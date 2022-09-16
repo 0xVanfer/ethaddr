@@ -120,6 +120,13 @@ var AaveATokenV2List = map[string]map[string]string{
 	},
 }
 
+// Aave s tokens v2.
+// map[network][underlying] = address.
+var AaveSTokenV2List = map[string]map[string]string{
+	chainId.AvalancheChainName: {},
+	chainId.EthereumChainName:  {},
+}
+
 // Aave v tokens v2.
 // map[network][underlying] = address.
 var AaveVTokenV2List = map[string]map[string]string{
