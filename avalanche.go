@@ -20,7 +20,7 @@ var DAIeList = map[string]string{
 	chainId.AvalancheChainName: "0xd586e7f844cea2f87f50152665bcbc2c279d8d70", // DAI.e
 }
 
-// WAVAX
+// Wrapped avalanche chain token: WAVAX.
 // map[network] = address.
 var WAVAXList = map[string]string{
 	chainId.EthereumChainName:  "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3", // WAVAX
