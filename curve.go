@@ -5,12 +5,14 @@ import "github.com/0xVanfer/chainId"
 const CurveProtocol string = "curve"
 
 // Curve token: CRV.
+// map[network] = address.
 var CurveTokenlist = map[string]string{
 	chainId.EthereumChainName:  "0xd533a949740bb3306d119cc777fa900ba034cd52", // CRV
 	chainId.AvalancheChainName: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
 }
 
 // Curve folded pools(a pool folded into other pools).
+// map[network] = []address.
 var CurveFoldedPoolList = map[string][]string{
 	chainId.EthereumChainName: {
 		"0x6c3f90f043a72fa612cbac8115ee7e52bde6e490", // 3crv
@@ -22,11 +24,13 @@ var CurveFoldedPoolList = map[string][]string{
 }
 
 // Curve gauage factory.
+// map[network] = address.
 var CurveGaugeFactoryList = map[string]string{
 	chainId.AvalancheChainName: "0xabc000d88f23bb45525e447528dbf656a9d55bf5",
 }
 
 // Curve pools.
+// map[network][pool name] = address.
 var CurvePoolsList = map[string]map[string]string{
 	chainId.EthereumChainName: {
 		"ib3CRV":      "0x5282a4ef67d9c33135340fb3289cc1711c13638c", // cyDAI/cyUSDC/cyUSDT
@@ -46,6 +50,7 @@ var CurvePoolsList = map[string]map[string]string{
 }
 
 // Curve gauges using different contracts.
+// map[network][gauge type] = []address.
 var CurveGauges = map[string]map[string][]string{
 	chainId.EthereumChainName: {
 		"liquidity gauge": {

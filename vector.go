@@ -5,16 +5,19 @@ import "github.com/0xVanfer/chainId"
 const VectorProtocol string = "vector"
 
 // Vector token: VTX.
+// map[network] = address.
 var VectorTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x5817d4f0b62a59b17f75207da1848c2ce75e7af4", // VTX
 }
 
 // Vector staking contract.
+// map[network] = address.
 var VectorChefList = map[string]string{
 	chainId.AvalancheChainName: "0x423d0fe33031aa4456a17b150804aa57fc157d97",
 }
 
 // Vector pool names.
+// map[network][pool type][underlying] = pool name.
 // todo: traderjoe pools
 var VectorPoolNameList = map[string]map[string]map[string]string{
 	chainId.AvalancheChainName: {
@@ -53,8 +56,9 @@ var VectorPoolNameList = map[string]map[string]map[string]string{
 	},
 }
 
-// vector machine gun pools 2022.06.13
+// Vector machine gun pools. 2022.06.13
 // todo: traderjoe pools
+// map[network][pool name] = address.
 var VectorMachinegunPoolList = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		VectorPoolNameList[chainId.AvalancheChainName]["VectorStaking"][TraderzJOEList[chainId.AvalancheChainName]]:           VectorChefList[chainId.AvalancheChainName],

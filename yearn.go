@@ -5,6 +5,7 @@ import "github.com/0xVanfer/chainId"
 var YearnProtocol string = "yearn"
 
 // Yearn token: YFI.
+// map[network] = address.
 var YearnTokenList = map[string]string{
 	chainId.EthereumChainName: "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e", // YFI
 	chainId.FantomChainName:   "0x29b0da86e484e1c0029b56e817912d778ac0ec69", // YFI
@@ -12,6 +13,7 @@ var YearnTokenList = map[string]string{
 }
 
 // Yearn woofy token: WOOFY.
+// map[network] = address.
 var WoofyList = map[string]string{
 	chainId.EthereumChainName: "0xd0660cd418a64a1d44e9214ad8e459324d8157f1", // WOOFY
 	chainId.FantomChainName:   "0xd0660cd418a64a1d44e9214ad8e459324d8157f1", // WOOFY
@@ -19,6 +21,7 @@ var WoofyList = map[string]string{
 }
 
 // Yearn vault tokens.
+// map[network][underlying] = address.
 var YearnVaultTokenList = map[string]map[string]string{
 	chainId.EthereumChainName: {
 		YearnTokenList[chainId.EthereumChainName]:                "0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1", // yvYFI

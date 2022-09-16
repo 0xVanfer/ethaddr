@@ -6,6 +6,7 @@ const AaveV2Protocol string = "aave"
 const AaveV3Protocol string = "aavev3"
 
 // Aave token: AAVE.
+// map[network] = address.
 var AaveTokenList = map[string]string{
 	chainId.EthereumChainName:  "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9", // AAVE
 	chainId.AvalancheChainName: "0x63a72806098bd3d9520cc43356dd78afe5d386d9", // AAVE.e
@@ -13,54 +14,63 @@ var AaveTokenList = map[string]string{
 }
 
 // Aave incentive controller V2.
+// map[network] = address.
 var AaveIncentiveControllerV2List = map[string]string{
 	chainId.EthereumChainName:  "0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5",
 	chainId.AvalancheChainName: "0x01d83fe6a10d2f2b7af17034343746188272cac9",
 }
 
 // Aave incentive controller V3.
+// map[network] = address.
 var AaveIncentiveControllerV3List = map[string]string{
 	chainId.AvalancheChainName: "0x929ec64c34a17401f460460d4b9390518e5b473e",
 	chainId.OptimismChainName:  "0x929ec64c34a17401f460460d4b9390518e5b473e",
 }
 
 // Aave lending pool v2.
+// map[network] = address.
 var AaveLendingPoolV2List = map[string]string{
 	chainId.EthereumChainName:  "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9",
 	chainId.AvalancheChainName: "0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c",
 }
 
 // Aave lending pool v3.
+// map[network] = address.
 var AaveLendingPoolV3List = map[string]string{
 	chainId.AvalancheChainName: "0x794a61358d6845594f94dc1db02a252b5b4814ad",
 	chainId.OptimismChainName:  "0x794a61358d6845594f94dc1db02a252b5b4814ad",
 }
 
 // Aave pool data provider v3.
+// map[network] = address.
 var AavePoolDataProviderList = map[string]string{
 	chainId.AvalancheChainName: "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
 	chainId.OptimismChainName:  "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
 }
 
 // Aave ui pool data provider v3.
+// map[network] = address.
 var AaveUiPoolDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xdbbfafc45983B4659e368a3025b81f69Ab6e5093",
 	chainId.OptimismChainName:  "0x64f558d4bfc1c03a8c8b2ff84976ff04c762b51f",
 }
 
 // Aave ui incentive data provider v3.
+// map[network] = address.
 var AaveUiIncentiveDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0x270f51cf3f681010b46f5c4ee2ad5120db33026f",
 	chainId.OptimismChainName:  "0x6dd4b295b457a26cc2646aaf2519436681afb5d4",
 }
 
 // Aave pool address provider v3.
+// map[network] = address.
 var AavePoolAddressProviderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
 	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
 }
 
 // Aave a tokens v2.
+// map[network][underlying] = address.
 var AaveATokenV2List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:      "0x47afa96cdc9fab46904a55a6ad4bf6660b53c38a", // avDAI
@@ -111,6 +121,7 @@ var AaveATokenV2List = map[string]map[string]string{
 }
 
 // Aave v tokens v2.
+// map[network][underlying] = address.
 var AaveVTokenV2List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:      "0x1852dc24d1a8956a0b356aa18ede954c7a0ca5ae", // variableDebtvDAI
@@ -161,6 +172,7 @@ var AaveVTokenV2List = map[string]map[string]string{
 }
 
 // Aave a tokens v3.
+// map[network][underlying] = address.
 var AaveATokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:       "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aAvaDAI
@@ -186,6 +198,7 @@ var AaveATokenV3List = map[string]map[string]string{
 }
 
 // Aave s tokens v3.
+// map[network][underlying] = address.
 var AaveSTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:       "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", // stableDebtAvaDAI
@@ -201,6 +214,7 @@ var AaveSTokenV3List = map[string]map[string]string{
 }
 
 // Aave v tokens v3.
+// map[network][underlying] = address.
 var AaveVTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:       "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtAvaDAI

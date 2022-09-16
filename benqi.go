@@ -5,21 +5,25 @@ import "github.com/0xVanfer/chainId"
 const BenqiProtocol string = "benqi"
 
 // Benqi token: QI.
+// map[network] = address.
 var BenqiTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5", // QI
 }
 
 // Benqi savax token: SAVAX.
+// map[network] = address.
 var BenqiSAVAXList = map[string]string{
 	chainId.AvalancheChainName: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be", // sAVAX
 }
 
 // Benqi comptroller, similar to compound.
+// map[network] = address.
 var BenqiComptrollerList = map[string]string{
 	chainId.AvalancheChainName: "0x486af39519b4dc9a7fccd318217352830e8ad9b4",
 }
 
 // Benqi c tokens(qi tokens).
+// map[network][underlying] = address.
 var BenqiCTokenList = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:       "0x835866d37afb8cb8f8334dccdaf66cf01832ff5d", // qiDAI

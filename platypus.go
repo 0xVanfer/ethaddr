@@ -5,16 +5,19 @@ import "github.com/0xVanfer/chainId"
 const PlatypusProtocol string = "platypus"
 
 // Platypus token: PTP.
+// map[network] = address.
 var PlatypusTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x22d4002028f537599be9f666d1c4fa138522f9c8", // PTP
 }
 
 // Platypus ve token: vePTP.
+// map[network] = address.
 var PlatypusvePTPList = map[string]string{
 	chainId.AvalancheChainName: "0x5857019c749147eee22b1fe63500f237f3c1b692", // vePTP
 }
 
 // Platypus xPTP.
+// map[network] = address.
 var PlatypusxPTPList = map[string]string{
 	chainId.AvalancheChainName: "0x060556209e507d30f2167a101bfc6d256ed2f3e1", // xPTP
 }
@@ -29,6 +32,7 @@ const PlatypusUSDCYUSDPairName string = "PlatypusUSDCYUSDpair"
 const PlatypusBTCbWBTCePairName string = "PlatypusBTCbWBTCepair"
 
 // Platypus router.
+// map[network][pool name] = address.
 var PlatypusRouterList = map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		PlatypusMainPoolsName:     "0x66357dcace80431aee0a7507e2e361b7e2402370",
@@ -42,6 +46,7 @@ var PlatypusRouterList = map[string]map[string]string{
 }
 
 // Platypus master platypus v2.
+// map[network] = address.
 var PlatypusMasterPlatypusV2List = map[string]string{
 	chainId.AvalancheChainName: "0x68c5f4374228beedfa078e77b5ed93c28a2f713e",
 }
@@ -75,6 +80,7 @@ const PlatypusLpWBTCeAddress string = "0xc09c12093b037866bf68c9474ecdb5113160fbc
 const PlatypusLpBTCbAddress string = "0x209a0399a2905900c0d1a9a382fe23e37024dc84"
 
 // Platypus lp list.
+// map[network][pool type][underlying] = address.
 var PlatypusLpList = map[string]map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		PlatypusMainPoolsName: {

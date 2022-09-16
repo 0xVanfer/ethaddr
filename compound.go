@@ -5,16 +5,19 @@ import "github.com/0xVanfer/chainId"
 const CompoundProtocol string = "compound"
 
 // Compound token: COMP.
+// map[network] = address.
 var CompoundTokenList = map[string]string{
 	chainId.EthereumChainName: "0xc00e94cb662c3520282e6f5717214004a7f26888", // COMP
 }
 
 // Comptroller.
+// map[network] = address.
 var CompoundComptrollerList = map[string]string{
 	chainId.EthereumChainName: "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
 }
 
 // Compound c tokens.
+// map[network][underlying] = address.
 var CompoundCTokenList = map[string]map[string]string{
 	chainId.EthereumChainName: {
 		BATList[chainId.EthereumChainName]:           "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e", // cBAT
