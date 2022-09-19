@@ -136,7 +136,7 @@ var AaveVTokenV2List = map[string]map[string]string{
 		USDTeList[chainId.AvalancheChainName]:     "0xfc1ada7a288d6fce0d29ccfaaa57bc9114bb2dbe", // variableDebtvUSDT
 		WETHList[chainId.AvalancheChainName]:      "0x4e575cacb37bc1b5afec68a0462c4165a5268983", // variableDebtvWETH
 		WBTCList[chainId.AvalancheChainName]:      "0x2dc0e35ec3ab070b8a175c829e23650ee604a9eb", // variableDebtvWBTC
-		WAVAXList[chainId.AvalancheChainName]:     "0x5c70b3f22595caf8314f77dabc628363aaee18ad", // variableDebtvWAVAX
+		WAVAXList[chainId.AvalancheChainName]:     "0x66a0fe52fb629a6cb4d10b8580afdffe888f5fd4", // variableDebtvWAVAX
 		AaveTokenList[chainId.AvalancheChainName]: "0x8352e3fd18b8d84d3c8a1b538d788899073c7a8e", // variableDebtvAAVE
 	},
 	chainId.EthereumChainName: {
