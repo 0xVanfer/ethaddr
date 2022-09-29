@@ -6,6 +6,7 @@ const AaveV2Protocol string = "aave"
 const AaveV3Protocol string = "aavev3"
 
 // Aave token: AAVE.
+//
 // map[network] = address.
 var AaveTokenList = map[string]string{
 	chainId.EthereumChainName:  "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9", // AAVE
@@ -14,6 +15,7 @@ var AaveTokenList = map[string]string{
 }
 
 // Aave incentive controller V2.
+//
 // map[network] = address.
 var AaveIncentiveControllerV2List = map[string]string{
 	chainId.EthereumChainName:  "0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5",
@@ -21,6 +23,7 @@ var AaveIncentiveControllerV2List = map[string]string{
 }
 
 // Aave incentive controller V3.
+//
 // map[network] = address.
 var AaveIncentiveControllerV3List = map[string]string{
 	chainId.AvalancheChainName: "0x929ec64c34a17401f460460d4b9390518e5b473e",
@@ -28,6 +31,7 @@ var AaveIncentiveControllerV3List = map[string]string{
 }
 
 // Aave lending pool v2.
+//
 // map[network] = address.
 var AaveLendingPoolV2List = map[string]string{
 	chainId.EthereumChainName:  "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9",
@@ -35,6 +39,7 @@ var AaveLendingPoolV2List = map[string]string{
 }
 
 // Aave lending pool v3.
+//
 // map[network] = address.
 var AaveLendingPoolV3List = map[string]string{
 	chainId.AvalancheChainName: "0x794a61358d6845594f94dc1db02a252b5b4814ad",
@@ -42,6 +47,7 @@ var AaveLendingPoolV3List = map[string]string{
 }
 
 // Aave pool data provider v3.
+//
 // map[network] = address.
 var AavePoolDataProviderList = map[string]string{
 	chainId.AvalancheChainName: "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
@@ -49,6 +55,7 @@ var AavePoolDataProviderList = map[string]string{
 }
 
 // Aave ui pool data provider v3.
+//
 // map[network] = address.
 var AaveUiPoolDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xdbbfafc45983B4659e368a3025b81f69Ab6e5093",
@@ -56,6 +63,7 @@ var AaveUiPoolDataProveiderV3List = map[string]string{
 }
 
 // Aave ui incentive data provider v3.
+//
 // map[network] = address.
 var AaveUiIncentiveDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0x270f51cf3f681010b46f5c4ee2ad5120db33026f",
@@ -63,6 +71,7 @@ var AaveUiIncentiveDataProveiderV3List = map[string]string{
 }
 
 // Aave pool address provider v3.
+//
 // map[network] = address.
 var AavePoolAddressProviderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
@@ -70,6 +79,7 @@ var AavePoolAddressProviderV3List = map[string]string{
 }
 
 // Aave a tokens v2.
+//
 // map[network][underlying] = address.
 var AaveATokenV2List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
@@ -121,6 +131,7 @@ var AaveATokenV2List = map[string]map[string]string{
 }
 
 // Aave s tokens v2.
+//
 // map[network][underlying] = address.
 var AaveSTokenV2List = map[string]map[string]string{
 	chainId.AvalancheChainName: {},
@@ -128,6 +139,7 @@ var AaveSTokenV2List = map[string]map[string]string{
 }
 
 // Aave v tokens v2.
+//
 // map[network][underlying] = address.
 var AaveVTokenV2List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
@@ -179,6 +191,7 @@ var AaveVTokenV2List = map[string]map[string]string{
 }
 
 // Aave a tokens v3.
+//
 // map[network][underlying] = address.
 var AaveATokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
@@ -205,6 +218,7 @@ var AaveATokenV3List = map[string]map[string]string{
 }
 
 // Aave s tokens v3.
+//
 // map[network][underlying] = address.
 var AaveSTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
@@ -221,6 +235,7 @@ var AaveSTokenV3List = map[string]map[string]string{
 }
 
 // Aave v tokens v3.
+//
 // map[network][underlying] = address.
 var AaveVTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {

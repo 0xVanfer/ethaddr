@@ -5,6 +5,7 @@ import "github.com/0xVanfer/chainId"
 const ZEROAddress string = "0x0000000000000000000000000000000000000000"
 
 // USDC
+//
 // map[network] = address.
 var USDCList = map[string]string{
 	chainId.EthereumChainName:  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", // USDC
@@ -13,6 +14,7 @@ var USDCList = map[string]string{
 }
 
 // USDT
+//
 // map[network] = address.
 var USDTList = map[string]string{
 	chainId.EthereumChainName:  "0xdac17f958d2ee523a2206206994597c13d831ec7", // USDT
@@ -21,6 +23,7 @@ var USDTList = map[string]string{
 }
 
 // DAI
+//
 // map[network] = address.
 var DAIList = map[string]string{
 	chainId.EthereumChainName: "0x6b175474e89094c44da98b954eedeac495271d0f", // DAI
@@ -28,6 +31,7 @@ var DAIList = map[string]string{
 }
 
 // UST
+//
 // map[network] = address.
 var USTList = map[string]string{
 	chainId.EthereumChainName:  "0xa693b19d2931d498c5b318df961919bb4aee87a5", // UST
@@ -35,6 +39,7 @@ var USTList = map[string]string{
 }
 
 // Wrapped eth: WETH.
+//
 // map[network] = address.
 var WETHList = map[string]string{
 	chainId.EthereumChainName:  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", // WETH
@@ -43,6 +48,7 @@ var WETHList = map[string]string{
 }
 
 // Wrapped btc: WBTC.
+//
 // map[network] = address.
 var WBTCList = map[string]string{
 	chainId.EthereumChainName:  "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599", // WBTC

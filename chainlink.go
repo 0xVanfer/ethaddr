@@ -3,6 +3,7 @@ package ethaddr
 import "github.com/0xVanfer/chainId"
 
 // Chainlink token: LINK.
+//
 // map[network] = address.
 var LINKList = map[string]string{
 	chainId.EthereumChainName:  "0x514910771af9ca656af840dff83e8264ecf986ca", // LINK

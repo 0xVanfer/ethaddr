@@ -5,12 +5,14 @@ import "github.com/0xVanfer/chainId"
 const KyberProtocol string = "kyber"
 
 // Kyber old token: KNC.
+//
 // map[network] = address.
 var KyberOldTokenList = map[string]string{
 	chainId.EthereumChainName: "0xdd974d5c2e2928dea5f71b9825b8b646686bd200", // KNC
 }
 
 // Kyber token in use: KNC.
+//
 // map[network] = address.
 var KyberTokenList = map[string]string{
 	chainId.EthereumChainName:      "0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202", // KNC
@@ -20,6 +22,7 @@ var KyberTokenList = map[string]string{
 }
 
 // Kyber factory.
+//
 // map[network] = address.
 var KyberFactoryList = map[string]string{
 	chainId.EthereumChainName:      "0x833e4083b7ae46cea85695c4f7ed25cdad8886de",
@@ -31,12 +34,14 @@ var KyberFactoryList = map[string]string{
 }
 
 // Kyber DMM factory.
+//
 // map[network] = address.
 var KyberDMMFactoryList = map[string]string{
 	chainId.ArbitrumChainName: "0xd9bfe9979e9ca4b2fe84ba5d4cf963bbcb376974",
 }
 
 // Kyber router.
+//
 // map[network] = address.
 var KyberRouterList = map[string]string{
 	chainId.EthereumChainName:      "0x1c87257f5e8609940bc751a07bb085bb7f8cdbe6",
@@ -48,12 +53,14 @@ var KyberRouterList = map[string]string{
 }
 
 // Kyber DMM router.
+//
 // map[network] = address.
 var KyberDMMRouterList = map[string]string{
 	chainId.ArbitrumChainName: "0xeae47c5d99f7b31165a7f0c5f7e0d6afa25cfd55",
 }
 
 // Kyber reward locker.
+//
 // map[network] = address.
 var KyberRewardLockerList = map[string]string{
 	chainId.EthereumChainName:      "0xfab5186a194588f5ad5074bd52659302906b4522",
@@ -63,6 +70,7 @@ var KyberRewardLockerList = map[string]string{
 }
 
 // Kyber migrator.
+//
 // map[network] = address.
 var KyberMigratorList = map[string]string{
 	chainId.EthereumChainName: "0x6a65e062ce8290007301296f3c6ae446af7bdeec",

@@ -5,6 +5,7 @@ import "github.com/0xVanfer/chainId"
 const CurveProtocol string = "curve"
 
 // Curve token: CRV.
+//
 // map[network] = address.
 var CurveTokenlist = map[string]string{
 	chainId.EthereumChainName:  "0xd533a949740bb3306d119cc777fa900ba034cd52", // CRV
@@ -12,6 +13,7 @@ var CurveTokenlist = map[string]string{
 }
 
 // Curve folded pools(a pool folded into other pools).
+//
 // map[network] = []address.
 var CurveFoldedPoolList = map[string][]string{
 	chainId.EthereumChainName: {
@@ -24,12 +26,14 @@ var CurveFoldedPoolList = map[string][]string{
 }
 
 // Curve gauage factory.
+//
 // map[network] = address.
 var CurveGaugeFactoryList = map[string]string{
 	chainId.AvalancheChainName: "0xabc000d88f23bb45525e447528dbf656a9d55bf5",
 }
 
 // Curve pools.
+//
 // map[network][pool name] = address.
 var CurvePoolsList = map[string]map[string]string{
 	chainId.EthereumChainName: {
@@ -50,6 +54,7 @@ var CurvePoolsList = map[string]map[string]string{
 }
 
 // Curve gauges using different contracts.
+//
 // map[network][gauge type] = []address.
 var CurveGauges = map[string]map[string][]string{
 	chainId.EthereumChainName: {
