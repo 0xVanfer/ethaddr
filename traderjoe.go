@@ -83,5 +83,7 @@ var TraderjoeCTokenList = map[string]map[string]string{
 		MIMList[chainId.AvalancheChainName]:                 "0xcE095A9657A02025081E0607c8D8b081c76A75ea", // jMIM
 		TraderjoeStakeTokenList[chainId.AvalancheChainName]: "0xC146783a59807154F92084f9243eb139D58Da696", // jXJOE
 		TraderjoeTokenList[chainId.AvalancheChainName]:      "0xbfdbe35168953c9d29bdf9a0043f902f233c76e0", // jJOE
+		BTCbList[chainId.AvalancheChainName]:                "0x13a7a6c167d75badd316ddeef6c526c8463a090f", // jBTC
+		USDTList[chainId.AvalancheChainName]:                "0x50ac14a3ee0a4cb6ef829f7ad65b2da5493e99d2", // jUSDTNative
 	},
 }
