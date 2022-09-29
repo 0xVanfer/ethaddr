@@ -6,7 +6,8 @@ import "github.com/0xVanfer/chainId"
 //
 // map[network] = address.
 var BUSDList = map[string]string{
-	chainId.EthereumChainName: "0x4fabb145d64652a948d72533023f6e7a623c7c53", // BUSD
+	chainId.EthereumChainName:  "0x4fabb145d64652a948d72533023f6e7a623c7c53", // BUSD
+	chainId.AvalancheChainName: "0x9c9e5fd8bbc25984b178fdce6117defa39d2db39", // BUSD
 }
 
 // Wrapped binance smart chain token: WBNB.

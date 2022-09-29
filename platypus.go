@@ -61,6 +61,7 @@ const PlatypusLpUSDTeAddress string = "0x0d26d103c91f63052fbca88aaf01d5304ae4001
 const PlatypusLpUSDCAddress string = "0xaef735b1e7ecfaf8209ea46610585817dc0a2e16"
 const PlatypusLpUSDTAddress string = "0x776628a5c37335608dd2a9538807b9bba3869e14"
 const PlatypusLpDAIeAddress string = "0xc1daa16e6979c2d1229cb1fd0823491ea44555be"
+const PlatypusLpBUSDAddress string = "0xe23f8ccdeb4e8ce5d9fe76782718cd85d12689c8"
 const PlatypusLpMIMDeprecatedAddress string = "0x6220baad9d08dee465befae4f82ee251cf7c8b82"
 
 const PlatypusLpFRAXAddress string = "0x6fd4b4c38ed80727ecd0d58505565f9e422c965f"
@@ -86,7 +87,7 @@ const PlatypusLpBTCbAddress string = "0x209a0399a2905900c0d1a9a382fe23e37024dc84
 
 // Platypus lp list.
 //
-// map[network][pool type][underlying] = address.
+// map[network][pool name][underlying] = address.
 var PlatypusLpList = map[string]map[string]map[string]string{
 	chainId.AvalancheChainName: {
 		PlatypusMainPoolsName: {
@@ -95,6 +96,7 @@ var PlatypusLpList = map[string]map[string]map[string]string{
 			USDCeList[chainId.AvalancheChainName]: PlatypusLpUSDCeAddress,
 			USDTList[chainId.AvalancheChainName]:  PlatypusLpUSDTAddress,
 			USDTeList[chainId.AvalancheChainName]: PlatypusLpUSDTeAddress,
+			BUSDList[chainId.AvalancheChainName]:  PlatypusLpBUSDAddress,
 		},
 		PlatypusUSDCFRAXPairName: {
 			USDCList[chainId.AvalancheChainName]: PlatypusLpUSDC_FRAXAddress,
