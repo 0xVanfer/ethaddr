@@ -204,6 +204,9 @@ var AaveATokenV3List = map[string]map[string]string{
 		LINKList[chainId.AvalancheChainName]:       "0x191c10aa4af7c30e871e70c95db0e4eb77237530", // aAvaLINK
 		AaveTokenList[chainId.AvalancheChainName]:  "0xf329e36c7bf6e5e86ce2150875a84ce77f477375", // aAvaAAVE
 		BenqiSAVAXList[chainId.AvalancheChainName]: "0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff", // aAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:       "0x8ffdf2de812095b1d19cb146e4c004587c0a0692", // aAvaBTC.b
+		FRAXList[chainId.AvalancheChainName]:       "0xc45a479877e1e9dfe9fcd4056c699575a1045daa",
+		MaiList[chainId.AvalancheChainName]:        "0x8eb270e296023e9d92081fdf967ddd7878724424",
 	},
 	chainId.OptimismChainName: {
 		DAIList[chainId.OptimismChainName]:       "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aOptDAI
@@ -231,6 +234,9 @@ var AaveSTokenV3List = map[string]map[string]string{
 		LINKList[chainId.AvalancheChainName]:       "0x89d976629b7055ff1ca02b927ba3e020f22a44e4", // stableDebtAvaLINK
 		AaveTokenList[chainId.AvalancheChainName]:  "0xfaef6a702d15428e588d4c0614aefb4348d83d48", // stableDebtAvaAAVE
 		BenqiSAVAXList[chainId.AvalancheChainName]: "0x08cb71192985e936c7cd166a8b268035e400c3c3", // stableDebtAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:       "0xa5e408678469d23efdb7694b1b0a85bb0669e8bd", //
+		FRAXList[chainId.AvalancheChainName]:       "0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841", //
+		MaiList[chainId.AvalancheChainName]:        "0x3ef10dff4928279c004308ebadc4db8b7620d6fc", //
 	},
 }
 
@@ -248,6 +254,9 @@ var AaveVTokenV3List = map[string]map[string]string{
 		LINKList[chainId.AvalancheChainName]:       "0x953a573793604af8d41f306feb8274190db4ae0e", // variableDebtAvaLINK
 		AaveTokenList[chainId.AvalancheChainName]:  "0xe80761ea617f66f96274ea5e8c37f03960ecc679", // variableDebtAvaAAVE
 		BenqiSAVAXList[chainId.AvalancheChainName]: "0x77ca01483f379e58174739308945f044e1a764dc", // variableDebtAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:       "0xa8669021776bc142dfca87c21b4a52595bcbb40a", // variableDebtAvaBTC.b
+		FRAXList[chainId.AvalancheChainName]:       "0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907", //
+		MaiList[chainId.AvalancheChainName]:        "0xce186f6cccb0c955445bb9d10c59cae488fea559", //
 	},
 	chainId.OptimismChainName: {
 		DAIList[chainId.OptimismChainName]:       "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtOpt
