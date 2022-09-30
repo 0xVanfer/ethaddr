@@ -68,7 +68,6 @@ var PlatypusRouterList = map[string]map[string]string{
 		Platypus_AVAX_yyAVAX_PairName: "0x8b4a45da5b0705ae4f47ebefc180c099345cf57e", // AVAX - yyAVAX
 
 		Platypus_BTCb_WBTCe_PairName: "0x39de4e02f76dbd4352ec2c926d8d64db8abdf5b2", // BTC.b - WBTC.e
-
 	},
 }
 

@@ -17,3 +17,10 @@ var LidoTokenList = map[string]string{
 var LidoSTETHList = map[string]string{
 	chainId.EthereumChainName: "0xae7ab96520de3a18e5e111b5eaab095312d7fe84", // stETH
 }
+
+// Lido stake matic token: stMATIC.
+//
+// map[network] = address.
+var STMATICList = map[string]string{
+	chainId.PolygonChainName: "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4", // stETH
+}
