@@ -46,7 +46,7 @@ const (
 	// Platypus AVAX - yyAVAX alt pool.
 	Platypus_AVAX_yyAVAX_PairName string = "Platypus_AVAX_yyAVAX_pair"
 	// Platypus BTC.b - WBTC.e alt pool.
-	Platypus_BTCb_WBTCe_PairName string = "PlatypusBTCbWBTCepair"
+	Platypus_BTCb_WBTCe_PairName string = "Platypus_BTCb_WBTCe_pair"
 )
 
 // Platypus router.
@@ -62,10 +62,10 @@ var PlatypusRouterList = map[string]map[string]string{
 		Platypus_USDC_MIM_PairName:   "0x30c30d826be87cd0a4b90855c2f38f7fcfe4eaa7", // USDC - MIM
 		Platypus_USDC_TUSD_PairName:  "0x13329c7905f1ee55c3c7d7bfc26c1197c512c207", // USDC - TUSD(deprecated)
 		Platypus_USDC_YUSD_PairName:  "0xc828d995c686aaba78a4ac89dfc8ec0ff4c5be83", // USDC - YUSD
-		Platypus_USDC_MONEY_PairName: "",                                           // USDC - MONEY
+		Platypus_USDC_MONEY_PairName: "0x27912ae6ba9a54219d8287c3540a8969ff35500b", // USDC - MONEY
 
 		Platypus_AVAX_sAVAX_PairName:  "0x4658ea7e9960d6158a261104aaa160cc953bb6ba", // AVAX - sAVAX
-		Platypus_AVAX_yyAVAX_PairName: "",                                           // AVAX - yyAVAX
+		Platypus_AVAX_yyAVAX_PairName: "0x8b4a45da5b0705ae4f47ebefc180c099345cf57e", // AVAX - yyAVAX
 
 		Platypus_BTCb_WBTCe_PairName: "0x39de4e02f76dbd4352ec2c926d8d64db8abdf5b2", // BTC.b - WBTC.e
 
@@ -129,9 +129,9 @@ const (
 	PlatypusLp_USDC_YUSD_USDC_Address string = "0x4b851118a4a4948799f24d0cbe17fa3dad09e2d5"
 
 	// Platypus USDC - MONEY pool - MONEY LP.
-	PlatypusLp_USDC_MONEY_MONEY_Address string = ""
+	PlatypusLp_USDC_MONEY_MONEY_Address string = "0xe08947ee864af325d9f98743b3b905875ae0ec99"
 	// Platypus USDC - MONEY pool - USDC LP.
-	PlatypusLp_USDC_MONEY_USDC_Address string = ""
+	PlatypusLp_USDC_MONEY_USDC_Address string = "0x551c259bf4d88edfdabb04179342a73daa759583"
 
 	// Platypus AVAX - sAVAX pool - AVAX LP.
 	PlatypusLp_AVAX_sAVAX_AVAX_Address string = "0xc73eed4494382093c6a7c284426a9a00f6c79939"
@@ -139,9 +139,9 @@ const (
 	PlatypusLp_AVAX_sAVAX_sAVAX_Address string = "0xa2a7ee49750ff12bb60b407da2531db3c50a1789"
 
 	// Platypus AVAX - yyAVAX pool - AVAX LP.
-	PlatypusLp_AVAX_yyAVAX_AVAX_Address string = ""
+	PlatypusLp_AVAX_yyAVAX_AVAX_Address string = "0x12141b8fd20b4bbdd5f4e911bf91575258a3eabd"
 	// Platypus AVAX - yyAVAX pool - yyAVAX LP.
-	PlatypusLp_AVAX_yyAVAX_yyAVAX_Address string = ""
+	PlatypusLp_AVAX_yyAVAX_yyAVAX_Address string = "0x3beb0d3db537b79d377131ce81950b683d382ec9"
 
 	// Platypus BTC.b - WBTC.e pool - BTC.b LP.
 	PlatypusLp_BTCb_WBTCe_BTCb_Address string = "0x209a0399a2905900c0d1a9a382fe23e37024dc84"
