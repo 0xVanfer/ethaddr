@@ -14,6 +14,15 @@ var LidoTokenList = map[string]string{
 // Lido stake eth token: stETH.
 //
 // map[network] = address.
+var STETHList = map[string]string{
+	chainId.EthereumChainName: "0xae7ab96520de3a18e5e111b5eaab095312d7fe84", // stETH
+}
+
+// Lido stake eth token: stETH.
+//
+// map[network] = address.
+//
+// Deprecated: Use STETHList instead.
 var LidoSTETHList = map[string]string{
 	chainId.EthereumChainName: "0xae7ab96520de3a18e5e111b5eaab095312d7fe84", // stETH
 }
@@ -22,5 +31,5 @@ var LidoSTETHList = map[string]string{
 //
 // map[network] = address.
 var STMATICList = map[string]string{
-	chainId.PolygonChainName: "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4", // stETH
+	chainId.PolygonChainName: "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4", // stMATIC
 }

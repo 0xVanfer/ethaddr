@@ -63,18 +63,18 @@ var AavePoolAddressProviderV3List = map[string]string{
 // map[network][underlying] = address.
 var AaveATokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
-		DAIeList[chainId.AvalancheChainName]:       "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aAvaDAI
-		USDCList[chainId.AvalancheChainName]:       "0x625e7708f30ca75bfd92586e17077590c60eb4cd", // aAvaUSDC
-		USDTList[chainId.AvalancheChainName]:       "0x6ab707aca953edaefbc4fd23ba73294241490620", // aAvaUSDT
-		WETHList[chainId.AvalancheChainName]:       "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8", // aAvaWETH
-		WBTCList[chainId.AvalancheChainName]:       "0x078f358208685046a11c85e8ad32895ded33a249", // aAvaWBTC
-		WAVAXList[chainId.AvalancheChainName]:      "0x6d80113e533a2c0fe82eabd35f1875dcea89ea97", // aAvaWAVAX
-		LINKList[chainId.AvalancheChainName]:       "0x191c10aa4af7c30e871e70c95db0e4eb77237530", // aAvaLINK
-		AaveTokenList[chainId.AvalancheChainName]:  "0xf329e36c7bf6e5e86ce2150875a84ce77f477375", // aAvaAAVE
-		BenqiSAVAXList[chainId.AvalancheChainName]: "0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff", // aAvaSAVAX
-		BTCbList[chainId.AvalancheChainName]:       "0x8ffdf2de812095b1d19cb146e4c004587c0a0692", // aAvaBTC.b
-		FRAXList[chainId.AvalancheChainName]:       "0xc45a479877e1e9dfe9fcd4056c699575a1045daa",
-		MaiList[chainId.AvalancheChainName]:        "0x8eb270e296023e9d92081fdf967ddd7878724424",
+		DAIeList[chainId.AvalancheChainName]:      "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aAvaDAI
+		USDCList[chainId.AvalancheChainName]:      "0x625e7708f30ca75bfd92586e17077590c60eb4cd", // aAvaUSDC
+		USDTList[chainId.AvalancheChainName]:      "0x6ab707aca953edaefbc4fd23ba73294241490620", // aAvaUSDT
+		WETHList[chainId.AvalancheChainName]:      "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8", // aAvaWETH
+		WBTCList[chainId.AvalancheChainName]:      "0x078f358208685046a11c85e8ad32895ded33a249", // aAvaWBTC
+		WAVAXList[chainId.AvalancheChainName]:     "0x6d80113e533a2c0fe82eabd35f1875dcea89ea97", // aAvaWAVAX
+		LINKList[chainId.AvalancheChainName]:      "0x191c10aa4af7c30e871e70c95db0e4eb77237530", // aAvaLINK
+		AaveTokenList[chainId.AvalancheChainName]: "0xf329e36c7bf6e5e86ce2150875a84ce77f477375", // aAvaAAVE
+		SAVAXList[chainId.AvalancheChainName]:     "0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff", // aAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:      "0x8ffdf2de812095b1d19cb146e4c004587c0a0692", // aAvaBTC.b
+		FRAXList[chainId.AvalancheChainName]:      "0xc45a479877e1e9dfe9fcd4056c699575a1045daa",
+		MaiList[chainId.AvalancheChainName]:       "0x8eb270e296023e9d92081fdf967ddd7878724424",
 	},
 	chainId.OptimismChainName: {
 		DAIList[chainId.OptimismChainName]:       "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aOptDAI
@@ -87,7 +87,7 @@ var AaveATokenV3List = map[string]map[string]string{
 		AaveTokenList[chainId.OptimismChainName]: "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aOptAAVE
 	},
 	chainId.PolygonChainName: {
-		AngelEURList[chainId.PolygonChainName]:       "0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77", // aPolAGEUR
+		AgEURList[chainId.PolygonChainName]:          "0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77", // aPolAGEUR
 		DAIList[chainId.PolygonChainName]:            "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aPolDAI
 		EURSList[chainId.PolygonChainName]:           "0x38d693ce1df5aadf7bc62595a37d667ad57922e5",
 		JEURList[chainId.PolygonChainName]:           "0x6533afac2e7bccb20dca161449a13a32d391fb00",
@@ -114,21 +114,21 @@ var AaveATokenV3List = map[string]map[string]string{
 // map[network][underlying] = address.
 var AaveSTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
-		DAIeList[chainId.AvalancheChainName]:       "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", // stableDebtAvaDAI
-		USDCList[chainId.AvalancheChainName]:       "0x307ffe186f84a3bc2613d1ea417a5737d69a7007", // stableDebtAvaUSDC
-		USDTList[chainId.AvalancheChainName]:       "0x70effc565db6eef7b927610155602d31b670e802", // stableDebtAvaUSDT
-		WETHList[chainId.AvalancheChainName]:       "0xd8ad37849950903571df17049516a5cd4cbe55f6", // stableDebtAvaWETH
-		WBTCList[chainId.AvalancheChainName]:       "0x633b207dd676331c413d4c013a6294b0fe47cd0e", // stableDebtAvaWBTC
-		WAVAXList[chainId.AvalancheChainName]:      "0xf15f26710c827dde8acba678682f3ce24f2fb56e", // stableDebtAvaWAVAX
-		LINKList[chainId.AvalancheChainName]:       "0x89d976629b7055ff1ca02b927ba3e020f22a44e4", // stableDebtAvaLINK
-		AaveTokenList[chainId.AvalancheChainName]:  "0xfaef6a702d15428e588d4c0614aefb4348d83d48", // stableDebtAvaAAVE
-		BenqiSAVAXList[chainId.AvalancheChainName]: "0x08cb71192985e936c7cd166a8b268035e400c3c3", // stableDebtAvaSAVAX
-		BTCbList[chainId.AvalancheChainName]:       "0xa5e408678469d23efdb7694b1b0a85bb0669e8bd", //
-		FRAXList[chainId.AvalancheChainName]:       "0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841", //
-		MaiList[chainId.AvalancheChainName]:        "0x3ef10dff4928279c004308ebadc4db8b7620d6fc", //
+		DAIeList[chainId.AvalancheChainName]:      "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", // stableDebtAvaDAI
+		USDCList[chainId.AvalancheChainName]:      "0x307ffe186f84a3bc2613d1ea417a5737d69a7007", // stableDebtAvaUSDC
+		USDTList[chainId.AvalancheChainName]:      "0x70effc565db6eef7b927610155602d31b670e802", // stableDebtAvaUSDT
+		WETHList[chainId.AvalancheChainName]:      "0xd8ad37849950903571df17049516a5cd4cbe55f6", // stableDebtAvaWETH
+		WBTCList[chainId.AvalancheChainName]:      "0x633b207dd676331c413d4c013a6294b0fe47cd0e", // stableDebtAvaWBTC
+		WAVAXList[chainId.AvalancheChainName]:     "0xf15f26710c827dde8acba678682f3ce24f2fb56e", // stableDebtAvaWAVAX
+		LINKList[chainId.AvalancheChainName]:      "0x89d976629b7055ff1ca02b927ba3e020f22a44e4", // stableDebtAvaLINK
+		AaveTokenList[chainId.AvalancheChainName]: "0xfaef6a702d15428e588d4c0614aefb4348d83d48", // stableDebtAvaAAVE
+		SAVAXList[chainId.AvalancheChainName]:     "0x08cb71192985e936c7cd166a8b268035e400c3c3", // stableDebtAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:      "0xa5e408678469d23efdb7694b1b0a85bb0669e8bd", //
+		FRAXList[chainId.AvalancheChainName]:      "0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841", //
+		MaiList[chainId.AvalancheChainName]:       "0x3ef10dff4928279c004308ebadc4db8b7620d6fc", //
 	},
 	chainId.PolygonChainName: {
-		AngelEURList[chainId.PolygonChainName]:       "0x40b4baecc69b882e8804f9286b12228c27f8c9bf", // stableDebtPolAGEUR
+		AgEURList[chainId.PolygonChainName]:          "0x40b4baecc69b882e8804f9286b12228c27f8c9bf", // stableDebtPolAGEUR
 		DAIList[chainId.PolygonChainName]:            "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", //
 		EURSList[chainId.PolygonChainName]:           "0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb",
 		JEURList[chainId.PolygonChainName]:           "0x6b4b37618d85db2a7b469983c888040f7f05ea3d",
@@ -155,18 +155,18 @@ var AaveSTokenV3List = map[string]map[string]string{
 // map[network][underlying] = address.
 var AaveVTokenV3List = map[string]map[string]string{
 	chainId.AvalancheChainName: {
-		DAIeList[chainId.AvalancheChainName]:       "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtAvaDAI
-		USDCList[chainId.AvalancheChainName]:       "0xfccf3cabbe80101232d343252614b6a3ee81c989", // variableDebtAvaUSDC
-		USDTList[chainId.AvalancheChainName]:       "0xfb00ac187a8eb5afae4eace434f493eb62672df7", // variableDebtAvaUSDT
-		WETHList[chainId.AvalancheChainName]:       "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351", // variableDebtAvaWETH
-		WBTCList[chainId.AvalancheChainName]:       "0x92b42c66840c7ad907b4bf74879ff3ef7c529473", // variableDebtAvaWBTC
-		WAVAXList[chainId.AvalancheChainName]:      "0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8", // variableDebtAvaWAVAX
-		LINKList[chainId.AvalancheChainName]:       "0x953a573793604af8d41f306feb8274190db4ae0e", // variableDebtAvaLINK
-		AaveTokenList[chainId.AvalancheChainName]:  "0xe80761ea617f66f96274ea5e8c37f03960ecc679", // variableDebtAvaAAVE
-		BenqiSAVAXList[chainId.AvalancheChainName]: "0x77ca01483f379e58174739308945f044e1a764dc", // variableDebtAvaSAVAX
-		BTCbList[chainId.AvalancheChainName]:       "0xa8669021776bc142dfca87c21b4a52595bcbb40a", // variableDebtAvaBTC.b
-		FRAXList[chainId.AvalancheChainName]:       "0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907", //
-		MaiList[chainId.AvalancheChainName]:        "0xce186f6cccb0c955445bb9d10c59cae488fea559", //
+		DAIeList[chainId.AvalancheChainName]:      "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtAvaDAI
+		USDCList[chainId.AvalancheChainName]:      "0xfccf3cabbe80101232d343252614b6a3ee81c989", // variableDebtAvaUSDC
+		USDTList[chainId.AvalancheChainName]:      "0xfb00ac187a8eb5afae4eace434f493eb62672df7", // variableDebtAvaUSDT
+		WETHList[chainId.AvalancheChainName]:      "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351", // variableDebtAvaWETH
+		WBTCList[chainId.AvalancheChainName]:      "0x92b42c66840c7ad907b4bf74879ff3ef7c529473", // variableDebtAvaWBTC
+		WAVAXList[chainId.AvalancheChainName]:     "0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8", // variableDebtAvaWAVAX
+		LINKList[chainId.AvalancheChainName]:      "0x953a573793604af8d41f306feb8274190db4ae0e", // variableDebtAvaLINK
+		AaveTokenList[chainId.AvalancheChainName]: "0xe80761ea617f66f96274ea5e8c37f03960ecc679", // variableDebtAvaAAVE
+		SAVAXList[chainId.AvalancheChainName]:     "0x77ca01483f379e58174739308945f044e1a764dc", // variableDebtAvaSAVAX
+		BTCbList[chainId.AvalancheChainName]:      "0xa8669021776bc142dfca87c21b4a52595bcbb40a", // variableDebtAvaBTC.b
+		FRAXList[chainId.AvalancheChainName]:      "0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907", //
+		MaiList[chainId.AvalancheChainName]:       "0xce186f6cccb0c955445bb9d10c59cae488fea559", //
 	},
 	chainId.OptimismChainName: {
 		DAIList[chainId.OptimismChainName]:       "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtOpt
@@ -179,7 +179,7 @@ var AaveVTokenV3List = map[string]map[string]string{
 		AaveTokenList[chainId.OptimismChainName]: "0xe80761ea617f66f96274ea5e8c37f03960ecc679", // variableDebtOpt
 	},
 	chainId.PolygonChainName: {
-		AngelEURList[chainId.PolygonChainName]:       "0x3ca5fa07689f266e907439afd1fbb59c44fe12f6", // variableDebtPolAGEUR
+		AgEURList[chainId.PolygonChainName]:          "0x3ca5fa07689f266e907439afd1fbb59c44fe12f6", // variableDebtPolAGEUR
 		DAIList[chainId.PolygonChainName]:            "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", //
 		EURSList[chainId.PolygonChainName]:           "0x5d557b07776d12967914379c71a1310e917c7555",
 		JEURList[chainId.PolygonChainName]:           "0x44705f578135cc5d703b4c9c122528c73eb87145",
@@ -224,6 +224,6 @@ var AaveV3NotAllowCollateralTokens = map[string][]string{
 	chainId.AvalancheChainName: {},
 	chainId.PolygonChainName: {
 		JEURList[chainId.PolygonChainName],
-		AngelEURList[chainId.PolygonChainName],
+		AgEURList[chainId.PolygonChainName],
 	},
 }

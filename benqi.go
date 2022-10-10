@@ -14,6 +14,15 @@ var BenqiTokenList = map[string]string{
 // Benqi savax token: SAVAX.
 //
 // map[network] = address.
+var SAVAXList = map[string]string{
+	chainId.AvalancheChainName: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be", // sAVAX
+}
+
+// Benqi savax token: SAVAX.
+//
+// map[network] = address.
+//
+// Deprecated: Use SAVAXList instead.
 var BenqiSAVAXList = map[string]string{
 	chainId.AvalancheChainName: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be", // sAVAX
 }

@@ -2,7 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
-// MaticX.
+const StaderProtocol string = "stader"
+
+// MaticX by Stader.
 //
 // map[network] = address.
 var MaticXList = map[string]string{

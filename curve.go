@@ -10,7 +10,7 @@ const CurveProtocol string = "curve"
 var CurveTokenlist = map[string]string{
 	chainId.EthereumChainName:  "0xd533a949740bb3306d119cc777fa900ba034cd52", // CRV
 	chainId.AvalancheChainName: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
-	chainId.PolygonChainName:   "0x172370d5cd63279efa6d502dab29171933a610af",
+	chainId.PolygonChainName:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
 }
 
 // Curve folded pools(a pool folded into other pools).

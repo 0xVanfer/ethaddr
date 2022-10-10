@@ -192,8 +192,8 @@ var PlatypusLpList = map[string]map[string]map[string]string{
 
 		// AVAX - sAVAX
 		Platypus_AVAX_sAVAX_PairName: {
-			WAVAXList[chainId.AvalancheChainName]:      PlatypusLp_AVAX_sAVAX_AVAX_Address,
-			BenqiSAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_sAVAX_sAVAX_Address,
+			WAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_sAVAX_AVAX_Address,
+			SAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_sAVAX_sAVAX_Address,
 		},
 		// AVAX - yyAVAX
 		Platypus_AVAX_yyAVAX_PairName: {
