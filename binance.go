@@ -14,6 +14,6 @@ var BUSDList = map[string]string{
 //
 // map[network] = address.
 var WBNBList = map[string]string{
-	chainId.EthereumChainName:      "0x418d75f65a02b3d53b2418fb8e1fe493759c7605", // WBNB
-	chainId.BinanaceSmartChainName: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", // WBNB
+	chainId.EthereumChainName:     "0x418d75f65a02b3d53b2418fb8e1fe493759c7605", // WBNB
+	chainId.BinanceSmartChainName: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", // WBNB
 }
