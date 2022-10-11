@@ -8,8 +8,11 @@ const PancakeswapProtocol string = "pancakeswap"
 //
 // map[network] = address.
 var PancakeswapTokenList = map[string]string{
-	chainId.BinanceSmartChainName: "0x60781c2586d68229fde47564546784ab3faca982", // PNG
+	chainId.BinanceSmartChainName: "0x60781c2586d68229fde47564546784ab3faca982", // CAKE
 }
+
+// Same as PancakeswapTokenList.
+var CAKEList = PancakeswapTokenList
 
 // Pancakeswap factory.
 //

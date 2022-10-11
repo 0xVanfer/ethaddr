@@ -7,9 +7,12 @@ const AngleProtocol string = "angle"
 // Angle token: ANGLE.
 //
 // map[network] = address.
-var ANGLEList = map[string]string{
+var AngleTokenList = map[string]string{
 	chainId.PolygonChainName: "0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1", // ANGLE
 }
+
+// Same as AngleTokenList.
+var ANGLEList = AngleTokenList
 
 // Angle EUR token: agEUR.
 //

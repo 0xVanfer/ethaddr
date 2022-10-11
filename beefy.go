@@ -10,3 +10,6 @@ const BeefyProtocol string = "beefy"
 var BeefyTokenList = map[string]string{
 	chainId.AvalancheChainName: "0xd6070ae98b8069de6b494332d1a1a81b6179d960", // BIFI
 }
+
+// Same as BeefyTokenList.
+var BIFIList = BeefyTokenList

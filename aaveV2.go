@@ -62,7 +62,7 @@ var AaveATokenV2List = map[string]map[string]string{
 		ReflexerTokenList[chainId.EthereumChainName]:     "0xc9bc48c72154ef3e5425641a3c747242112a46af", // aRAI 25
 		AMPLList[chainId.EthereumChainName]:              "0x1e6bb68acec8fefbd87d192be09bb274170a0548", // aAMPL 26
 		USDPList[chainId.EthereumChainName]:              "0x2e8f4bdbe3d47d7d7de490437aea9915d930f1a3", // aUSDP 27 (should be aPAX)
-		DefiPulseTokenList[chainId.EthereumChainName]:    "0x6f634c6135d2ebd550000ac92f494f9cb8183dae", // aDPI 28
+		DPIList[chainId.EthereumChainName]:               "0x6f634c6135d2ebd550000ac92f494f9cb8183dae", // aDPI 28
 		FRAXList[chainId.EthereumChainName]:              "0xd4937682df3c8aef4fe912a96a74121c0829e664", // aFRAX 29
 		FEIList[chainId.EthereumChainName]:               "0x683923db55fead99a79fa01a27eec3cb19679cc3", // aFEI 30
 		STETHList[chainId.EthereumChainName]:             "0x1982b2f5814301d4e9a8b0201555376e62f82428", // aSTETH 31
@@ -122,7 +122,7 @@ var AaveVTokenV2List = map[string]map[string]string{
 		ReflexerTokenList[chainId.EthereumChainName]:     "0xb5385132ee8321977fff44b60cde9fe9ab0b4e6b", // variableDebtRAI 25
 		AMPLList[chainId.EthereumChainName]:              "0xf013d90e4e4e3baf420dfea60735e75dbd42f1e1", // variableDebtAMPL 26
 		USDPList[chainId.EthereumChainName]:              "0xfdb93b3b10936cf81fa59a02a7523b6e2149b2b7", // variableDebtUSDP 27 (should be aPAX)
-		// DefiPulseTokenList[chainId.EthereumChainName]: "",                                           // variableDebtDPI 28
+		// DPIList[chainId.EthereumChainName]: "",                                           // variableDebtDPI 28
 		FRAXList[chainId.EthereumChainName]:  "0xfe8f19b17ffef0fdbfe2671f248903055afaa8ca", // variableDebtFRAX 29
 		FEIList[chainId.EthereumChainName]:   "0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe", // variableDebtFEI 30
 		STETHList[chainId.EthereumChainName]: "0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db", // variableDebtSTETH 31

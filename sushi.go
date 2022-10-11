@@ -13,6 +13,9 @@ var SushiTokenList = map[string]string{
 	chainId.PolygonChainName:   "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a", // SUSHI
 }
 
+// Same as SushiTokenList.
+var SUSHIList = SushiTokenList
+
 // XSUSHI.
 //
 // map[network] = address.

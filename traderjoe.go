@@ -11,6 +11,9 @@ var TraderjoeTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd", // JOE
 }
 
+// Same as TraderjoeTokenList.
+var JOEList = TraderjoeTokenList
+
 // Traderjoe zJOE.
 //
 // map[network] = address.

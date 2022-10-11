@@ -11,6 +11,9 @@ var PlatypusTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x22d4002028f537599be9f666d1c4fa138522f9c8", // PTP
 }
 
+// Same as PlatypusTokenList.
+var PTPList = PlatypusTokenList
+
 // Platypus ve token: vePTP.
 //
 // map[network] = address.

@@ -11,6 +11,9 @@ var AxialTokenList = map[string]string{
 	chainId.AvalancheChainName: "0xcf8419a615c57511807236751c0af38db4ba3351", // AXIAL
 }
 
+// Same as AxialTokenList.
+var AXIALList = AxialTokenList
+
 // Axial chef v3.
 //
 // map[network] = address.

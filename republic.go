@@ -11,6 +11,9 @@ var RepublicTokenList = map[string]string{
 	chainId.EthereumChainName: "0x408e41876cccdc0f92210600ef50372656052a38", // REN
 }
 
+// Same as RepublicTokenList.
+var RENList = RepublicTokenList
+
 // Republic btc: renBTC.
 //
 // map[network] = address.

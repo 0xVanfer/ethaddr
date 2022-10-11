@@ -13,6 +13,9 @@ var CurveTokenlist = map[string]string{
 	chainId.PolygonChainName:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
 }
 
+// Same as CurveTokenlist.
+var CRVList = CurveTokenlist
+
 // Curve folded pools(a pool folded into other pools).
 //
 // map[network] = []address.

@@ -11,6 +11,9 @@ var CompoundTokenList = map[string]string{
 	chainId.EthereumChainName: "0xc00e94cb662c3520282e6f5717214004a7f26888", // COMP
 }
 
+// Same as CompoundTokenList.
+var COMPList = CompoundTokenList
+
 // Comptroller.
 //
 // map[network] = address.

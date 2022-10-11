@@ -11,6 +11,9 @@ var LidoTokenList = map[string]string{
 	chainId.EthereumChainName: "0x5a98fcbea516cf06857215779fd812ca3bef1b32", // LDO
 }
 
+// Same as LidoTokenList.
+var LDOList = LidoTokenList
+
 // Lido stake eth token: stETH.
 //
 // map[network] = address.

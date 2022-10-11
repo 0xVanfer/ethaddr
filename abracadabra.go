@@ -7,10 +7,13 @@ const AbracadabraProtocol string = "abracadabra"
 // Abracadabra token: SPELL.
 //
 // map[network] = address.
-var SPELLList = map[string]string{
+var AbracadabraTokenList = map[string]string{
 	chainId.EthereumChainName:  "0x090185f2135308bad17527004364ebcc2d37e5f6", // SPELL
 	chainId.AvalancheChainName: "0xce1bffbd5374dac86a2893119683f4911a2f7814", // SPELL
 }
+
+// Same as AbracadabraTokenList.
+var SPELLList = AbracadabraTokenList
 
 // Abracadabra magic internet money: MIM.
 //

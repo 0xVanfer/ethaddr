@@ -10,3 +10,6 @@ const DecentralandProtocol string = "decentraland"
 var DecentralandTokenList = map[string]string{
 	chainId.EthereumChainName: "0x0f5d2fb29fb7d3cfee444a200298f468908cc942", // MANA
 }
+
+// Same as DecentralandTokenList.
+var MANAList = DecentralandTokenList

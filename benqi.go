@@ -11,6 +11,9 @@ var BenqiTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5", // QI
 }
 
+// Same as BenqiTokenList.
+var QIList = BenqiTokenList
+
 // Benqi savax token: SAVAX.
 //
 // map[network] = address.

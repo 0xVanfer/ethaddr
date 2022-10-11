@@ -21,6 +21,9 @@ var KyberTokenList = map[string]string{
 	chainId.AvalancheChainName:    "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f", // KNC
 }
 
+// Same as KyberTokenList.
+var KNCList = KyberTokenList
+
 // Kyber factory.
 //
 // map[network] = address.

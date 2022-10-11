@@ -11,6 +11,9 @@ var PangolinTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x60781c2586d68229fde47564546784ab3faca982", // PNG
 }
 
+// Same as PangolinTokenList.
+var PNGList = PangolinTokenList
+
 // Pangolin chef v2.
 //
 // map[network] = address.

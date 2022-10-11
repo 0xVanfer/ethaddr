@@ -11,6 +11,9 @@ var VectorTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x5817d4f0b62a59b17f75207da1848c2ce75e7af4", // VTX
 }
 
+// Same as VectorTokenList.
+var VTXList = VectorTokenList
+
 // Vector staking contract.
 //
 // map[network] = address.

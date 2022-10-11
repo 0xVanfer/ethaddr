@@ -10,3 +10,6 @@ const MakerProtocol string = "maker"
 var MakerTokenList = map[string]string{
 	chainId.EthereumChainName: "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2", // MKR
 }
+
+// Same as MakerTokenList.
+var MKRList = MakerTokenList
