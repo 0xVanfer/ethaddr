@@ -2,16 +2,16 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
-// Angel EUR token: agEUR.
+const AngleProtocol string = "angle"
+
+// Angle token: ANGLE.
 //
 // map[network] = address.
-//
-// Deprecated: Use AgEURList instead.
-var AngelEURList = map[string]string{
-	chainId.PolygonChainName: "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4", // agEUR
+var ANGLEList = map[string]string{
+	chainId.PolygonChainName: "0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1", // ANGLE
 }
 
-// Angel EUR token: agEUR.
+// Angle EUR token: agEUR.
 //
 // map[network] = address.
 var AgEURList = map[string]string{
