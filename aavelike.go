@@ -1,5 +1,11 @@
 package ethaddr
 
+// Aave-like protocols.
+var AaveLikeProtocols = []string{
+	AaveV2Protocol,
+	AaveV3Protocol,
+}
+
 // Aave-like A token list map.
 //
 // map[protocol name][network][underlying] = a token.

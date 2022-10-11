@@ -1,5 +1,12 @@
 package ethaddr
 
+// Aave-like protocols.
+var CompoundLikeProtocols = []string{
+	BenqiProtocol,
+	CompoundProtocol,
+	TraderJoeProtocol,
+}
+
 // Compound-like C token list map.
 //
 // map[protocol name][network][underlying] = c token.
