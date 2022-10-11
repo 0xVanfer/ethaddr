@@ -18,15 +18,6 @@ var SAVAXList = map[string]string{
 	chainId.AvalancheChainName: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be", // sAVAX
 }
 
-// Benqi savax token: SAVAX.
-//
-// map[network] = address.
-//
-// Deprecated: Use SAVAXList instead.
-var BenqiSAVAXList = map[string]string{
-	chainId.AvalancheChainName: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be", // sAVAX
-}
-
 // Benqi comptroller, similar to compound.
 //
 // map[network] = address.
@@ -49,7 +40,7 @@ var BenqiCTokenList = map[string]map[string]string{
 		BenqiTokenList[chainId.AvalancheChainName]: "0x35bd6aeda81a7e5fc7a7832490e71f757b0cd9ce", // qiQI
 		USDCList[chainId.AvalancheChainName]:       "0xb715808a78f6041e46d61cb123c9b4a27056ae9c", // qiUSDCn
 		USDTList[chainId.AvalancheChainName]:       "0xd8fcda6ec4bdc547c0827b8804e89acd817d56ef", // qiUSDTn
-		BenqiSAVAXList[chainId.AvalancheChainName]: "0xf362fea9659cf036792c9cb02f8ff8198e21b4cb", // qisAVAX
+		SAVAXList[chainId.AvalancheChainName]:      "0xf362fea9659cf036792c9cb02f8ff8198e21b4cb", // qisAVAX
 		BTCbList[chainId.AvalancheChainName]:       "0x89a415b3d20098e6a6c8f7a59001c67bd3129821", // qiBTC.b
 	},
 }
