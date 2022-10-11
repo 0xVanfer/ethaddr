@@ -2,6 +2,16 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+const AbracadabraProtocol string = "abracadabra"
+
+// Abracadabra token: SPELL.
+//
+// map[network] = address.
+var SPELLList = map[string]string{
+	chainId.EthereumChainName:  "0x090185f2135308bad17527004364ebcc2d37e5f6", // SPELL
+	chainId.AvalancheChainName: "0xce1bffbd5374dac86a2893119683f4911a2f7814", // SPELL
+}
+
 // Abracadabra magic internet money: MIM.
 //
 // map[network] = address.
