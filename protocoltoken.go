@@ -4,30 +4,30 @@ package ethaddr
 //
 // map[protocol name][network] = token.
 var ProtocolTokenListMap = map[string]map[string]string{
-	AaveV2Protocol:       AaveTokenList,         // aave v2
-	AaveV3Protocol:       AaveTokenList,         // aave v3
-	AbracadabraProtocol:  SPELLList,             // abracadabra
-	AlphaProtocol:        AlphaTokenList,        // alpha
-	AngleProtocol:        ANGLEList,             // angle
-	AxialProtocol:        AxialTokenList,        // axial
-	BalancerProtocol:     BalancerTokenList,     // balancer
-	BeefyProtocol:        BeefyTokenList,        // beefy
-	BenqiProtocol:        BenqiTokenList,        // benqi
-	CompoundProtocol:     CompoundTokenList,     // compound
-	ConvexProtocol:       ConvexTokenList,       // convex
-	CurveProtocol:        CurveTokenlist,        // curve
-	DecentralandProtocol: DecentralandTokenList, // decentraland
-	KyberProtocol:        KyberTokenList,        // kyber
-	LidoProtocol:         LidoTokenList,         // lido
-	MakerProtocol:        MakerTokenList,        // maker
-	PancakeswapProtocol:  PancakeswapTokenList,  // pancakeswap
-	PangolinProtocol:     PangolinTokenList,     // pangolin
-	QuickswapProtocol:    QuickswapTokenList,    // quickswap
-	RepublicProtocol:     RepublicTokenList,     // republic
-	SushiProtocol:        SushiTokenList,        // sushi
-	TraderJoeProtocol:    TraderjoeTokenList,    // traderjoe
-	UniswapProtocolV2:    UniswapTokenList,      // uniswap v2
-	UniswapProtocolV3:    UniswapTokenList,      // uniswap v3
-	VectorProtocol:       VectorTokenList,       // vector
-	YearnProtocol:        YearnTokenList,        // yearn
+	AaveV2Protocol:       AAVEList,  // aave v2
+	AaveV3Protocol:       AAVEList,  // aave v3
+	AbracadabraProtocol:  SPELLList, // abracadabra
+	AlphaProtocol:        ALPHAList, // alpha
+	AngleProtocol:        ANGLEList, // angle
+	AxialProtocol:        AXIALList, // axial
+	BalancerProtocol:     BALList,   // balancer
+	BeefyProtocol:        BIFIList,  // beefy
+	BenqiProtocol:        QIList,    // benqi
+	CompoundProtocol:     COMPList,  // compound
+	ConvexProtocol:       CVXList,   // convex
+	CurveProtocol:        CRVList,   // curve
+	DecentralandProtocol: MANAList,  // decentraland
+	KyberProtocol:        KNCList,   // kyber
+	LidoProtocol:         LDOList,   // lido
+	MakerProtocol:        MKRList,   // maker
+	PancakeswapProtocol:  CAKEList,  // pancakeswap
+	PangolinProtocol:     PNGList,   // pangolin
+	QuickswapProtocol:    QUICKList, // quickswap
+	RepublicProtocol:     RENList,   // republic
+	SushiProtocol:        SUSHIList, // sushi
+	TraderJoeProtocol:    JOEList,   // traderjoe
+	UniswapProtocolV2:    UNIList,   // uniswap v2
+	UniswapProtocolV3:    UNIList,   // uniswap v3
+	VectorProtocol:       VTXList,   // vector
+	YearnProtocol:        YFIList,   // yearn
 }
