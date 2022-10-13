@@ -227,9 +227,9 @@ var CurveGauges = map[string]map[string][]string{
 			"0x94A5E05D66834c6C6961E199D34dA576679fC187", // arbitrum-f-4pool
 			"0x1AEAA1b998307217D62E9eeFb6407B10598eF3b8", // avalanche-f-3pool
 			"0xfbb5b8f2f9b7a4d21ff44dC724C1Fb7b531A6612", // avalanche-f-AVAX/AVAXL
-			"0x00F7d467ef51E44f11f52a0c0Bef2E56C271b264", // avalanche-f-crv amWBTC/renBTC-gauge
-			"0x4620D46b4db7fB04a01A75fFed228Bc027C9A899", // avalanche-f-av3CRV-gauge
-			"0x1879075f1c055564CB968905aC404A5A01a1699A", // avalanche-f-crvUSDBTCETH-gauge
+			"0x00f7d467ef51e44f11f52a0c0bef2e56c271b264", // avalanche-f-crv amWBTC/renBTC-gauge
+			"0x4620d46b4db7fb04a01a75ffed228bc027c9a899", // avalanche-f-av3CRV-gauge
+			"0x1879075f1c055564cb968905ac404a5a01a1699a", // avalanche-f-crvUSDBTCETH-gauge
 			"0xc5aE4B5F86332e70f3205a8151Ee9eD9F71e0797", // optimism-f-sUSD3CRV
 			"0xF4eA7617E7999710244e2eAbfC8730d35482EE76", // optimism-f-4pool
 			"0xB721Cc32160Ab0da2614CC6aB16eD822Aeebc101", // xdai-f-x3CRV-gauge
