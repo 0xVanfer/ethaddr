@@ -69,6 +69,8 @@ var AaveATokenV2List = map[string]map[string]string{
 		ENSList[chainId.EthereumChainName]:           "0x9a14e23a58edf4efdcb360f68cd1b95ce2081a2f", // aENS 32
 		USTList[chainId.EthereumChainName]:           "0xc2e2152647f4c26028482efaf64b2aa28779efc4", // aUST 33 deprecated
 		CVXList[chainId.EthereumChainName]:           "0x952749e07d7157bb9644a894dfaf3bad5ef6d918", // aCVX 34
+		OneInchTokenList[chainId.EthereumChainName]:  "0xb29130cbcc3f791f077eade0266168e808e5151e", // a1INCH
+		LUSDList[chainId.EthereumChainName]:          "0xce1871f791548600cb59efbeffc9c38719142079", // aLUSD
 	},
 }
 
@@ -121,6 +123,8 @@ var AaveSTokenV2List = map[string]map[string]string{
 		ENSList[chainId.EthereumChainName]:           "0x34441ffd1948e49dc7a607882d0c38efd0083815",
 		USTList[chainId.EthereumChainName]:           "0x7fdbfb0412700d94403c42ca3caeeea183f07b26",
 		CVXList[chainId.EthereumChainName]:           "0xb01eb1ce1da06179136d561766fc2d609c5f55eb",
+		OneInchTokenList[chainId.EthereumChainName]:  "0x1278d6ed804d59d2d18a5aa5638dfd591a79af0a",
+		LUSDList[chainId.EthereumChainName]:          "0x39f010127274b2dbdb770b45e1de54d974974526",
 	},
 }
 
@@ -173,5 +177,7 @@ var AaveVTokenV2List = map[string]map[string]string{
 		ENSList[chainId.EthereumChainName]:           "0x176808047cc9b7A2C9AE202c593ED42dDD7C0D13", // variableDebtENS 32
 		USTList[chainId.EthereumChainName]:           "0xaf32001cf2E66C4C3af4205F6EA77112AA4160FE", // variableDebtUST 33 deprecated
 		CVXList[chainId.EthereumChainName]:           "0x4ae5e4409c6dbc84a00f9f89e4ba096603fb7d50", // variableDebtCVX 34
+		OneInchTokenList[chainId.EthereumChainName]:  "0xd7896c1b9b4455aff31473908eb15796ad2295da",
+		LUSDList[chainId.EthereumChainName]:          "0x411066489ab40442d6fc215ad7c64224120d33f2",
 	},
 }
