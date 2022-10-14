@@ -8,6 +8,11 @@ type LendingTokenLists struct {
 	CTokenList *map[string]map[string]string // map[network][underlying]=address
 }
 
+// If the list not pass regular check, the protocol is not supported.
+func (list LendingTokenLists) RegularCheck() bool {
+	return list.ATokenList != nil || list.CTokenList != nil
+}
+
 // map[protocol name]=LendingTokenLists
 var LendingTokenListsMap = map[string]LendingTokenLists{
 	AaveV2Protocol: {
