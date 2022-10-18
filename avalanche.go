@@ -27,8 +27,16 @@ var DAIeList = map[string]string{
 //
 // map[network] = address.
 var WAVAXList = map[string]string{
-	chainId.EthereumChainName:  "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3", // WAVAX
+	chainId.EthereumChainName:  "0x85f138bfee4ef8e540890cfb48f620571d67eda3", // WAVAX(wormwhole)
 	chainId.AvalancheChainName: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7", // WAVAX
+	chainId.PolygonChainName:   "0x7bb11e7f8b10e9e571e5d8eace04735fdfb2358a", // WAVAX(wormwhole)
+}
+
+// AVAX on Polygon.
+//
+// map[network] = address.
+var AVAXList = map[string]string{
+	chainId.PolygonChainName: "0x2c89bbc92bd86f8075d1decc58c7f4e0107f286b", // AVAX
 }
 
 // XAVA

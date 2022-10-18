@@ -14,3 +14,17 @@ var BalancerTokenList = map[string]string{
 
 // Same as BalancerTokenList.
 var BALList = BalancerTokenList
+
+// Balancer v2 vault.
+//
+// map[network] = address.
+var BalancerV2VaultList = map[string]string{
+	chainId.PolygonChainName: "0xba12222222228d8ba445958a75a0704d566bf2c8",
+}
+
+// Balancer helper.
+//
+// map[network] = address.
+var BalancherHelperList = map[string]string{
+	chainId.PolygonChainName: "0x239e55f427d44c3cc793f49bfb507ebe76638a2b",
+}
