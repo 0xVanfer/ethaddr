@@ -76,4 +76,31 @@ var TrustedTokenList = map[string][]tokenInfo{
 			Decimals: 8,
 		},
 	},
+	chainId.PolygonChainName: {
+		{
+			Address:  USDCList[chainId.PolygonChainName],
+			Symbol:   "USDC",
+			Decimals: 6,
+		},
+		{
+			Address:  USDTList[chainId.PolygonChainName],
+			Symbol:   "USDT",
+			Decimals: 6,
+		},
+		{
+			Address:  DAIList[chainId.PolygonChainName],
+			Symbol:   "DAI",
+			Decimals: 18,
+		},
+		{
+			Address:  WETHList[chainId.PolygonChainName],
+			Symbol:   "WETH",
+			Decimals: 18,
+		},
+		{
+			Address:  WBTCList[chainId.PolygonChainName],
+			Symbol:   "WBTC",
+			Decimals: 8,
+		},
+	},
 }

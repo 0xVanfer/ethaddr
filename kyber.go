@@ -4,7 +4,9 @@ import "github.com/0xVanfer/chainId"
 
 const KyberProtocol string = "kyber"
 
-// Kyber old token: KNC.
+// Kyber old token: KNC. Kyber has another new token, also called KNC.
+// You can find the new one by "KyberTokenList" in this package.
+// However, this old version token is still in use, such as AAVE V2 Ethereum.
 //
 // map[network] = address.
 var KyberOldTokenList = map[string]string{

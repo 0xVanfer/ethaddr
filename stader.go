@@ -18,3 +18,7 @@ var MaticXList = map[string]string{
 var StaderStakeManagerList = map[string]string{
 	chainId.EthereumChainName: "0x5e3ef299fddf15eaa0432e6e66473ace8c13d908",
 }
+
+var StaderChildPoolList = map[string]string{
+	chainId.PolygonChainName: "0xfd225c9e6601c9d38d8f98d8731bf59efcf8c0e3",
+}
