@@ -45,5 +45,6 @@ var BenqiCTokenList = map[string]map[string]string{
 		USDTList[chainId.AvalancheChainName]:       "0xd8fcda6ec4bdc547c0827b8804e89acd817d56ef", // qiUSDTn
 		SAVAXList[chainId.AvalancheChainName]:      "0xf362fea9659cf036792c9cb02f8ff8198e21b4cb", // qisAVAX
 		BTCbList[chainId.AvalancheChainName]:       "0x89a415b3d20098e6a6c8f7a59001c67bd3129821", // qiBTC.b
+		BUSDList[chainId.AvalancheChainName]:       "0x872670ccae8c19557cc9443eff587d7086b8043a", // qiBUSD
 	},
 }
