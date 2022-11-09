@@ -48,26 +48,32 @@ var CianAutomation = map[string]string{
 	chainId.PolygonChainName:   "0xa79d00c0fea6baabe8a1fed0c41c4d36e7b81895",
 }
 
-// Same as CianWrappedChainTokenGateway.
+// Same as CianWrappedNativeTokenGateway.
 var (
-	CianWavaxGateway  = CianWrappedChainTokenGateway
-	CianWmaticGateway = CianWrappedChainTokenGateway
+	CianWavaxGateway  = CianWrappedNativeTokenGateway
+	CianWmaticGateway = CianWrappedNativeTokenGateway
 )
 
+// Deprecated: Use CianWrappedNativeTokenGateway instead.
+var CianWrappedChainTokenGateway = CianWrappedNativeTokenGateway
+
 // map[network] = address.
-var CianWrappedChainTokenGateway = map[string]string{
+var CianWrappedNativeTokenGateway = map[string]string{
 	chainId.AvalancheChainName: "0x28f83ce214462e888787c5cfd0cc08dd439c9920",
 	chainId.PolygonChainName:   "0xdcb3d91555385dae23e6b966b5626aa7a75be940",
 }
 
-// Same as CianFeeBoxChainToken.
+// Same as CianFeeBoxNativeToken.
 var (
-	CianFeeBoxAVAX  = CianFeeBoxChainToken
-	CianFeeBoxMATIC = CianFeeBoxChainToken
+	CianFeeBoxAVAX  = CianFeeBoxNativeToken
+	CianFeeBoxMATIC = CianFeeBoxNativeToken
 )
 
+// Deprecated: Use CianFeeBoxNativeToken instead.
+var CianFeeBoxChainToken = CianFeeBoxNativeToken
+
 // map[network] = address.
-var CianFeeBoxChainToken = map[string]string{
+var CianFeeBoxNativeToken = map[string]string{
 	chainId.AvalancheChainName: "0xec55e7cfebbe4f878e9dd998d3a038458ac3197d",
 	chainId.PolygonChainName:   "0x1c8126e02e8a7dac69fd6444ef0b8be5430df776",
 }
