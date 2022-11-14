@@ -15,6 +15,8 @@ var SAVAXOracleMap = map[string]string{
 // map[network][token] = oracle address.
 //
 // Addresses from: https://docs.chain.link/docs/data-feeds/price-feeds/addresses/
+//
+// Or can read from https://cl-docs-addresses.web.app/addresses.json
 var ToUsdOracleMap = map[string]map[string]string{
 	chainId.EthereumChainName: {
 		OneInchTokenList[chainId.EthereumChainName]: "0xc929ad75b72593967de83e7f7cda0493458261d9",

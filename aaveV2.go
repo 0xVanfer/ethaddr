@@ -4,13 +4,16 @@ import "github.com/0xVanfer/chainId"
 
 const AaveV2Protocol string = "aave"
 
-// Aave incentive controller V2.
+// Aave incentives controller V2.
 //
 // map[network] = address.
-var AaveIncentiveControllerV2List = map[string]string{
+var AaveIncentivesControllerV2List = map[string]string{
 	chainId.EthereumChainName:  "0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5",
 	chainId.AvalancheChainName: "0x01d83fe6a10d2f2b7af17034343746188272cac9",
 }
+
+// Deprecated. Use AaveIncentivesControllerV2List instead.
+var AaveIncentiveControllerV2List = AaveIncentivesControllerV2List
 
 // Aave lending pool v2.
 //
