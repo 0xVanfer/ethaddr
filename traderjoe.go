@@ -73,6 +73,27 @@ var TraderjoeVeBoostChef = map[string]string{
 	chainId.AvalancheChainName: "0x4483f0b6e2f5486d06958c20f8c39a7abe87bf8f",
 }
 
+// Traderjoe liquidity book factory.
+//
+// map[network] = address.
+var TraderjoeLBFactoryList = map[string]string{
+	chainId.AvalancheChainName: "0x6e77932a92582f504ff6c4bdbcef7da6c198aeef",
+}
+
+// Traderjoe liquidity book router.
+//
+// map[network] = address.
+var TraderjoeLBRouterList = map[string]string{
+	chainId.AvalancheChainName: "0xe3ffc583dc176575eea7fd9df2a7c65f7e23f4c3",
+}
+
+// Traderjoe liquidity book qouter.
+//
+// map[network] = address.
+var TraderjoeLBQuoterList = map[string]string{
+	chainId.AvalancheChainName: "0x51409fd32c15e9857eef9f28275fa0842c3c4545",
+}
+
 // Traderjoe c tokens (j tokens).
 //
 // map[network][underlying] = address.
