@@ -16,3 +16,10 @@ var OneInchTokenList = map[string]string{
 var OneInchRouterList = map[string]string{
 	chainId.PolygonChainName: "0x1111111254fb6c44bAC0beD2854e76F90643097d",
 }
+
+// 1 Inch spot aggregator.
+//
+// map[network] = address
+var OneInchSpotPriceAggregatorList = map[string]string{
+	chainId.EthereumChainName: "0x07d91f5fb9bf7798734c3f606db065549f6893bb",
+}
