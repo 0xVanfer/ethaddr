@@ -21,5 +21,6 @@ var OneInchRouterList = map[string]string{
 //
 // map[network] = address
 var OneInchSpotPriceAggregatorList = map[string]string{
-	chainId.EthereumChainName: "0x07d91f5fb9bf7798734c3f606db065549f6893bb",
+	chainId.EthereumChainName:  "0x07d91f5fb9bf7798734c3f606db065549f6893bb",
+	chainId.AvalancheChainName: "0xbd0c7aaf0bf082712ebe919a9dd94b2d978f79a9",
 }
