@@ -148,38 +148,38 @@ var AaveVTokenV2List = map[string]map[string]string{
 		USDTList[chainId.EthereumChainName]:          "0x531842cebbdd378f8ee36d171d6cc9c4fcf475ec", // variableDebtUSDT 0
 		WBTCList[chainId.EthereumChainName]:          "0x9c39809Dec7F95F5e0713634a4D0701329B3b4d2", // variableDebtWBTC 1
 		WETHList[chainId.EthereumChainName]:          "0xF63B34710400CAd3e044cFfDcAb00a0f32E33eCf", // variableDebtWETH 2
-		YFIList[chainId.EthereumChainName]:           "0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97", // variableDebtYFI 3
-		ZRXList[chainId.EthereumChainName]:           "0x85791D117A392097590bDeD3bD5abB8d5A20491A", // variableDebtZRX 4
+		YFIList[chainId.EthereumChainName]:           "0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97", // variableDebtYFI 3 deprecated
+		ZRXList[chainId.EthereumChainName]:           "0x85791D117A392097590bDeD3bD5abB8d5A20491A", // variableDebtZRX 4 deprecated
 		UNIList[chainId.EthereumChainName]:           "0x5BdB050A92CADcCfCDcCCBFC17204a1C9cC0Ab73", // variableDebtUNI 5
 		AAVEList[chainId.EthereumChainName]:          "0xF7DBA49d571745D9d7fcb56225B05BEA803EBf3C", // variableDebtAAVE 6
-		BATList[chainId.EthereumChainName]:           "0xfc218A6Dfe6901CB34B1a5281FC6f1b8e7E56877", // variableDebtBAT 7
+		BATList[chainId.EthereumChainName]:           "0xfc218A6Dfe6901CB34B1a5281FC6f1b8e7E56877", // variableDebtBAT 7 deprecated
 		BUSDList[chainId.EthereumChainName]:          "0xbA429f7011c9fa04cDd46a2Da24dc0FF0aC6099c", // variableDebtBUSD 8
 		DAIList[chainId.EthereumChainName]:           "0x6c3c78838c761c6ac7be9f59fe808ea2a6e4379d", // variableDebtDAI 9
-		ENJList[chainId.EthereumChainName]:           "0x38995f292a6e31b78203254fe1cdd5ca1010a446", // variableDebtENJ 10
-		KyberOldTokenList[chainId.EthereumChainName]: "0x6B05D1c608015Ccb8e205A690cB86773A96F39f1", // variableDebtKNC 11
+		ENJList[chainId.EthereumChainName]:           "0x38995f292a6e31b78203254fe1cdd5ca1010a446", // variableDebtENJ 10 deprecated
+		KyberOldTokenList[chainId.EthereumChainName]: "0x6B05D1c608015Ccb8e205A690cB86773A96F39f1", // variableDebtKNC 11 deprecated
 		LINKList[chainId.EthereumChainName]:          "0x0b8f12b1788BFdE65Aa1ca52E3e9F3Ba401be16D", // variableDebtLINK 12
-		MANAList[chainId.EthereumChainName]:          "0x0A68976301e46Ca6Ce7410DB28883E309EA0D352", // variableDebtMANA 13
+		MANAList[chainId.EthereumChainName]:          "0x0A68976301e46Ca6Ce7410DB28883E309EA0D352", // variableDebtMANA 13 deprecated
 		MKRList[chainId.EthereumChainName]:           "0xba728ead5e496be00dcf66f650b6d7758ecb50f8", // variableDebtMKR 14
-		RENList[chainId.EthereumChainName]:           "0xcd9d82d33bd737de215cdac57fe2f7f04df77fe0", // variableDebtREN 15
+		RENList[chainId.EthereumChainName]:           "0xcd9d82d33bd737de215cdac57fe2f7f04df77fe0", // variableDebtREN 15 deprecated
 		SNXList[chainId.EthereumChainName]:           "0x267eb8cf715455517f9bd5834aeae3cea1ebdbd8", // variableDebtSNX 16
 		SUSDList[chainId.EthereumChainName]:          "0xdc6a3ab17299d9c2a412b0e0a4c1f55446ae0817", // variableDebtSUSD 17
 		TUSDList[chainId.EthereumChainName]:          "0x01C0eb1f8c6F1C1bF74ae028697ce7AA2a8b0E92", // variableDebtTUSD 18
 		USDCList[chainId.EthereumChainName]:          "0x619beb58998eD2278e08620f97007e1116D5D25b", // variableDebtUSDC 19
 		CRVList[chainId.EthereumChainName]:           "0x00ad8eBF64F141f1C81e9f8f792d3d1631c6c684", // variableDebtCRV 20
 		GUSDList[chainId.EthereumChainName]:          "0x279af5b99540c1a3a7e3cdd326e19659401ef99e", // variableDebtGUSD 21
-		BALList[chainId.EthereumChainName]:           "0x13210D4Fe0d5402bd7Ecbc4B5bC5cFcA3b71adB0", // variableDebtBAL 22
-		XSushiList[chainId.EthereumChainName]:        "0xfAFEDF95E21184E3d880bd56D4806c4b8d31c69A", // variableDebtXSUSHI 23
-		RenFILList[chainId.EthereumChainName]:        "0x348e2ebd5e962854871874e444f4122399c02755", // variableDebtRENFIL 24
-		RAIList[chainId.EthereumChainName]:           "0xb5385132ee8321977fff44b60cde9fe9ab0b4e6b", // variableDebtRAI 25
-		AMPLList[chainId.EthereumChainName]:          "0xf013d90e4e4e3baf420dfea60735e75dbd42f1e1", // variableDebtAMPL 26
+		BALList[chainId.EthereumChainName]:           "0x13210D4Fe0d5402bd7Ecbc4B5bC5cFcA3b71adB0", // variableDebtBAL 22 deprecated
+		XSushiList[chainId.EthereumChainName]:        "0xfAFEDF95E21184E3d880bd56D4806c4b8d31c69A", // variableDebtXSUSHI 23 deprecated
+		RenFILList[chainId.EthereumChainName]:        "0x348e2ebd5e962854871874e444f4122399c02755", // variableDebtRENFIL 24 deprecated
+		RAIList[chainId.EthereumChainName]:           "0xb5385132ee8321977fff44b60cde9fe9ab0b4e6b", // variableDebtRAI 25 deprecated
+		AMPLList[chainId.EthereumChainName]:          "0xf013d90e4e4e3baf420dfea60735e75dbd42f1e1", // variableDebtAMPL 26 deprecated
 		USDPList[chainId.EthereumChainName]:          "0xfdb93b3b10936cf81fa59a02a7523b6e2149b2b7", // variableDebtUSDP 27 (should be aPAX)
 		DPIList[chainId.EthereumChainName]:           "0x4ddff5885a67e4effec55875a3977d7e60f82ae0", // variableDebtDPI 28
 		FRAXList[chainId.EthereumChainName]:          "0xfe8f19b17ffef0fdbfe2671f248903055afaa8ca", // variableDebtFRAX 29
-		FEIList[chainId.EthereumChainName]:           "0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe", // variableDebtFEI 30
+		FEIList[chainId.EthereumChainName]:           "0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe", // variableDebtFEI 30 deprecated
 		STETHList[chainId.EthereumChainName]:         "0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db", // variableDebtSTETH 31
 		ENSList[chainId.EthereumChainName]:           "0x176808047cc9b7A2C9AE202c593ED42dDD7C0D13", // variableDebtENS 32
 		USTList[chainId.EthereumChainName]:           "0xaf32001cf2E66C4C3af4205F6EA77112AA4160FE", // variableDebtUST 33 deprecated
-		CVXList[chainId.EthereumChainName]:           "0x4ae5e4409c6dbc84a00f9f89e4ba096603fb7d50", // variableDebtCVX 34
+		CVXList[chainId.EthereumChainName]:           "0x4ae5e4409c6dbc84a00f9f89e4ba096603fb7d50", // variableDebtCVX 34 deprecated
 		OneInchTokenList[chainId.EthereumChainName]:  "0xd7896c1b9b4455aff31473908eb15796ad2295da",
 		LUSDList[chainId.EthereumChainName]:          "0x411066489ab40442d6fc215ad7c64224120d33f2",
 	},
