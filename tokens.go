@@ -43,6 +43,7 @@ var USTList = map[string]string{
 }
 
 // Wrapped eth: WETH.
+// Including avalanche WETH.e.
 //
 // map[network] = address.
 var WETHList = map[string]string{
@@ -53,6 +54,7 @@ var WETHList = map[string]string{
 }
 
 // Wrapped btc: WBTC.
+// Including avalanche WBTC.e.
 //
 // map[network] = address.
 var WBTCList = map[string]string{
