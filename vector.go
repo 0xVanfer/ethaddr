@@ -22,6 +22,7 @@ var VectorChefList = map[string]string{
 }
 
 // Vector pool names.
+// Get pair names: https://api.vectorfinance.io/api/v1/vtx/tvl
 //
 // map[network][pool type][underlying] = pool name.
 var VectorPoolNameList = map[string]map[string]map[string]string{
@@ -75,7 +76,7 @@ var VectorPoolNameList = map[string]map[string]map[string]string{
 		// AVAX-yyAVAX
 		Platypus_AVAX_yyAVAX_PairName: {
 			WAVAXList[chainId.AvalancheChainName]:  "AVAX_yyAVAX",
-			YyAVAXList[chainId.AvalancheChainName]: "YYAVAX",
+			YyAVAXList[chainId.AvalancheChainName]: "yyAVAX",
 		},
 		// WBTC-BTC.b
 		PlatypusLp_BTCb_WBTCe_BTCb_Address: {
