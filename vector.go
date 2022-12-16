@@ -120,3 +120,8 @@ var VectorMachinegunPoolList = map[string]map[string]string{
 		VectorPoolNameList[chainId.AvalancheChainName][Platypus_BTCb_WBTCe_PairName][WBTCList[chainId.AvalancheChainName]]:    "0xf482b0d19c9be9a562ef4701d621ce396cab4c8e",
 	},
 }
+
+// Vector helper v4 for AVAX.
+// Does not fit the exisiting structure.
+// TODO: Find a better solution.
+var VectorHelperV4AVAX string = "0xab42ed09F43DDa849aa7F62500885A973A38a8Bc"
