@@ -16,6 +16,8 @@ var CurveTokenlist = map[string]string{
 // Same as CurveTokenlist.
 var CRVList = CurveTokenlist
 
+var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022"
+
 // Curve folded pools(a pool folded into other pools).
 //
 // map[network] = []address.

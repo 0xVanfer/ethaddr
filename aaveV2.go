@@ -23,6 +23,13 @@ var AaveLendingPoolV2List = map[string]string{
 	chainId.AvalancheChainName: "0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c",
 }
 
+// Aave oracle v2.
+//
+// map[network] = address.
+var AaveOracleV2List = map[string]string{
+	chainId.EthereumChainName: "0xa50ba011c48153de246e5192c8f9258a2ba79ca9",
+}
+
 // Aave a tokens v2.
 //
 // map[network][underlying] = address.

@@ -27,3 +27,10 @@ var QuickswapFactoryList = map[string]string{
 var QuickswapRouter02List = map[string]string{
 	chainId.PolygonChainName: "0xa5e0829caced8ffdd4de3c43696c57f7d7a678ff",
 }
+
+// Quickswap router03.
+//
+// map[network] = address.
+var QuickswapRouter03List = map[string]string{
+	chainId.PolygonChainName: "0xf5b509bb0909a69b1c207e495f687a596c168e12",
+}
