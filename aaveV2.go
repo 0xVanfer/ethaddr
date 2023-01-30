@@ -12,7 +12,7 @@ var AaveIncentivesControllerV2List = map[string]string{
 	chainId.AvalancheChainName: "0x01d83fe6a10d2f2b7af17034343746188272cac9",
 }
 
-// Deprecated. Use AaveIncentivesControllerV2List instead.
+// Deprecated: Use AaveIncentivesControllerV2List instead.
 var AaveIncentiveControllerV2List = AaveIncentivesControllerV2List
 
 // Aave lending pool v2.
