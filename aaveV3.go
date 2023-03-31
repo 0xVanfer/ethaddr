@@ -46,9 +46,9 @@ var AavePoolDataProviderList = map[string]string{
 // map[network] = address.
 var AaveUiPoolDataProveiderV3List = map[string]string{
 	chainId.EthereumChainName:  "0x91c0ea31b49b69ea18607702c5d9ac360bf3de7d",
-	chainId.AvalancheChainName: "0xdbbfafc45983b4659e368a3025b81f69ab6e5093",
-	chainId.OptimismChainName:  "0x64f558d4bfc1c03a8c8b2ff84976ff04c762b51f",
-	chainId.PolygonChainName:   "0x7006e5a16e449123a3f26920746d03337ff37340",
+	chainId.AvalancheChainName: "0xf71dbe0faef1473ffc607d4c555dff0aeadb878d",
+	chainId.OptimismChainName:  "0xbd83ddbe37fc91923d59c8c1e0bde0cccca332d5",
+	chainId.PolygonChainName:   "0xc69728f11e9e6127733751c8410432913123acf1",
 }
 
 // Aave ui incentive data provider v3.
@@ -56,9 +56,9 @@ var AaveUiPoolDataProveiderV3List = map[string]string{
 // map[network] = address.
 var AaveUiIncentiveDataProveiderV3List = map[string]string{
 	chainId.EthereumChainName:  "0x162a7ac02f547ad796ca549f757e2b8d1d9b10a6",
-	chainId.AvalancheChainName: "0x270f51cf3f681010b46f5c4ee2ad5120db33026f",
-	chainId.OptimismChainName:  "0x6dd4b295b457a26cc2646aaf2519436681afb5d4",
-	chainId.PolygonChainName:   "0xf43efc9789736baf550dc016c7389210c43e7997",
+	chainId.AvalancheChainName: "0x265d414f80b0fca9505710e6f16db4b67555d365",
+	chainId.OptimismChainName:  "0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7",
+	chainId.PolygonChainName:   "0x874313a46e4957d29faac43bf5eb2b144894f557",
 }
 
 // Aave pool address provider v3.
@@ -66,9 +66,9 @@ var AaveUiIncentiveDataProveiderV3List = map[string]string{
 // map[network] = address.
 var AavePoolAddressProviderV3List = map[string]string{
 	chainId.EthereumChainName:  "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
-	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
-	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
-	chainId.PolygonChainName:   "0xa97684ead0e402dc232d5a977953Df7ecbab3cdb",
+	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+	chainId.PolygonChainName:   "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 }
 
 // Aave a tokens v3.
