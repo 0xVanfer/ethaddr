@@ -10,11 +10,33 @@ var OneInchTokenList = map[string]string{
 	chainId.PolygonChainName:  "0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f", // 1INCH
 }
 
-// 1 Inch router.
+// Deprecated: Use OneInchRouterListV4 instead.
+var OneInchRouterList = OneInchRouterListV4
+
+// 1 Inch router V4.
 //
 // map[network] = address
-var OneInchRouterList = map[string]string{
-	chainId.PolygonChainName: "0x1111111254fb6c44bAC0beD2854e76F90643097d",
+var OneInchRouterListV4 = map[string]string{
+	chainId.EthereumChainName:     "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.PolygonChainName:      "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.ArbitrumChainName:     "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.AvalancheChainName:    "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.BinanceSmartChainName: "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.FantomChainName:       "0x1111111254fb6c44bac0bed2854e76f90643097d",
+	chainId.OptimismChainName:     "0x1111111254fb6c44bac0bed2854e76f90643097d",
+}
+
+// 1 Inch router V5.
+//
+// map[network] = address
+var OneInchRouterListV5 = map[string]string{
+	chainId.EthereumChainName:     "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.PolygonChainName:      "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.ArbitrumChainName:     "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.AvalancheChainName:    "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.BinanceSmartChainName: "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.FantomChainName:       "0x1111111254eeb25477b68fb85ed929f73a960582",
+	chainId.OptimismChainName:     "0x1111111254eeb25477b68fb85ed929f73a960582",
 }
 
 // 1 Inch spot aggregator.
