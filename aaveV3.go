@@ -15,6 +15,7 @@ var AaveIncentivesControllerV3List = map[string]string{
 	chainId.AvalancheChainName: "0x929ec64c34a17401f460460d4b9390518e5b473e",
 	chainId.OptimismChainName:  "0x929ec64c34a17401f460460d4b9390518e5b473e",
 	chainId.PolygonChainName:   "0x929ec64c34a17401f460460d4b9390518e5b473e",
+	chainId.ArbitrumChainName:  "0x929ec64c34a17401f460460d4b9390518e5b473e",
 }
 
 // Aave lending pool v3.
@@ -49,6 +50,7 @@ var AaveUiPoolDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xf71dbe0faef1473ffc607d4c555dff0aeadb878d",
 	chainId.OptimismChainName:  "0xbd83ddbe37fc91923d59c8c1e0bde0cccca332d5",
 	chainId.PolygonChainName:   "0xc69728f11e9e6127733751c8410432913123acf1",
+	chainId.ArbitrumChainName:  "0x145de30c929a065582da84cf96f88460db9745a7",
 }
 
 // Aave ui incentive data provider v3.
@@ -59,6 +61,7 @@ var AaveUiIncentiveDataProveiderV3List = map[string]string{
 	chainId.AvalancheChainName: "0x265d414f80b0fca9505710e6f16db4b67555d365",
 	chainId.OptimismChainName:  "0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7",
 	chainId.PolygonChainName:   "0x874313a46e4957d29faac43bf5eb2b144894f557",
+	chainId.ArbitrumChainName:  "0xda67af3403555ce0ae3ffc22fdb7354458277358",
 }
 
 // Aave pool address provider v3.
@@ -69,6 +72,7 @@ var AavePoolAddressProviderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.PolygonChainName:   "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+	chainId.ArbitrumChainName:  "0x770ef9f4fe897e59dacc474ef11238303f9552b6",
 }
 
 // Aave a tokens v3.
@@ -129,6 +133,16 @@ var AaveATokenV3List = map[string]map[string]string{
 		WETHList[chainId.PolygonChainName]:    "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8",
 		WMATICList[chainId.PolygonChainName]:  "0x6d80113e533a2c0fe82eabd35f1875dcea89ea97",
 	},
+	chainId.ArbitrumChainName: {
+		DAIList[chainId.ArbitrumChainName]:  "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aArbDAI
+		EURSList[chainId.ArbitrumChainName]: "0x6d80113e533a2c0fe82eabd35f1875dcea89ea97", // aArbEURS
+		USDCList[chainId.ArbitrumChainName]: "0x625e7708f30ca75bfd92586e17077590c60eb4cd",
+		USDTList[chainId.ArbitrumChainName]: "0x6ab707aca953edaefbc4fd23ba73294241490620",
+		AAVEList[chainId.ArbitrumChainName]: "0xf329e36c7bf6e5e86ce2150875a84ce77f477375",
+		LINKList[chainId.ArbitrumChainName]: "0x191c10aa4af7c30e871e70c95db0e4eb77237530",
+		WBTCList[chainId.ArbitrumChainName]: "0x078f358208685046a11c85e8ad32895ded33a249",
+		WETHList[chainId.ArbitrumChainName]: "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8",
+	},
 }
 
 // Aave s tokens v3.
@@ -178,6 +192,16 @@ var AaveSTokenV3List = map[string]map[string]string{
 		WBTCList[chainId.PolygonChainName]:    "0x633b207dd676331c413d4c013a6294b0fe47cd0e",
 		WETHList[chainId.PolygonChainName]:    "0xd8ad37849950903571df17049516a5cd4cbe55f6",
 		WMATICList[chainId.PolygonChainName]:  "0xf15f26710c827dde8acba678682f3ce24f2fb56e",
+	},
+	chainId.ArbitrumChainName: {
+		DAIList[chainId.ArbitrumChainName]:  "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", // sArbDAI
+		EURSList[chainId.ArbitrumChainName]: "0xf15f26710c827dde8acba678682f3ce24f2fb56e",
+		USDCList[chainId.ArbitrumChainName]: "0x307ffe186f84a3bc2613d1ea417a5737d69a7007",
+		USDTList[chainId.ArbitrumChainName]: "0x70effc565db6eef7b927610155602d31b670e802",
+		AAVEList[chainId.ArbitrumChainName]: "0xfaef6a702d15428e588d4c0614aefb4348d83d48",
+		LINKList[chainId.ArbitrumChainName]: "0x89d976629b7055ff1ca02b927ba3e020f22a44e4",
+		WBTCList[chainId.ArbitrumChainName]: "0x633b207dd676331c413d4c013a6294b0fe47cd0e",
+		WETHList[chainId.ArbitrumChainName]: "0xd8ad37849950903571df17049516a5cd4cbe55f6",
 	},
 }
 
@@ -238,6 +262,16 @@ var AaveVTokenV3List = map[string]map[string]string{
 		WBTCList[chainId.PolygonChainName]:    "0x92b42c66840c7ad907b4bf74879ff3ef7c529473",
 		WETHList[chainId.PolygonChainName]:    "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351",
 		WMATICList[chainId.PolygonChainName]:  "0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8",
+	},
+	chainId.ArbitrumChainName: {
+		DAIList[chainId.ArbitrumChainName]:  "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc",
+		EURSList[chainId.ArbitrumChainName]: "0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8",
+		USDCList[chainId.ArbitrumChainName]: "0xfccf3cabbe80101232d343252614b6a3ee81c989",
+		USDTList[chainId.ArbitrumChainName]: "0xfb00ac187a8eb5afae4eace434f493eb62672df7",
+		AAVEList[chainId.ArbitrumChainName]: "0xe80761ea617f66f96274ea5e8c37f03960ecc679",
+		LINKList[chainId.ArbitrumChainName]: "0x953a573793604af8d41f306feb8274190db4ae0e",
+		WBTCList[chainId.ArbitrumChainName]: "0x92b42c66840c7ad907b4bf74879ff3ef7c529473",
+		WETHList[chainId.ArbitrumChainName]: "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351",
 	},
 }
 
