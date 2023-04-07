@@ -9,6 +9,7 @@ const LidoProtocol string = "lido"
 // map[network] = address.
 var LidoTokenList = map[string]string{
 	chainId.EthereumChainName: "0x5a98fcbea516cf06857215779fd812ca3bef1b32", // LDO
+	chainId.ArbitrumChainName: "0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60", // LDO
 }
 
 // Same as LidoTokenList.
@@ -26,6 +27,7 @@ var STETHList = map[string]string{
 // map[network] = address.
 var WSTETHList = map[string]string{
 	chainId.EthereumChainName: "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0", // wstETH
+	chainId.ArbitrumChainName: "0x5979d7b546e38e414f7e9822514be443a4800529", // wstETH
 }
 
 // Lido stake matic token: stMATIC.

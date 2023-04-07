@@ -7,6 +7,7 @@ import "github.com/0xVanfer/chainId"
 // map[network] = address.
 var MAIList = map[string]string{
 	chainId.AvalancheChainName: "0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b", // MAI
+	chainId.ArbitrumChainName:  "0x3f56e0c36d275367b8c502090edf38289b3dea0d", // MAI
 }
 
 // Mai MATIC: miMATIC.

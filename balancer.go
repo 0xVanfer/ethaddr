@@ -10,6 +10,7 @@ const BalancerProtocol string = "balancer"
 var BalancerTokenList = map[string]string{
 	chainId.EthereumChainName: "0xba100000625a3754423978a60c9317c58a424e3d", // BAL
 	chainId.PolygonChainName:  "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3", // BAL
+	chainId.ArbitrumChainName: "0x040d1edc9569d4bab2d15287dc5a4f10f56a56b8", // BAL
 }
 
 // Same as BalancerTokenList.

@@ -9,6 +9,7 @@ const TraderJoeProtocol string = "traderjoe"
 // map[network] = address.
 var TraderjoeTokenList = map[string]string{
 	chainId.AvalancheChainName: "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd", // JOE
+	chainId.ArbitrumChainName:  "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07", // JOE
 }
 
 // Same as TraderjoeTokenList.

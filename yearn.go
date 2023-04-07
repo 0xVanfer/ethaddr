@@ -11,6 +11,7 @@ var YearnTokenList = map[string]string{
 	chainId.EthereumChainName: "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e", // YFI
 	chainId.FantomChainName:   "0x29b0da86e484e1c0029b56e817912d778ac0ec69", // YFI
 	chainId.PolygonChainName:  "0xda537104d6a5edd53c6fbba9a898708e465260b6", // YFI
+	chainId.ArbitrumChainName: "0x82e3a8f066a6989666b031d916c43672085b1582", // YFI
 }
 
 // Same as YearnTokenList.

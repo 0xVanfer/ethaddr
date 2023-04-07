@@ -8,7 +8,8 @@ const QuickswapProtocol string = "quickswap"
 //
 // map[network] = address.
 var QuickswapTokenList = map[string]string{
-	chainId.PolygonChainName: "0xb5c064f955d8e7f38fe0460c556a72987494ee17", // QUICK
+	chainId.PolygonChainName:  "0xb5c064f955d8e7f38fe0460c556a72987494ee17", // QUICK
+	chainId.ArbitrumChainName: "0x6c28e052ffdf1d9f46c284c2e2fe60c503246f2f", // QUICK
 }
 
 // Same as QuickswapTokenList.

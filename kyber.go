@@ -21,6 +21,7 @@ var KyberTokenList = map[string]string{
 	chainId.PolygonChainName:      "0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c", // KNC
 	chainId.BinanceSmartChainName: "0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b", // KNC
 	chainId.AvalancheChainName:    "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f", // KNC
+	chainId.ArbitrumChainName:     "0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb", // KNC
 }
 
 // Same as KyberTokenList.

@@ -46,13 +46,6 @@ var XAVAList = map[string]string{
 	chainId.AvalancheChainName: "0xd1c3f94de7e5b45fa4edbba472491a9f4b166fc4", // XAVA
 }
 
-// BTC.b for avalanche
-//
-// map[network] = address.
-var BTCbList = map[string]string{
-	chainId.AvalancheChainName: "0x152b9d0fdc40c096757f570a51e494bd4b943e50", // BTC.b
-}
-
 // YUSD
 //
 // map[network] = address.
