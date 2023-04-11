@@ -71,6 +71,7 @@ func GetCommonTokensAddressSymbolMap() map[string]map[string]string {
 			}
 			chainMapp[strings.ToLower(tokenMap[network])] = symbol
 		}
+		chainMapp[EtherAddress] = chainId.ChainTokenSymbolList[network]
 		mapp[network] = chainMapp
 	}
 	return mapp
