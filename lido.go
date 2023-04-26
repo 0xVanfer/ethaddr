@@ -28,6 +28,7 @@ var STETHList = map[string]string{
 var WSTETHList = map[string]string{
 	chainId.EthereumChainName: "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0", // wstETH
 	chainId.ArbitrumChainName: "0x5979d7b546e38e414f7e9822514be443a4800529", // wstETH
+	chainId.OptimismChainName: "0x1f32b1c2345538c0c6f582fcb022739c4a194ebb", // wstETH
 }
 
 // Lido stake matic token: stMATIC.
