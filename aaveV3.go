@@ -72,7 +72,7 @@ var AavePoolAddressProviderV3List = map[string]string{
 	chainId.AvalancheChainName: "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.PolygonChainName:   "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
-	chainId.ArbitrumChainName:  "0x770ef9f4fe897e59dacc474ef11238303f9552b6",
+	chainId.ArbitrumChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 }
 
 // Aave a tokens v3.
