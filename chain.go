@@ -6,10 +6,10 @@ import "github.com/0xVanfer/chainId"
 //
 // map[chain name] = address.
 var WrappedNativeTokenList = map[string]string{
-	chainId.AvalancheChainName:    WAVAXList[chainId.AvalancheChainName],
-	chainId.BinanceSmartChainName: WBNBList[chainId.BinanceSmartChainName],
-	chainId.EthereumChainName:     WETHList[chainId.EthereumChainName],
-	chainId.PolygonChainName:      WMATICList[chainId.PolygonChainName],
+	chainId.AvalancheChainName: WAVAXList[chainId.AvalancheChainName],
+	chainId.BNBSmartChainName:  WBNBList[chainId.BNBSmartChainName],
+	chainId.EthereumChainName:  WETHList[chainId.EthereumChainName],
+	chainId.PolygonChainName:   WMATICList[chainId.PolygonChainName],
 }
 
 // Deprecated: Use WrappedNativeTokenList instead.

@@ -20,7 +20,7 @@ var ProtocolTokenListMap = map[string]map[string]string{
 	KyberProtocol:        KNCList,   // kyber
 	LidoProtocol:         LDOList,   // lido
 	MakerProtocol:        MKRList,   // maker
-	PancakeswapProtocol:  CAKEList,  // pancakeswap
+	PancakeswapProtocol:  CakeList,  // pancakeswap
 	PangolinProtocol:     PNGList,   // pangolin
 	QuickswapProtocol:    QUICKList, // quickswap
 	RepublicProtocol:     RENList,   // republic

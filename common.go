@@ -17,7 +17,7 @@ func GetCommonTokensAddressSymbolMap() map[string]map[string]string {
 		chainId.PolygonChainName,
 		chainId.ArbitrumChainName,
 		chainId.AvalancheChainName,
-		chainId.BinanceSmartChainName,
+		chainId.BNBSmartChainName,
 		chainId.OptimismChainName,
 	}
 	// Commonly used tokens.
@@ -71,7 +71,7 @@ func GetCommonTokensAddressSymbolMap() map[string]map[string]string {
 			}
 			chainMapp[strings.ToLower(tokenMap[network])] = symbol
 		}
-		chainMapp[EtherAddress] = chainId.ChainTokenSymbolList[network]
+		chainMapp[EtherAddress] = chainId.NativeTokenSymbolList[network]
 		mapp[network] = chainMapp
 	}
 	return mapp

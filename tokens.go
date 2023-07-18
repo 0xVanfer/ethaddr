@@ -14,6 +14,7 @@ var USDCList = map[string]string{
 	chainId.OptimismChainName:  "0x7f5c764cbc14f9669b88837ca1490cca17c31607", // USDC
 	chainId.PolygonChainName:   "0x2791bca1f2de4661ed88a30c99a7a9449aa84174", // USDC
 	chainId.ArbitrumChainName:  "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8", // USDC
+	chainId.BNBSmartChainName:  "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d", // USDC
 }
 
 // USDT
@@ -25,6 +26,7 @@ var USDTList = map[string]string{
 	chainId.OptimismChainName:  "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58", // USDT
 	chainId.PolygonChainName:   "0xc2132d05d31c914a87c6611c10748aeb04b58e8f", // USDT
 	chainId.ArbitrumChainName:  "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", // USDT
+	chainId.BNBSmartChainName:  "0x55d398326f99059ff775485246999027b3197955", // USDT
 }
 
 // DAI
@@ -35,6 +37,7 @@ var DAIList = map[string]string{
 	chainId.OptimismChainName: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1", // DAI
 	chainId.PolygonChainName:  "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063", // DAI
 	chainId.ArbitrumChainName: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1", // DAI
+	chainId.BNBSmartChainName: "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3", // DAI
 }
 
 // UST
@@ -43,6 +46,7 @@ var DAIList = map[string]string{
 var USTList = map[string]string{
 	chainId.EthereumChainName:  "0xa693b19d2931d498c5b318df961919bb4aee87a5", // UST
 	chainId.AvalancheChainName: "0x260bbf5698121eb85e7a74f2e45e16ce762ebe11", // UST
+	chainId.BNBSmartChainName:  "0x3d4350cd54aef9f9b2c29435e0fa809957b3f30a", // UST
 }
 
 // Wrapped eth: WETH.
@@ -55,6 +59,13 @@ var WETHList = map[string]string{
 	chainId.OptimismChainName:  "0x4200000000000000000000000000000000000006", // WETH
 	chainId.PolygonChainName:   "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", // WETH
 	chainId.ArbitrumChainName:  "0x82af49447d8a07e3bd95bd0d56f35241523fbab1", // WETH
+}
+
+// BNB chain ETH is BEP20 token.
+//
+// map[network] = address.
+var ETHList = map[string]string{
+	chainId.BNBSmartChainName: "0x2170ed0880ac9a755fd29b2688956bd959f933f8", // ETH
 }
 
 // Wrapped btc: WBTC.

@@ -11,6 +11,7 @@ var AaveTokenList = map[string]string{
 	chainId.OptimismChainName:  "0x76fb31fb4af56892a25e32cfc43de717950c9278", // AAVE
 	chainId.PolygonChainName:   "0xd6df932a45c0f255f85145f286ea0b292b21c90b", // AAVE
 	chainId.ArbitrumChainName:  "0xba5ddd1f9d7f570dc94a51479a000e3bce967196", // AAVE
+	chainId.BNBSmartChainName:  "0xfb6115445bff7b52feb98650c87f44907e58f802", // AAVE
 }
 
 // Same as AaveTokenList.
