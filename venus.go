@@ -2,6 +2,8 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+const VenusProtocol string = "venus"
+
 // Venus token XVS.
 //
 // map[network] = address.
