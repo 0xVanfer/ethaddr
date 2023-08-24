@@ -45,7 +45,7 @@ var AavePoolDataProviderList = map[string]string{
 // Aave ui pool data provider v3.
 //
 // map[network] = address.
-var AaveUiPoolDataProveiderV3List = map[string]string{
+var AaveUiPoolDataProviderV3List = map[string]string{
 	chainId.EthereumChainName:  "0x91c0ea31b49b69ea18607702c5d9ac360bf3de7d",
 	chainId.AvalancheChainName: "0xf71dbe0faef1473ffc607d4c555dff0aeadb878d",
 	chainId.OptimismChainName:  "0xbd83ddbe37fc91923d59c8c1e0bde0cccca332d5",
@@ -53,16 +53,22 @@ var AaveUiPoolDataProveiderV3List = map[string]string{
 	chainId.ArbitrumChainName:  "0x145de30c929a065582da84cf96f88460db9745a7",
 }
 
+// Deprecated: Spelling mistake. Use AaveUiPoolDataProviderV3List instead.
+var AaveUiPoolDataProveiderV3List = AaveUiPoolDataProviderV3List
+
 // Aave ui incentive data provider v3.
 //
 // map[network] = address.
-var AaveUiIncentiveDataProveiderV3List = map[string]string{
+var AaveUiIncentiveDataProviderV3List = map[string]string{
 	chainId.EthereumChainName:  "0x162a7ac02f547ad796ca549f757e2b8d1d9b10a6",
 	chainId.AvalancheChainName: "0x265d414f80b0fca9505710e6f16db4b67555d365",
 	chainId.OptimismChainName:  "0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7",
 	chainId.PolygonChainName:   "0x874313a46e4957d29faac43bf5eb2b144894f557",
 	chainId.ArbitrumChainName:  "0xda67af3403555ce0ae3ffc22fdb7354458277358",
 }
+
+// Deprecated: Spelling mistake. Use AaveUiIncentiveDataProviderV3List instead.
+var AaveUiIncentiveDataProveiderV3List = AaveUiIncentiveDataProviderV3List
 
 // Aave pool address provider v3.
 //
