@@ -32,6 +32,10 @@ var SparkTreasuryControllerList = map[string]string{
 	chainId.EthereumChainName: "0x92ef091c5a1e01b3ce1ba0d0150c84412d818f7a",
 }
 
+var SparkIncentivesList = map[string]string{
+	chainId.EthereumChainName: "0x4370d3b6c9588e02ce9d22e684387859c7ff5b34",
+}
+
 // Spark a tokens.
 //
 // map[network][underlying] = address.
