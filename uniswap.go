@@ -16,6 +16,15 @@ var UniswapTokenList = map[string]string{
 // Same as UniswapTokenList.
 var UNIList = UniswapTokenList
 
+// Uniswap V2 swap router.
+//
+// map[network] = address.
+//
+// Uni V2 is only on ethereum.
+var UniswapV2RouterList = map[string]string{
+	chainId.EthereumChainName: "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+}
+
 // Uniswap V3 swap router.
 //
 // map[network] = address.
