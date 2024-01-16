@@ -2,6 +2,8 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+const PendleProtocol string = "pendle"
+
 // Pendle token: PENDLE.
 //
 // map[network] = address.

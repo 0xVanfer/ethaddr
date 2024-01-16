@@ -2,6 +2,8 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+const YakProtocol string = "yak"
+
 // Yak yield token: yyAVAX.
 //
 // map[network] = address.

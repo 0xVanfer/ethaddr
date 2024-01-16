@@ -2,6 +2,8 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+const OneInchProtocol string = "1inch"
+
 // 1 Inch token: 1INCH.
 //
 // map[network] = address.

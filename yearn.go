@@ -2,7 +2,7 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
-var YearnProtocol string = "yearn"
+const YearnProtocol string = "yearn"
 
 // Yearn token: YFI.
 //
