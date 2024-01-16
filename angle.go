@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.angle.money/overview/readme
+//
+// Deployed contracts: https://developers.angle.money/overview/smart-contracts/mainnet-contracts
 const AngleProtocol string = "angle"
 
 // Angle token: ANGLE.
@@ -18,6 +21,7 @@ var ANGLEList = AngleTokenList
 //
 // map[network] = address.
 var AgEURList = map[string]string{
+	chainId.EthereumChainName: "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8", // agEUR
 	chainId.PolygonChainName:  "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4", // agEUR
 	chainId.ArbitrumChainName: "0xfa5ed56a203466cbbc2430a43c66b9d8723528e7", // agEUR
 }

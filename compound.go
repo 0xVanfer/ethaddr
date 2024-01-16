@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.compound.finance/
+//
+// Deployed contracts: https://docs.compound.finance/#networks
 const CompoundProtocol string = "compound"
 
 // Compound token: COMP.

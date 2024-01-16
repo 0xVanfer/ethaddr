@@ -2,10 +2,10 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.aave.com/developers/getting-started/readme
+//
+// Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
 const AaveV3Protocol string = "aavev3"
-
-// Deprecated: Use AaveIncentivesControllerV3List instead.
-var AaveIncentiveControllerV3List = AaveIncentivesControllerV3List
 
 // Aave incentive controller V3.
 //
@@ -53,9 +53,6 @@ var AaveUiPoolDataProviderV3List = map[string]string{
 	chainId.ArbitrumChainName:  "0x145de30c929a065582da84cf96f88460db9745a7",
 }
 
-// Deprecated: Spelling mistake. Use AaveUiPoolDataProviderV3List instead.
-var AaveUiPoolDataProveiderV3List = AaveUiPoolDataProviderV3List
-
 // Aave ui incentive data provider v3.
 //
 // map[network] = address.
@@ -66,9 +63,6 @@ var AaveUiIncentiveDataProviderV3List = map[string]string{
 	chainId.PolygonChainName:   "0x874313a46e4957d29faac43bf5eb2b144894f557",
 	chainId.ArbitrumChainName:  "0xda67af3403555ce0ae3ffc22fdb7354458277358",
 }
-
-// Deprecated: Spelling mistake. Use AaveUiIncentiveDataProviderV3List instead.
-var AaveUiIncentiveDataProveiderV3List = AaveUiIncentiveDataProviderV3List
 
 // Aave pool address provider v3.
 //

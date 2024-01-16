@@ -2,7 +2,7 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
-// https://app.spark.fi/markets/
+// Website: https://app.spark.fi/markets/
 const SparkProtocol string = "spark"
 
 // Spark Saving DAI address.
@@ -67,3 +67,6 @@ var SparkVTokenList = map[string]map[string]string{
 		WSTETHList[chainId.EthereumChainName]: "0xd5c3e3b566a42a6110513ac7670c1a86d76e13e6",
 	},
 }
+
+// Spark s tokens.
+var SparkSTokenList = map[string]map[string]string{}

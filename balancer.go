@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.balancer.fi/
+//
+// Deployed contracts: https://docs.balancer.fi/reference/contracts/deployment-addresses/mainnet.html
 const BalancerProtocol string = "balancer"
 
 // Balancer token: BAL.

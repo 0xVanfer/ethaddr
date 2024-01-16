@@ -10,9 +10,6 @@ var OneInchTokenList = map[string]string{
 	chainId.PolygonChainName:  "0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f", // 1INCH
 }
 
-// Deprecated: Use OneInchRouterListV4 instead.
-var OneInchRouterList = OneInchRouterListV4
-
 // 1 Inch router V4.
 //
 // map[network] = address

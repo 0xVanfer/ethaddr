@@ -54,11 +54,14 @@ var USTList = map[string]string{
 //
 // map[network] = address.
 var WETHList = map[string]string{
-	chainId.EthereumChainName:  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", // WETH
-	chainId.AvalancheChainName: "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab", // WETH.e
-	chainId.OptimismChainName:  "0x4200000000000000000000000000000000000006", // WETH
-	chainId.PolygonChainName:   "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", // WETH
-	chainId.ArbitrumChainName:  "0x82af49447d8a07e3bd95bd0d56f35241523fbab1", // WETH
+	chainId.AvalancheChainName:    "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab", // WETH.e
+	chainId.ArbitrumChainName:     "0x82af49447d8a07e3bd95bd0d56f35241523fbab1", // WETH
+	chainId.BaseChainName:         "0x4200000000000000000000000000000000000006", // WETH
+	chainId.EthereumChainName:     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", // WETH
+	chainId.OptimismChainName:     "0x4200000000000000000000000000000000000006", // WETH
+	chainId.PolygonChainName:      "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", // WETH
+	chainId.PolygonZkEVMChainName: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9", // WETH
+	chainId.ScrollChainName:       "0x5300000000000000000000000000000000000004", // WETH
 }
 
 // BNB chain ETH is BEP20 token.

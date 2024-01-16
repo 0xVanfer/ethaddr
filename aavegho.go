@@ -2,6 +2,7 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.gho.xyz/concepts/overview
 var GHOList = map[string]string{
 	chainId.EthereumChainName: "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f", // GHO
 }

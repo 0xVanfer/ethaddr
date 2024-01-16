@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.mav.xyz/
+//
+// Deployed contracts: https://docs.mav.xyz/further-information/contract-addresses
 const MaverickProtocol string = "maverick"
 
 // Maverick token: MAV.

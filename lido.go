@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.lido.fi/
+//
+// Deployed contracts: https://docs.lido.fi/deployed-contracts/
 const LidoProtocol string = "lido"
 
 // Lido token: LDO.

@@ -2,6 +2,7 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.abracadabra.money/learn/
 const AbracadabraProtocol string = "abracadabra"
 
 // Abracadabra token: SPELL.

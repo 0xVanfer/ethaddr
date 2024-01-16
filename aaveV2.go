@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.aave.com/developers/getting-started/readme
+//
+// Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
 const AaveV2Protocol string = "aave"
 
 // Aave incentives controller V2.
@@ -11,9 +14,6 @@ var AaveIncentivesControllerV2List = map[string]string{
 	chainId.EthereumChainName:  "0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5",
 	chainId.AvalancheChainName: "0x01d83fe6a10d2f2b7af17034343746188272cac9",
 }
-
-// Deprecated: Use AaveIncentivesControllerV2List instead.
-var AaveIncentiveControllerV2List = AaveIncentivesControllerV2List
 
 // Aave lending pool v2.
 //

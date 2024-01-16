@@ -2,16 +2,6 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
-// Deprecated: Use ToUsdOracleMap["avalanche"][wavax address] instead.
-var AVAXOracleMap = map[string]string{
-	chainId.AvalancheChainName: "0x0a77230d17318075983913bc2145db16c7366156",
-}
-
-// Deprecated: Use ToUsdOracleMap["avalanche"][savax address] instead.
-var SAVAXOracleMap = map[string]string{
-	chainId.AvalancheChainName: "0xc9245871D69BF4c36c6F2D15E0D68Ffa883FE1A7",
-}
-
 // map[network][token] = oracle address.
 //
 // Addresses from: https://docs.chain.link/docs/data-feeds/price-feeds/addresses/

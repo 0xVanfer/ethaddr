@@ -54,9 +54,6 @@ var (
 	CianWmaticGateway = CianWrappedNativeTokenGateway
 )
 
-// Deprecated: Use CianWrappedNativeTokenGateway instead.
-var CianWrappedChainTokenGateway = CianWrappedNativeTokenGateway
-
 // map[network] = address.
 var CianWrappedNativeTokenGateway = map[string]string{
 	chainId.AvalancheChainName: "0x28f83ce214462e888787c5cfd0cc08dd439c9920",
@@ -68,9 +65,6 @@ var (
 	CianFeeBoxAVAX  = CianFeeBoxNativeToken
 	CianFeeBoxMATIC = CianFeeBoxNativeToken
 )
-
-// Deprecated: Use CianFeeBoxNativeToken instead.
-var CianFeeBoxChainToken = CianFeeBoxNativeToken
 
 // map[network] = address.
 var CianFeeBoxNativeToken = map[string]string{

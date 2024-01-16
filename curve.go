@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://curve.readthedocs.io/
+//
+// Deployed contracts: https://curve.readthedocs.io/ref-addresses.html
 const CurveProtocol string = "curve"
 
 // Curve token: CRV.

@@ -4,6 +4,7 @@ package ethaddr
 var AaveLikeProtocols = []string{
 	AaveV2Protocol,
 	AaveV3Protocol,
+	SparkProtocol,
 }
 
 // Aave-like A token list map.
@@ -12,6 +13,7 @@ var AaveLikeProtocols = []string{
 var AaveLikeATokenListMap = map[string]*map[string]map[string]string{
 	AaveV2Protocol: &AaveATokenV2List,
 	AaveV3Protocol: &AaveATokenV3List,
+	SparkProtocol:  &SparkATokenList,
 }
 
 // Aave-like V token list map.
@@ -20,6 +22,7 @@ var AaveLikeATokenListMap = map[string]*map[string]map[string]string{
 var AaveLikeVTokenListMap = map[string]*map[string]map[string]string{
 	AaveV2Protocol: &AaveVTokenV2List,
 	AaveV3Protocol: &AaveVTokenV3List,
+	SparkProtocol:  &SparkVTokenList,
 }
 
 // Aave-like S token list map.
@@ -28,4 +31,5 @@ var AaveLikeVTokenListMap = map[string]*map[string]map[string]string{
 var AaveLikeSTokenListMap = map[string]*map[string]map[string]string{
 	AaveV2Protocol: &AaveSTokenV2List,
 	AaveV3Protocol: &AaveSTokenV3List,
+	SparkProtocol:  &SparkSTokenList,
 }

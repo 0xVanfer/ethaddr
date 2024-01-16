@@ -33,6 +33,7 @@ var VectorPoolNameList = map[string]map[string]map[string]string{
 			PlatypusxPTPList[chainId.AvalancheChainName]: "XPTP",
 			VectorTokenList[chainId.AvalancheChainName]:  "VTX",
 		},
+		// Deprecated: Platypus' dead.
 		// Main pools.
 		PlatypusMainPoolsName: {
 			DAIeList[chainId.AvalancheChainName]:  "DAIe",
@@ -42,42 +43,49 @@ var VectorPoolNameList = map[string]map[string]map[string]string{
 			USDTeList[chainId.AvalancheChainName]: "USDTe",
 			BUSDList[chainId.AvalancheChainName]:  "BUSD",
 		},
+		// Deprecated: Platypus' dead.
 		// USDC-FRAX
 		Platypus_USDC_FRAX_PairName: {
 			USDCList[chainId.AvalancheChainName]: "USDC_FRAX",
 			FRAXList[chainId.AvalancheChainName]: "FRAX",
 		},
+		// Deprecated: Platypus' dead.
 		// USDC-MIM
 		Platypus_USDC_MIM_PairName: {
 			USDCList[chainId.AvalancheChainName]: "USDC_MIM",
 			MIMList[chainId.AvalancheChainName]:  "MIM",
 		},
+		// Deprecated: Platypus' dead.
 		// AVAX-sAVAX
 		Platypus_AVAX_sAVAX_PairName: {
 			WAVAXList[chainId.AvalancheChainName]: "AVAX",
 			SAVAXList[chainId.AvalancheChainName]: "SAVAX",
 		},
-		// Deprecated.
+		// Deprecated: Platypus' dead.
 		// USDC-TUSD
 		Platypus_USDC_TUSD_PairName: {
 			USDCList[chainId.AvalancheChainName]: "USDC_TUSD",
 			TUSDList[chainId.AvalancheChainName]: "TUSD",
 		},
+		// Deprecated: Platypus' dead.
 		// USDC-YUSD
 		Platypus_USDC_YUSD_PairName: {
 			USDCList[chainId.AvalancheChainName]: "USDC_YUSD",
 			YUSDList[chainId.AvalancheChainName]: "YUSD",
 		},
+		// Deprecated: Platypus' dead.
 		// USDC-MONEY
 		Platypus_USDC_MONEY_PairName: {
 			USDCList[chainId.AvalancheChainName]:  "USDC_MONEY",
 			MoneyList[chainId.AvalancheChainName]: "MONEY",
 		},
+		// Deprecated: Platypus' dead.
 		// AVAX-yyAVAX
 		Platypus_AVAX_yyAVAX_PairName: {
 			WAVAXList[chainId.AvalancheChainName]:  "AVAX_yyAVAX",
 			YyAVAXList[chainId.AvalancheChainName]: "yyAVAX",
 		},
+		// Deprecated: Platypus' dead.
 		// WBTC-BTC.b
 		PlatypusLp_BTCb_WBTCe_BTCb_Address: {
 			WBTCList[chainId.AvalancheChainName]: "WBTCe",

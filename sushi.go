@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.sushi.com/docs/intro
+//
+// Deployed contracts: https://docs.sushi.com/docs/Products/Classic%20AMM/Deployment%20Addresses
 const SushiProtocol string = "sushi"
 
 // Sushi token: SUSHI.
@@ -26,6 +29,8 @@ var XSushiList = map[string]string{
 
 // v2 Router02
 //
+// https://docs.sushi.com/docs/Products/Classic%20AMM/Deployment%20Addresses
+//
 // map[network] = address
 var SushiV2RouterList = map[string]string{
 	chainId.EthereumChainName:  "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
@@ -40,6 +45,8 @@ var SushiV2RouterList = map[string]string{
 
 // v2 factory
 //
+// https://docs.sushi.com/docs/Products/Classic%20AMM/Deployment%20Addresses
+//
 // map[network] = address
 var SushiV2FactoryList = map[string]string{
 	chainId.EthereumChainName:  "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac",
@@ -53,6 +60,8 @@ var SushiV2FactoryList = map[string]string{
 }
 
 // v3 factory
+//
+// https://docs.sushi.com/docs/Products/V3%20AMM/Core/Deployment%20Addresses
 //
 // map[network] = address
 var SushiV3FactoryList = map[string]string{

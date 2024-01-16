@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.benqi.fi/
+//
+// Deployed contracts: https://docs.benqi.fi/resources/contracts/benqi-liquidity-market
 const BenqiProtocol string = "benqi"
 
 // Benqi token: QI.

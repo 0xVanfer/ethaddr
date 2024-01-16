@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.kyberswap.com/
+//
+// Deployed contracts: https://docs.kyberswap.com/liquidity-solutions/kyberswap-classic/contracts/classic-contract-addresses
 const KyberProtocol string = "kyber"
 
 // Kyber old token: KNC. Kyber has another new token, also called KNC.

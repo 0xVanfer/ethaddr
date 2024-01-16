@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.convexfinance.com/convexfinance/
+//
+// Deprecated contracts: https://docs.convexfinance.com/convexfinance/faq/contract-addresses
 const ConvexProtocol string = "convex"
 
 // Convex token: CVX.

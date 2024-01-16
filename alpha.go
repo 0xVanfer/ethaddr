@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Now: https://stellaxyz.io/ Previous: https://alphaventuredao.io/
+//
+// Docs: https://docs.stellaxyz.io/stella-doc/overview/getting-started
 const AlphaProtocol string = "alpha"
 
 // Alpha token: ALPHA.

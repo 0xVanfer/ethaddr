@@ -34,4 +34,9 @@ var LendingTokenListsMap = map[string]LendingTokenLists{
 	CompoundProtocol: {
 		CTokenList: &CompoundCTokenList,
 	},
+	SparkProtocol: {
+		ATokenList: &SparkATokenList,
+		VTokenList: &SparkVTokenList,
+		STokenList: &SparkSTokenList,
+	},
 }

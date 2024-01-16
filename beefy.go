@@ -2,6 +2,9 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Docs: https://docs.beefy.finance/
+//
+// Deployed contracts: https://docs.beefy.finance/additional-resources/contract-addresses
 const BeefyProtocol string = "beefy"
 
 // Beefy token: BIFI.
