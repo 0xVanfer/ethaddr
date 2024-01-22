@@ -37,6 +37,10 @@ var WSTETHList = map[string]string{
 // Lido stake matic token: stMATIC.
 //
 // map[network] = address.
+//
+// The ethereum is the `ROOT` chain and polygon is the `CHILD` chain.
+// The operations and calculation are done on root chain, and child chain is only a operation contract.
 var STMATICList = map[string]string{
-	chainId.PolygonChainName: "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4", // stMATIC
+	chainId.EthereumChainName: "0x9ee91F9f426fA633d227f7a9b000E28b9dfd8599", // stMATIC
+	chainId.PolygonChainName:  "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4", // stMATIC
 }
