@@ -2,12 +2,15 @@ package ethaddr
 
 import "github.com/0xVanfer/chainId"
 
+// Deprecated: Remove.
 type tokenInfo struct {
 	Address  string
 	Symbol   string
 	Decimals int
 }
 
+// Deprecated: Remove.
+//
 // Trusted tokens info.
 //
 // map[network] = []tokenInfo{Address:"xx", Symbol:"xx", Decimals:xx}
