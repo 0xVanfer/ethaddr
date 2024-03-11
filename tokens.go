@@ -15,6 +15,7 @@ var USDCList = map[string]string{
 	chainId.PolygonChainName:   "0x2791bca1f2de4661ed88a30c99a7a9449aa84174", // USDC
 	chainId.ArbitrumChainName:  "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8", // USDC
 	chainId.BNBSmartChainName:  "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d", // USDC
+	chainId.BaseChainName:      "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", // USDC
 }
 
 // USDT

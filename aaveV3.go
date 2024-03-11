@@ -5,6 +5,8 @@ import "github.com/0xVanfer/chainId"
 // Docs: https://docs.aave.com/developers/getting-started/readme
 //
 // Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
+//
+// AToken, VToken, underlying: https://github.com/bgd-labs/aave-address-book/blob/main/tokenlist.json
 const AaveV3Protocol string = "aavev3"
 
 // Aave incentive controller V3.
@@ -16,6 +18,7 @@ var AaveIncentivesControllerV3List = map[string]string{
 	chainId.OptimismChainName:  "0x929ec64c34a17401f460460d4b9390518e5b473e",
 	chainId.PolygonChainName:   "0x929ec64c34a17401f460460d4b9390518e5b473e",
 	chainId.ArbitrumChainName:  "0x929ec64c34a17401f460460d4b9390518e5b473e",
+	chainId.BaseChainName:      "0x4d0109d509e66df298257ffdd55f94a3814343aa",
 }
 
 // Aave lending pool v3.
@@ -28,6 +31,7 @@ var AaveLendingPoolV3List = map[string]string{
 	chainId.PolygonChainName:   "0x794a61358d6845594f94dc1db02a252b5b4814ad",
 	chainId.ArbitrumChainName:  "0x794a61358d6845594f94dc1db02a252b5b4814ad",
 	chainId.FantomChainName:    "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+	chainId.BaseChainName:      "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
 }
 
 // Aave pool data provider v3.
@@ -40,6 +44,7 @@ var AavePoolDataProviderList = map[string]string{
 	chainId.PolygonChainName:   "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
 	chainId.ArbitrumChainName:  "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
 	chainId.FantomChainName:    "0x69fa688f1dc47d4b5d8029d5a35fb7a548310654",
+	chainId.BaseChainName:      "0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac",
 }
 
 // Aave ui pool data provider v3.
@@ -51,6 +56,7 @@ var AaveUiPoolDataProviderV3List = map[string]string{
 	chainId.OptimismChainName:  "0xbd83ddbe37fc91923d59c8c1e0bde0cccca332d5",
 	chainId.PolygonChainName:   "0xc69728f11e9e6127733751c8410432913123acf1",
 	chainId.ArbitrumChainName:  "0x145de30c929a065582da84cf96f88460db9745a7",
+	chainId.BaseChainName:      "0x174446a6741300cD2E7C1b1A636Fee99c8F83502",
 }
 
 // Aave ui incentive data provider v3.
@@ -62,6 +68,7 @@ var AaveUiIncentiveDataProviderV3List = map[string]string{
 	chainId.OptimismChainName:  "0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7",
 	chainId.PolygonChainName:   "0x874313a46e4957d29faac43bf5eb2b144894f557",
 	chainId.ArbitrumChainName:  "0xda67af3403555ce0ae3ffc22fdb7354458277358",
+	chainId.BaseChainName:      "0xEdD3b4737C1a0011626631a977b91Cf3E944982d",
 }
 
 // Aave pool address provider v3.
@@ -73,6 +80,7 @@ var AavePoolAddressProviderV3List = map[string]string{
 	chainId.OptimismChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.PolygonChainName:   "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
 	chainId.ArbitrumChainName:  "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+	chainId.BaseChainName:      "0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D",
 }
 
 // Aave a tokens v3.
@@ -144,6 +152,26 @@ var AaveATokenV3List = map[string]map[string]string{
 		WBTCList[chainId.ArbitrumChainName]: "0x078f358208685046a11c85e8ad32895ded33a249",
 		WETHList[chainId.ArbitrumChainName]: "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8",
 	},
+	chainId.BaseChainName: {
+		WETHList[chainId.BaseChainName]:   "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7", // aBasWETH
+		CbETHList[chainId.BaseChainName]:  "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad", // aBascbETH
+		USDbCList[chainId.BaseChainName]:  "0x0a1d576f3eFeF75b330424287a95A366e8281D54", // aBasUSDbC
+		WSTETHList[chainId.BaseChainName]: "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D", // aBaswstETH
+		USDCList[chainId.BaseChainName]:   "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB", // aBasUSDC
+	},
+}
+
+// Aave static a tokens v3. The wrapped, non-rebase version of a token.
+//
+// map[network][underlying] = address.
+var AaveStaticATokenV3List = map[string]map[string]string{
+	// wstETH does not have static a token.
+	chainId.BaseChainName: {
+		WETHList[chainId.BaseChainName]:  "0x468973e3264F2aEba0417A8f2cD0Ec397E738898", // stataBasWETH
+		CbETHList[chainId.BaseChainName]: "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e", // stataBascbETH
+		USDbCList[chainId.BaseChainName]: "0x6fCe2756794128B1771324caA860965801DCbCdB", // stataBasUSDbC
+		USDCList[chainId.BaseChainName]:  "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc", // stataBasUSDC
+	},
 }
 
 // Aave s tokens v3.
@@ -204,6 +232,13 @@ var AaveSTokenV3List = map[string]map[string]string{
 		LINKList[chainId.ArbitrumChainName]: "0x89d976629b7055ff1ca02b927ba3e020f22a44e4",
 		WBTCList[chainId.ArbitrumChainName]: "0x633b207dd676331c413d4c013a6294b0fe47cd0e",
 		WETHList[chainId.ArbitrumChainName]: "0xd8ad37849950903571df17049516a5cd4cbe55f6",
+	},
+	chainId.BaseChainName: {
+		WETHList[chainId.BaseChainName]:   "0xaED3b56FeA82E809665f02AcBcDEc0816c75f4d9",
+		CbETHList[chainId.BaseChainName]:  "0xa9dF5c62d16d3f496673F4d736852017b086eCA0",
+		USDbCList[chainId.BaseChainName]:  "0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654",
+		WSTETHList[chainId.BaseChainName]: "0xfe742Fa2a84294E8316F05b17c05090Fc68B5105",
+		USDCList[chainId.BaseChainName]:   "0x03506214379aA86ad1176af71c260278cfa10B38",
 	},
 }
 
@@ -275,6 +310,13 @@ var AaveVTokenV3List = map[string]map[string]string{
 		LINKList[chainId.ArbitrumChainName]: "0x953a573793604af8d41f306feb8274190db4ae0e",
 		WBTCList[chainId.ArbitrumChainName]: "0x92b42c66840c7ad907b4bf74879ff3ef7c529473",
 		WETHList[chainId.ArbitrumChainName]: "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351",
+	},
+	chainId.BaseChainName: {
+		WETHList[chainId.BaseChainName]:   "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E",
+		CbETHList[chainId.BaseChainName]:  "0x1DabC36f19909425f654777249815c073E8Fd79F",
+		USDbCList[chainId.BaseChainName]:  "0x7376b2F323dC56fCd4C191B34163ac8a84702DAB",
+		WSTETHList[chainId.BaseChainName]: "0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1",
+		USDCList[chainId.BaseChainName]:   "0x59dca05b6c26dbd64b5381374aaac5cd05644c28",
 	},
 }
 

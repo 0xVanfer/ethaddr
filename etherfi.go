@@ -22,7 +22,11 @@ var WrappedEtherfiETHList = map[string]string{
 }
 
 // eETH
+//
+// map[network] = address.
 var EETHList = EtherfiETHList
 
 // weETH
+//
+// map[network] = address.
 var WEETHList = WrappedEtherfiETHList
