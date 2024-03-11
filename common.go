@@ -6,6 +6,8 @@ import (
 	"github.com/0xVanfer/chainId"
 )
 
+// Deprecated.
+//
 // Get the symbol from the address.
 //
 // map[network][address] = symbol
