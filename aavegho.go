@@ -4,13 +4,13 @@ import "github.com/0xVanfer/chainId"
 
 // Docs: https://docs.gho.xyz/concepts/overview
 var GHOList = map[string]string{
-	chainId.EthereumChainName: "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f", // GHO
+	chainId.EthereumChainName: "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f", // GHO, 0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f
 }
 
 var GHOFlashMinterAddress = map[string]string{
-	chainId.EthereumChainName: "0xb639D208Bcf0589D54FaC24E655C79EC529762B8",
+	chainId.EthereumChainName: "0xb639D208Bcf0589D54FaC24E655C79EC529762B8", // 0xb639d208bcf0589d54fac24e655c79ec529762b8
 }
 
 var GHOUIDataProviderAddress = map[string]string{
-	chainId.EthereumChainName: "0x379c1EDD1A41218bdbFf960a9d5AD2818Bf61aE8",
+	chainId.EthereumChainName: "0x379c1EDD1A41218bdbFf960a9d5AD2818Bf61aE8", // 0x379c1edd1a41218bdbff960a9d5ad2818bf61ae8
 }

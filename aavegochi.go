@@ -6,7 +6,7 @@ import "github.com/0xVanfer/chainId"
 //
 // map[network] = address.
 var AavegochiTokenList = map[string]string{
-	chainId.PolygonChainName: "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7", // GHST
+	chainId.PolygonChainName: "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7", // GHST, 0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7
 }
 
 // Same as AavegochiTokenList.

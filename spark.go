@@ -9,7 +9,7 @@ const SparkProtocol string = "spark"
 //
 // map[network] = address.
 var SDAIList = map[string]string{
-	chainId.EthereumChainName: "0x83f20f44975d03b1b09e64809b757c47f942beea",
+	chainId.EthereumChainName: "0x83F20F44975D03b1b09e64809B757c47f942BEeA", // sDAI, 0x83f20f44975d03b1b09e64809b757c47f942beea
 }
 
 var SparkPoolList = map[string]string{

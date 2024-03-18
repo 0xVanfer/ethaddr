@@ -8,9 +8,12 @@ const OneInchProtocol string = "1inch"
 //
 // map[network] = address.
 var OneInchTokenList = map[string]string{
-	chainId.EthereumChainName: "0x111111111117dc0aa78b770fa6a738034120c302", // 1INCH
+	chainId.EthereumChainName: "0x111111111117dC0aa78b770fA6A738034120C302", // 1INCH, 0x111111111117dc0aa78b770fa6a738034120c302
 	chainId.PolygonChainName:  "0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f", // 1INCH
 }
+
+// 1 Inch token: 1INCH.
+var OINCHLIST = OneInchTokenList
 
 // 1 Inch router V4.
 //

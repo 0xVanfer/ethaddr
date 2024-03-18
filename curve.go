@@ -11,7 +11,7 @@ const CurveProtocol string = "curve"
 //
 // map[network] = address.
 var CurveTokenlist = map[string]string{
-	chainId.EthereumChainName:  "0xd533a949740bb3306d119cc777fa900ba034cd52", // CRV
+	chainId.EthereumChainName:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
 	chainId.AvalancheChainName: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
 	chainId.PolygonChainName:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
 	chainId.ArbitrumChainName:  "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978", // CRV
@@ -19,6 +19,13 @@ var CurveTokenlist = map[string]string{
 
 // Same as CurveTokenlist.
 var CRVList = CurveTokenlist
+
+// Curve USD: crvUSD.
+//
+// map[network] = address.
+var CrvUSDList = map[string]string{
+	chainId.EthereumChainName: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
+}
 
 var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022"
 

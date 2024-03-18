@@ -20,7 +20,7 @@ var KyberOldTokenList = map[string]string{
 //
 // map[network] = address.
 var KyberTokenList = map[string]string{
-	chainId.EthereumChainName:  "0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202", // KNC
+	chainId.EthereumChainName:  "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202", // KNC, 0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202
 	chainId.PolygonChainName:   "0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c", // KNC
 	chainId.BNBSmartChainName:  "0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b", // KNC
 	chainId.AvalancheChainName: "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f", // KNC

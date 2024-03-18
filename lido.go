@@ -11,7 +11,7 @@ const LidoProtocol string = "lido"
 //
 // map[network] = address.
 var LidoTokenList = map[string]string{
-	chainId.EthereumChainName: "0x5a98fcbea516cf06857215779fd812ca3bef1b32", // LDO
+	chainId.EthereumChainName: "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32", // LDO, 0x5a98fcbea516cf06857215779fd812ca3bef1b32
 	chainId.ArbitrumChainName: "0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60", // LDO
 }
 
@@ -29,7 +29,7 @@ var STETHList = map[string]string{
 //
 // map[network] = address.
 var WSTETHList = map[string]string{
-	chainId.EthereumChainName: "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0", // wstETH
+	chainId.EthereumChainName: "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0", // wstETH, 0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0
 	chainId.ArbitrumChainName: "0x5979d7b546e38e414f7e9822514be443a4800529", // wstETH
 	chainId.OptimismChainName: "0x1f32b1c2345538c0c6f582fcb022739c4a194ebb", // wstETH
 	chainId.BaseChainName:     "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452", // wstETH

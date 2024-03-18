@@ -11,23 +11,23 @@ const AaveV2Protocol string = "aave"
 //
 // map[network] = address.
 var AaveIncentivesControllerV2List = map[string]string{
-	chainId.EthereumChainName:  "0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5",
-	chainId.AvalancheChainName: "0x01d83fe6a10d2f2b7af17034343746188272cac9",
+	chainId.EthereumChainName:  "0xd784927Ff2f95ba542BfC824c8a8a98F3495f6b5", // 0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5
+	chainId.AvalancheChainName: "0x01D83Fe6A10D2f2B7AF17034343746188272cAc9", // 0x01d83fe6a10d2f2b7af17034343746188272cac9
 }
 
 // Aave lending pool v2.
 //
 // map[network] = address.
 var AaveLendingPoolV2List = map[string]string{
-	chainId.EthereumChainName:  "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9",
-	chainId.AvalancheChainName: "0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c",
+	chainId.EthereumChainName:  "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9", // 0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9
+	chainId.AvalancheChainName: "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C", // 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c
 }
 
 // Aave oracle v2.
 //
 // map[network] = address.
 var AaveOracleV2List = map[string]string{
-	chainId.EthereumChainName: "0xa50ba011c48153de246e5192c8f9258a2ba79ca9",
+	chainId.EthereumChainName: "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9", // 0xa50ba011c48153de246e5192c8f9258a2ba79ca9
 }
 
 // Aave a tokens v2.

@@ -88,14 +88,34 @@ var AavePoolAddressProviderV3List = map[string]string{
 // map[network][underlying] = address.
 var AaveATokenV3List = map[string]map[string]string{
 	chainId.EthereumChainName: {
-		WETHList[chainId.EthereumChainName]:      "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8", // aEthWETH
-		WSTETHList[chainId.EthereumChainName]:    "0x0b925ed163218f6662a35e0f0371ac234f9e9371", // aEthwstETH
-		WBTCList[chainId.EthereumChainName]:      "0x5ee5bf7ae06d1be5997a1a72006fe6c607ec6de8", // aEthWBTC
-		USDCList[chainId.EthereumChainName]:      "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c", // aEthUSDC
-		DAIList[chainId.EthereumChainName]:       "0x018008bfb33d285247a21d44e50697654f754e63", // aEthDAI
-		LINKList[chainId.EthereumChainName]:      "0x5e8c8a7243651db1384c0ddfdbe39761e8e7e51a", // aEthLINK
-		AaveTokenList[chainId.EthereumChainName]: "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9", // aEthAAVE
-		GHOList[chainId.EthereumChainName]:       "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+		WETHList[chainId.EthereumChainName]:   "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8", // aEthWETH, 0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8
+		WSTETHList[chainId.EthereumChainName]: "0x0B925eD163218f6662a35e0f0371Ac234f9E9371", // aEthwstETH, 0x0b925ed163218f6662a35e0f0371ac234f9e9371
+		WBTCList[chainId.EthereumChainName]:   "0x5Ee5bf7ae06D1Be5997A1A72006FE6C607eC6DE8", // aEthWBTC, 0x5ee5bf7ae06d1be5997a1a72006fe6c607ec6de8
+		USDCList[chainId.EthereumChainName]:   "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c", // aEthUSDC, 0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c
+		DAIList[chainId.EthereumChainName]:    "0x018008bfb33d285247A21d44E50697654f754e63", // aEthDAI, 0x018008bfb33d285247a21d44e50697654f754e63
+		LINKList[chainId.EthereumChainName]:   "0x5E8C8A7243651DB1384C0dDfDbE39761E8e7E51a", // aEthLINK, 0x5e8c8a7243651db1384c0ddfdbe39761e8e7e51a
+		AAVEList[chainId.EthereumChainName]:   "0xA700b4eB416Be35b2911fd5Dee80678ff64fF6C9", // aEthAAVE, 0xa700b4eb416be35b2911fd5dee80678ff64ff6c9
+		CbETHList[chainId.EthereumChainName]:  "0x977b6fc5dE62598B08C85AC8Cf2b745874E8b78c", // aEthcbETH, 0x977b6fc5de62598b08c85ac8cf2b745874e8b78c
+		USDTList[chainId.EthereumChainName]:   "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a", // aEthUSDT, 0x23878914efe38d27c4d67ab83ed1b93a74d4086a
+		RETHList[chainId.EthereumChainName]:   "0xCc9EE9483f662091a1de4795249E24aC0aC2630f", // aEthrETH, 0xcc9ee9483f662091a1de4795249e24ac0ac2630f
+		LUSDList[chainId.EthereumChainName]:   "0x3Fe6a295459FAe07DF8A0ceCC36F37160FE86AA9", // aEthLUSD, 0x3fe6a295459fae07df8a0cecc36f37160fe86aa9
+		CRVList[chainId.EthereumChainName]:    "0x7B95Ec873268a6BFC6427e7a28e396Db9D0ebc65", // aEthCRV, 0x7b95ec873268a6bfc6427e7a28e396db9d0ebc65
+		MKRList[chainId.EthereumChainName]:    "0x8A458A9dc9048e005d22849F470891b840296619", // aEthMKR, 0x8a458a9dc9048e005d22849f470891b840296619
+		SNXList[chainId.EthereumChainName]:    "0xC7B4c17861357B8ABB91F25581E7263E08DCB59c", // aEthSNX, 0xc7b4c17861357b8abb91f25581e7263e08dcb59c
+		BALList[chainId.EthereumChainName]:    "0x2516E7B3F76294e03C42AA4c5b5b4DCE9C436fB8", // aEthBAL, 0x2516e7b3f76294e03c42aa4c5b5b4dce9c436fb8
+		UNIList[chainId.EthereumChainName]:    "0xF6D2224916DDFbbab6e6bd0D1B7034f4Ae0CaB18", // aEthUNI, 0xf6d2224916ddfbbab6e6bd0d1b7034f4ae0cab18
+		LDOList[chainId.EthereumChainName]:    "0x9A44fd41566876A39655f74971a3A6eA0a17a454", // aEthLDO, 0x9a44fd41566876a39655f74971a3a6ea0a17a454
+		ENSList[chainId.EthereumChainName]:    "0x545bD6c032eFdde65A377A6719DEF2796C8E0f2e", // aEthENS, 0x545bd6c032efdde65a377a6719def2796c8e0f2e
+		OINCHLIST[chainId.EthereumChainName]:  "0x71Aef7b30728b9BB371578f36c5A1f1502a5723e", // aEth1INCH, 0x71aef7b30728b9bb371578f36c5a1f1502a5723e
+		FRAXList[chainId.EthereumChainName]:   "0xd4e245848d6E1220DBE62e155d89fa327E43CB06", // aEthFRAX, 0xd4e245848d6e1220dbe62e155d89fa327e43cb06
+		GHOList[chainId.EthereumChainName]:    "0x00907f9921424583e7ffBfEdf84F92B7B2Be4977", // aEthGHO, 0x00907f9921424583e7ffbfedf84f92b7b2be4977
+		RPLList[chainId.EthereumChainName]:    "0xB76CF92076adBF1D9C39294FA8e7A67579FDe357", // aEthRPL, 0xb76cf92076adbf1d9c39294fa8e7a67579fde357
+		SDAIList[chainId.EthereumChainName]:   "0x4C612E3B15b96Ff9A6faED838F8d07d479a8dD4c", // aEthsDAI, 0x4c612e3b15b96ff9a6faed838f8d07d479a8dd4c
+		STGList[chainId.EthereumChainName]:    "0x1bA9843bD4327c6c77011406dE5fA8749F7E3479", // aEthSTG, 0x1ba9843bd4327c6c77011406de5fa8749f7e3479
+		KNCList[chainId.EthereumChainName]:    "0x5b502e3796385E1e9755d7043B9C945C3aCCeC9C", // aEthKNC, 0x5b502e3796385e1e9755d7043b9c945c3accec9c
+		FXSList[chainId.EthereumChainName]:    "0x82F9c5ad306BBa1AD0De49bB5FA6F01bf61085ef", // aEthFXS, 0x82f9c5ad306bba1ad0de49bb5fa6f01bf61085ef
+		CrvUSDList[chainId.EthereumChainName]: "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A", // aEthcrvUSD, 0xb82fa9f31612989525992fcfbb09ab22eff5c85a
+		PyUSDList[chainId.EthereumChainName]:  "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E", // aEthPYUSD, 0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e
 	},
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:  "0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee", // aAvaDAI
@@ -179,14 +199,35 @@ var AaveStaticATokenV3List = map[string]map[string]string{
 // map[network][underlying] = address.
 var AaveSTokenV3List = map[string]map[string]string{
 	chainId.EthereumChainName: {
-		WETHList[chainId.EthereumChainName]:      "0x102633152313c81cd80419b6ecf66d14ad68949a",
-		WSTETHList[chainId.EthereumChainName]:    "0x39739943199c0fbfe9e5f1b5b160cd73a64cb85d",
-		WBTCList[chainId.EthereumChainName]:      "0xa1773f1ccf6db192ad8fe826d15fe1d328b03284",
-		USDCList[chainId.EthereumChainName]:      "0xb0fe3d292f4bd50de902ba5bdf120ad66e9d7a39",
-		DAIList[chainId.EthereumChainName]:       "0x413adac9e2ef8683adf5ddaece8f19613d60d1bb",
-		LINKList[chainId.EthereumChainName]:      "0x63b1129ca97d2b9f97f45670787ac12a9df1110a",
-		AaveTokenList[chainId.EthereumChainName]: "0x268497bf083388b1504270d0e717222d3a87d6f2",
-		GHOList[chainId.EthereumChainName]:       "0x3f3df7266da30102344a813f1a3d07f5f041b5ac",
+		WETHList[chainId.EthereumChainName]:   "0x102633152313C81cD80419b6EcF66d14Ad68949A", // stableDebtEthWETH, 0x102633152313c81cd80419b6ecf66d14ad68949a
+		WSTETHList[chainId.EthereumChainName]: "0x39739943199c0fBFe9E5f1B5B160cd73a64CB85D", // stableDebtEthwstETH, 0x39739943199c0fbfe9e5f1b5b160cd73a64cb85d
+		WBTCList[chainId.EthereumChainName]:   "0xA1773F1ccF6DB192Ad8FE826D15fe1d328B03284", // stableDebtEthWBTC, 0xa1773f1ccf6db192ad8fe826d15fe1d328b03284
+		USDCList[chainId.EthereumChainName]:   "0xB0fe3D292f4bd50De902Ba5bDF120Ad66E9d7a39", // stableDebtEthUSDC, 0xb0fe3d292f4bd50de902ba5bdf120ad66e9d7a39
+		DAIList[chainId.EthereumChainName]:    "0x413AdaC9E2Ef8683ADf5DDAEce8f19613d60D1bb", // stableDebtEthDAI, 0x413adac9e2ef8683adf5ddaece8f19613d60d1bb
+		LINKList[chainId.EthereumChainName]:   "0x63B1129ca97D2b9F97f45670787Ac12a9dF1110a", // stableDebtEthLINK, 0x63b1129ca97d2b9f97f45670787ac12a9df1110a
+		AAVEList[chainId.EthereumChainName]:   "0x268497bF083388B1504270d0E717222d3A87D6F2", // stableDebtEthAAVE, 0x268497bf083388b1504270d0e717222d3a87d6f2
+		CbETHList[chainId.EthereumChainName]:  "0x82bE6012cea6D147B968eBAea5ceEcF6A5b4F493", // stableDebtEthcbETH, 0x82be6012cea6d147b968ebaea5ceecf6a5b4f493
+		USDTList[chainId.EthereumChainName]:   "0x822Fa72Df1F229C3900f5AD6C3Fa2C424D691622", // stableDebtEthUSDT, 0x822fa72df1f229c3900f5ad6c3fa2c424d691622
+		RETHList[chainId.EthereumChainName]:   "0x1d1906f909CAe494c7441604DAfDDDbD0485A925", // stableDebtEthrETH, 0x1d1906f909cae494c7441604dafdddbd0485a925
+		LUSDList[chainId.EthereumChainName]:   "0x37A6B708FDB1483C231961b9a7F145261E815fc3", // stableDebtEthLUSD, 0x37a6b708fdb1483c231961b9a7f145261e815fc3
+		CRVList[chainId.EthereumChainName]:    "0x90D9CD005E553111EB8C9c31Abe9706a186b6048", // stableDebtEthCRV, 0x90d9cd005e553111eb8c9c31abe9706a186b6048
+		MKRList[chainId.EthereumChainName]:    "0x0496372BE7e426D28E89DEBF01f19F014d5938bE", // stableDebtEthMKR, 0x0496372be7e426d28e89debf01f19f014d5938be
+		SNXList[chainId.EthereumChainName]:    "0x478E1ec1A2BeEd94c1407c951E4B9e22d53b2501", // stableDebtEthSNX, 0x478e1ec1a2beed94c1407c951e4b9e22d53b2501
+		BALList[chainId.EthereumChainName]:    "0xB368d45aaAa07ee2c6275Cb320D140b22dE43CDD", // stableDebtEthBAL, 0xb368d45aaaa07ee2c6275cb320d140b22de43cdd
+		UNIList[chainId.EthereumChainName]:    "0x2FEc76324A0463c46f32e74A86D1cf94C02158DC", // stableDebtEthUNI, 0x2fec76324a0463c46f32e74a86d1cf94c02158dc
+		LDOList[chainId.EthereumChainName]:    "0xa0a5bF5781Aeb548db9d4226363B9e89287C5FD2", // stableDebtEthLDO, 0xa0a5bf5781aeb548db9d4226363b9e89287c5fd2
+		ENSList[chainId.EthereumChainName]:    "0x7617d02E311CdE347A0cb45BB7DF2926BBaf5347", // stableDebtEthENS, 0x7617d02e311cde347a0cb45bb7df2926bbaf5347
+		OINCHLIST[chainId.EthereumChainName]:  "0x4b62bFAff61AB3985798e5202D2d167F567D0BCD", // stableDebtEth1INCH, 0x4b62bfaff61ab3985798e5202d2d167f567d0bcd
+		FRAXList[chainId.EthereumChainName]:   "0x219640546c0DFDDCb9ab3bcdA89B324e0a376367", // stableDebtEthFRAX, 0x219640546c0dfddcb9ab3bcda89b324e0a376367
+		GHOList[chainId.EthereumChainName]:    "0x3f3DF7266dA30102344A813F1a3D07f5F041B5AC", // stableDebtEthGHO, 0x3f3df7266da30102344a813f1a3d07f5f041b5ac
+		RPLList[chainId.EthereumChainName]:    "0x41e330fd8F7eA31E2e8F02cC0C9392D1403597B4", // stableDebtEthRPL, 0x41e330fd8f7ea31e2e8f02cc0c9392d1403597b4
+		SDAIList[chainId.EthereumChainName]:   "0x48Bc45f084988bC01933EA93EeFfEBC0416534f6", // stableDebtEthsDAI, 0x48bc45f084988bc01933ea93eeffebc0416534f6
+		STGList[chainId.EthereumChainName]:    "0xc3115D0660b93AeF10F298886ae22E3Dd477E482", // stableDebtEthSTG, 0xc3115d0660b93aef10f298886ae22e3dd477e482
+		KNCList[chainId.EthereumChainName]:    "0xdfEE0C9eA1309cB9611F33972E72a72166fcF548", // stableDebtEthKNC, 0xdfee0c9ea1309cb9611f33972e72a72166fcf548
+		FXSList[chainId.EthereumChainName]:    "0x61dFd349140C239d3B61fEe203Efc811b518a317", // stableDebtEthFXS, 0x61dfd349140c239d3b61fee203efc811b518a317
+		CrvUSDList[chainId.EthereumChainName]: "0xb55C604075D79486b8A329c396Fc711Be54B5330", // stableDebtEthcrvUSD, 0xb55c604075d79486b8a329c396fc711be54b5330
+		PyUSDList[chainId.EthereumChainName]:  "0x5B393DB4c72B1Bd82CE2834F6485d61b137Bc7aC", // stableDebtEthPYUSD, 0x5b393db4c72b1bd82ce2834f6485d61b137bc7ac
+
 	},
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:  "0xd94112b5b62d53c9402e7a60289c6810def1dc9b", // stableDebtAvaDAI
@@ -247,14 +288,34 @@ var AaveSTokenV3List = map[string]map[string]string{
 // map[network][underlying] = address.
 var AaveVTokenV3List = map[string]map[string]string{
 	chainId.EthereumChainName: {
-		WETHList[chainId.EthereumChainName]:      "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
-		WSTETHList[chainId.EthereumChainName]:    "0xc96113eed8cab59cd8a66813bcb0ceb29f06d2e4",
-		WBTCList[chainId.EthereumChainName]:      "0x40aabef1aa8f0eec637e0e7d92fbffb2f26a8b7b",
-		USDCList[chainId.EthereumChainName]:      "0x72e95b8931767c79ba4eee721354d6e99a61d004",
-		DAIList[chainId.EthereumChainName]:       "0xcf8d0c70c850859266f5c338b38f9d663181c314",
-		LINKList[chainId.EthereumChainName]:      "0x4228f8895c7dda20227f6a5c6751b8ebf19a6ba8",
-		AaveTokenList[chainId.EthereumChainName]: "0xbae535520abd9f8c85e58929e0006a2c8b372f74",
-		GHOList[chainId.EthereumChainName]:       "0x786dbff3f1292ae8f92ea68cf93c30b34b1ed04b",
+		WETHList[chainId.EthereumChainName]:   "0xeA51d7853EEFb32b6ee06b1C12E6dcCA88Be0fFE", // variableDebtEthWETH, 0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe
+		WSTETHList[chainId.EthereumChainName]: "0xC96113eED8cAB59cD8A66813bCB0cEb29F06D2e4", // variableDebtEthwstETH, 0xc96113eed8cab59cd8a66813bcb0ceb29f06d2e4
+		WBTCList[chainId.EthereumChainName]:   "0x40aAbEf1aa8f0eEc637E0E7d92fbfFB2F26A8b7B", // variableDebtEthWBTC, 0x40aabef1aa8f0eec637e0e7d92fbffb2f26a8b7b
+		USDCList[chainId.EthereumChainName]:   "0x72E95b8931767C79bA4EeE721354d6E99a61D004", // variableDebtEthUSDC, 0x72e95b8931767c79ba4eee721354d6e99a61d004
+		DAIList[chainId.EthereumChainName]:    "0xcF8d0c70c850859266f5C338b38F9D663181C314", // variableDebtEthDAI, 0xcf8d0c70c850859266f5c338b38f9d663181c314
+		LINKList[chainId.EthereumChainName]:   "0x4228F8895C7dDA20227F6a5c6751b8Ebf19a6ba8", // variableDebtEthLINK, 0x4228f8895c7dda20227f6a5c6751b8ebf19a6ba8
+		AAVEList[chainId.EthereumChainName]:   "0xBae535520Abd9f8C85E58929e0006A2c8B372F74", // variableDebtEthAAVE, 0xbae535520abd9f8c85e58929e0006a2c8b372f74
+		CbETHList[chainId.EthereumChainName]:  "0x0c91bcA95b5FE69164cE583A2ec9429A569798Ed", // variableDebtEthcbETH, 0x0c91bca95b5fe69164ce583a2ec9429a569798ed
+		USDTList[chainId.EthereumChainName]:   "0x6df1C1E379bC5a00a7b4C6e67A203333772f45A8", // variableDebtEthUSDT, 0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8
+		RETHList[chainId.EthereumChainName]:   "0xae8593DD575FE29A9745056aA91C4b746eee62C8", // variableDebtEthrETH, 0xae8593dd575fe29a9745056aa91c4b746eee62c8
+		LUSDList[chainId.EthereumChainName]:   "0x33652e48e4B74D18520f11BfE58Edd2ED2cEc5A2", // variableDebtEthLUSD, 0x33652e48e4b74d18520f11bfe58edd2ed2cec5a2
+		CRVList[chainId.EthereumChainName]:    "0x1b7D3F4b3c032a5AE656e30eeA4e8E1Ba376068F", // variableDebtEthCRV, 0x1b7d3f4b3c032a5ae656e30eea4e8e1ba376068f
+		MKRList[chainId.EthereumChainName]:    "0x6Efc73E54E41b27d2134fF9f98F15550f30DF9B1", // variableDebtEthMKR, 0x6efc73e54e41b27d2134ff9f98f15550f30df9b1
+		SNXList[chainId.EthereumChainName]:    "0x8d0de040e8aAd872eC3c33A3776dE9152D3c34ca", // variableDebtEthSNX, 0x8d0de040e8aad872ec3c33a3776de9152d3c34ca
+		BALList[chainId.EthereumChainName]:    "0x3D3efceb4Ff0966D34d9545D3A2fa2dcdBf451f2", // variableDebtEthBAL, 0x3d3efceb4ff0966d34d9545d3a2fa2dcdbf451f2
+		UNIList[chainId.EthereumChainName]:    "0xF64178Ebd2E2719F2B1233bCb5Ef6DB4bCc4d09a", // variableDebtEthUNI, 0xf64178ebd2e2719f2b1233bcb5ef6db4bcc4d09a
+		LDOList[chainId.EthereumChainName]:    "0xc30808705C01289A3D306ca9CAB081Ba9114eC82", // variableDebtEthLDO, 0xc30808705c01289a3d306ca9cab081ba9114ec82
+		ENSList[chainId.EthereumChainName]:    "0xd180D7fdD4092f07428eFE801E17BC03576b3192", // variableDebtEthENS, 0xd180d7fdd4092f07428efe801e17bc03576b3192
+		OINCHLIST[chainId.EthereumChainName]:  "0xA38fCa8c6Bf9BdA52E76EB78f08CaA3BE7c5A970", // variableDebtEth1INCH, 0xa38fca8c6bf9bda52e76eb78f08caa3be7c5a970
+		FRAXList[chainId.EthereumChainName]:   "0x88B8358F5BC87c2D7E116cCA5b65A9eEb2c5EA3F", // variableDebtEthFRAX, 0x88b8358f5bc87c2d7e116cca5b65a9eeb2c5ea3f
+		GHOList[chainId.EthereumChainName]:    "0x786dBff3f1292ae8F92ea68Cf93c30b34B1ed04B", // variableDebtEthGHO, 0x786dbff3f1292ae8f92ea68cf93c30b34b1ed04b
+		RPLList[chainId.EthereumChainName]:    "0x8988ECA19D502fd8b9CCd03fA3bD20a6f599bc2A", // variableDebtEthRPL, 0x8988eca19d502fd8b9ccd03fa3bd20a6f599bc2a
+		SDAIList[chainId.EthereumChainName]:   "0x8Db9D35e117d8b93C6Ca9b644b25BaD5d9908141", // variableDebtEthsDAI, 0x8db9d35e117d8b93c6ca9b644b25bad5d9908141
+		STGList[chainId.EthereumChainName]:    "0x655568bDd6168325EC7e58Bf39b21A856F906Dc2", // variableDebtEthSTG, 0x655568bdd6168325ec7e58bf39b21a856f906dc2
+		KNCList[chainId.EthereumChainName]:    "0x253127Ffc04981cEA8932F406710661c2f2c3fD2", // variableDebtEthKNC, 0x253127ffc04981cea8932f406710661c2f2c3fd2
+		FXSList[chainId.EthereumChainName]:    "0x68e9f0aD4e6f8F5DB70F6923d4d6d5b225B83b16", // variableDebtEthFXS, 0x68e9f0ad4e6f8f5db70f6923d4d6d5b225b83b16
+		CrvUSDList[chainId.EthereumChainName]: "0x028f7886F3e937f8479efaD64f31B3fE1119857a", // variableDebtEthcrvUSD, 0x028f7886f3e937f8479efad64f31b3fe1119857a
+		PyUSDList[chainId.EthereumChainName]:  "0x57B67e4DE077085Fd0AF2174e9c14871BE664546", // variableDebtEthPYUSD, 0x57b67e4de077085fd0af2174e9c14871be664546
 	},
 	chainId.AvalancheChainName: {
 		DAIeList[chainId.AvalancheChainName]:  "0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc", // variableDebtAvaDAI

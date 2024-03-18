@@ -9,7 +9,7 @@ const EtherAddress string = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 //
 // map[network] = address.
 var USDCList = map[string]string{
-	chainId.EthereumChainName:  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", // USDC
+	chainId.EthereumChainName:  "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", // USDC, 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
 	chainId.AvalancheChainName: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e", // USDC
 	chainId.OptimismChainName:  "0x7f5c764cbc14f9669b88837ca1490cca17c31607", // USDC
 	chainId.PolygonChainName:   "0x2791bca1f2de4661ed88a30c99a7a9449aa84174", // USDC
@@ -22,7 +22,7 @@ var USDCList = map[string]string{
 //
 // map[network] = address.
 var USDTList = map[string]string{
-	chainId.EthereumChainName:  "0xdac17f958d2ee523a2206206994597c13d831ec7", // USDT
+	chainId.EthereumChainName:  "0xdAC17F958D2ee523a2206206994597C13D831ec7", // USDT, 0xdac17f958d2ee523a2206206994597c13d831ec7
 	chainId.AvalancheChainName: "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7", // USDt
 	chainId.OptimismChainName:  "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58", // USDT
 	chainId.PolygonChainName:   "0xc2132d05d31c914a87c6611c10748aeb04b58e8f", // USDT
@@ -34,7 +34,7 @@ var USDTList = map[string]string{
 //
 // map[network] = address.
 var DAIList = map[string]string{
-	chainId.EthereumChainName: "0x6b175474e89094c44da98b954eedeac495271d0f", // DAI
+	chainId.EthereumChainName: "0x6B175474E89094C44Da98b954EedeAC495271d0F", // DAI, 0x6b175474e89094c44da98b954eedeac495271d0f
 	chainId.OptimismChainName: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1", // DAI
 	chainId.PolygonChainName:  "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063", // DAI
 	chainId.ArbitrumChainName: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1", // DAI
@@ -58,7 +58,7 @@ var WETHList = map[string]string{
 	chainId.AvalancheChainName:    "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab", // WETH.e
 	chainId.ArbitrumChainName:     "0x82af49447d8a07e3bd95bd0d56f35241523fbab1", // WETH
 	chainId.BaseChainName:         "0x4200000000000000000000000000000000000006", // WETH
-	chainId.EthereumChainName:     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", // WETH
+	chainId.EthereumChainName:     "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH, 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
 	chainId.OptimismChainName:     "0x4200000000000000000000000000000000000006", // WETH
 	chainId.PolygonChainName:      "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619", // WETH
 	chainId.PolygonZkEVMChainName: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9", // WETH
@@ -77,7 +77,7 @@ var ETHList = map[string]string{
 //
 // map[network] = address.
 var WBTCList = map[string]string{
-	chainId.EthereumChainName:  "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599", // WBTC
+	chainId.EthereumChainName:  "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", // WBTC, 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599
 	chainId.AvalancheChainName: "0x50b7545627a5162f82a992c33b87adc75187b218", // WBTC.e
 	chainId.OptimismChainName:  "0x68f180fcce6836688e9084f035309e29bf0a2095", // WBTC
 	chainId.PolygonChainName:   "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6", // WBTC
