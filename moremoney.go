@@ -6,5 +6,5 @@ import "github.com/0xVanfer/chainId"
 //
 // map[network] = address.
 var MoneyList = map[string]string{
-	chainId.AvalancheChainName: "0x0f577433bf59560ef2a79c124e9ff99fca258948", // MONEY
+	chainId.AvalancheChainName: "0x0f577433Bf59560Ef2a79c124E9Ff99fCa258948", // MONEY, 0x0f577433bf59560ef2a79c124e9ff99fca258948
 }

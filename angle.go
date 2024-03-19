@@ -11,7 +11,7 @@ const AngleProtocol string = "angle"
 //
 // map[network] = address.
 var AngleTokenList = map[string]string{
-	chainId.PolygonChainName: "0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1", // ANGLE
+	chainId.PolygonChainName: "0x900F717EA076E1E7a484ad9DD2dB81CEEc60eBF1", // ANGLE, 0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1
 }
 
 // Same as AngleTokenList.
@@ -21,7 +21,7 @@ var ANGLEList = AngleTokenList
 //
 // map[network] = address.
 var AgEURList = map[string]string{
-	chainId.EthereumChainName: "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8", // agEUR
-	chainId.PolygonChainName:  "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4", // agEUR
-	chainId.ArbitrumChainName: "0xfa5ed56a203466cbbc2430a43c66b9d8723528e7", // agEUR
+	chainId.EthereumChainName: "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8", // agEUR, 0x1a7e4e63778b4f12a199c062f3efdd288afcbce8
+	chainId.PolygonChainName:  "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4", // agEUR, 0xe0b52e49357fd4daf2c15e02058dce6bc0057db4
+	chainId.ArbitrumChainName: "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7", // agEUR, 0xfa5ed56a203466cbbc2430a43c66b9d8723528e7
 }

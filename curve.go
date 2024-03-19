@@ -27,18 +27,18 @@ var CrvUSDList = map[string]string{
 	chainId.EthereumChainName: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
 }
 
-var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022"
+var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022" // 0xdc24316b9ae028f1497c275eb9192a3ea0f67022
 
 // Curve folded pools(a pool folded into other pools).
 //
 // map[network] = []address.
 var CurveFoldedPoolList = map[string][]string{
 	chainId.EthereumChainName: {
-		"0x6c3f90f043a72fa612cbac8115ee7e52bde6e490", // 3crv
-		"0x075b1bb99792c9e1041ba13afef80c91a1e70fb3", // 3btc
+		"0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490", // 3crv, 0x6c3f90f043a72fa612cbac8115ee7e52bde6e490
+		"0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3", // 3btc, 0x075b1bb99792c9e1041ba13afef80c91a1e70fb3
 	},
 	chainId.AvalancheChainName: {
-		"0x1337bedc9d22ecbe766df105c9623922a27963ec", // av3CRV
+		"0x1337BedC9D22ecbe766dF105c9623922A27963EC", // av3CRV, 0x1337bedc9d22ecbe766df105c9623922a27963ec
 	},
 }
 
@@ -46,7 +46,7 @@ var CurveFoldedPoolList = map[string][]string{
 //
 // map[network] = address.
 var CurveGaugeFactoryList = map[string]string{
-	chainId.AvalancheChainName: "0xabc000d88f23bb45525e447528dbf656a9d55bf5",
+	chainId.AvalancheChainName: "0xabC000d88f23Bb45525E447528DBF656A9D55bf5", // 0xabc000d88f23bb45525e447528dbf656a9d55bf5
 }
 
 // Curve pools.
@@ -54,19 +54,19 @@ var CurveGaugeFactoryList = map[string]string{
 // map[network][pool name] = address.
 var CurvePoolsList = map[string]map[string]string{
 	chainId.EthereumChainName: {
-		"ib3CRV":      "0x5282a4ef67d9c33135340fb3289cc1711c13638c", // cyDAI/cyUSDC/cyUSDT
-		"eCRV":        "0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c", // ETH/sETH
-		"steCRV":      "0x06325440d014e39736583c165c2963ba99faf14e", // ETH/stETH
-		"crvRenWSBTC": "0x075b1bb99792c9e1041ba13afef80c91a1e70fb3", // renBTC/wBTC/sBTC
-		"crvRenWBTC":  "0x49849c98ae39fff122806c06791fa73784fb3675", // renBTC/wBTC
-		"oBTC":        "0x2fe94ea3d5d4a175184081439753de15aef9d614", // oBTC/sbtcCRV
-		"pBTC":        "0xde5331ac4b3630f94853ff322b66407e0d6331e8", // pBTC/sbtcCRV
-		"tBTC":        "0x64eda51d3ad40d56b9dfc5554e06f94e1dd786fd", // tBTC/sbtcCRV
-		"bBTC":        "0x410e3e86ef427e30b9235497143881f717d93c2a", // bBTC/sbtcCRV
-		"FRAX3CRV-f":  "0xd632f22692fac7611d2aa1c0d552930d43caed3b", // FRAX/3CRV
-		"LUSD3CRV-f":  "0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca", // LUSD/3CRV
-		"saCRV":       "0x02d341ccb60faaf662bc0554d13778015d1b285c", // aDAI/aSUSD
-		"yveCRV-DAO":  "0xc5bddf9843308380375a611c18b50fb9341f502a", // CRV/3CRV
+		"ib3CRV":      "0x5282a4eF67D9C33135340fB3289cc1711c13638C", // cyDAI/cyUSDC/cyUSDT, 0x5282a4ef67d9c33135340fb3289cc1711c13638c
+		"eCRV":        "0xA3D87FffcE63B53E0d54fAa1cc983B7eB0b74A9c", // ETH/sETH, 0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c
+		"steCRV":      "0x06325440D014e39736583c165C2963BA99fAf14E", // ETH/stETH, 0x06325440d014e39736583c165c2963ba99faf14e
+		"crvRenWSBTC": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3", // renBTC/wBTC/sBTC, 0x075b1bb99792c9e1041ba13afef80c91a1e70fb3
+		"crvRenWBTC":  "0x49849C98ae39Fff122806C06791Fa73784FB3675", // renBTC/wBTC, 0x49849c98ae39fff122806c06791fa73784fb3675
+		"oBTC":        "0x2fE94ea3d5d4a175184081439753DE15AeF9d614", // oBTC/sbtcCRV, 0x2fe94ea3d5d4a175184081439753de15aef9d614
+		"pBTC":        "0xDE5331AC4B3630f94853Ff322B66407e0D6331E8", // pBTC/sbtcCRV, 0xde5331ac4b3630f94853ff322b66407e0d6331e8
+		"tBTC":        "0x64eda51d3Ad40D56b9dFc5554E06F94e1Dd786Fd", // tBTC/sbtcCRV, 0x64eda51d3ad40d56b9dfc5554e06f94e1dd786fd
+		"bBTC":        "0x410e3E86ef427e30B9235497143881f717d93c2A", // bBTC/sbtcCRV, 0x410e3e86ef427e30b9235497143881f717d93c2a
+		"FRAX3CRV-f":  "0xd632f22692FaC7611d2AA1C0D552930D43CAEd3B", // FRAX/3CRV, 0xd632f22692fac7611d2aa1c0d552930d43caed3b
+		"LUSD3CRV-f":  "0xEd279fDD11cA84bEef15AF5D39BB4d4bEE23F0cA", // LUSD/3CRV, 0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca
+		"saCRV":       "0x02d341CcB60fAaf662bC0554d13778015d1b285C", // aDAI/aSUSD, 0x02d341ccb60faaf662bc0554d13778015d1b285c
+		"yveCRV-DAO":  "0xc5bDdf9843308380375a611c18B50Fb9341f502A", // CRV/3CRV, 0xc5bddf9843308380375a611c18b50fb9341f502a
 	},
 }
 

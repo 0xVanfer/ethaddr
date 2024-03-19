@@ -6,10 +6,10 @@ import "github.com/0xVanfer/chainId"
 //
 // map[network] = address.
 var FRAXList = map[string]string{
+	chainId.ArbitrumChainName:  "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F", // FRAX, 0x17fc002b466eec40dae837fc4be5c67993ddbd6f
+	chainId.AvalancheChainName: "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64", // FRAX, 0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64
 	chainId.EthereumChainName:  "0x853d955aCEf822Db058eb8505911ED77F175b99e", // FRAX, 0x853d955acef822db058eb8505911ed77f175b99e
-	chainId.AvalancheChainName: "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64", // FRAX
-	chainId.OptimismChainName:  "0x2e3d870790dc77a83dd1d18184acc7439a53f475", // FRAX
-	chainId.ArbitrumChainName:  "0x17fc002b466eec40dae837fc4be5c67993ddbd6f", // FRAX
+	chainId.OptimismChainName:  "0x2E3D870790dC77A83DD1d18184Acc7439A53f475", // FRAX, 0x2e3d870790dc77a83dd1d18184acc7439a53f475
 }
 
 // Frax share token: FXS.

@@ -6,5 +6,5 @@ import "github.com/0xVanfer/chainId"
 //
 // map[network] = address.
 var ZRXList = map[string]string{
-	chainId.EthereumChainName: "0xe41d2489571d322189246dafa5ebde1f4699f498", // ZRX
+	chainId.EthereumChainName: "0xE41d2489571d322189246DaFA5ebDe1F4699F498", // ZRX, 0xe41d2489571d322189246dafa5ebde1f4699f498
 }

@@ -8,10 +8,10 @@ const YearnProtocol string = "yearn"
 //
 // map[network] = address.
 var YearnTokenList = map[string]string{
-	chainId.EthereumChainName: "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e", // YFI
-	chainId.FantomChainName:   "0x29b0da86e484e1c0029b56e817912d778ac0ec69", // YFI
-	chainId.PolygonChainName:  "0xda537104d6a5edd53c6fbba9a898708e465260b6", // YFI
-	chainId.ArbitrumChainName: "0x82e3a8f066a6989666b031d916c43672085b1582", // YFI
+	chainId.EthereumChainName: "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e", // YFI, 0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e
+	chainId.FantomChainName:   "0x29b0Da86e484E1C0029B56e817912d778aC0EC69", // YFI, 0x29b0da86e484e1c0029b56e817912d778ac0ec69
+	chainId.PolygonChainName:  "0xDA537104D6A5edd53c6fBba9A898708E465260b6", // YFI, 0xda537104d6a5edd53c6fbba9a898708e465260b6
+	chainId.ArbitrumChainName: "0x82e3A8F066a6989666b031d916c43672085b1582", // YFI, 0x82e3a8f066a6989666b031d916c43672085b1582
 }
 
 // Same as YearnTokenList.
@@ -21,9 +21,9 @@ var YFIList = YearnTokenList
 //
 // map[network] = address.
 var WoofyList = map[string]string{
-	chainId.EthereumChainName: "0xd0660cd418a64a1d44e9214ad8e459324d8157f1", // WOOFY
-	chainId.FantomChainName:   "0xd0660cd418a64a1d44e9214ad8e459324d8157f1", // WOOFY
-	chainId.PolygonChainName:  "0xd0660cd418a64a1d44e9214ad8e459324d8157f1", // WOOFY
+	chainId.EthereumChainName: "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
+	chainId.FantomChainName:   "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
+	chainId.PolygonChainName:  "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
 }
 
 // Yearn vault tokens.
@@ -31,25 +31,25 @@ var WoofyList = map[string]string{
 // map[network][underlying] = address.
 var YearnVaultTokenList = map[string]map[string]string{
 	chainId.EthereumChainName: {
-		YearnTokenList[chainId.EthereumChainName]:                "0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1", // yvYFI
-		OneInchTokenList[chainId.EthereumChainName]:              "0xb8c3b7a2a618c552c23b1e4701109a9e756bab67", // yv1INCH
-		WETHList[chainId.EthereumChainName]:                      "0xa258c4606ca8206d8aa700ce2143d7db854d168c", // yvWETH
-		USDCList[chainId.EthereumChainName]:                      "0x5f18c75abdae578b483e5f43f12a39cf75b973a9", // yvUSDC
-		DAIList[chainId.EthereumChainName]:                       "0xda816459f1ab5631232fe5e97a05bbbb94970c95", // yvDAI
-		WBTCList[chainId.EthereumChainName]:                      "0xcb550a6d4c8e3517a939bc79d0c7093eb7cf56b5", // yvWBTC
-		USDTList[chainId.EthereumChainName]:                      "0x7da96a3891add058ada2e826306d812c638d87a7", // yvUSDT
-		CurvePoolsList[chainId.EthereumChainName]["ib3CRV"]:      "0x27b7b1ad7288079a66d12350c828d3c00a6f07d7", // yvCurve-IronBank
-		CurvePoolsList[chainId.EthereumChainName]["eCRV"]:        "0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c", // yvCurve-sETH
-		CurvePoolsList[chainId.EthereumChainName]["steCRV"]:      "0xdcd90c7f6324cfa40d7169ef80b12031770b4325", // yvCurve-stETH
-		CurvePoolsList[chainId.EthereumChainName]["crvRenWSBTC"]: "0x8414db07a7f743debafb402070ab01a4e0d2e45e", // yvCurve-sBTC
-		CurvePoolsList[chainId.EthereumChainName]["crvRenWBTC"]:  "0x7047f90229a057c13bf847c0744d646cfb6c9e1a", // yvCurve-renBTC
-		CurvePoolsList[chainId.EthereumChainName]["oBTC"]:        "0xe9dc63083c464d6edccff23444ff3cfc6886f6fb", // yvCurve-oBTC
-		CurvePoolsList[chainId.EthereumChainName]["pBTC"]:        "0x3c5df3077bcf800640b5dae8c91106575a4826e6", // yvCurve-pBTC
-		CurvePoolsList[chainId.EthereumChainName]["tBTC"]:        "0x23d3d0f1c697247d5e0a9efb37d8b0ed0c464f7f", // yvCurve-tBTC
-		CurvePoolsList[chainId.EthereumChainName]["bBTC"]:        "0x8fa3a9ecd9efb07a8ce90a6eb014cf3c0e3b32ef", // yvCurve-bBTC
-		CurvePoolsList[chainId.EthereumChainName]["FRAX3CRV-f"]:  "0xb4ada607b9d6b2c9ee07a275e9616b84ac560139", // yvCurve-FRAX
-		CurvePoolsList[chainId.EthereumChainName]["LUSD3CRV-f"]:  "0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6", // yvCurve-LUSD
-		CurvePoolsList[chainId.EthereumChainName]["saCRV"]:       "0xb4d1be44bff40ad6e506edf43156577a3f8672ec", // yvCurve-sAave
-		CurvePoolsList[chainId.EthereumChainName]["yveCRV-DAO"]:  "0x9d409a0a012cfba9b15f6d4b36ac57a46966ab9a", // yvBOOST
+		YearnTokenList[chainId.EthereumChainName]:                "0xE14d13d8B3b85aF791b2AADD661cDBd5E6097Db1", // yvYFI, 0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1
+		OINCHLIST[chainId.EthereumChainName]:                     "0xB8C3B7A2A618C552C23B1E4701109a9E756Bab67", // yv1INCH, 0xb8c3b7a2a618c552c23b1e4701109a9e756bab67
+		WETHList[chainId.EthereumChainName]:                      "0xa258C4606Ca8206D8aA700cE2143D7db854D168c", // yvWETH, 0xa258c4606ca8206d8aa700ce2143d7db854d168c
+		USDCList[chainId.EthereumChainName]:                      "0x5f18C75AbDAe578b483E5F43f12a39cF75b973a9", // yvUSDC, 0x5f18c75abdae578b483e5f43f12a39cf75b973a9
+		DAIList[chainId.EthereumChainName]:                       "0xdA816459F1AB5631232FE5e97a05BBBb94970c95", // yvDAI, 0xda816459f1ab5631232fe5e97a05bbbb94970c95
+		WBTCList[chainId.EthereumChainName]:                      "0xcB550A6D4C8e3517A939BC79d0c7093eb7cF56B5", // yvWBTC, 0xcb550a6d4c8e3517a939bc79d0c7093eb7cf56b5
+		USDTList[chainId.EthereumChainName]:                      "0x7Da96a3891Add058AdA2E826306D812C638D87a7", // yvUSDT, 0x7da96a3891add058ada2e826306d812c638d87a7
+		CurvePoolsList[chainId.EthereumChainName]["ib3CRV"]:      "0x27b7b1ad7288079A66d12350c828D3C00A6F07d7", // yvCurve-IronBank, 0x27b7b1ad7288079a66d12350c828d3c00a6f07d7
+		CurvePoolsList[chainId.EthereumChainName]["eCRV"]:        "0xA3D87FffcE63B53E0d54fAa1cc983B7eB0b74A9c", // yvCurve-sETH, 0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c
+		CurvePoolsList[chainId.EthereumChainName]["steCRV"]:      "0xdCD90C7f6324cfa40d7169ef80b12031770B4325", // yvCurve-stETH, 0xdcd90c7f6324cfa40d7169ef80b12031770b4325
+		CurvePoolsList[chainId.EthereumChainName]["crvRenWSBTC"]: "0x8414Db07a7F743dEbaFb402070AB01a4E0d2E45e", // yvCurve-sBTC, 0x8414db07a7f743debafb402070ab01a4e0d2e45e
+		CurvePoolsList[chainId.EthereumChainName]["crvRenWBTC"]:  "0x7047F90229a057C13BF847C0744D646CFb6c9E1A", // yvCurve-renBTC, 0x7047f90229a057c13bf847c0744d646cfb6c9e1a
+		CurvePoolsList[chainId.EthereumChainName]["oBTC"]:        "0xe9Dc63083c464d6EDcCFf23444fF3CFc6886f6FB", // yvCurve-oBTC, 0xe9dc63083c464d6edccff23444ff3cfc6886f6fb
+		CurvePoolsList[chainId.EthereumChainName]["pBTC"]:        "0x3c5DF3077BcF800640B5DAE8c91106575a4826E6", // yvCurve-pBTC, 0x3c5df3077bcf800640b5dae8c91106575a4826e6
+		CurvePoolsList[chainId.EthereumChainName]["tBTC"]:        "0x23D3D0f1c697247d5e0a9efB37d8b0ED0C464f7f", // yvCurve-tBTC, 0x23d3d0f1c697247d5e0a9efb37d8b0ed0c464f7f
+		CurvePoolsList[chainId.EthereumChainName]["bBTC"]:        "0x8fA3A9ecd9EFb07A8CE90A6eb014CF3c0E3B32Ef", // yvCurve-bBTC, 0x8fa3a9ecd9efb07a8ce90a6eb014cf3c0e3b32ef
+		CurvePoolsList[chainId.EthereumChainName]["FRAX3CRV-f"]:  "0xB4AdA607B9d6b2c9Ee07A275e9616B84AC560139", // yvCurve-FRAX, 0xb4ada607b9d6b2c9ee07a275e9616b84ac560139
+		CurvePoolsList[chainId.EthereumChainName]["LUSD3CRV-f"]:  "0x5fA5B62c8AF877CB37031e0a3B2f34A78e3C56A6", // yvCurve-LUSD, 0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6
+		CurvePoolsList[chainId.EthereumChainName]["saCRV"]:       "0xb4D1Be44BfF40ad6e506edf43156577a3f8672eC", // yvCurve-sAave, 0xb4d1be44bff40ad6e506edf43156577a3f8672ec
+		CurvePoolsList[chainId.EthereumChainName]["yveCRV-DAO"]:  "0x9d409a0A012CFbA9B15F6D4B36Ac57A46966Ab9a", // yvBOOST, 0x9d409a0a012cfba9b15f6d4b36ac57a46966ab9a
 	},
 }

@@ -11,7 +11,7 @@ const MorphoBlueProtocol string = "morphoblue"
 //
 // map[network] = address.
 var MorphoTokenList = map[string]string{
-	chainId.EthereumChainName: "0x9994E35Db50125E0DF82e4c2dde62496CE330999", // MORPHO
+	chainId.EthereumChainName: "0x9994E35Db50125E0DF82e4c2dde62496CE330999", // MORPHO, 0x9994e35db50125e0df82e4c2dde62496ce330999
 }
 
 var MORPHOList = MorphoTokenList
