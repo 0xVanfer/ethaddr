@@ -1,7 +1,5 @@
 package ethaddr
 
-import "github.com/0xVanfer/chainId"
-
 // Docs: https://docs.convexfinance.com/convexfinance/
 //
 // Deployed contracts: https://docs.convexfinance.com/convexfinance/faq/contract-addresses
@@ -11,7 +9,7 @@ const ConvexProtocol string = "convex"
 //
 // map[network] = address.
 var ConvexTokenList = map[string]string{
-	chainId.EthereumChainName: "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B", // CVX, 0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b
+	chainEthereum: "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B", // CVX, 0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b
 }
 
 // Same as ConvexTokenList.

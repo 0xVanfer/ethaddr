@@ -1,7 +1,5 @@
 package ethaddr
 
-import "github.com/0xVanfer/chainId"
-
 // Docs: https://curve.readthedocs.io/
 //
 // Deployed contracts: https://curve.readthedocs.io/ref-addresses.html
@@ -11,10 +9,10 @@ const CurveProtocol string = "curve"
 //
 // map[network] = address.
 var CurveTokenlist = map[string]string{
-	chainId.EthereumChainName:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
-	chainId.AvalancheChainName: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
-	chainId.PolygonChainName:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
-	chainId.ArbitrumChainName:  "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978", // CRV
+	chainEthereum:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
+	chainAvalanche: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
+	chainPolygon:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
+	chainArbitrum:  "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978", // CRV
 }
 
 // Same as CurveTokenlist.
@@ -24,7 +22,7 @@ var CRVList = CurveTokenlist
 //
 // map[network] = address.
 var CrvUSDList = map[string]string{
-	chainId.EthereumChainName: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
+	chainEthereum: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
 }
 
 var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022" // 0xdc24316b9ae028f1497c275eb9192a3ea0f67022
@@ -33,11 +31,11 @@ var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67
 //
 // map[network] = []address.
 var CurveFoldedPoolList = map[string][]string{
-	chainId.EthereumChainName: {
+	chainEthereum: {
 		"0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490", // 3crv, 0x6c3f90f043a72fa612cbac8115ee7e52bde6e490
 		"0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3", // 3btc, 0x075b1bb99792c9e1041ba13afef80c91a1e70fb3
 	},
-	chainId.AvalancheChainName: {
+	chainAvalanche: {
 		"0x1337BedC9D22ecbe766dF105c9623922A27963EC", // av3CRV, 0x1337bedc9d22ecbe766df105c9623922a27963ec
 	},
 }
@@ -46,14 +44,14 @@ var CurveFoldedPoolList = map[string][]string{
 //
 // map[network] = address.
 var CurveGaugeFactoryList = map[string]string{
-	chainId.AvalancheChainName: "0xabC000d88f23Bb45525E447528DBF656A9D55bf5", // 0xabc000d88f23bb45525e447528dbf656a9d55bf5
+	chainAvalanche: "0xabC000d88f23Bb45525E447528DBF656A9D55bf5", // 0xabc000d88f23bb45525e447528dbf656a9d55bf5
 }
 
 // Curve pools.
 //
 // map[network][pool name] = address.
 var CurvePoolsList = map[string]map[string]string{
-	chainId.EthereumChainName: {
+	chainEthereum: {
 		"ib3CRV":      "0x5282a4eF67D9C33135340fB3289cc1711c13638C", // cyDAI/cyUSDC/cyUSDT, 0x5282a4ef67d9c33135340fb3289cc1711c13638c
 		"eCRV":        "0xA3D87FffcE63B53E0d54fAa1cc983B7eB0b74A9c", // ETH/sETH, 0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c
 		"steCRV":      "0x06325440D014e39736583c165C2963BA99fAf14E", // ETH/stETH, 0x06325440d014e39736583c165c2963ba99faf14e
@@ -74,7 +72,7 @@ var CurvePoolsList = map[string]map[string]string{
 //
 // map[network][gauge type] = []address.
 var CurveGauges = map[string]map[string][]string{
-	chainId.EthereumChainName: {
+	chainEthereum: {
 		"liquidity gauge": {
 			"0x7ca5b0a2910B33e9759DC7dDB0413949071D7575", // compound
 			"0xBC89cd85491d81C6AD2954E6d0362Ee29fCa8F53", // usdt

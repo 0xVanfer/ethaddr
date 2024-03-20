@@ -1,7 +1,5 @@
 package ethaddr
 
-import "github.com/0xVanfer/chainId"
-
 // WARNING: Platypus was dead and relaunched on Jan.2024.
 
 // Website: https://platypus.finance/
@@ -15,7 +13,7 @@ const PlatypusProtocol string = "platypus"
 //
 // map[network] = address.
 var PlatypusTokenList = map[string]string{
-	chainId.AvalancheChainName: "0x22d4002028f537599bE9f666d1c4Fa138522f9c8", // PTP, 0x22d4002028f537599be9f666d1c4fa138522f9c8
+	chainAvalanche: "0x22d4002028f537599bE9f666d1c4Fa138522f9c8", // PTP, 0x22d4002028f537599be9f666d1c4fa138522f9c8
 }
 
 // Same as PlatypusTokenList.
@@ -27,7 +25,7 @@ var PTPList = PlatypusTokenList
 //
 // map[network] = address.
 var PlatypusvePTPList = map[string]string{
-	chainId.AvalancheChainName: "0x5857019c749147EEE22b1Fe63500F237F3c1B692", // vePTP, 0x5857019c749147eee22b1fe63500f237f3c1b692
+	chainAvalanche: "0x5857019c749147EEE22b1Fe63500F237F3c1B692", // vePTP, 0x5857019c749147eee22b1fe63500f237f3c1b692
 }
 
 // WARNING: Platypus has dead and relaunched. They might have deployed new contracts and the addresses here might be out dated.
@@ -36,7 +34,7 @@ var PlatypusvePTPList = map[string]string{
 //
 // map[network] = address.
 var PlatypusxPTPList = map[string]string{
-	chainId.AvalancheChainName: "0x060556209E507d30f2167a101bFC6D256Ed2f3e1", // xPTP, 0x060556209e507d30f2167a101bfc6d256ed2f3e1
+	chainAvalanche: "0x060556209E507d30f2167a101bFC6D256Ed2f3e1", // xPTP, 0x060556209e507d30f2167a101bfc6d256ed2f3e1
 }
 
 // WARNING: Platypus has dead and relaunched. They might have deployed new contracts and the addresses here might be out dated.
@@ -71,7 +69,7 @@ const (
 //
 // map[network][pool name] = address.
 var PlatypusRouterList = map[string]map[string]string{
-	chainId.AvalancheChainName: {
+	chainAvalanche: {
 		// main
 		PlatypusMainPoolsName: "0x66357dCaCe80431aee0A7507e2E361B7e2402370", // 0x66357dcace80431aee0a7507e2e361b7e2402370
 
@@ -95,7 +93,7 @@ var PlatypusRouterList = map[string]map[string]string{
 //
 // map[network] = address.
 var PlatypusMasterPlatypusV2List = map[string]string{
-	chainId.AvalancheChainName: "0x68c5f4374228BEEdFa078e77b5ed93C28a2f713E", // 0x68c5f4374228beedfa078e77b5ed93c28a2f713e
+	chainAvalanche: "0x68c5f4374228BEEdFa078e77b5ed93C28a2f713E", // 0x68c5f4374228beedfa078e77b5ed93c28a2f713e
 }
 
 // WARNING: Platypus has dead and relaunched. They might have deployed new contracts and the addresses here might be out dated.
@@ -104,7 +102,7 @@ var PlatypusMasterPlatypusV2List = map[string]string{
 //
 // map[network] = address.
 var PlatypusMasterPlatypusV4List = map[string]string{
-	chainId.AvalancheChainName: "0xfF6934aAC9C94E1C39358D4fDCF70aeca77D0AB0", // 0xff6934aac9c94e1c39358d4fdcf70aeca77d0ab0
+	chainAvalanche: "0xfF6934aAC9C94E1C39358D4fDCF70aeca77D0AB0", // 0xff6934aac9c94e1c39358d4fdcf70aeca77d0ab0
 }
 
 // WARNING: Platypus has dead and relaunched. They might have deployed new contracts and the addresses here might be out dated.
@@ -178,53 +176,53 @@ const (
 //
 // map[network][pool name][underlying] = address.
 var PlatypusLpList = map[string]map[string]map[string]string{
-	chainId.AvalancheChainName: {
+	chainAvalanche: {
 		// main pools
 		PlatypusMainPoolsName: {
-			DAIeList[chainId.AvalancheChainName]:  PlatypusLpDAIeAddress,
-			USDCList[chainId.AvalancheChainName]:  PlatypusLpUSDCAddress,
-			USDCeList[chainId.AvalancheChainName]: PlatypusLpUSDCeAddress,
-			USDTList[chainId.AvalancheChainName]:  PlatypusLpUSDTAddress,
-			USDTeList[chainId.AvalancheChainName]: PlatypusLpUSDTeAddress,
-			BUSDList[chainId.AvalancheChainName]:  PlatypusLpBUSDAddress,
+			DAIeList[chainAvalanche]:  PlatypusLpDAIeAddress,
+			USDCList[chainAvalanche]:  PlatypusLpUSDCAddress,
+			USDCeList[chainAvalanche]: PlatypusLpUSDCeAddress,
+			USDTList[chainAvalanche]:  PlatypusLpUSDTAddress,
+			USDTeList[chainAvalanche]: PlatypusLpUSDTeAddress,
+			BUSDList[chainAvalanche]:  PlatypusLpBUSDAddress,
 		},
 
 		// USDC - FRAX
 		Platypus_USDC_FRAX_PairName: {
-			USDCList[chainId.AvalancheChainName]: PlatypusLp_USDC_FRAX_USDC_Address,
-			FRAXList[chainId.AvalancheChainName]: PlatypusLp_USDC_FRAX_FRAX_Address,
+			USDCList[chainAvalanche]: PlatypusLp_USDC_FRAX_USDC_Address,
+			FRAXList[chainAvalanche]: PlatypusLp_USDC_FRAX_FRAX_Address,
 		},
 		// USDC - MIM
 		Platypus_USDC_MIM_PairName: {
-			USDCList[chainId.AvalancheChainName]: PlatypusLp_USDC_MIM_USDC_Address,
-			MIMList[chainId.AvalancheChainName]:  PlatypusLp_USDC_MIM_MIM_Address,
+			USDCList[chainAvalanche]: PlatypusLp_USDC_MIM_USDC_Address,
+			MIMList[chainAvalanche]:  PlatypusLp_USDC_MIM_MIM_Address,
 		},
 		// USDC - YUSD
 		Platypus_USDC_YUSD_PairName: {
-			USDCList[chainId.AvalancheChainName]: PlatypusLp_USDC_YUSD_USDC_Address,
-			YUSDList[chainId.AvalancheChainName]: PlatypusLp_USDC_YUSD_YUSD_Address,
+			USDCList[chainAvalanche]: PlatypusLp_USDC_YUSD_USDC_Address,
+			YUSDList[chainAvalanche]: PlatypusLp_USDC_YUSD_YUSD_Address,
 		},
 		// USDC - MONEY
 		Platypus_USDC_MONEY_PairName: {
-			USDCList[chainId.AvalancheChainName]:  PlatypusLp_USDC_MONEY_USDC_Address,
-			MoneyList[chainId.AvalancheChainName]: PlatypusLp_USDC_MONEY_MONEY_Address,
+			USDCList[chainAvalanche]:  PlatypusLp_USDC_MONEY_USDC_Address,
+			MoneyList[chainAvalanche]: PlatypusLp_USDC_MONEY_MONEY_Address,
 		},
 
 		// BTC.b - WBTC.e
 		Platypus_BTCb_WBTCe_PairName: {
-			WBTCList[chainId.AvalancheChainName]: PlatypusLp_BTCb_WBTCe_WBTCe_Address,
-			BTCbList[chainId.AvalancheChainName]: PlatypusLp_BTCb_WBTCe_BTCb_Address,
+			WBTCList[chainAvalanche]: PlatypusLp_BTCb_WBTCe_WBTCe_Address,
+			BTCbList[chainAvalanche]: PlatypusLp_BTCb_WBTCe_BTCb_Address,
 		},
 
 		// AVAX - sAVAX
 		Platypus_AVAX_sAVAX_PairName: {
-			WAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_sAVAX_AVAX_Address,
-			SAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_sAVAX_sAVAX_Address,
+			WAVAXList[chainAvalanche]: PlatypusLp_AVAX_sAVAX_AVAX_Address,
+			SAVAXList[chainAvalanche]: PlatypusLp_AVAX_sAVAX_sAVAX_Address,
 		},
 		// AVAX - yyAVAX
 		Platypus_AVAX_yyAVAX_PairName: {
-			WAVAXList[chainId.AvalancheChainName]:  PlatypusLp_AVAX_yyAVAX_AVAX_Address,
-			YyAVAXList[chainId.AvalancheChainName]: PlatypusLp_AVAX_yyAVAX_yyAVAX_Address,
+			WAVAXList[chainAvalanche]:  PlatypusLp_AVAX_yyAVAX_AVAX_Address,
+			YyAVAXList[chainAvalanche]: PlatypusLp_AVAX_yyAVAX_yyAVAX_Address,
 		},
 		"PlatypusDeprecated": {
 			"mim": PlatypusLpMIMAddress,

@@ -1,7 +1,5 @@
 package ethaddr
 
-import "github.com/0xVanfer/chainId"
-
 // Blast L2 addresses.
 var (
 	BlastYieldContract                 = "0x4300000000000000000000000000000000000002"
@@ -20,5 +18,5 @@ var (
 //
 // map[network] = address
 var USDBList = map[string]string{
-	chainId.BlastChainName: "0x4200000000000000000000000000000000000022", // 0x4200000000000000000000000000000000000022
+	chainBlast: "0x4200000000000000000000000000000000000022", // 0x4200000000000000000000000000000000000022
 }
