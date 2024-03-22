@@ -4,7 +4,7 @@ package ethaddr
 //
 // map[network] = address.
 var AmpleforthTokenList = map[string]string{
-	chainEthereum: "0xD46bA6D942050d489DBd938a2C909A5d5039A161", // AMPL, 0xd46ba6d942050d489dbd938a2c909a5d5039a161
+	ChainEthereum: "0xD46bA6D942050d489DBd938a2C909A5d5039A161", // AMPL, 0xd46ba6d942050d489dbd938a2c909a5d5039a161
 }
 
 // Same as AmpleforthTokenList.

@@ -6,15 +6,15 @@ package ethaddr
 var WrappedNativeTokenList = map[string]string{
 	// ETH and ETH L2s.
 
-	chainEthereum:  WETHList[chainEthereum],
-	chainArbitrum:  WETHList[chainArbitrum],
-	chainBase:      WETHList[chainBase],
-	chainOptimism:  WETHList[chainOptimism],
-	chainPolygonZk: WETHList[chainPolygonZk],
-	chainScroll:    WETHList[chainScroll],
+	ChainEthereum:  WETHList[ChainEthereum],
+	ChainArbitrum:  WETHList[ChainArbitrum],
+	ChainBase:      WETHList[ChainBase],
+	ChainOptimism:  WETHList[ChainOptimism],
+	ChainPolygonZk: WETHList[ChainPolygonZk],
+	ChainScroll:    WETHList[ChainScroll],
 
-	chainAvalanche: WAVAXList[chainAvalanche],
-	chainBSC:       WBNBList[chainBSC],
-	chainFantom:    WFTMList[chainFantom],
-	chainPolygon:   WMATICList[chainPolygon],
+	ChainAvalanche: WAVAXList[ChainAvalanche],
+	ChainBSC:       WBNBList[ChainBSC],
+	ChainFantom:    WFTMList[ChainFantom],
+	ChainPolygon:   WMATICList[ChainPolygon],
 }
