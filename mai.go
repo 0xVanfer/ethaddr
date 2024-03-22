@@ -6,6 +6,7 @@ package ethaddr
 var MAIList = map[string]string{
 	chainArbitrum:  "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d", // MAI, 0x3f56e0c36d275367b8c502090edf38289b3dea0d
 	chainAvalanche: "0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b", // MAI, 0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b
+	chainOptimism:  "0xdFA46478F9e5EA86d57387849598dbFB2e964b02", // MAI, 0xdfa46478f9e5ea86d57387849598dbfb2e964b02
 }
 
 // Mai MATIC: miMATIC.

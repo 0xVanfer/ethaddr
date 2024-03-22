@@ -1,5 +1,7 @@
 package ethaddr
 
+// WARNING: Kyber was hacked and has very little tvl now. Mar.22.2024
+//
 // Docs: https://docs.kyberswap.com/
 //
 // Deployed contracts: https://docs.kyberswap.com/liquidity-solutions/kyberswap-classic/contracts/classic-contract-addresses

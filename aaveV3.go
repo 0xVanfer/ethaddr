@@ -1,10 +1,14 @@
 package ethaddr
 
+// Website: https://aave.com/
+//
 // Docs: https://docs.aave.com/developers/getting-started/readme
 //
 // Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
 //
 // AToken, VToken, underlying: https://github.com/bgd-labs/aave-address-book/blob/main/tokenlist.json
+//
+// X (twitter): https://twitter.com/aave
 const AaveV3Protocol string = "aavev3"
 
 // Aave incentive controller V3.
@@ -85,6 +89,52 @@ var AavePoolAddressProviderV3List = map[string]string{
 //
 // map[network][underlying] = address.
 var AaveATokenV3List = map[string]map[string]string{
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainArbitrum: {
+		DAIList[chainArbitrum]:    "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aArbDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
+		LINKList[chainArbitrum]:   "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aArb, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		USDCeList[chainArbitrum]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aArbUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
+		WBTCList[chainArbitrum]:   "0x078f358208685046a11C85e8ad32895DED33A249", // aArb, 0x078f358208685046a11c85e8ad32895ded33a249
+		WETHList[chainArbitrum]:   "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aArb, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[chainArbitrum]:   "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aArb, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEList[chainArbitrum]:   "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aArb, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		EURSList[chainArbitrum]:   "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aArbEURS, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
+		WSTETHList[chainArbitrum]: "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aArb, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		MAIList[chainArbitrum]:    "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aArb, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		RETHList[chainArbitrum]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aArb, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		LUSDList[chainArbitrum]:   "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aArb, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+		USDCList[chainArbitrum]:   "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aArb, 0x724dc807b04555b71ed48a6896b6f41593b8c637
+		FRAXList[chainArbitrum]:   "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aArb, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
+		ARBList[chainArbitrum]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aArb, 0x6533afac2e7bccb20dca161449a13a32d391fb00
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainAvalanche: {
+		DAIeList[chainAvalanche]:  "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aAvaDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
+		LINKList[chainAvalanche]:  "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aAvaLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		USDCList[chainAvalanche]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aAvaUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
+		WBTCeList[chainAvalanche]: "0x078f358208685046a11C85e8ad32895DED33A249", // aAvaWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
+		WETHeList[chainAvalanche]: "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aAvaWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[chainAvalanche]:  "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aAvaUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEeList[chainAvalanche]: "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aAvaAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		WAVAXList[chainAvalanche]: "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aAvaWAVAX, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
+		SAVAXList[chainAvalanche]: "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aAvaSAVAX, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		FRAXList[chainAvalanche]:  "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aAvaFRAX, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		MAIList[chainAvalanche]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aAvaMAI, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		BTCbList[chainAvalanche]:  "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aAvaBTC.b, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainBase: {
+		WETHList[chainBase]:   "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7", // aBasWETH, 0xd4a0e0b9149bcee3c920d2e00b5de09138fd8bb7
+		CbETHList[chainBase]:  "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad", // aBascbETH, 0xcf3d55c10db69f28fd1a75bd73f3d8a2d9c595ad
+		USDbCList[chainBase]:  "0x0a1d576f3eFeF75b330424287a95A366e8281D54", // aBasUSDbC, 0x0a1d576f3efef75b330424287a95a366e8281d54
+		WSTETHList[chainBase]: "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D", // aBaswstETH, 0x99cbc45ea5bb7ef3a5bc08fb1b7e56bb2442ef0d
+		USDCList[chainBase]:   "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB", // aBasUSDC, 0x4e65fe4dba92790696d040ac24aa414708f5c0ab
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainEthereum: {
 		WETHList[chainEthereum]:   "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8", // aEthWETH, 0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8
 		WSTETHList[chainEthereum]: "0x0B925eD163218f6662a35e0f0371Ac234f9E9371", // aEthwstETH, 0x0b925ed163218f6662a35e0f0371ac234f9e9371
@@ -115,67 +165,48 @@ var AaveATokenV3List = map[string]map[string]string{
 		CrvUSDList[chainEthereum]: "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A", // aEthcrvUSD, 0xb82fa9f31612989525992fcfbb09ab22eff5c85a
 		PyUSDList[chainEthereum]:  "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E", // aEthPYUSD, 0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e
 	},
-	chainAvalanche: {
-		DAIeList[chainAvalanche]:  "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aAvaDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		USDCList[chainAvalanche]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aAvaUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		USDTList[chainAvalanche]:  "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aAvaUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		WETHList[chainAvalanche]:  "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aAvaWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
-		WBTCList[chainAvalanche]:  "0x078f358208685046a11C85e8ad32895DED33A249", // aAvaWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
-		WAVAXList[chainAvalanche]: "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aAvaWAVAX, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-		LINKList[chainAvalanche]:  "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aAvaLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
-		AAVEList[chainAvalanche]:  "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aAvaAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
-		SAVAXList[chainAvalanche]: "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aAvaSAVAX, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
-		BTCbList[chainAvalanche]:  "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aAvaBTC.b, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
-		FRAXList[chainAvalanche]:  "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aAvaFRAX, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
-		MAIList[chainAvalanche]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aAvaMAI, 0x8eb270e296023e9d92081fdf967ddd7878724424
-	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainOptimism: {
-		DAIList[chainOptimism]:  "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aOptDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		USDCList[chainOptimism]: "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aOptUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		USDTList[chainOptimism]: "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aOptUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		WETHList[chainOptimism]: "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aOptWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
-		WBTCList[chainOptimism]: "0x078f358208685046a11C85e8ad32895DED33A249", // aOptWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
-		SUSDList[chainOptimism]: "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aOptSUSD, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-		LINKList[chainOptimism]: "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aOptLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
-		AAVEList[chainOptimism]: "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aOptAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		DAIList[chainOptimism]:    "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aOptDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
+		LINKList[chainOptimism]:   "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aOptLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		USDCeList[chainOptimism]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aOptUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
+		WBTCList[chainOptimism]:   "0x078f358208685046a11C85e8ad32895DED33A249", // aOptWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
+		WETHList[chainOptimism]:   "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aOptWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[chainOptimism]:   "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aOptUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEList[chainOptimism]:   "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aOptAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		SUSDList[chainOptimism]:   "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aOptSUSD, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
+		OPList[chainOptimism]:     "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aOpt, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		WSTETHList[chainOptimism]: "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aOpt, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		LUSDList[chainOptimism]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aOpt, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		MAIList[chainOptimism]:    "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aOpt, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+		RETHList[chainOptimism]:   "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aOpt, 0x724dc807b04555b71ed48a6896b6f41593b8c637
+		USDCList[chainOptimism]:   "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aOpt, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
 	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainPolygon: {
-		AgEURList[chainPolygon]:   "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77", // aPolAGEUR,0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77
 		DAIList[chainPolygon]:     "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aPolDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		EURSList[chainPolygon]:    "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aPol, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
-		JEURList[chainPolygon]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aPol, 0x6533afac2e7bccb20dca161449a13a32d391fb00
-		MiMATICList[chainPolygon]: "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D", // aPol, 0xebe517846d0f36eced99c735cbf6131e1feb775d
-		USDCList[chainPolygon]:    "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aPolUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		USDTList[chainPolygon]:    "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aPol, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		AAVEList[chainPolygon]:    "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aPol, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
-		BALList[chainPolygon]:     "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aPol, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
-		CRVList[chainPolygon]:     "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aPol, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
-		DPIList[chainPolygon]:     "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aPol, 0x724dc807b04555b71ed48a6896b6f41593b8c637
-		GHSTList[chainPolygon]:    "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aPol, 0x8eb270e296023e9d92081fdf967ddd7878724424
 		LINKList[chainPolygon]:    "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aPol, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
-		MaticXList[chainPolygon]:  "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE", // aPol, 0x80ca0d8c38d2e2bcbab66aa1648bd1c7160500fe
-		STMATICList[chainPolygon]: "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9", // aPol, 0xea1132120ddcdda2f119e99fa7a27a0d036f7ac9
-		SUSHIList[chainPolygon]:   "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aPol, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		USDCeList[chainPolygon]:   "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aPolUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
 		WBTCList[chainPolygon]:    "0x078f358208685046a11C85e8ad32895DED33A249", // aPol, 0x078f358208685046a11c85e8ad32895ded33a249
 		WETHList[chainPolygon]:    "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aPol, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[chainPolygon]:    "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aPol, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEList[chainPolygon]:    "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aPol, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
 		WMATICList[chainPolygon]:  "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aPol, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-	},
-	chainArbitrum: {
-		DAIList[chainArbitrum]:  "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aArbDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		EURSList[chainArbitrum]: "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aArbEURS, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-		USDCList[chainArbitrum]: "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aArbUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		USDTList[chainArbitrum]: "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aArb, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		AAVEList[chainArbitrum]: "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aArb, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
-		LINKList[chainArbitrum]: "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aArb, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
-		WBTCList[chainArbitrum]: "0x078f358208685046a11C85e8ad32895DED33A249", // aArb, 0x078f358208685046a11c85e8ad32895ded33a249
-		WETHList[chainArbitrum]: "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aArb, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
-	},
-	chainBase: {
-		WETHList[chainBase]:   "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7", // aBasWETH, 0xd4a0e0b9149bcee3c920d2e00b5de09138fd8bb7
-		CbETHList[chainBase]:  "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad", // aBascbETH, 0xcf3d55c10db69f28fd1a75bd73f3d8a2d9c595ad
-		USDbCList[chainBase]:  "0x0a1d576f3eFeF75b330424287a95A366e8281D54", // aBasUSDbC, 0x0a1d576f3efef75b330424287a95a366e8281d54
-		WSTETHList[chainBase]: "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D", // aBaswstETH, 0x99cbc45ea5bb7ef3a5bc08fb1b7e56bb2442ef0d
-		USDCList[chainBase]:   "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB", // aBasUSDC, 0x4e65fe4dba92790696d040ac24aa414708f5c0ab
+		CRVList[chainPolygon]:     "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aPol, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		SUSHIList[chainPolygon]:   "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aPol, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		GHSTList[chainPolygon]:    "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aPol, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		BALList[chainPolygon]:     "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aPol, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+		DPIList[chainPolygon]:     "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aPol, 0x724dc807b04555b71ed48a6896b6f41593b8c637
+		EURSList[chainPolygon]:    "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aPol, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
+		JEURList[chainPolygon]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aPol, 0x6533afac2e7bccb20dca161449a13a32d391fb00
+		EURAList[chainPolygon]:    "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77", // aPolAGEUR,0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77
+		MiMATICList[chainPolygon]: "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D", // aPol, 0xebe517846d0f36eced99c735cbf6131e1feb775d
+		STMATICList[chainPolygon]: "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9", // aPol, 0xea1132120ddcdda2f119e99fa7a27a0d036f7ac9
+		MaticXList[chainPolygon]:  "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE", // aPol, 0x80ca0d8c38d2e2bcbab66aa1648bd1c7160500fe
+		WSTETHList[chainPolygon]:  "0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40", // aPolwstETH,0xf59036caebea7dc4b86638dfa2e3c97da9fccd40
+		USDCList[chainPolygon]:    "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD", // aPolUSDCn, 0xa4d94019934d8333ef880abffbf2fdd611c762bd
 	},
 }
 
@@ -184,6 +215,8 @@ var AaveATokenV3List = map[string]map[string]string{
 // map[network][underlying] = address.
 var AaveStaticATokenV3List = map[string]map[string]string{
 	// wstETH does not have static a token.
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainBase: {
 		WETHList[chainBase]:  "0x468973e3264F2aEba0417A8f2cD0Ec397E738898", // stataBasWETH, 0x468973e3264f2aeba0417a8f2cd0ec397e738898
 		CbETHList[chainBase]: "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e", // stataBascbETH, 0x16a004065dfb11276dcb29dc03fb8a85f9a43c6e
@@ -196,6 +229,51 @@ var AaveStaticATokenV3List = map[string]map[string]string{
 //
 // map[network][underlying] = address.
 var AaveSTokenV3List = map[string]map[string]string{
+
+	chainArbitrum: {
+		DAIList[chainArbitrum]:    "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // sArbDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
+		LINKList[chainArbitrum]:   "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // sArb, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
+		USDCeList[chainArbitrum]:  "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // sArb, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
+		WBTCList[chainArbitrum]:   "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // sArb, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
+		WETHList[chainArbitrum]:   "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // sArb, 0xd8ad37849950903571df17049516a5cd4cbe55f6
+		USDTList[chainArbitrum]:   "0x70eFfc565DB6EEf7B927610155602d31b670e802", // sArb, 0x70effc565db6eef7b927610155602d31b670e802
+		AAVEList[chainArbitrum]:   "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // sArb, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
+		EURSList[chainArbitrum]:   "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // sArb, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
+		WSTETHList[chainArbitrum]: "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // sArb, 0x08cb71192985e936c7cd166a8b268035e400c3c3
+		MAIList[chainArbitrum]:    "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // sArb, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
+		RETHList[chainArbitrum]:   "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // sArb, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
+		LUSDList[chainArbitrum]:   "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // sArb, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
+		USDCList[chainArbitrum]:   "0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a", // sArb, 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a
+		FRAXList[chainArbitrum]:   "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // sArb, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
+		ARBList[chainArbitrum]:    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D", // sArb, 0x6b4b37618d85db2a7b469983c888040f7f05ea3d
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainAvalanche: {
+		DAIeList[chainAvalanche]:  "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtAvaDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
+		LINKList[chainAvalanche]:  "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtAvaLINK, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
+		USDCList[chainAvalanche]:  "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtAvaUSDC, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
+		WBTCeList[chainAvalanche]: "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // stableDebtAvaWBTC, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
+		WETHList[chainAvalanche]:  "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtAvaWETH, 0xd8ad37849950903571df17049516a5cd4cbe55f6
+		USDTList[chainAvalanche]:  "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtAvaUSDT, 0x70effc565db6eef7b927610155602d31b670e802
+		AAVEeList[chainAvalanche]: "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtAvaAAVE, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
+		WAVAXList[chainAvalanche]: "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // stableDebtAvaWAVAX, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
+		SAVAXList[chainAvalanche]: "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // stableDebtAvaSAVAX, 0x08cb71192985e936c7cd166a8b268035e400c3c3
+		FRAXList[chainAvalanche]:  "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // stableDebtAvaFRAX, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
+		MAIList[chainAvalanche]:   "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // stableDebtAvaMAI, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
+		BTCbList[chainAvalanche]:  "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtAvaBTC.b, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainBase: {
+		WETHList[chainBase]:   "0xaED3b56FeA82E809665f02AcBcDEc0816c75f4d9", // 0xaed3b56fea82e809665f02acbcdec0816c75f4d9
+		CbETHList[chainBase]:  "0xa9dF5c62d16d3f496673F4d736852017b086eCA0", // 0xa9df5c62d16d3f496673f4d736852017b086eca0
+		USDbCList[chainBase]:  "0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654", // 0xbbadd47fbafa9de717fe203e4707deb893c64654
+		WSTETHList[chainBase]: "0xfe742Fa2a84294E8316F05b17c05090Fc68B5105", // 0xfe742fa2a84294e8316f05b17c05090fc68b5105
+		USDCList[chainBase]:   "0x03506214379aA86ad1176af71c260278cfa10B38", // 0x03506214379aa86ad1176af71c260278cfa10b38
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainEthereum: {
 		WETHList[chainEthereum]:   "0x102633152313C81cD80419b6EcF66d14Ad68949A", // stableDebtEthWETH, 0x102633152313c81cd80419b6ecf66d14ad68949a
 		WSTETHList[chainEthereum]: "0x39739943199c0fBFe9E5f1B5B160cd73a64CB85D", // stableDebtEthwstETH, 0x39739943199c0fbfe9e5f1b5b160cd73a64cb85d
@@ -225,59 +303,49 @@ var AaveSTokenV3List = map[string]map[string]string{
 		FXSList[chainEthereum]:    "0x61dFd349140C239d3B61fEe203Efc811b518a317", // stableDebtEthFXS, 0x61dfd349140c239d3b61fee203efc811b518a317
 		CrvUSDList[chainEthereum]: "0xb55C604075D79486b8A329c396Fc711Be54B5330", // stableDebtEthcrvUSD, 0xb55c604075d79486b8a329c396fc711be54b5330
 		PyUSDList[chainEthereum]:  "0x5B393DB4c72B1Bd82CE2834F6485d61b137Bc7aC", // stableDebtEthPYUSD, 0x5b393db4c72b1bd82ce2834f6485d61b137bc7ac
-
 	},
-	chainAvalanche: {
-		DAIeList[chainAvalanche]:  "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtAvaDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
-		USDCList[chainAvalanche]:  "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtAvaUSDC, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
-		USDTList[chainAvalanche]:  "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtAvaUSDT, 0x70effc565db6eef7b927610155602d31b670e802
-		WETHList[chainAvalanche]:  "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtAvaWETH, 0xd8ad37849950903571df17049516a5cd4cbe55f6
-		WBTCList[chainAvalanche]:  "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // stableDebtAvaWBTC, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
-		WAVAXList[chainAvalanche]: "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // stableDebtAvaWAVAX, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
-		LINKList[chainAvalanche]:  "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtAvaLINK, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
-		AAVEList[chainAvalanche]:  "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtAvaAAVE, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
-		SAVAXList[chainAvalanche]: "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // stableDebtAvaSAVAX, 0x08cb71192985e936c7cd166a8b268035e400c3c3
-		BTCbList[chainAvalanche]:  "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtAvaBTC.b, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
-		FRAXList[chainAvalanche]:  "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // stableDebtAvaFRAX, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
-		MAIList[chainAvalanche]:   "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // stableDebtAvaMAI, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainOptimism: {
+		DAIList[chainOptimism]:    "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtOptDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
+		LINKList[chainOptimism]:   "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtOpt, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
+		USDCeList[chainOptimism]:  "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtOpt, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
+		WBTCList[chainOptimism]:   "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // stableDebtOpt, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
+		WETHList[chainOptimism]:   "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtOpt, 0xd8ad37849950903571df17049516a5cd4cbe55f6
+		USDTList[chainOptimism]:   "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtOpt, 0x70effc565db6eef7b927610155602d31b670e802
+		AAVEList[chainOptimism]:   "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtOpt, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
+		SUSDList[chainOptimism]:   "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // stableDebtOpt, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
+		OPList[chainOptimism]:     "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // stableDebtOpt, 0x08cb71192985e936c7cd166a8b268035e400c3c3
+		WSTETHList[chainOptimism]: "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // stableDebtOpt, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
+		LUSDList[chainOptimism]:   "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // stableDebtOpt, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
+		MAIList[chainOptimism]:    "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtOpt, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
+		RETHList[chainOptimism]:   "0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a", // stableDebtOpt, 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a
+		USDCList[chainOptimism]:   "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // stableDebtOpt, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
 	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainPolygon: {
-		AgEURList[chainPolygon]:   "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF", // stableDebtPolAGEUR, 0x40b4baecc69b882e8804f9286b12228c27f8c9bf
 		DAIList[chainPolygon]:     "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtPol, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
-		EURSList[chainPolygon]:    "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // stableDebtPol, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
-		JEURList[chainPolygon]:    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D", // stableDebtPol, 0x6b4b37618d85db2a7b469983c888040f7f05ea3d
-		MiMATICList[chainPolygon]: "0x687871030477bf974725232F764aa04318A8b9c8", // stableDebtPol, 0x687871030477bf974725232f764aa04318a8b9c8
-		USDCList[chainPolygon]:    "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtPol, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
-		USDTList[chainPolygon]:    "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtPol, 0x70effc565db6eef7b927610155602d31b670e802
-		AAVEList[chainPolygon]:    "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtPol, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
-		BALList[chainPolygon]:     "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtPol, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
-		CRVList[chainPolygon]:     "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // stableDebtPol, 0x08cb71192985e936c7cd166a8b268035e400c3c3
-		DPIList[chainPolygon]:     "0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a", // stableDebtPol, 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a
-		GHSTList[chainPolygon]:    "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // stableDebtPol, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
 		LINKList[chainPolygon]:    "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtPol, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
-		MaticXList[chainPolygon]:  "0x62fC96b27a510cF4977B59FF952Dc32378Cc221d", // stableDebtPol, 0x62fc96b27a510cf4977b59ff952dc32378cc221d
-		STMATICList[chainPolygon]: "0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219", // stableDebtPol, 0x1ffd28689da7d0148ff0fcb669e9f9f0fc13a219
-		SUSHIList[chainPolygon]:   "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // stableDebtPol, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
+		USDCeList[chainPolygon]:   "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtPol, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
 		WBTCList[chainPolygon]:    "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // stableDebtPol, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
 		WETHList[chainPolygon]:    "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtPol, 0xd8ad37849950903571df17049516a5cd4cbe55f6
+		USDTList[chainPolygon]:    "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtPol, 0x70effc565db6eef7b927610155602d31b670e802
+		AAVEList[chainPolygon]:    "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtPol, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
 		WMATICList[chainPolygon]:  "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // stableDebtPol, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
-	},
-	chainArbitrum: {
-		DAIList[chainArbitrum]:  "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // sArbDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
-		EURSList[chainArbitrum]: "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // sArb, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
-		USDCList[chainArbitrum]: "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // sArb, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
-		USDTList[chainArbitrum]: "0x70eFfc565DB6EEf7B927610155602d31b670e802", // sArb, 0x70effc565db6eef7b927610155602d31b670e802
-		AAVEList[chainArbitrum]: "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // sArb, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
-		LINKList[chainArbitrum]: "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // sArb, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
-		WBTCList[chainArbitrum]: "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // sArb, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
-		WETHList[chainArbitrum]: "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // sArb, 0xd8ad37849950903571df17049516a5cd4cbe55f6
-	},
-	chainBase: {
-		WETHList[chainBase]:   "0xaED3b56FeA82E809665f02AcBcDEc0816c75f4d9", // 0xaed3b56fea82e809665f02acbcdec0816c75f4d9
-		CbETHList[chainBase]:  "0xa9dF5c62d16d3f496673F4d736852017b086eCA0", // 0xa9df5c62d16d3f496673f4d736852017b086eca0
-		USDbCList[chainBase]:  "0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654", // 0xbbadd47fbafa9de717fe203e4707deb893c64654
-		WSTETHList[chainBase]: "0xfe742Fa2a84294E8316F05b17c05090Fc68B5105", // 0xfe742fa2a84294e8316f05b17c05090fc68b5105
-		USDCList[chainBase]:   "0x03506214379aA86ad1176af71c260278cfa10B38", // 0x03506214379aa86ad1176af71c260278cfa10b38
+		CRVList[chainPolygon]:     "0x08Cb71192985E936C7Cd166A8b268035e400c3c3", // stableDebtPol, 0x08cb71192985e936c7cd166a8b268035e400c3c3
+		SUSHIList[chainPolygon]:   "0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841", // stableDebtPol, 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841
+		GHSTList[chainPolygon]:    "0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc", // stableDebtPol, 0x3ef10dff4928279c004308ebadc4db8b7620d6fc
+		BALList[chainPolygon]:     "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtPol, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
+		DPIList[chainPolygon]:     "0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a", // stableDebtPol, 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a
+		EURSList[chainPolygon]:    "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // stableDebtPol, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
+		JEURList[chainPolygon]:    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D", // stableDebtPol, 0x6b4b37618d85db2a7b469983c888040f7f05ea3d
+		EURAList[chainPolygon]:    "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF", // stableDebtPolAGEUR, 0x40b4baecc69b882e8804f9286b12228c27f8c9bf
+		MiMATICList[chainPolygon]: "0x687871030477bf974725232F764aa04318A8b9c8", // stableDebtPol, 0x687871030477bf974725232f764aa04318a8b9c8
+		STMATICList[chainPolygon]: "0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219", // stableDebtPol, 0x1ffd28689da7d0148ff0fcb669e9f9f0fc13a219
+		MaticXList[chainPolygon]:  "0x62fC96b27a510cF4977B59FF952Dc32378Cc221d", // stableDebtPol, 0x62fc96b27a510cf4977b59ff952dc32378cc221d
+		WSTETHList[chainPolygon]:  "0x173e54325AE58B072985DbF232436961981EA000", // stableDebtPol, 0x173e54325ae58b072985dbf232436961981ea000
+		USDCList[chainPolygon]:    "0xc889e9f8370D14A428a9857205d99BFdB400b757", // stableDebtPol, 0xc889e9f8370d14a428a9857205d99bfdb400b757
 	},
 }
 
@@ -285,6 +353,52 @@ var AaveSTokenV3List = map[string]map[string]string{
 //
 // map[network][underlying] = address.
 var AaveVTokenV3List = map[string]map[string]string{
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainArbitrum: {
+		DAIList[chainArbitrum]:    "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtArb, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
+		LINKList[chainArbitrum]:   "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtArb, 0x953a573793604af8d41f306feb8274190db4ae0e
+		USDCeList[chainArbitrum]:  "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtArb, 0xfccf3cabbe80101232d343252614b6a3ee81c989
+		WBTCList[chainArbitrum]:   "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtArb, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
+		WETHList[chainArbitrum]:   "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtArb, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
+		USDTList[chainArbitrum]:   "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtArb, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
+		AAVEList[chainArbitrum]:   "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtArb, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
+		EURSList[chainArbitrum]:   "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtArb, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
+		WSTETHList[chainArbitrum]: "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtArb, 0x77ca01483f379e58174739308945f044e1a764dc
+		MAIList[chainArbitrum]:    "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtArb, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
+		RETHList[chainArbitrum]:   "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtArb, 0xce186f6cccb0c955445bb9d10c59cae488fea559
+		LUSDList[chainArbitrum]:   "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtArb, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
+		USDCList[chainArbitrum]:   "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6", // variableDebtArb, 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6
+		FRAXList[chainArbitrum]:   "0x5D557B07776D12967914379C71a1310e917C7555", // variableDebtArb, 0x5d557b07776d12967914379c71a1310e917c7555
+		ARBList[chainArbitrum]:    "0x44705f578135cC5d703b4c9c122528C73Eb87145", // variableDebtArb, 0x44705f578135cc5d703b4c9c122528c73eb87145
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainAvalanche: {
+		DAIeList[chainAvalanche]:  "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtAvaDAI, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
+		LINKList[chainAvalanche]:  "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtAvaLINK, 0x953a573793604af8d41f306feb8274190db4ae0e
+		USDCList[chainAvalanche]:  "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtAvaUSDC, 0xfccf3cabbe80101232d343252614b6a3ee81c989
+		WBTCeList[chainAvalanche]: "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtAvaWBTC, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
+		WETHeList[chainAvalanche]: "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtAvaWETH, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
+		USDTList[chainAvalanche]:  "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtAvaUSDT, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
+		AAVEeList[chainAvalanche]: "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtAvaAAVE, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
+		WAVAXList[chainAvalanche]: "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtAvaWAVAX, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
+		SAVAXList[chainAvalanche]: "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtAvaSAVAX, 0x77ca01483f379e58174739308945f044e1a764dc
+		FRAXList[chainAvalanche]:  "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtAvaFRAX, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
+		MAIList[chainAvalanche]:   "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtAvaMAI, 0xce186f6cccb0c955445bb9d10c59cae488fea559
+		BTCbList[chainAvalanche]:  "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtAvaBTC.b, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
+	chainBase: {
+		WETHList[chainBase]:   "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E", // 0x24e6e0795b3c7c71d965fcc4f371803d1c1dca1e
+		CbETHList[chainBase]:  "0x1DabC36f19909425f654777249815c073E8Fd79F", // 0x1dabc36f19909425f654777249815c073e8fd79f
+		USDbCList[chainBase]:  "0x7376b2F323dC56fCd4C191B34163ac8a84702DAB", // 0x7376b2f323dc56fcd4c191b34163ac8a84702dab
+		WSTETHList[chainBase]: "0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1", // 0x41a7c3f5904ad176dacbb1d99101f59ef0811dc1
+		USDCList[chainBase]:   "0x59dca05b6c26dbd64b5381374aaac5cd05644c28", // 0x59dca05b6c26dbd64b5381374aaac5cd05644c28
+	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainEthereum: {
 		WETHList[chainEthereum]:   "0xeA51d7853EEFb32b6ee06b1C12E6dcCA88Be0fFE", // variableDebtEthWETH, 0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe
 		WSTETHList[chainEthereum]: "0xC96113eED8cAB59cD8A66813bCB0cEb29F06D2e4", // variableDebtEthwstETH, 0xc96113eed8cab59cd8a66813bcb0ceb29f06d2e4
@@ -315,95 +429,113 @@ var AaveVTokenV3List = map[string]map[string]string{
 		CrvUSDList[chainEthereum]: "0x028f7886F3e937f8479efaD64f31B3fE1119857a", // variableDebtEthcrvUSD, 0x028f7886f3e937f8479efad64f31b3fe1119857a
 		PyUSDList[chainEthereum]:  "0x57B67e4DE077085Fd0AF2174e9c14871BE664546", // variableDebtEthPYUSD, 0x57b67e4de077085fd0af2174e9c14871be664546
 	},
-	chainAvalanche: {
-		DAIeList[chainAvalanche]:  "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtAvaDAI, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
-		USDCList[chainAvalanche]:  "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtAvaUSDC, 0xfccf3cabbe80101232d343252614b6a3ee81c989
-		USDTList[chainAvalanche]:  "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtAvaUSDT, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
-		WETHList[chainAvalanche]:  "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtAvaWETH, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
-		WBTCList[chainAvalanche]:  "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtAvaWBTC, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
-		WAVAXList[chainAvalanche]: "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtAvaWAVAX, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
-		LINKList[chainAvalanche]:  "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtAvaLINK, 0x953a573793604af8d41f306feb8274190db4ae0e
-		AAVEList[chainAvalanche]:  "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtAvaAAVE, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
-		SAVAXList[chainAvalanche]: "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtAvaSAVAX, 0x77ca01483f379e58174739308945f044e1a764dc
-		BTCbList[chainAvalanche]:  "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtAvaBTC.b, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
-		FRAXList[chainAvalanche]:  "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtAvaFRAX, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
-		MAIList[chainAvalanche]:   "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtAvaMAI, 0xce186f6cccb0c955445bb9d10c59cae488fea559
-	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainOptimism: {
-		DAIList[chainOptimism]:  "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtOpt, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
-		USDCList[chainOptimism]: "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtOpt, 0xfccf3cabbe80101232d343252614b6a3ee81c989
-		USDTList[chainOptimism]: "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtOpt, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
-		WETHList[chainOptimism]: "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtOpt, 0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351
-		WBTCList[chainOptimism]: "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtOpt, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
-		SUSDList[chainOptimism]: "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtOpt, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
-		LINKList[chainOptimism]: "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtOpt, 0x953a573793604af8d41f306feb8274190db4ae0e
-		AAVEList[chainOptimism]: "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtOpt, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
+		DAIList[chainOptimism]:    "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtOpt, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
+		LINKList[chainOptimism]:   "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtOpt, 0x953a573793604af8d41f306feb8274190db4ae0e
+		USDCeList[chainOptimism]:  "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtOpt, 0xfccf3cabbe80101232d343252614b6a3ee81c989
+		WBTCList[chainOptimism]:   "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtOpt, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
+		WETHList[chainOptimism]:   "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtOpt, 0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351
+		USDTList[chainOptimism]:   "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtOpt, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
+		AAVEList[chainOptimism]:   "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtOpt, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
+		SUSDList[chainOptimism]:   "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtOpt, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
+		OPList[chainOptimism]:     "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtOpt, 0x77ca01483f379e58174739308945f044e1a764dc
+		WSTETHList[chainOptimism]: "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtOpt, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
+		LUSDList[chainOptimism]:   "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtOpt, 0xce186f6cccb0c955445bb9d10c59cae488fea559
+		MAIList[chainOptimism]:    "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtOpt, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
+		RETHList[chainOptimism]:   "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6", // variableDebtOpt, 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6
+		USDCList[chainOptimism]:   "0x5D557B07776D12967914379C71a1310e917C7555", // variableDebtOpt, 0x5d557b07776d12967914379c71a1310e917c7555
 	},
+	// Already in order of the contract return value.
+	// Last updated at Mar.22.2024.
 	chainPolygon: {
-		AgEURList[chainPolygon]:   "0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6", // variableDebtPolAGEUR, 0x3ca5fa07689f266e907439afd1fbb59c44fe12f6
 		DAIList[chainPolygon]:     "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtPol, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
-		EURSList[chainPolygon]:    "0x5D557B07776D12967914379C71a1310e917C7555", // variableDebtPol, 0x5d557b07776d12967914379c71a1310e917c7555
-		JEURList[chainPolygon]:    "0x44705f578135cC5d703b4c9c122528C73Eb87145", // variableDebtPol, 0x44705f578135cc5d703b4c9c122528c73eb87145
-		MiMATICList[chainPolygon]: "0x18248226C16BF76c032817854E7C83a2113B4f06", // variableDebtPol, 0x18248226c16bf76c032817854e7c83a2113b4f06
-		USDCList[chainPolygon]:    "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtPol, 0xfccf3cabbe80101232d343252614b6a3ee81c989
-		USDTList[chainPolygon]:    "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtPol, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
-		AAVEList[chainPolygon]:    "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtPol, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
-		BALList[chainPolygon]:     "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtPol, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
-		CRVList[chainPolygon]:     "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtPol, 0x77ca01483f379e58174739308945f044e1a764dc
-		DPIList[chainPolygon]:     "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6", // variableDebtPol, 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6
-		GHSTList[chainPolygon]:    "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtPol, 0xce186f6cccb0c955445bb9d10c59cae488fea559
 		LINKList[chainPolygon]:    "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtPol, 0x953a573793604af8d41f306feb8274190db4ae0e
-		MaticXList[chainPolygon]:  "0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9", // variableDebtPol, 0xb5b46f918c2923fc7f26db76e8a6a6e9c4347cf9
-		STMATICList[chainPolygon]: "0x6b030Ff3FB9956B1B69f475B77aE0d3Cf2CC5aFa", // variableDebtPol, 0x6b030ff3fb9956b1b69f475b77ae0d3cf2cc5afa
-		SUSHIList[chainPolygon]:   "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtPol, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
+		USDCeList[chainPolygon]:   "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtPol, 0xfccf3cabbe80101232d343252614b6a3ee81c989
 		WBTCList[chainPolygon]:    "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtPol, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
 		WETHList[chainPolygon]:    "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtPol, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
+		USDTList[chainPolygon]:    "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtPol, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
+		AAVEList[chainPolygon]:    "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtPol, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
 		WMATICList[chainPolygon]:  "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtPol, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
-	},
-	chainArbitrum: {
-		DAIList[chainArbitrum]:  "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtArb, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
-		EURSList[chainArbitrum]: "0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8", // variableDebtArb, 0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8
-		USDCList[chainArbitrum]: "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtArb, 0xfccf3cabbe80101232d343252614b6a3ee81c989
-		USDTList[chainArbitrum]: "0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7", // variableDebtArb, 0xfb00ac187a8eb5afae4eace434f493eb62672df7
-		AAVEList[chainArbitrum]: "0xE80761Ea617F66F96274eA5e8c37f03960ecC679", // variableDebtArb, 0xe80761ea617f66f96274ea5e8c37f03960ecc679
-		LINKList[chainArbitrum]: "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtArb, 0x953a573793604af8d41f306feb8274190db4ae0e
-		WBTCList[chainArbitrum]: "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtArb, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
-		WETHList[chainArbitrum]: "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtArb, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
-	},
-	chainBase: {
-		WETHList[chainBase]:   "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E", // 0x24e6e0795b3c7c71d965fcc4f371803d1c1dca1e
-		CbETHList[chainBase]:  "0x1DabC36f19909425f654777249815c073E8Fd79F", // 0x1dabc36f19909425f654777249815c073e8fd79f
-		USDbCList[chainBase]:  "0x7376b2F323dC56fCd4C191B34163ac8a84702DAB", // 0x7376b2f323dc56fcd4c191b34163ac8a84702dab
-		WSTETHList[chainBase]: "0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1", // 0x41a7c3f5904ad176dacbb1d99101f59ef0811dc1
-		USDCList[chainBase]:   "0x59dca05b6c26dbd64b5381374aaac5cd05644c28", // 0x59dca05b6c26dbd64b5381374aaac5cd05644c28
+		CRVList[chainPolygon]:     "0x77CA01483f379E58174739308945f044e1a764dc", // variableDebtPol, 0x77ca01483f379e58174739308945f044e1a764dc
+		SUSHIList[chainPolygon]:   "0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907", // variableDebtPol, 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907
+		GHSTList[chainPolygon]:    "0xCE186F6Cccb0c955445bb9d10C59caE488Fea559", // variableDebtPol, 0xce186f6cccb0c955445bb9d10c59cae488fea559
+		BALList[chainPolygon]:     "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtPol, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
+		DPIList[chainPolygon]:     "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6", // variableDebtPol, 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6
+		EURSList[chainPolygon]:    "0x5D557B07776D12967914379C71a1310e917C7555", // variableDebtPol, 0x5d557b07776d12967914379c71a1310e917c7555
+		JEURList[chainPolygon]:    "0x44705f578135cC5d703b4c9c122528C73Eb87145", // variableDebtPol, 0x44705f578135cc5d703b4c9c122528c73eb87145
+		EURAList[chainPolygon]:    "0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6", // variableDebtPolAGEUR, 0x3ca5fa07689f266e907439afd1fbb59c44fe12f6
+		MiMATICList[chainPolygon]: "0x18248226C16BF76c032817854E7C83a2113B4f06", // variableDebtPol, 0x18248226c16bf76c032817854e7c83a2113b4f06
+		STMATICList[chainPolygon]: "0x6b030Ff3FB9956B1B69f475B77aE0d3Cf2CC5aFa", // variableDebtPol, 0x6b030ff3fb9956b1b69f475b77ae0d3cf2cc5afa
+		MaticXList[chainPolygon]:  "0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9", // variableDebtPol, 0xb5b46f918c2923fc7f26db76e8a6a6e9c4347cf9
+		WSTETHList[chainPolygon]:  "0x77fA66882a8854d883101Fb8501BD3CaD347Fc32", // variableDebtPol, 0x77fa66882a8854d883101fb8501bd3cad347fc32
+		USDCList[chainPolygon]:    "0xE701126012EC0290822eEA17B794454d1AF8b030", // variableDebtPolUSDCn, 0xe701126012ec0290822eea17b794454d1af8b030
 	},
 }
 
+// DEPRECATED: not standard. Will not be updated on time.
+//
+// Last updated at Mar.22.2024.
+//
 // Aave v3 isolated tokens.
 //
 // map[network]= []underlyings.
 var AaveV3IsolatedTokens = map[string][]string{
-	chainEthereum: {},
-	chainAvalanche: {
-		USDTList[chainAvalanche],
-		FRAXList[chainAvalanche],
-		MAIList[chainAvalanche],
+	chainArbitrum: {
+		ARBList[chainArbitrum],
 	},
+	chainAvalanche: {},
+	chainBase:      {},
+	chainBSC: {
+		CakeList[chainBSC],
+	},
+	chainEthereum: {
+		MKRList[chainEthereum],
+		UNIList[chainEthereum],
+		LDOList[chainEthereum],
+		OINCHLIST[chainEthereum],
+		SNXList[chainEthereum],
+		ENSList[chainEthereum],
+		CRVList[chainEthereum],
+		FXSList[chainEthereum],
+		BALList[chainEthereum],
+		STGList[chainEthereum],
+		FRAXList[chainEthereum],
+		KNCList[chainEthereum],
+	},
+	chainOptimism: {},
 	chainPolygon: {
-		USDTList[chainPolygon],
 		EURSList[chainPolygon],
-		MiMATICList[chainPolygon],
 	},
 }
 
+// DEPRECATED: not standard. Will not be updated on time.
+//
+// Last updated at Mar.22.2024.
+//
 // Aave v3 tokens that are not allowed to be set as collateral.
 //
 // map[network]= []underlyings.
 var AaveV3NotAllowCollateralTokens = map[string][]string{
-	chainEthereum:  {},
-	chainAvalanche: {},
+	chainArbitrum: {
+		LUSDList[chainArbitrum],
+		EURSList[chainArbitrum],
+	},
+	chainAvalanche: {
+		FRAXList[chainAvalanche],
+	},
+	chainBase: {},
+	chainBSC:  {},
+	chainEthereum: {
+		PyUSDList[chainEthereum],
+		RPLList[chainEthereum],
+		CrvUSDList[chainEthereum],
+	},
+	chainOptimism: {
+		LUSDList[chainOptimism],
+	},
 	chainPolygon: {
-		JEURList[chainPolygon],
-		AgEURList[chainPolygon],
+		EURAList[chainPolygon],
 	},
 }

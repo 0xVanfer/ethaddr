@@ -2,10 +2,15 @@ package ethaddr
 
 // Last edited: March.19.2024.
 // The listed or delisted tokens might be not up to date.
+// For now, only ETH, POL, AVAX are still working.
 
+// Website: https://aave.com/
+//
 // Docs: https://docs.aave.com/developers/getting-started/readme
 //
 // Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
+//
+// X (twitter): https://twitter.com/aave
 const AaveV2Protocol string = "aave"
 
 // Aave incentives controller V2.
@@ -14,6 +19,7 @@ const AaveV2Protocol string = "aave"
 var AaveIncentivesControllerV2List = map[string]string{
 	chainAvalanche: "0x01D83Fe6A10D2f2B7AF17034343746188272cAc9", // 0x01d83fe6a10d2f2b7af17034343746188272cac9
 	chainEthereum:  "0xd784927Ff2f95ba542BfC824c8a8a98F3495f6b5", // 0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5
+	chainPolygon:   "0x357D51124f59836DeD84c8a1730D72B749d8BC23", // 0x357d51124f59836ded84c8a1730d72b749d8bc23
 }
 
 // Aave lending pool v2.
@@ -22,13 +28,43 @@ var AaveIncentivesControllerV2List = map[string]string{
 var AaveLendingPoolV2List = map[string]string{
 	chainAvalanche: "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C", // 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c
 	chainEthereum:  "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9", // 0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9
+	chainPolygon:   "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf", // 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf
 }
 
 // Aave oracle v2.
 //
 // map[network] = address.
 var AaveOracleV2List = map[string]string{
-	chainEthereum: "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9", // 0xa50ba011c48153de246e5192c8f9258a2ba79ca9
+	chainAvalanche: "0xdC336Cd4769f4cC7E9d726DA53e6d3fC710cEB89", // 0xdc336cd4769f4cc7e9d726da53e6d3fc710ceb89
+	chainEthereum:  "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9", // 0xa50ba011c48153de246e5192c8f9258a2ba79ca9
+	chainPolygon:   "0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d", // 0x0229f777b0fab107f9591a41d5f02e4e98db6f2d
+}
+
+// Aave lending pool address provider v2.
+//
+// map[network] = address.
+var AavePoolAddressProviderV2List = map[string]string{
+	chainAvalanche: "0xb6A86025F0FE1862B372cb0ca18CE3EDe02A318f", // 0xb6a86025f0fe1862b372cb0ca18ce3ede02a318f
+	chainEthereum:  "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5", // 0xb53c1a33016b2dc2ff3653530bff1848a515c8c5
+	chainPolygon:   "0xd05e3E715d945B59290df0ae8eF85c1BdB684744", // 0xd05e3e715d945b59290df0ae8ef85c1bdb684744
+}
+
+// Aave ui pool data provider v2.
+//
+// map[network] = address.
+var AaveUiPoolDataProviderV2List = map[string]string{
+	chainAvalanche: "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A", // 0x00e50fab64ebb37b87df06aa46b8b35d5f1a4e1a
+	chainEthereum:  "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A", // 0x00e50fab64ebb37b87df06aa46b8b35d5f1a4e1a
+	chainPolygon:   "0x204f2Eb81D996729829debC819f7992DCEEfE7b1", // 0x204f2eb81d996729829debc819f7992dceefe7b1
+}
+
+// Aave ui incentives data provider v2.
+//
+// map[network] = address.
+var AaveUiIncentiveDataProviderV2List = map[string]string{
+	chainAvalanche: "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF", // 0x11979886a6dbae27d7a72c49fcf3f23240d647bf
+	chainEthereum:  "0xD01ab9a6577E1D84F142e44D49380e23A340387d", // 0xd01ab9a6577e1d84f142e44d49380e23a340387d
+	chainPolygon:   "0x645654D59A5226CBab969b1f5431aA47CBf64ab8", // 0x645654d59a5226cbab969b1f5431aa47cbf64ab8
 }
 
 // Aave a tokens v2.
@@ -82,6 +118,15 @@ var AaveATokenV2List = map[string]map[string]string{
 		CVXList[chainEthereum]:           "0x952749E07d7157bb9644A894dFAF3Bad5eF6D918", // aCVX 34, 0x952749e07d7157bb9644a894dfaf3bad5ef6d918, delisted
 		OINCHLIST[chainEthereum]:         "0xB29130CBcC3F791f077eAdE0266168E808E5151e", // a1INCH 35, 0xb29130cbcc3f791f077eade0266168e808e5151e, delisted
 		LUSDList[chainEthereum]:          "0xce1871f791548600cb59efbefFC9c38719142079", // aLUSD 36, 0xce1871f791548600cb59efbeffc9c38719142079
+	},
+	chainPolygon: {
+		AAVEList[chainPolygon]:   "0x1d2a0E5EC8E5bBDCA5CB219e649B565d8e5c3360", // amAAVE, 0x1d2a0e5ec8e5bbdca5cb219e649b565d8e5c3360
+		DAIList[chainPolygon]:    "0x27F8D03b3a2196956ED754baDc28D73be8830A6e", // amDAI, 0x27f8d03b3a2196956ed754badc28d73be8830a6e
+		USDCeList[chainPolygon]:  "0x1a13F4Ca1d028320A707D99520AbFefca3998b7F", // amUSDC, 0x1a13f4ca1d028320a707d99520abfefca3998b7f
+		USDTList[chainPolygon]:   "0x60D55F02A771d515e077c9C2403a1ef324885CeC", // amUSDT, 0x60d55f02a771d515e077c9c2403a1ef324885cec
+		WBTCList[chainPolygon]:   "0x5c2ed810328349100A66B82b78a1791B101C9D61", // amWBTC, 0x5c2ed810328349100a66b82b78a1791b101c9d61
+		WETHList[chainPolygon]:   "0x28424507fefb6f7f8E9D3860F56504E4e5f5f390", // amWETH, 0x28424507fefb6f7f8e9d3860f56504e4e5f5f390
+		WMATICList[chainPolygon]: "0x8dF3aad3a84da6b69A4DA8aeC3eA40d9091B2Ac4", // amWMATIC, 0x8df3aad3a84da6b69a4da8aec3ea40d9091b2ac4
 	},
 }
 
@@ -137,6 +182,15 @@ var AaveSTokenV2List = map[string]map[string]string{
 		OINCHLIST[chainEthereum]:         "0x1278d6ED804d59d2d18a5Aa5638DfD591A79aF0a", // stableDebt1INCH 35, 0x1278d6ed804d59d2d18a5aa5638dfd591a79af0a, delisted
 		LUSDList[chainEthereum]:          "0x39f010127274b2dBdB770B45e1de54d974974526", // stableDebtLUSD 36, 0x39f010127274b2dbdb770b45e1de54d974974526
 	},
+	chainPolygon: {
+		AAVEList[chainPolygon]:   "0x17912140e780B29Ba01381F088f21E8d75F954F9", // stableDebtmAAVE, 0x17912140e780b29ba01381f088f21e8d75f954f9
+		DAIList[chainPolygon]:    "0x2238101B7014C279aaF6b408A284E49cDBd5DB55", // stableDebtmDAI, 0x2238101b7014c279aaf6b408a284e49cdbd5db55
+		USDCeList[chainPolygon]:  "0xdeb05676dB0DB85cecafE8933c903466Bf20C572", // stableDebtmUSDC, 0xdeb05676db0db85cecafe8933c903466bf20c572
+		USDTList[chainPolygon]:   "0xe590cfca10e81FeD9B0e4496381f02256f5d2f61", // stableDebtmUSDT, 0xe590cfca10e81fed9b0e4496381f02256f5d2f61
+		WBTCList[chainPolygon]:   "0x2551B15dB740dB8348bFaDFe06830210eC2c2F13", // stableDebtmWBTC, 0x2551b15db740db8348bfadfe06830210ec2c2f13
+		WETHList[chainPolygon]:   "0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f", // stableDebtmWETH, 0xc478cbbeb590c76b01ce658f8c4dda04f30e2c6f
+		WMATICList[chainPolygon]: "0xb9A6E29fB540C5F1243ef643EB39b0AcbC2e68E3", // stableDebtmWMATIC, 0xb9a6e29fb540c5f1243ef643eb39b0acbc2e68e3
+	},
 }
 
 // Aave v tokens v2.
@@ -190,5 +244,14 @@ var AaveVTokenV2List = map[string]map[string]string{
 		CVXList[chainEthereum]:           "0x4Ae5E4409C6Dbc84A00f9f89e4ba096603fb7d50", // variableDebtCVX 34, 0x4ae5e4409c6dbc84a00f9f89e4ba096603fb7d50, delisted
 		OINCHLIST[chainEthereum]:         "0xD7896C1B9b4455aFf31473908eB15796ad2295DA", // variableDebt1INCH 35, 0xd7896c1b9b4455aff31473908eb15796ad2295da, delisted
 		LUSDList[chainEthereum]:          "0x411066489AB40442d6Fc215aD7c64224120D33F2", // variableDebtLUSD 36, 0x411066489ab40442d6fc215ad7c64224120d33f2
+	},
+	chainPolygon: {
+		AAVEList[chainPolygon]:   "0x1c313e9d0d826662F5CE692134D938656F681350", // variableDebtmAAVE, 0x1c313e9d0d826662f5ce692134d938656f681350
+		DAIList[chainPolygon]:    "0x75c4d1Fb84429023170086f06E682DcbBF537b7d", // variableDebtmDAI, 0x75c4d1fb84429023170086f06e682dcbbf537b7d
+		USDCeList[chainPolygon]:  "0x248960A9d75EdFa3de94F7193eae3161Eb349a12", // variableDebtmUSDC, 0x248960a9d75edfa3de94f7193eae3161eb349a12
+		USDTList[chainPolygon]:   "0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3", // variableDebtmUSDT, 0x8038857fd47108a07d1f6bf652ef1cbec279a2f3
+		WBTCList[chainPolygon]:   "0xF664F50631A6f0D72ecdaa0e49b0c019Fa72a8dC", // variableDebtmWBTC, 0xf664f50631a6f0d72ecdaa0e49b0c019fa72a8dc
+		WETHList[chainPolygon]:   "0xeDe17e9d79fc6f9fF9250D9EEfbdB88Cc18038b5", // variableDebtmWETH, 0xede17e9d79fc6f9ff9250d9eefbdb88cc18038b5
+		WMATICList[chainPolygon]: "0x59e8E9100cbfCBCBAdf86b9279fa61526bBB8765", // variableDebtmWMATIC, 0x59e8e9100cbfcbcbadf86b9279fa61526bbb8765
 	},
 }

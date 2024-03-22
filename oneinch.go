@@ -16,7 +16,7 @@ var OINCHLIST = OneInchTokenList
 // 1 Inch router V4.
 //
 // map[network] = address
-var OneInchRouterListV4 = map[string]string{
+var OneInchRouterV4List = map[string]string{
 	chainArbitrum:  "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 	chainAvalanche: "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 	chainBSC:       "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
@@ -26,10 +26,13 @@ var OneInchRouterListV4 = map[string]string{
 	chainPolygon:   "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 }
 
+// DEPRECATED: use OneInchRouterV4List instead.
+var OneInchRouterListV4 = OneInchRouterV4List
+
 // 1 Inch router V5.
 //
 // map[network] = address
-var OneInchRouterListV5 = map[string]string{
+var OneInchRouterV5List = map[string]string{
 	chainArbitrum:  "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	chainAvalanche: "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	chainBSC:       "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
@@ -37,6 +40,22 @@ var OneInchRouterListV5 = map[string]string{
 	chainFantom:    "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	chainOptimism:  "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	chainPolygon:   "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
+}
+
+// DEPRECATED: use OneInchRouterV5List instead.
+var OneInchRouterListV5 = OneInchRouterV5List
+
+// 1 Inch router V6.
+//
+// map[network] = address
+var OneInchRouterV6List = map[string]string{
+	chainArbitrum:  "",                                           //
+	chainAvalanche: "",                                           //
+	chainBSC:       "",                                           //
+	chainEthereum:  "0x111111125421cA6dc452d289314280a0f8842A65", // 0x111111125421ca6dc452d289314280a0f8842a65
+	chainFantom:    "",                                           //
+	chainOptimism:  "",                                           //
+	chainPolygon:   "",                                           //
 }
 
 // 1 Inch spot aggregator.

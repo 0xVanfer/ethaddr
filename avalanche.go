@@ -1,26 +1,5 @@
 package ethaddr
 
-// USDC.e for avalanche
-//
-// map[network] = address.
-var USDCeList = map[string]string{
-	chainAvalanche: "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664", // USDC.e, 0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664
-}
-
-// USDT.e for avalanche
-//
-// map[network] = address.
-var USDTeList = map[string]string{
-	chainAvalanche: "0xc7198437980c041c805A1EDcbA50c1Ce5db95118", // USDT.e, 0xc7198437980c041c805a1edcba50c1ce5db95118
-}
-
-// DAI.e
-//
-// map[network] = address.
-var DAIeList = map[string]string{
-	chainAvalanche: "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70", // DAI.e, 0xd586e7f844cea2f87f50152665bcbc2c279d8d70
-}
-
 // Wrapped avalanche chain token: WAVAX.
 //
 // map[network] = address.

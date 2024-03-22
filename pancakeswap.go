@@ -2,7 +2,7 @@ package ethaddr
 
 const PancakeswapProtocol string = "pancakeswap"
 
-// Pancakeswap token: CAKE.
+// Pancakeswap token: Cake. (symbol is in camel)
 //
 // map[network] = address.
 var PancakeswapTokenList = map[string]string{

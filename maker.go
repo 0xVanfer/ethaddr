@@ -22,3 +22,10 @@ var DAIList = map[string]string{
 	chainOptimism: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1", // DAI, 0xda10009cbd5d07dd0cecc66161fc93d7c9000da1
 	chainPolygon:  "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // DAI, 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063
 }
+
+// DAI.e. The bridged DAI.
+//
+// map[network] = address.
+var DAIeList = map[string]string{
+	chainAvalanche: "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70", // DAI.e, 0xd586e7f844cea2f87f50152665bcbc2c279d8d70
+}
