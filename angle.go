@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://app.angle.money/
+//
 // Docs: https://docs.angle.money/overview/readme
 //
 // Deployed contracts: https://developers.angle.money/overview/smart-contracts/mainnet-contracts

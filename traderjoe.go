@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://traderjoexyz.com/ethereum
 const TraderJoeProtocol string = "traderjoe"
 
 // Traderjoe token: JOE.

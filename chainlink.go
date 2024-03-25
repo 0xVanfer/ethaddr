@@ -14,3 +14,10 @@ var ChainlinkTokenList = map[string]string{
 
 // Same as ChainlinkTokenList.
 var LINKList = ChainlinkTokenList
+
+// Bridged Chainlink token: LINK.e.
+//
+// map[network] = address.
+var LINKeList = map[string]string{
+	ChainAvalanche: "0x5947BB275c521040051D82396192181b413227A3", // LINK.e, 0x5947bb275c521040051d82396192181b413227a3
+}

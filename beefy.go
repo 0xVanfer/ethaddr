@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://app.beefy.finance/
+//
 // Docs: https://docs.beefy.finance/
 //
 // Deployed contracts: https://docs.beefy.finance/additional-resources/contract-addresses

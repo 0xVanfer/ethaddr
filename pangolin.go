@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://www.pangolin.exchange/
 const PangolinProtocol string = "pangolin"
 
 // Pangolin token: PNG.

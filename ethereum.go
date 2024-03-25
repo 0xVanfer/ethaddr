@@ -1,5 +1,7 @@
 package ethaddr
 
+// Blockscan: https://etherscan.io/
+
 // Wrapped eth: WETH.
 //
 // NOT STABLE for avalanche. If WETH is later deployed on avalanche, this address might be changed.

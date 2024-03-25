@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://lido.fi/
+//
 // Docs: https://docs.lido.fi/
 //
 // Deployed contracts: https://docs.lido.fi/deployed-contracts/

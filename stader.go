@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://www.staderlabs.com/
+//
 // Docs: https://www.staderlabs.com/docs/
 //
 // Deployed contracts: https://www.staderlabs.com/docs-v1/Ethereum/smart-contracts

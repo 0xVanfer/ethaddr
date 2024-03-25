@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://balancer.fi/
+//
 // Docs: https://docs.balancer.fi/
 //
 // Deployed contracts: https://docs.balancer.fi/reference/contracts/deployment-addresses/mainnet.html

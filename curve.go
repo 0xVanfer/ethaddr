@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://classic.curve.fi/ ; https://curve.fi/
+//
 // Docs: https://curve.readthedocs.io/
 //
 // Deployed contracts: https://curve.readthedocs.io/ref-addresses.html

@@ -1,5 +1,7 @@
 package ethaddr
 
+// Deprecated: meaningless.
+//
 // Protocol token list map.
 //
 // map[protocol name][network] = token.

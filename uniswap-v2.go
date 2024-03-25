@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://app.uniswap.org/swap
 const UniswapProtocolV2 = "uniswapv2"
 
 // Uniswap V2 swap router.

@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://app.morpho.org/
+//
 // Docs: https://docs.morpho.org/
 //
 // Deployed contracts: https://docs.morpho.org/addresses

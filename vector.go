@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://vectorfinance.io/
 const VectorProtocol string = "vector"
 
 // Vector token: VTX.

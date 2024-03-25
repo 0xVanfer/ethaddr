@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://makerdao.com/
 const MakerProtocol string = "maker"
 
 // Maker token: MKR.

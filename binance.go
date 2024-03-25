@@ -1,5 +1,7 @@
 package ethaddr
 
+// Blockscan: https://bscscan.com/
+
 // Binance stable coin: BUSD.
 //
 // map[network] = address.

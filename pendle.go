@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://www.pendle.finance/
 const PendleProtocol string = "pendle"
 
 // Pendle token: PENDLE.

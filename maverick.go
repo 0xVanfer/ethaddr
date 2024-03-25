@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://www.mav.xyz/
+//
 // Docs: https://docs.mav.xyz/
 //
 // Deployed contracts: https://docs.mav.xyz/further-information/contract-addresses

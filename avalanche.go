@@ -1,5 +1,7 @@
 package ethaddr
 
+// Blockscan for avlanche: https://snowscan.xyz/; previously https://snowtrace.io/.
+
 // Wrapped avalanche chain token: WAVAX.
 //
 // map[network] = address.

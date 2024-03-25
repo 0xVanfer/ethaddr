@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://1inch.io/
 const OneInchProtocol string = "1inch"
 
 // 1 Inch token: 1INCH.

@@ -1,6 +1,8 @@
 package ethaddr
 
-// Optimism token ARB.
+// Blockscan: https://optimistic.etherscan.io/
+
+// Optimism token OP.
 //
 // map[network] = address.
 var OPList = map[string]string{

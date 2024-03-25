@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://www.convexfinance.com/
+//
 // Docs: https://docs.convexfinance.com/convexfinance/
 //
 // Deployed contracts: https://docs.convexfinance.com/convexfinance/faq/contract-addresses

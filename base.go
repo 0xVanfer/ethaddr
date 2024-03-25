@@ -1,5 +1,7 @@
 package ethaddr
 
+// Blockscan: https://basescan.org/
+
 // USD Base Coin
 //
 // map[network] = address.

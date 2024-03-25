@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://www.ether.fi/
+//
 // Doc: https://etherfi.gitbook.io/etherfi
 //
 // Deployed contracts: https://etherfi.gitbook.io/etherfi/contracts-and-integrations/deployed-contracts

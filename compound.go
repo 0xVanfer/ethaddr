@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://compound.finance/
+//
 // Docs: https://docs.compound.finance/
 //
 // Deployed contracts: https://docs.compound.finance/#networks

@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://quickswap.exchange/
 const QuickswapProtocol string = "quickswap"
 
 // Quickswap token: Quick.

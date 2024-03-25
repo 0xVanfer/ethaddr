@@ -1,5 +1,7 @@
 package ethaddr
 
+// Website: https://benqi.fi/
+//
 // Docs: https://docs.benqi.fi/
 //
 // Deployed contracts: https://docs.benqi.fi/resources/contracts/benqi-liquidity-market
@@ -15,7 +17,7 @@ var BenqiTokenList = map[string]string{
 // Same as BenqiTokenList.
 var QIList = BenqiTokenList
 
-// Benqi savax token: SAVAX.
+// Benqi savax token: sAVAX.
 //
 // map[network] = address.
 var SAVAXList = map[string]string{

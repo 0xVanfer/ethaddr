@@ -1,5 +1,7 @@
 package ethaddr
 
+// Blockscan: https://arbiscan.io/.
+
 // Arbitrum token ARB.
 //
 // map[network] = address.

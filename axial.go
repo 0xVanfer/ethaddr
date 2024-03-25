@@ -1,5 +1,8 @@
 package ethaddr
 
+// Axial has dead and the website (https://www.axial.exchange/) is shut down.
+// Last checked: Mar.25.2024
+
 // WARNING: Axial has dead.
 //
 // Website: https://www.axial.exchange/
