@@ -12,9 +12,9 @@ const CurveProtocol string = "curve"
 // map[network] = address.
 var CurveTokenlist = map[string]string{
 	ChainEthereum:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
-	ChainAvalanche: "0x47536f17f4ff30e64a96a7555826b8f9e66ec468", // CRV
-	ChainPolygon:   "0x172370d5cd63279efa6d502dab29171933a610af", // CRV
-	ChainArbitrum:  "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978", // CRV
+	ChainAvalanche: "0x47536F17F4fF30e64A96a7555826b8f9e66ec468", // CRV, 0x47536f17f4ff30e64a96a7555826b8f9e66ec468
+	ChainPolygon:   "0x172370d5Cd63279eFa6d502DAB29171933a610AF", // CRV, 0x172370d5cd63279efa6d502dab29171933a610af
+	ChainArbitrum:  "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978", // CRV, 0x11cdb42b0eb46d95f990bedd4695a6e3fa034978
 }
 
 // Same as CurveTokenlist.
