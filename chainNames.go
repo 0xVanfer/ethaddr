@@ -19,5 +19,4 @@ const (
 	ChainArbitrum  string = chainId.ArbitrumChainName     // 42161
 	ChainAvalanche string = chainId.AvalancheChainName    // 43114
 	ChainScroll    string = chainId.ScrollChainName       // 534352
-	ChainSepolia   string = chainId.SepoliaChainName      // 11155111
 )
