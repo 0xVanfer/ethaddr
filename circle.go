@@ -15,6 +15,7 @@ var USDCList = map[string]string{
 	ChainEthereum:  "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", // USDC, 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
 	ChainOptimism:  "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85", // USDC, 0x0b2c639c533813f4aa9d7837caf62653d097ff85
 	ChainPolygon:   "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // USDC, 0x3c499c542cef5e3811e1192ce70d8cc03d5c3359
+	ChainScroll:    "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4", // USDC, 0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4
 }
 
 // USDC.e. The bridged USDC. See the original USDC mint by Circle in USDCList.

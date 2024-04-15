@@ -8,6 +8,10 @@ package ethaddr
 //
 // AToken, VToken, underlying: https://github.com/bgd-labs/aave-address-book/blob/main/tokenlist.json
 //
+// Pools: https://github.com/bgd-labs/aave-address-book/tree/main/scripts/configs/pools
+//
+//	or https://github.com/bgd-labs/aave-address-book/tree/main/src/ts
+//
 // X (twitter): https://twitter.com/aave
 const AaveV3Protocol string = "aavev3"
 
@@ -22,6 +26,7 @@ var AaveIncentivesControllerV3List = map[string]string{
 	ChainEthereum:  "0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb", // 0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb
 	ChainOptimism:  "0x929EC64c34a17401F460460D4B9390518E5B473e", // 0x929ec64c34a17401f460460d4b9390518e5b473e
 	ChainPolygon:   "0x929EC64c34a17401F460460D4B9390518E5B473e", // 0x929ec64c34a17401f460460d4b9390518e5b473e
+	ChainScroll:    "0xa3f3100C4f1D0624DB9DB97b40C13885Ce297799", // 0xa3f3100c4f1d0624db9db97b40c13885ce297799
 }
 
 // Aave lending pool v3.
@@ -36,6 +41,8 @@ var AaveLendingPoolV3List = map[string]string{
 	ChainFantom:    "0x794a61358D6845594F94dc1DB02A252b5b4814aD", // 0x794a61358d6845594f94dc1db02a252b5b4814ad
 	ChainOptimism:  "0x794a61358D6845594F94dc1DB02A252b5b4814aD", // 0x794a61358d6845594f94dc1db02a252b5b4814ad
 	ChainPolygon:   "0x794a61358D6845594F94dc1DB02A252b5b4814aD", // 0x794a61358d6845594f94dc1db02a252b5b4814ad
+	ChainScroll:    "0x11fCfe756c05AD438e312a7fd934381537D3cFfe", // 0x11fcfe756c05ad438e312a7fd934381537d3cffe
+
 }
 
 // Aave pool data provider v3.
@@ -58,6 +65,8 @@ var AavePoolDataProviderList = map[string]string{
 	ChainFantom:    "0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654", // 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
 	ChainOptimism:  "0xd9Ca4878dd38B021583c1B669905592EAe76E044", // 0xd9ca4878dd38b021583c1b669905592eae76e044
 	ChainPolygon:   "0x9441B65EE553F70df9C77d45d3283B6BC24F222d", // 0x9441b65ee553f70df9c77d45d3283b6bc24f222d
+	ChainScroll:    "0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee", // 0xa99f4e69acf23c6838de90dd1b5c02ea928a53ee
+
 }
 
 // Aave ui pool data provider v3.
@@ -71,6 +80,7 @@ var AaveUiPoolDataProviderV3List = map[string]string{
 	ChainEthereum:  "0x91c0eA31b49B69Ea18607702c5d9aC360bf3dE7d", // 0x91c0ea31b49b69ea18607702c5d9ac360bf3de7d
 	ChainOptimism:  "0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5", // 0xbd83ddbe37fc91923d59c8c1e0bde0cccca332d5
 	ChainPolygon:   "0xC69728f11E9E6127733751c8410432913123acf1", // 0xc69728f11e9e6127733751c8410432913123acf1
+	ChainScroll:    "0x639c4ae31A02D54d66A9c696c63404BCa8B2734C", // 0x639c4ae31a02d54d66a9c696c63404bca8b2734c
 }
 
 // Aave ui incentive data provider v3.
@@ -84,6 +94,7 @@ var AaveUiIncentiveDataProviderV3List = map[string]string{
 	ChainEthereum:  "0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6", // 0x162a7ac02f547ad796ca549f757e2b8d1d9b10a6
 	ChainOptimism:  "0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7", // 0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7
 	ChainPolygon:   "0x874313A46e4957D29FAAC43BF5Eb2B144894f557", // 0x874313a46e4957d29faac43bf5eb2b144894f557
+	ChainScroll:    "0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07", // 0x37a2f0b0b5fc33999e3e7fdeccfae1e894ff9b07
 }
 
 // Aave pool address provider v3.
@@ -97,6 +108,8 @@ var AavePoolAddressProviderV3List = map[string]string{
 	ChainEthereum:  "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e", // 0x2f39d218133afab8f2b819b1066c7e434ad94e9e
 	ChainOptimism:  "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 	ChainPolygon:   "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
+	ChainScroll:    "0x69850D0B276776781C063771b161bd8894BCdD04", // 0x69850d0b276776781c063771b161bd8894bcdd04
+
 }
 
 // Aave a tokens v3.
@@ -222,6 +235,11 @@ var AaveATokenV3List = map[string]map[string]string{
 		WSTETHList[ChainPolygon]:  "0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40", // aPolwstETH,0xf59036caebea7dc4b86638dfa2e3c97da9fccd40
 		USDCList[ChainPolygon]:    "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD", // aPolUSDCn, 0xa4d94019934d8333ef880abffbf2fdd611c762bd
 	},
+	ChainScroll: {
+		WETHList[ChainScroll]:   "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a", // aScrWETH, 0xf301805be1df81102c957f6d4ce29d2b8c056b2a
+		USDCList[ChainScroll]:   "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD", // aScrUSDC, 0x1d738a3436a8c49ceffbab7fbf04b660fb528cbd
+		WSTETHList[ChainScroll]: "0x5B1322eeb46240b02e20062b8F0F9908d525B09c", // aScrwstETH, 0x5b1322eeb46240b02e20062b8f0f9908d525b09c
+	},
 }
 
 // Aave static a tokens v3. The wrapped, non-rebase version of a token.
@@ -236,6 +254,11 @@ var AaveStaticATokenV3List = map[string]map[string]string{
 		CbETHList[ChainBase]: "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e", // stataBascbETH, 0x16a004065dfb11276dcb29dc03fb8a85f9a43c6e
 		USDbCList[ChainBase]: "0x6fCe2756794128B1771324caA860965801DCbCdB", // stataBasUSDbC, 0x6fce2756794128b1771324caa860965801dcbcdb
 		USDCList[ChainBase]:  "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc", // stataBasUSDC, 0x4ea71a20e655794051d1ee8b6e4a3269b13ccacc
+	},
+	ChainScroll: {
+		WETHList[ChainScroll]:   "0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd", // stataScrWETH, 0x6b9dfac194fa78a1882680e2ce19194d006aeefd
+		USDCList[ChainScroll]:   "0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7", // stataScrUSDC, 0x9fa123bc7e6b61cc8a9d893673a4c6e5392ff4a7
+		WSTETHList[ChainScroll]: "0x6e368c4dBf083e18a29aE63FC06AF9deDb3242F0", // stataScrwstETH, 0x6e368c4dbf083e18a29ae63fc06af9dedb3242f0
 	},
 }
 

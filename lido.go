@@ -34,6 +34,7 @@ var WSTETHList = map[string]string{
 	ChainEthereum: "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0", // wstETH, 0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0
 	ChainOptimism: "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb", // wstETH, 0x1f32b1c2345538c0c6f582fcb022739c4a194ebb
 	ChainPolygon:  "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD", // wstETH, 0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd
+	ChainScroll:   "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32", // wstETH, 0xf610a9dfb7c89644979b4a0f27063e9e7d7cda32
 }
 
 // Lido stake matic token: stMATIC.
