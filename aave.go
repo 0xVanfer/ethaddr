@@ -7,7 +7,7 @@ package ethaddr
 // map[network] = address.
 //
 // More details are seperated into `aaveV2.go` & `aaveV3.go`.
-var AaveTokenList = map[string]string{
+var AaveTokenList = map[int64]string{
 	ChainArbitrum:  "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196", // AAVE, 0xba5ddd1f9d7f570dc94a51479a000e3bce967196
 	ChainAvalanche: "0x63a72806098Bd3D9520cC43356dD78afe5D386D9", // AAVE.e, 0x63a72806098bd3d9520cc43356dd78afe5d386d9
 	ChainBSC:       "0xfb6115445Bff7b52FeB98650C87f44907E58f802", // AAVE, 0xfb6115445bff7b52feb98650c87f44907e58f802
@@ -19,7 +19,7 @@ var AaveTokenList = map[string]string{
 // Aave token on avalanche: AAVE.e.
 //
 // map[network] = address.
-var AAVEeList = map[string]string{
+var AAVEeList = map[int64]string{
 	ChainAvalanche: "0x63a72806098Bd3D9520cC43356dD78afe5D386D9", // AAVE.e, 0x63a72806098bd3d9520cc43356dd78afe5d386d9
 }
 

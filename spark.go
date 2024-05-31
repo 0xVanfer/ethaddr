@@ -6,38 +6,38 @@ const SparkProtocol string = "spark"
 // Spark Saving DAI address.
 //
 // map[network] = address.
-var SDAIList = map[string]string{
+var SDAIList = map[int64]string{
 	ChainEthereum: "0x83F20F44975D03b1b09e64809B757c47f942BEeA", // sDAI, 0x83f20f44975d03b1b09e64809b757c47f942beea
 }
 
-var SparkPoolList = map[string]string{
+var SparkPoolList = map[int64]string{
 	ChainEthereum: "0xC13e21B648A5Ee794902342038FF3aDAB66BE987", // 0xc13e21b648a5ee794902342038ff3adab66be987
 }
 
-var SparkPoolAddressProviderList = map[string]string{
+var SparkPoolAddressProviderList = map[int64]string{
 	ChainEthereum: "0x02C3eA4e34C0cBd694D2adFa2c690EECbC1793eE", // 0x02c3ea4e34c0cbd694d2adfa2c690eecbc1793ee
 }
 
-var SparkDataProviderList = map[string]string{
+var SparkDataProviderList = map[int64]string{
 	ChainEthereum: "0xFc21d6d146E6086B8359705C8b28512a983db0cb", // 0xfc21d6d146e6086b8359705c8b28512a983db0cb
 }
 
-var SparkTreasuryList = map[string]string{
+var SparkTreasuryList = map[int64]string{
 	ChainEthereum: "0xb137E7d16564c81ae2b0C8ee6B55De81dd46ECe5", // 0xb137e7d16564c81ae2b0c8ee6b55de81dd46ece5
 }
 
-var SparkTreasuryControllerList = map[string]string{
+var SparkTreasuryControllerList = map[int64]string{
 	ChainEthereum: "0x92eF091C5a1E01b3CE1ba0D0150C84412d818F7a", // 0x92ef091c5a1e01b3ce1ba0d0150c84412d818f7a
 }
 
-var SparkIncentivesList = map[string]string{
+var SparkIncentivesList = map[int64]string{
 	ChainEthereum: "0x4370D3b6C9588E02ce9D22e684387859c7Ff5b34", // 0x4370d3b6c9588e02ce9d22e684387859c7ff5b34
 }
 
 // Spark a tokens.
 //
 // map[network][underlying] = address.
-var SparkATokenList = map[string]map[string]string{
+var SparkATokenList = map[int64]map[string]string{
 	ChainEthereum: {
 		DAIList[ChainEthereum]:    "0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B", // spDAI, 0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b
 		USDCList[ChainEthereum]:   "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815", // spUSDC, 0x377c3bd93f2a2984e1e7be6a5c22c525ed4a4815
@@ -53,7 +53,7 @@ var SparkATokenList = map[string]map[string]string{
 // Spark v tokens.
 //
 // map[network][underlying] = address.
-var SparkVTokenList = map[string]map[string]string{
+var SparkVTokenList = map[int64]map[string]string{
 	ChainEthereum: {
 		DAIList[ChainEthereum]:    "0xf705d2B7e92B3F38e6ae7afaDAA2fEE110fE5914", // variableDebtDAI, 0xf705d2b7e92b3f38e6ae7afadaa2fee110fe5914
 		USDCList[ChainEthereum]:   "0x7B70D04099CB9cfb1Db7B6820baDAfB4C5C70A67", // variableDebtUSDC, 0x7b70d04099cb9cfb1db7b6820badafb4c5c70a67
@@ -67,4 +67,4 @@ var SparkVTokenList = map[string]map[string]string{
 }
 
 // Spark s tokens.
-var SparkSTokenList = map[string]map[string]string{}
+var SparkSTokenList = map[int64]map[string]string{}

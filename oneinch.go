@@ -6,7 +6,7 @@ const OneInchProtocol string = "1inch"
 // 1 Inch token: 1INCH.
 //
 // map[network] = address.
-var OneInchTokenList = map[string]string{
+var OneInchTokenList = map[int64]string{
 	ChainEthereum: "0x111111111117dC0aa78b770fA6A738034120C302", // 1INCH, 0x111111111117dc0aa78b770fa6a738034120c302
 	ChainPolygon:  "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f", // 1INCH, 0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f
 }
@@ -17,7 +17,7 @@ var OINCHLIST = OneInchTokenList
 // 1 Inch router V4.
 //
 // map[network] = address
-var OneInchRouterV4List = map[string]string{
+var OneInchRouterV4List = map[int64]string{
 	ChainArbitrum:  "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 	ChainAvalanche: "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 	ChainBSC:       "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
@@ -33,7 +33,7 @@ var OneInchRouterListV4 = OneInchRouterV4List
 // 1 Inch router V5.
 //
 // map[network] = address
-var OneInchRouterV5List = map[string]string{
+var OneInchRouterV5List = map[int64]string{
 	ChainArbitrum:  "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	ChainAvalanche: "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	ChainBSC:       "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
@@ -49,7 +49,7 @@ var OneInchRouterListV5 = OneInchRouterV5List
 // 1 Inch router V6.
 //
 // map[network] = address
-var OneInchRouterV6List = map[string]string{
+var OneInchRouterV6List = map[int64]string{
 	ChainArbitrum:  "",                                           //
 	ChainAvalanche: "",                                           //
 	ChainBSC:       "",                                           //
@@ -62,7 +62,7 @@ var OneInchRouterV6List = map[string]string{
 // 1 Inch spot aggregator.
 //
 // map[network] = address
-var OneInchSpotPriceAggregatorList = map[string]string{
+var OneInchSpotPriceAggregatorList = map[int64]string{
 	ChainArbitrum:  "0x735247fb0a604c0adC6cab38ACE16D0DbA31295F", // 0x735247fb0a604c0adc6cab38ace16d0dba31295f
 	ChainAvalanche: "0xBd0c7AaF0bF082712EbE919a9dD94b2d978f79A9", // 0xbd0c7aaf0bf082712ebe919a9dd94b2d978f79a9
 	ChainBSC:       "0xfbD61B037C325b959c0F6A7e69D8f37770C2c550", // 0xfbd61b037c325b959c0f6a7e69d8f37770c2c550

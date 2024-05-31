@@ -10,7 +10,7 @@ const BenqiProtocol string = "benqi"
 // Benqi token: QI.
 //
 // map[network] = address.
-var BenqiTokenList = map[string]string{
+var BenqiTokenList = map[int64]string{
 	ChainAvalanche: "0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5", // QI, 0x8729438eb15e2c8b576fcc6aecda6a148776c0f5
 }
 
@@ -20,21 +20,21 @@ var QIList = BenqiTokenList
 // Benqi savax token: sAVAX.
 //
 // map[network] = address.
-var SAVAXList = map[string]string{
+var SAVAXList = map[int64]string{
 	ChainAvalanche: "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE", // sAVAX, 0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be
 }
 
 // Benqi comptroller, similar to compound.
 //
 // map[network] = address.
-var BenqiComptrollerList = map[string]string{
+var BenqiComptrollerList = map[int64]string{
 	ChainAvalanche: "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4", // 0x486af39519b4dc9a7fccd318217352830e8ad9b4
 }
 
 // Benqi c tokens(qi tokens).
 //
 // map[network][underlying] = address.
-var BenqiCTokenList = map[string]map[string]string{
+var BenqiCTokenList = map[int64]map[string]string{
 	ChainAvalanche: {
 		DAIeList[ChainAvalanche]:  "0x835866d37AFB8CB8F8334dCCdaf66cf01832Ff5D", // qiDAI, 0x835866d37afb8cb8f8334dccdaf66cf01832ff5d
 		USDCeList[ChainAvalanche]: "0xBEb5d47A3f720Ec0a390d04b4d41ED7d9688bC7F", // qiUSDC, 0xbeb5d47a3f720ec0a390d04b4d41ed7d9688bc7f

@@ -10,7 +10,7 @@ const CompoundProtocol string = "compound"
 // Compound token: COMP.
 //
 // map[network] = address.
-var CompoundTokenList = map[string]string{
+var CompoundTokenList = map[int64]string{
 	ChainEthereum: "0xc00e94Cb662C3520282E6f5717214004A7f26888", // COMP, 0xc00e94cb662c3520282e6f5717214004a7f26888
 }
 
@@ -20,14 +20,14 @@ var COMPList = CompoundTokenList
 // Comptroller.
 //
 // map[network] = address.
-var CompoundComptrollerList = map[string]string{
+var CompoundComptrollerList = map[int64]string{
 	ChainEthereum: "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B", // 0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b
 }
 
 // Compound c tokens.
 //
 // map[network][underlying] = address.
-var CompoundCTokenList = map[string]map[string]string{
+var CompoundCTokenList = map[int64]map[string]string{
 	ChainEthereum: {
 		BATList[ChainEthereum]:   "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E", // cBAT, 0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e
 		DAIList[ChainEthereum]:   "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643", // cDAI, 0x5d3a536e4d6dbd6114cc1ead35777bab948e3643

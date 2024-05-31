@@ -7,7 +7,7 @@ package ethaddr
 // Or can read from https://cl-docs-addresses.web.app/addresses.json
 //
 // Notice: This map is mainly for reference, it is not suggested to use it directly
-var ToUsdOracleMap = map[string]map[string]string{
+var ToUsdOracleMap = map[int64]map[string]string{
 	ChainEthereum: {
 		OINCHLIST[ChainEthereum]:  "0xc929ad75B72593967DE83E7F7Cda0493458261D9", // 0xc929ad75b72593967de83e7f7cda0493458261d9
 		AAVEList[ChainEthereum]:   "0x547a514d5e3769680Ce22B2361c10Ea13619e8a9", // 0x547a514d5e3769680ce22b2361c10ea13619e8a9

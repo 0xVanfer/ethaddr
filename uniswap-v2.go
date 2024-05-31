@@ -8,6 +8,6 @@ const UniswapProtocolV2 = "uniswapv2"
 // map[network] = address.
 //
 // Uni V2 is only on ethereum.
-var UniswapV2RouterList = map[string]string{
+var UniswapV2RouterList = map[int64]string{
 	ChainEthereum: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D", // 0x7a250d5630b4cf539739df2c5dacb4c659f2488d
 }

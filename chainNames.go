@@ -1,35 +1,33 @@
 package ethaddr
 
-import "github.com/0xVanfer/chainId"
-
 const (
-	ChainEthereum   string = chainId.EthereumChainName     // 1
-	ChainGoerli     string = chainId.GoerliChainName       // 5
-	ChainOptimism   string = chainId.OptimismChainName     // 10
-	ChainBSC        string = chainId.BNBSmartChainName     // 56
-	ChainOK         string = chainId.OkChainName           // 66
-	ChainGnosis     string = chainId.GnosisChainName       // 100
-	ChainHeco       string = chainId.HecoChainName         // 128
-	ChainPolygon    string = chainId.PolygonChainName      // 137
-	ChainBlast      string = chainId.BlastChainName        // 238
-	ChainFantom     string = chainId.FantomChainName       // 250
-	ChainFraxtal    string = chainId.FraxtalChainName      // 252
-	ChainFilecoin   string = chainId.FilecoinChainName     // 314
-	ChainPolygonZk  string = chainId.PolygonZkEVMChainName // 1101
-	ChainMoonbeam   string = chainId.MoonbeamChainName     // 1284
-	ChainCentrifuge string = chainId.CentrifugeChainName   // 2031
-	ChainKava       string = chainId.KavaChainName         // 2222
-	ChainMantle     string = chainId.MantleChainName       // 5000
-	ChainBase       string = chainId.BaseChainName         // 8453
-	ChainImmutable  string = chainId.ImmutableChainName    // 13371
-	ChainArbitrum   string = chainId.ArbitrumChainName     // 42161
-	ChainCelo       string = chainId.CeloChainName         // 42220
-	ChainAvalanche  string = chainId.AvalancheChainName    // 43114
-	ChainLinea      string = chainId.LineaChainName        // 59144
-	ChainScroll     string = chainId.ScrollChainName       // 534352
+	ChainEthereum   int64 = 1
+	ChainGoerli     int64 = 5
+	ChainOptimism   int64 = 10
+	ChainBSC        int64 = 56
+	ChainOK         int64 = 66
+	ChainGnosis     int64 = 100
+	ChainHeco       int64 = 128
+	ChainPolygon    int64 = 137
+	ChainBlast      int64 = 238
+	ChainFantom     int64 = 250
+	ChainFraxtal    int64 = 252
+	ChainFilecoin   int64 = 314
+	ChainPolygonZk  int64 = 1101
+	ChainMoonbeam   int64 = 1284
+	ChainCentrifuge int64 = 2031
+	ChainKava       int64 = 2222
+	ChainMantle     int64 = 5000
+	ChainBase       int64 = 8453
+	ChainImmutable  int64 = 13371
+	ChainArbitrum   int64 = 42161
+	ChainCelo       int64 = 42220
+	ChainAvalanche  int64 = 43114
+	ChainLinea      int64 = 59144
+	ChainScroll     int64 = 534352
 )
 
 // Deprecated: Use ChainGnosis instead.
 //
 // XDai has renamed as gnosis.
-const ChainXDai string = ChainGnosis
+const ChainXDai int64 = ChainGnosis

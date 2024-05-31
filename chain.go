@@ -3,7 +3,7 @@ package ethaddr
 // Chain name map to wrapped native tokens.
 //
 // map[chain name] = address.
-var WrappedNativeTokenList = map[string]string{
+var WrappedNativeTokenList = map[int64]string{
 	// ETH and ETH L2s.
 
 	ChainEthereum:  WETHList[ChainEthereum],

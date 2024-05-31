@@ -7,7 +7,7 @@ package ethaddr
 // BSC use the one mint by binance itself, and peg with Circle USDC.
 //
 // map[network] = address.
-var USDCList = map[string]string{
+var USDCList = map[int64]string{
 	ChainArbitrum:  "0xaf88d065e77c8cC2239327C5EDb3A432268e5831", // USDC, 0xaf88d065e77c8cc2239327c5edb3a432268e5831
 	ChainAvalanche: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E", // USDC, 0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e
 	ChainBase:      "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", // USDC, 0x833589fcd6edb6e08f4c7c32d4f71b54bda02913
@@ -21,7 +21,7 @@ var USDCList = map[string]string{
 // USDC.e. The bridged USDC. See the original USDC mint by Circle in USDCList.
 //
 // map[network] = address.
-var USDCeList = map[string]string{
+var USDCeList = map[int64]string{
 	ChainArbitrum:  "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8", // USDC.e, 0xff970a61a04b1ca14834a43f5de4533ebddb5cc8
 	ChainAvalanche: "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664", // USDC.e, 0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664
 	ChainOptimism:  "0x7F5c764cBc14f9669B88837ca1490cCa17c31607", // USDC.e, 0x7f5c764cbc14f9669b88837ca1490cca17c31607

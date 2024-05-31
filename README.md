@@ -1,10 +1,12 @@
 # Ethaddr
 
-#### 1. token addresses
+## May.31.2024 Update
 
-#### 2. contract addresses
+Use chainID as the key of network.
 
-#### 3. maps
+No more dependencies.
+
+No more functions.
 
 ## To Use
 

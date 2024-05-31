@@ -10,7 +10,7 @@ var AaveLikeProtocols = []string{
 // Aave-like A token list map.
 //
 // map[protocol name][network][underlying] = a token.
-var AaveLikeATokenListMap = map[string]*map[string]map[string]string{
+var AaveLikeATokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol: &AaveATokenV2List,
 	AaveV3Protocol: &AaveATokenV3List,
 	SparkProtocol:  &SparkATokenList,
@@ -19,7 +19,7 @@ var AaveLikeATokenListMap = map[string]*map[string]map[string]string{
 // Aave-like V token list map.
 //
 // map[protocol name][network][underlying] = v token.
-var AaveLikeVTokenListMap = map[string]*map[string]map[string]string{
+var AaveLikeVTokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol: &AaveVTokenV2List,
 	AaveV3Protocol: &AaveVTokenV3List,
 	SparkProtocol:  &SparkVTokenList,
@@ -28,7 +28,7 @@ var AaveLikeVTokenListMap = map[string]*map[string]map[string]string{
 // Aave-like S token list map.
 //
 // map[protocol name][network][underlying] = s token.
-var AaveLikeSTokenListMap = map[string]*map[string]map[string]string{
+var AaveLikeSTokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol: &AaveSTokenV2List,
 	AaveV3Protocol: &AaveSTokenV3List,
 	SparkProtocol:  &SparkSTokenList,

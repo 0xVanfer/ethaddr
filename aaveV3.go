@@ -18,7 +18,7 @@ const AaveV3Protocol string = "aavev3"
 // Aave incentive controller V3.
 //
 // map[network] = address.
-var AaveIncentivesControllerV3List = map[string]string{
+var AaveIncentivesControllerV3List = map[int64]string{
 	ChainArbitrum:  "0x929EC64c34a17401F460460D4B9390518E5B473e", // 0x929ec64c34a17401f460460d4b9390518e5b473e
 	ChainAvalanche: "0x929EC64c34a17401F460460D4B9390518E5B473e", // 0x929ec64c34a17401f460460d4b9390518e5b473e
 	ChainBase:      "0x4D0109d509e66dF298257FfdD55F94A3814343Aa", // 0x4d0109d509e66df298257ffdd55f94a3814343aa
@@ -32,7 +32,7 @@ var AaveIncentivesControllerV3List = map[string]string{
 // Aave lending pool v3.
 //
 // map[network] = address.
-var AaveLendingPoolV3List = map[string]string{
+var AaveLendingPoolV3List = map[int64]string{
 	ChainArbitrum:  "0x794a61358D6845594F94dc1DB02A252b5b4814aD", // 0x794a61358d6845594f94dc1db02a252b5b4814ad
 	ChainAvalanche: "0x794a61358D6845594F94dc1DB02A252b5b4814aD", // 0x794a61358d6845594f94dc1db02a252b5b4814ad
 	ChainBase:      "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5", // 0xa238dd80c259a72e81d7e4664a9801593f98d1c5
@@ -56,7 +56,7 @@ var AaveLendingPoolV3List = map[string]string{
 // Polygon used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
 // Optimism used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
 // Fantom has not changed. (Mar.25.2024)
-var AavePoolDataProviderList = map[string]string{
+var AavePoolDataProviderList = map[int64]string{
 	ChainArbitrum:  "0x6b4E260b765B3cA1514e618C0215A6B7839fF93e", // 0x6b4e260b765b3ca1514e618c0215a6b7839ff93e
 	ChainAvalanche: "0x50ddd0Cd4266299527d25De9CBb55fE0EB8dAc30", // 0x50ddd0cd4266299527d25de9cbb55fe0eb8dac30
 	ChainBase:      "0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac", // 0x2d8a3c5677189723c4cb8873cfc9c8976fdf38ac
@@ -72,7 +72,7 @@ var AavePoolDataProviderList = map[string]string{
 // Aave ui pool data provider v3.
 //
 // map[network] = address.
-var AaveUiPoolDataProviderV3List = map[string]string{
+var AaveUiPoolDataProviderV3List = map[int64]string{
 	ChainArbitrum:  "0x145dE30c929a065582da84Cf96F88460dB9745A7", // 0x145de30c929a065582da84cf96f88460db9745a7
 	ChainAvalanche: "0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d", // 0xf71dbe0faef1473ffc607d4c555dff0aeadb878d
 	ChainBase:      "0x174446a6741300cD2E7C1b1A636Fee99c8F83502", // 0x174446a6741300cd2e7c1b1a636fee99c8f83502
@@ -86,7 +86,7 @@ var AaveUiPoolDataProviderV3List = map[string]string{
 // Aave ui incentive data provider v3.
 //
 // map[network] = address.
-var AaveUiIncentiveDataProviderV3List = map[string]string{
+var AaveUiIncentiveDataProviderV3List = map[int64]string{
 	ChainArbitrum:  "0xDA67AF3403555Ce0AE3ffC22fDb7354458277358", // 0xda67af3403555ce0ae3ffc22fdb7354458277358
 	ChainAvalanche: "0x265d414f80b0fca9505710e6F16dB4b67555D365", // 0x265d414f80b0fca9505710e6f16db4b67555d365
 	ChainBase:      "0xEdD3b4737C1a0011626631a977b91Cf3E944982d", // 0xedd3b4737c1a0011626631a977b91cf3e944982d
@@ -100,7 +100,7 @@ var AaveUiIncentiveDataProviderV3List = map[string]string{
 // Aave pool address provider v3.
 //
 // map[network] = address.
-var AavePoolAddressProviderV3List = map[string]string{
+var AavePoolAddressProviderV3List = map[int64]string{
 	ChainArbitrum:  "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 	ChainAvalanche: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 	ChainBase:      "0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D", // 0xe20fcbdbffc4dd138ce8b2e6fbb6cb49777ad64d
@@ -115,7 +115,7 @@ var AavePoolAddressProviderV3List = map[string]string{
 // Aave a tokens v3.
 //
 // map[network][underlying] = address.
-var AaveATokenV3List = map[string]map[string]string{
+var AaveATokenV3List = map[int64]map[string]string{
 	// Already in order of the contract return value.
 	// Last updated at Mar.22.2024.
 	ChainArbitrum: {
@@ -245,7 +245,7 @@ var AaveATokenV3List = map[string]map[string]string{
 // Aave static a tokens v3. The wrapped, non-rebase version of a token.
 //
 // map[network][underlying] = address.
-var AaveStaticATokenV3List = map[string]map[string]string{
+var AaveStaticATokenV3List = map[int64]map[string]string{
 	// wstETH does not have static a token.
 	// Already in order of the contract return value.
 	// Last updated at Mar.22.2024.
@@ -265,7 +265,7 @@ var AaveStaticATokenV3List = map[string]map[string]string{
 // Aave s tokens v3.
 //
 // map[network][underlying] = address.
-var AaveSTokenV3List = map[string]map[string]string{
+var AaveSTokenV3List = map[int64]map[string]string{
 
 	ChainArbitrum: {
 		DAIList[ChainArbitrum]:    "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // sArbDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
@@ -389,7 +389,7 @@ var AaveSTokenV3List = map[string]map[string]string{
 // Aave v tokens v3.
 //
 // map[network][underlying] = address.
-var AaveVTokenV3List = map[string]map[string]string{
+var AaveVTokenV3List = map[int64]map[string]string{
 	// Already in order of the contract return value.
 	// Last updated at Mar.22.2024.
 	ChainArbitrum: {
@@ -518,7 +518,7 @@ var AaveVTokenV3List = map[string]map[string]string{
 // Aave v3 isolated tokens.
 //
 // map[network]= []underlyings.
-var AaveV3IsolatedTokens = map[string][]string{
+var AaveV3IsolatedTokens = map[int64][]string{
 	ChainArbitrum: {
 		ARBList[ChainArbitrum],
 	},
@@ -554,7 +554,7 @@ var AaveV3IsolatedTokens = map[string][]string{
 // Aave v3 tokens that are not allowed to be set as collateral.
 //
 // map[network]= []underlyings.
-var AaveV3NotAllowCollateralTokens = map[string][]string{
+var AaveV3NotAllowCollateralTokens = map[int64][]string{
 	ChainArbitrum: {
 		LUSDList[ChainArbitrum],
 		EURSList[ChainArbitrum],

@@ -5,14 +5,14 @@ const VenusProtocol string = "venus"
 // Venus token XVS.
 //
 // map[network] = address.
-var XVSList = map[string]string{
+var XVSList = map[int64]string{
 	ChainBSC: "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63", // XVS, 0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63
 }
 
 // Venus c tokens(v tokens).
 //
 // map[network][underlying] = address.
-var VenusCTokenList = map[string]map[string]string{
+var VenusCTokenList = map[int64]map[string]string{
 	ChainBSC: {
 		SXPList[ChainBSC]:     "0x2fF3d0F6990a40261c66E1ff2017aCBc282EB6d0", // vSXP, 0x2ff3d0f6990a40261c66e1ff2017acbc282eb6d0
 		XVSList[ChainBSC]:     "0x151B1e2635A717bcDc836ECd6FbB62B674FE3E1D", // v, 0x151b1e2635a717bcdc836ecd6fbb62b674fe3e1d

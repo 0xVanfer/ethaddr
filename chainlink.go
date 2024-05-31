@@ -3,7 +3,7 @@ package ethaddr
 // Chainlink token: LINK.
 //
 // map[network] = address.
-var ChainlinkTokenList = map[string]string{
+var ChainlinkTokenList = map[int64]string{
 	ChainArbitrum:  "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4", // LINK, 0xf97f4df75117a78c1a5a0dbb814af92458539fb4
 	ChainAvalanche: "0x5947BB275c521040051D82396192181b413227A3", // LINK.e, 0x5947bb275c521040051d82396192181b413227a3
 	ChainBSC:       "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD", // LINK, 0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd
@@ -18,6 +18,6 @@ var LINKList = ChainlinkTokenList
 // Bridged Chainlink token: LINK.e.
 //
 // map[network] = address.
-var LINKeList = map[string]string{
+var LINKeList = map[int64]string{
 	ChainAvalanche: "0x5947BB275c521040051D82396192181b413227A3", // LINK.e, 0x5947bb275c521040051d82396192181b413227a3
 }

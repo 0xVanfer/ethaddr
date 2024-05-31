@@ -6,7 +6,7 @@ const VectorProtocol string = "vector"
 // Vector token: VTX.
 //
 // map[network] = address.
-var VectorTokenList = map[string]string{
+var VectorTokenList = map[int64]string{
 	ChainAvalanche: "0x5817D4F0b62A59b17f75207DA1848C2cE75e7AF4", // VTX, 0x5817d4f0b62a59b17f75207da1848c2ce75e7af4
 }
 
@@ -16,7 +16,7 @@ var VTXList = VectorTokenList
 // Vector staking contract.
 //
 // map[network] = address.
-var VectorChefList = map[string]string{
+var VectorChefList = map[int64]string{
 	ChainAvalanche: "0x423D0FE33031aA4456a17b150804aA57fc157d97", // 0x423d0fe33031aa4456a17b150804aa57fc157d97
 }
 
@@ -24,7 +24,7 @@ var VectorChefList = map[string]string{
 // Get pair names: https://api.vectorfinance.io/api/v1/vtx/tvl
 //
 // map[network][pool type][underlying] = pool name.
-var VectorPoolNameList = map[string]map[string]map[string]string{
+var VectorPoolNameList = map[int64]map[string]map[string]string{
 	ChainAvalanche: {
 		// Staking.
 		"VectorStaking": {
@@ -97,7 +97,7 @@ var VectorPoolNameList = map[string]map[string]map[string]string{
 // Vector helper v4.
 //
 // map[network][pool name] = address.
-var VectorMachinegunPoolList = map[string]map[string]string{
+var VectorMachinegunPoolList = map[int64]map[string]string{
 	ChainAvalanche: {
 		// Staking.
 		VectorPoolNameList[ChainAvalanche]["VectorStaking"][TraderzJOEList[ChainAvalanche]]:   VectorChefList[ChainAvalanche],

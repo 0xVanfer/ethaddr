@@ -5,7 +5,7 @@ const YearnProtocol string = "yearn"
 // Yearn token: YFI.
 //
 // map[network] = address.
-var YearnTokenList = map[string]string{
+var YearnTokenList = map[int64]string{
 	ChainEthereum: "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e", // YFI, 0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e
 	ChainFantom:   "0x29b0Da86e484E1C0029B56e817912d778aC0EC69", // YFI, 0x29b0da86e484e1c0029b56e817912d778ac0ec69
 	ChainPolygon:  "0xDA537104D6A5edd53c6fBba9A898708E465260b6", // YFI, 0xda537104d6a5edd53c6fbba9a898708e465260b6
@@ -18,7 +18,7 @@ var YFIList = YearnTokenList
 // Yearn woofy token: WOOFY.
 //
 // map[network] = address.
-var WoofyList = map[string]string{
+var WoofyList = map[int64]string{
 	ChainEthereum: "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
 	ChainFantom:   "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
 	ChainPolygon:  "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
@@ -27,7 +27,7 @@ var WoofyList = map[string]string{
 // Yearn vault tokens.
 //
 // map[network][underlying] = address.
-var YearnVaultTokenList = map[string]map[string]string{
+var YearnVaultTokenList = map[int64]map[string]string{
 	ChainEthereum: {
 		YearnTokenList[ChainEthereum]:                "0xE14d13d8B3b85aF791b2AADD661cDBd5E6097Db1", // yvYFI, 0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1
 		OINCHLIST[ChainEthereum]:                     "0xB8C3B7A2A618C552C23B1E4701109a9E756Bab67", // yv1INCH, 0xb8c3b7a2a618c552c23b1e4701109a9e756bab67

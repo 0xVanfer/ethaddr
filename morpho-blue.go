@@ -10,18 +10,18 @@ const MorphoBlueProtocol string = "morphoblue"
 // MORPHO token.
 //
 // map[network] = address.
-var MorphoTokenList = map[string]string{
+var MorphoTokenList = map[int64]string{
 	ChainEthereum: "0x9994E35Db50125E0DF82e4c2dde62496CE330999", // MORPHO, 0x9994e35db50125e0df82e4c2dde62496ce330999
 }
 
-var MorphoBlueList = map[string]string{
+var MorphoBlueList = map[int64]string{
 	ChainEthereum: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
 }
 
 var MORPHOList = MorphoTokenList
 
 // map[network][collateral token][borrow token] = id
-var MorphoMarketIDMapList = map[string]map[string]map[string][]string{
+var MorphoMarketIDMapList = map[int64]map[string]map[string][]string{
 	ChainEthereum: {
 		WSTETHList[ChainEthereum]: {
 			WETHList[ChainEthereum]: {
@@ -71,7 +71,7 @@ var MorphoMarketIDMapList = map[string]map[string]map[string][]string{
 }
 
 // map[network] = [all ids]
-var MorphoMarketIDs = map[string][]string{
+var MorphoMarketIDs = map[int64][]string{
 	ChainEthereum: {
 		"0xc54d7acf14de29e0e5527cabd7a576506870346a78a11a6762e2cca66322ec41", // wstETH - WETH 94.5%
 		"0x06f2842602373d247c4934f7656e513955ccc4c377f0febc0d9ca2c3bcc191b1", // sDAI - USDC 96.5% (2024.02.02)

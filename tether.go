@@ -3,7 +3,7 @@ package ethaddr
 // USDT
 //
 // map[network] = address.
-var USDTList = map[string]string{
+var USDTList = map[int64]string{
 	ChainArbitrum:  "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", // USDT, 0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9
 	ChainAvalanche: "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7", // USDt, 0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7
 	ChainBSC:       "0x55d398326f99059fF775485246999027B3197955", // USDT, 0x55d398326f99059ff775485246999027b3197955
@@ -15,6 +15,6 @@ var USDTList = map[string]string{
 // USDT.e for avalanche
 //
 // map[network] = address.
-var USDTeList = map[string]string{
+var USDTeList = map[int64]string{
 	ChainAvalanche: "0xc7198437980c041c805A1EDcbA50c1Ce5db95118", // USDT.e, 0xc7198437980c041c805a1edcba50c1ce5db95118
 }

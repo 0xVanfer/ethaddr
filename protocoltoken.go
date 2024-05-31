@@ -5,7 +5,7 @@ package ethaddr
 // Protocol token list map.
 //
 // map[protocol name][network] = token.
-var ProtocolTokenListMap = map[string]map[string]string{
+var ProtocolTokenListMap = map[string]map[int64]string{
 	AaveV2Protocol:       AAVEList,  // aave v2
 	AaveV3Protocol:       AAVEList,  // aave v3
 	AbracadabraProtocol:  SPELLList, // abracadabra

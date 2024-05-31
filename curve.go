@@ -10,7 +10,7 @@ const CurveProtocol string = "curve"
 // Curve token: CRV.
 //
 // map[network] = address.
-var CurveTokenlist = map[string]string{
+var CurveTokenlist = map[int64]string{
 	ChainEthereum:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
 	ChainAvalanche: "0x47536F17F4fF30e64A96a7555826b8f9e66ec468", // CRV, 0x47536f17f4ff30e64a96a7555826b8f9e66ec468
 	ChainPolygon:   "0x172370d5Cd63279eFa6d502DAB29171933a610AF", // CRV, 0x172370d5cd63279efa6d502dab29171933a610af
@@ -23,7 +23,7 @@ var CRVList = CurveTokenlist
 // Curve USD: crvUSD.
 //
 // map[network] = address.
-var CrvUSDList = map[string]string{
+var CrvUSDList = map[int64]string{
 	ChainEthereum: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
 }
 
@@ -32,7 +32,7 @@ var CurveSTETHETHRouterAddress string = "0xDC24316b9AE028F1497c275EB9192a3Ea0f67
 // Curve folded pools(a pool folded into other pools).
 //
 // map[network] = []address.
-var CurveFoldedPoolList = map[string][]string{
+var CurveFoldedPoolList = map[int64][]string{
 	ChainEthereum: {
 		"0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490", // 3crv, 0x6c3f90f043a72fa612cbac8115ee7e52bde6e490
 		"0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3", // 3btc, 0x075b1bb99792c9e1041ba13afef80c91a1e70fb3
@@ -45,14 +45,14 @@ var CurveFoldedPoolList = map[string][]string{
 // Curve gauage factory.
 //
 // map[network] = address.
-var CurveGaugeFactoryList = map[string]string{
+var CurveGaugeFactoryList = map[int64]string{
 	ChainAvalanche: "0xabC000d88f23Bb45525E447528DBF656A9D55bf5", // 0xabc000d88f23bb45525e447528dbf656a9d55bf5
 }
 
 // Curve pools.
 //
 // map[network][pool name] = address.
-var CurvePoolsList = map[string]map[string]string{
+var CurvePoolsList = map[int64]map[string]string{
 	ChainEthereum: {
 		"ib3CRV":      "0x5282a4eF67D9C33135340fB3289cc1711c13638C", // cyDAI/cyUSDC/cyUSDT, 0x5282a4ef67d9c33135340fb3289cc1711c13638c
 		"eCRV":        "0xA3D87FffcE63B53E0d54fAa1cc983B7eB0b74A9c", // ETH/sETH, 0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c
@@ -73,7 +73,7 @@ var CurvePoolsList = map[string]map[string]string{
 // Curve gauges using different contracts.
 //
 // map[network][gauge type] = []address.
-var CurveGauges = map[string]map[string][]string{
+var CurveGauges = map[int64]map[string][]string{
 	ChainEthereum: {
 		"liquidity gauge": {
 			"0x7ca5b0a2910B33e9759DC7dDB0413949071D7575", // compound
