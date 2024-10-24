@@ -1,5 +1,6 @@
 package ethaddr
 
+// Website: https://pancakeswap.finance/
 const PancakeswapProtocol string = "pancakeswap"
 
 // Pancakeswap token: Cake. (symbol is in camel)

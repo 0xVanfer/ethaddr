@@ -87,8 +87,8 @@ var VectorPoolNameList = map[int64]map[string]map[string]string{
 		// Deprecated: Platypus' dead.
 		// WBTC-BTC.b
 		PlatypusLp_BTCb_WBTCe_BTCb_Address: {
-			WBTCList[ChainAvalanche]: "WBTCe",
-			BTCbList[ChainAvalanche]: "BTCb",
+			WBTCeList[ChainAvalanche]: "WBTCe",
+			BTCbList[ChainAvalanche]:  "BTCb",
 		},
 	},
 }
@@ -124,7 +124,7 @@ var VectorMachinegunPoolList = map[int64]map[string]string{
 		VectorPoolNameList[ChainAvalanche][Platypus_AVAX_yyAVAX_PairName][WAVAXList[ChainAvalanche]]:  "0xAF224FD9cF65e869E150013529694be18bE7b418", // 0xaf224fd9cf65e869e150013529694be18be7b418
 		VectorPoolNameList[ChainAvalanche][Platypus_AVAX_yyAVAX_PairName][YyAVAXList[ChainAvalanche]]: "0xf3876553724471EA85E58C0B0D1ec7c4b4147BdF", // 0xf3876553724471ea85e58c0b0d1ec7c4b4147bdf
 		VectorPoolNameList[ChainAvalanche][Platypus_BTCb_WBTCe_PairName][BTCbList[ChainAvalanche]]:    "0x5c3666FA2A2950402A3ff53B69C1E009448FBd41", // 0x5c3666fa2a2950402a3ff53b69c1e009448fbd41
-		VectorPoolNameList[ChainAvalanche][Platypus_BTCb_WBTCe_PairName][WBTCList[ChainAvalanche]]:    "0xF482b0d19c9bE9a562EF4701D621ce396CAb4C8e", // 0xf482b0d19c9be9a562ef4701d621ce396cab4c8e
+		VectorPoolNameList[ChainAvalanche][Platypus_BTCb_WBTCe_PairName][WBTCeList[ChainAvalanche]]:   "0xF482b0d19c9bE9a562EF4701D621ce396CAb4C8e", // 0xf482b0d19c9be9a562ef4701d621ce396cab4c8e
 	},
 }
 

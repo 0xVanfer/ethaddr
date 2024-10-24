@@ -1,5 +1,10 @@
 package ethaddr
 
+// Website: https://synthetix.io/
+//
+// Docs: https://stargateprotocol.gitbook.io/stargate/v/user-docs
+const SynthetixProtocol string = "synthetix"
+
 // Synthetix token: SNX.
 //
 // map[network] = address.

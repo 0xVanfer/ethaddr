@@ -11,10 +11,12 @@ const CurveProtocol string = "curve"
 //
 // map[network] = address.
 var CurveTokenlist = map[int64]string{
-	ChainEthereum:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
-	ChainAvalanche: "0x47536F17F4fF30e64A96a7555826b8f9e66ec468", // CRV, 0x47536f17f4ff30e64a96a7555826b8f9e66ec468
-	ChainPolygon:   "0x172370d5Cd63279eFa6d502DAB29171933a610AF", // CRV, 0x172370d5cd63279efa6d502dab29171933a610af
 	ChainArbitrum:  "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978", // CRV, 0x11cdb42b0eb46d95f990bedd4695a6e3fa034978
+	ChainAvalanche: "0x47536F17F4fF30e64A96a7555826b8f9e66ec468", // CRV, 0x47536f17f4ff30e64a96a7555826b8f9e66ec468
+	ChainEthereum:  "0xD533a949740bb3306d119CC777fa900bA034cd52", // CRV, 0xd533a949740bb3306d119cc777fa900ba034cd52
+	ChainOptimism:  "0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53", // CRV, 0x0994206dfe8de6ec6920ff4d779b0d950605fb53
+	ChainPolygon:   "0x172370d5Cd63279eFa6d502DAB29171933a610AF", // CRV, 0x172370d5cd63279efa6d502dab29171933a610af
+	ChainScroll:    "0xB755039eDc7910C1F1BD985D48322E55A31AC0bF", // CRV, 0xb755039edc7910c1f1bd985d48322e55a31ac0bf
 }
 
 // Same as CurveTokenlist.
@@ -24,6 +26,7 @@ var CRVList = CurveTokenlist
 //
 // map[network] = address.
 var CrvUSDList = map[int64]string{
+	ChainArbitrum: "0x498Bf2B1e120FeD3ad3D42EA2165E9b73f99C1e5", // crvUSD, 0x498bf2b1e120fed3ad3d42ea2165e9b73f99c1e5
 	ChainEthereum: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
 }
 

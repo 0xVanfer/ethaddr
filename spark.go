@@ -34,6 +34,14 @@ var SparkIncentivesList = map[int64]string{
 	ChainEthereum: "0x4370D3b6C9588E02ce9D22e684387859c7Ff5b34", // 0x4370d3b6c9588e02ce9d22e684387859c7ff5b34
 }
 
+var SparkUiPoolDataProviderList = map[int64]string{
+	ChainEthereum: "0xF028c2F4b19898718fD0F77b9b881CbfdAa5e8Bb", // 0xf028c2f4b19898718fd0f77b9b881cbfdaa5e8bb
+}
+
+var SparkUiIncentiveDataProviderList = map[int64]string{
+	ChainEthereum: "0xA7F8A757C4f7696c015B595F51B2901AC0121B18", // 0xa7f8a757c4f7696c015b595f51b2901ac0121b18
+}
+
 // Spark a tokens.
 //
 // map[network][underlying] = address.
@@ -47,6 +55,10 @@ var SparkATokenList = map[int64]map[string]string{
 		WBTCList[ChainEthereum]:   "0x4197ba364AE6698015AE5c1468f54087602715b2", // spWBTC, 0x4197ba364ae6698015ae5c1468f54087602715b2
 		WETHList[ChainEthereum]:   "0x59cD1C87501baa753d0B5B5Ab5D8416A45cD71DB", // spWETH, 0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db
 		WSTETHList[ChainEthereum]: "0x12B54025C112Aa61fAce2CDB7118740875A566E9", // spwstETH, 0x12b54025c112aa61face2cdb7118740875a566e9
+		WEETHList[ChainEthereum]:  "0x3CFd5C0D4acAA8Faee335842e4f31159fc76B008", // spweETH, 0x3cfd5c0d4acaa8faee335842e4f31159fc76b008
+		GNOList[ChainEthereum]:    "0x7b481aCC9fDADDc9af2cBEA1Ff2342CB1733E50F", // spGNO, 0x7b481acc9fdaddc9af2cbea1ff2342cb1733e50f
+		CbBTCList[ChainEthereum]:  "0xb3973D459df38ae57797811F2A1fd061DA1BC123", // spcbBTC, 0xb3973d459df38ae57797811f2a1fd061da1bc123
+		SUSDSList[ChainEthereum]:  "0x6715bc100A183cc65502F05845b589c1919ca3d3", // spsUSDS, 0x6715bc100a183cc65502f05845b589c1919ca3d3
 	},
 }
 
@@ -63,8 +75,27 @@ var SparkVTokenList = map[int64]map[string]string{
 		WBTCList[ChainEthereum]:   "0xf6fEe3A8aC8040C3d6d81d9A4a168516Ec9B51D2", // variableDebtWBTC, 0xf6fee3a8ac8040c3d6d81d9a4a168516ec9b51d2
 		WETHList[ChainEthereum]:   "0x2e7576042566f8D6990e07A1B61Ad1efd86Ae70d", // variableDebtWETH, 0x2e7576042566f8d6990e07a1b61ad1efd86ae70d
 		WSTETHList[ChainEthereum]: "0xd5c3E3B566a42A6110513Ac7670C1a86D76E13E6", // variableDebtwstETH, 0xd5c3e3b566a42a6110513ac7670c1a86d76e13e6
+		WEETHList[ChainEthereum]:  "0xc2bD6d2fEe70A0A73a33795BdbeE0368AeF5c766", // variableDebtweETH, 0xc2bd6d2fee70a0a73a33795bdbee0368aef5c766
+		GNOList[ChainEthereum]:    "0x57a2957651DA467fCD4104D749f2F3684784c25a", // variableDebtGNO, 0x57a2957651da467fcd4104d749f2f3684784c25a
+		CbBTCList[ChainEthereum]:  "0x661fE667D2103eb52d3632a3eB2cAbd123F27938", // variableDebtcbBTC, 0x661fe667d2103eb52d3632a3eb2cabd123f27938
+		SUSDSList[ChainEthereum]:  "0x4e89b83f426fED3f2EF7Bb2d7eb5b53e288e1A13", // variableDebtsUSDS, 0x4e89b83f426fed3f2ef7bb2d7eb5b53e288e1a13
 	},
 }
 
 // Spark s tokens.
-var SparkSTokenList = map[int64]map[string]string{}
+var SparkSTokenList = map[int64]map[string]string{
+	ChainEthereum: {
+		DAIList[ChainEthereum]:    "0xfe2B7a7F4cC0Fb76f7Fc1C6518D586F1e4559176", // stableDebtDAI, 0xfe2b7a7f4cc0fb76f7fc1c6518d586f1e4559176
+		USDCList[ChainEthereum]:   "0x887Ac022983Ff083AEb623923789052A955C6798", // stableDebtUSDC, 0x887ac022983ff083aeb623923789052a955c6798
+		USDTList[ChainEthereum]:   "0x0Dae62F953Ceb2E969fB4dE85f3F9074fa920776", // stableDebtUSDT, 0x0dae62f953ceb2e969fb4de85f3f9074fa920776
+		RETHList[ChainEthereum]:   "0xa9a4037295Ea3a168DC3F65fE69FdA524d52b3e1", // stableDebtrETH, 0xa9a4037295ea3a168dc3f65fe69fda524d52b3e1
+		SDAIList[ChainEthereum]:   "0xEc6C6aBEd4DC03299EFf82Ac8A0A83643d3cB335", // stableDebtsDAI, 0xec6c6abed4dc03299eff82ac8a0a83643d3cb335
+		WBTCList[ChainEthereum]:   "0x4b29e6cBeE62935CfC92efcB3839eD2c2F35C1d9", // stableDebtWBTC, 0x4b29e6cbee62935cfc92efcb3839ed2c2f35c1d9
+		WETHList[ChainEthereum]:   "0x3c6b93D38ffA15ea995D1BC950d5D0Fa6b22bD05", // stableDebtWETH, 0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05
+		WSTETHList[ChainEthereum]: "0x9832D969a0c8662D98fFf334A4ba7FeE62b109C2", // stableDebtwstETH, 0x9832d969a0c8662d98fff334a4ba7fee62b109c2
+		WEETHList[ChainEthereum]:  "0x5B1F8aF3E6C0BF4d20e8e5220a4e4A3A8fA6Dc0A", // stableDebtweETH, 0x5b1f8af3e6c0bf4d20e8e5220a4e4a3a8fa6dc0a
+		GNOList[ChainEthereum]:    "0xbf13910620722D4D4F8A03962894EB3335Bf4FaE", // stableDebtGNO, 0xbf13910620722d4d4f8a03962894eb3335bf4fae
+		CbBTCList[ChainEthereum]:  "0x26a76E2fa1EaDbe7C30f0c333059Bcc3642c28d2", // stableDebtcbBTC, 0x26a76e2fa1eadbe7c30f0c333059bcc3642c28d2
+		SUSDSList[ChainEthereum]:  "0x55580770e14E008082aB2E8d08a16Cc1dC192741", // stableDebtsUSDS, 0x55580770e14e008082ab2e8d08a16cc1dc192741
+	},
+}

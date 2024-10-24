@@ -1,10 +1,15 @@
 package ethaddr
 
-// Blockscan: https://etherscan.io/
+const (
+	ChainNameEthereum string = "ethereum" // Blockscan: https://etherscan.io/
+	ChainNameGoerli   string = "goerli"   // Already deprecated.
+	ChainNameSepolia  string = "sepolia"  // Blockscan: https://sepolia.etherscan.io/
+)
 
 // Wrapped eth: WETH.
 //
-// NOT STABLE for avalanche. If WETH is later deployed on avalanche, this address might be changed.
+// For chain avalanche (43114), use WETHeList instead.
+// If the protocol later deploy the token on avalanche, this address might be changed.
 //
 // map[network] = address.
 var WETHList = map[int64]string{
@@ -26,6 +31,7 @@ var WETHeList = map[int64]string{
 }
 
 // BNB chain ETH is BEP20 token.
+// Other chains with ether address 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE MUST NOT use this list.
 //
 // map[network] = address.
 var ETHList = map[int64]string{

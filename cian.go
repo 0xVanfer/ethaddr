@@ -2,6 +2,43 @@ package ethaddr
 
 var CianProtocol string = "cian"
 
+var CianYieldLayerstETHList = map[int64]string{
+	ChainEthereum: "0xB13aa2d0345b0439b064f26B82D8dCf3f508775d", // ylstETH, 0xb13aa2d0345b0439b064f26b82d8dcf3f508775d
+}
+
+var CianYieldLayerstETHBridgedFromEthereumList = map[int64]string{
+	ChainScroll: "0xBAC6DD1b1F186EF7cf4d64737235a9C53878cB27", // ylstETH, 0xbac6dd1b1f186ef7cf4d64737235a9c53878cb27
+}
+
+var CianStakedYieldLayerstETHList = map[int64]string{
+	ChainScroll: "0x3498fDed9C88Ae83b3BC6a302108F2da408e613b", // sylstETH, 0x3498fded9c88ae83b3bc6a302108f2da408e613b
+}
+
+var CianYieldLayerrsETHList = map[int64]string{
+	ChainEthereum: "0xd87a19fF681AE98BF10d2220D1AE3Fbd374ADE4e", // ylrsETH, 0xd87a19ff681ae98bf10d2220d1ae3fbd374ade4e
+	ChainArbitrum: "0x15cbFF12d53e7BdE3f1618844CaaEf99b2836d2A", // ylrsETH, 0x15cbff12d53e7bde3f1618844caaef99b2836d2a
+}
+
+// Cian yield layer stETH, ylstETH.
+//
+// map[chainID] = address.
+var YLstETHList = CianYieldLayerstETHList
+
+// Cian staked yield layer stETH, sylstETH.
+//
+// map[chainID] = address.
+var SYLstETHList = CianStakedYieldLayerstETHList
+
+// Cian yield layer rsETH, ylrsETH.
+//
+// map[chainID] = address.
+var YLrsETHList = CianYieldLayerrsETHList
+
+// Cian yield layer stETH `Bridged From Ethereum`, ylstETH.
+//
+// map[chainID] = address.
+var YLstETHBFEList = CianYieldLayerstETHBridgedFromEthereumList
+
 // ---------------------------------------- system ----------------------------------------
 
 // map[network] = address.

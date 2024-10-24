@@ -1,6 +1,7 @@
 package ethaddr
 
 // Blockscan for avlanche: https://snowscan.xyz/; previously https://snowtrace.io/.
+const ChainNameAvalanche string = "avalanche"
 
 // Wrapped avalanche chain token: WAVAX.
 //
@@ -11,7 +12,7 @@ var WAVAXList = map[int64]string{
 	ChainPolygon:   "0x7Bb11E7f8b10E9e571E5d8Eace04735fDFB2358a", // WAVAX(wormwhole), 0x7bb11e7f8b10e9e571e5d8eace04735fdfb2358a
 }
 
-// AVAX on Polygon.
+// AVAX on Polygon, optimism...
 //
 // map[network] = address.
 var AVAXList = map[int64]string{

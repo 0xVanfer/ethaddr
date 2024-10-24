@@ -1,13 +1,21 @@
 package ethaddr
 
 // Website: https://1inch.io/
+//
+// Docs: https://portal.1inch.dev/documentation/overview
 const OneInchProtocol string = "1inch"
 
 // 1 Inch token: 1INCH.
 //
+// For polygon, 0x111111111117dC0aa78b770fA6A738034120C302 is also a token called 1INCH,
+// but with almost zero holders. Consider it to be a fake one.
+//
 // map[network] = address.
 var OneInchTokenList = map[int64]string{
+	ChainArbitrum: "0x6314C31A7a1652cE482cffe247E9CB7c3f4BB9aF", // 1INCH, 0x6314c31a7a1652ce482cffe247e9cb7c3f4bb9af
+	ChainBSC:      "0x111111111117dC0aa78b770fA6A738034120C302", // 1INCH, 0x111111111117dc0aa78b770fa6a738034120c302
 	ChainEthereum: "0x111111111117dC0aa78b770fA6A738034120C302", // 1INCH, 0x111111111117dc0aa78b770fa6a738034120c302
+	ChainOptimism: "0xAd42D013ac31486B73b6b059e748172994736426", // 1INCH, 0xad42d013ac31486b73b6b059e748172994736426
 	ChainPolygon:  "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f", // 1INCH, 0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f
 }
 
@@ -27,9 +35,6 @@ var OneInchRouterV4List = map[int64]string{
 	ChainPolygon:   "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 }
 
-// DEPRECATED: use OneInchRouterV4List instead.
-var OneInchRouterListV4 = OneInchRouterV4List
-
 // 1 Inch router V5.
 //
 // map[network] = address
@@ -42,9 +47,6 @@ var OneInchRouterV5List = map[int64]string{
 	ChainOptimism:  "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	ChainPolygon:   "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 }
-
-// DEPRECATED: use OneInchRouterV5List instead.
-var OneInchRouterListV5 = OneInchRouterV5List
 
 // 1 Inch router V6.
 //

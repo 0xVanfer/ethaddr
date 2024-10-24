@@ -1,5 +1,8 @@
 package ethaddr
 
+// Blockscan: https://ftmscan.com/
+const ChainNameFantom string = "fantom"
+
 // WFTM
 //
 // map[network] = address

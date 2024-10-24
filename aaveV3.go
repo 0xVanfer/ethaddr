@@ -15,7 +15,8 @@ package ethaddr
 // X (twitter): https://twitter.com/aave
 const AaveV3Protocol string = "aavev3"
 
-// Aave incentive controller V3.
+// Aave rewards controller V3.
+// Previously named as "incentives controller".
 //
 // map[network] = address.
 var AaveIncentivesControllerV3List = map[int64]string{
@@ -45,56 +46,57 @@ var AaveLendingPoolV3List = map[int64]string{
 
 }
 
-// Aave pool data provider v3.
+// Aave protocol data provider v3.
+// Previously named as "pool data provider".
 //
 // map[network] = address.
 //
-// In the docs, aave still use 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654, but when read by `AavePoolAddressProviderV3List`
-// we get another address, which is the latest. (Last updated Mar.25.2024)
-// Arbitrum used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-// Avalanche used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-// Polygon used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-// Optimism used to use: 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-// Fantom has not changed. (Mar.25.2024)
-var AavePoolDataProviderList = map[int64]string{
-	ChainArbitrum:  "0x6b4E260b765B3cA1514e618C0215A6B7839fF93e", // 0x6b4e260b765b3ca1514e618c0215a6b7839ff93e
-	ChainAvalanche: "0x50ddd0Cd4266299527d25De9CBb55fE0EB8dAc30", // 0x50ddd0cd4266299527d25de9cbb55fe0eb8dac30
-	ChainBase:      "0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac", // 0x2d8a3c5677189723c4cb8873cfc9c8976fdf38ac
-	ChainBSC:       "0x41585C50524fb8c3899B43D7D797d9486AAc94DB", // 0x41585c50524fb8c3899b43d7d797d9486aac94db
-	ChainEthereum:  "0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3", // 0x7b4eb56e7cd4b454ba8ff71e4518426369a138a3
-	ChainFantom:    "0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654", // 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-	ChainOptimism:  "0xd9Ca4878dd38B021583c1B669905592EAe76E044", // 0xd9ca4878dd38b021583c1b669905592eae76e044
-	ChainPolygon:   "0x9441B65EE553F70df9C77d45d3283B6BC24F222d", // 0x9441b65ee553f70df9c77d45d3283b6bc24f222d
-	ChainScroll:    "0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee", // 0xa99f4e69acf23c6838de90dd1b5c02ea928a53ee
-
+// Last updated Oct.9.2024. Aave v3.2.0
+var AavePoolDataProviderV3List = map[int64]string{
+	ChainArbitrum:  "0x7F23D86Ee20D869112572136221e173428DD740B", // 0x7f23d86ee20d869112572136221e173428dd740b
+	ChainAvalanche: "0x7F23D86Ee20D869112572136221e173428DD740B", // 0x7f23d86ee20d869112572136221e173428dd740b
+	ChainBase:      "0xd82a47fdebB5bf5329b09441C3DaB4b5df2153Ad", // 0xd82a47fdebb5bf5329b09441c3dab4b5df2153ad
+	ChainBSC:       "0x23dF2a19384231aFD114b036C14b6b03324D79BC", // 0x23df2a19384231afd114b036c14b6b03324d79bc
+	ChainEthereum:  "0x41393e5e337606dc3821075Af65AeE84D7688CBD", // 0x41393e5e337606dc3821075af65aee84d7688cbd
+	ChainFantom:    "0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654", // 0x69fa688f1dc47d4b5d8029d5a35fb7a548310654
+	ChainOptimism:  "0x7F23D86Ee20D869112572136221e173428DD740B", // 0x7f23d86ee20d869112572136221e173428dd740b
+	ChainPolygon:   "0x7F23D86Ee20D869112572136221e173428DD740B", // 0x7f23d86ee20d869112572136221e173428dd740b
+	ChainScroll:    "0xe2108b60623C6Dcf7bBd535bD15a451fd0811f7b", // 0xe2108b60623c6dcf7bbd535bd15a451fd0811f7b
 }
+
+// Deprecated: user AavePoolDataProviderV3List instead.
+var AavePoolDataProviderList = AavePoolDataProviderV3List
 
 // Aave ui pool data provider v3.
 //
 // map[network] = address.
+//
+// Last updated Oct.9.2024. Aave v3.2.0
 var AaveUiPoolDataProviderV3List = map[int64]string{
-	ChainArbitrum:  "0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16", // 0x5d4d4007a4c6336550ddaa2a7c0d5e7972eebd16
-	ChainAvalanche: "0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9", // 0x5598bbfa2f4fe8151f45bba0a3ede1b54b51a0a9
-	ChainBase:      "0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16", // 0x5d4d4007a4c6336550ddaa2a7c0d5e7972eebd16
-	ChainBSC:       "0x78F8Bd884C3D738B74B420540659c82f392820e0", // 0x78f8bd884c3d738b74b420540659c82f392820e0
-	ChainEthereum:  "0x5c5228aC8BC1528482514aF3e27E692495148717", // 0x5c5228ac8bc1528482514af3e27e692495148717
-	ChainOptimism:  "0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9", // 0x5598bbfa2f4fe8151f45bba0a3ede1b54b51a0a9
-	ChainPolygon:   "0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9", // 0x5598bbfa2f4fe8151f45bba0a3ede1b54b51a0a9
-	ChainScroll:    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763", // 0xc851e6147dce6a469cc33be3121b6b2d4cad2763
+	ChainArbitrum:  "0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3", // 0xc0179321f0825c3e0f59fe7ca4e40557b97797a3
+	ChainAvalanche: "0x374a2592f0265b3bb802d75809e61b1b5BbD85B7", // 0x374a2592f0265b3bb802d75809e61b1b5bbd85b7
+	ChainBase:      "0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4", // 0xe92cd6164ce7dc68e740765bc1f2a091b6cbc3e4
+	ChainBSC:       "0xb12e82DF057BF16ecFa89D7D089dc7E5C1Dc057B", // 0xb12e82df057bf16ecfa89d7d089dc7e5c1dc057b
+	ChainEthereum:  "0x194324C9Af7f56E22F1614dD82E18621cb9238E7", // 0x194324c9af7f56e22f1614dd82e18621cb9238e7
+	ChainOptimism:  "0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB", // 0x86b0521f92a554057e54b93098ba2a6aaa2f4acb
+	ChainPolygon:   "0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4", // 0xe92cd6164ce7dc68e740765bc1f2a091b6cbc3e4
+	ChainScroll:    "0x2E549104c516b8657A7D888494DfbAbD7C70b464", // 0x2e549104c516b8657a7d888494dfbabd7c70b464
 }
 
 // Aave ui incentive data provider v3.
 //
 // map[network] = address.
+//
+// Last updated Oct.9.2024. Aave v3.2.0
 var AaveUiIncentiveDataProviderV3List = map[int64]string{
-	ChainArbitrum:  "0xDA67AF3403555Ce0AE3ffC22fDb7354458277358", // 0xda67af3403555ce0ae3ffc22fdb7354458277358
-	ChainAvalanche: "0x265d414f80b0fca9505710e6F16dB4b67555D365", // 0x265d414f80b0fca9505710e6f16db4b67555d365
-	ChainBase:      "0xEdD3b4737C1a0011626631a977b91Cf3E944982d", // 0xedd3b4737c1a0011626631a977b91cf3e944982d
-	ChainBSC:       "0x1236010CECea55998384e795B59815D871f5f94d", // 0x1236010cecea55998384e795b59815d871f5f94d
-	ChainEthereum:  "0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6", // 0x162a7ac02f547ad796ca549f757e2b8d1d9b10a6
-	ChainOptimism:  "0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7", // 0x6f143fe2f7b02424ad3cad1593d6f36c0aab69d7
-	ChainPolygon:   "0x874313A46e4957D29FAAC43BF5Eb2B144894f557", // 0x874313a46e4957d29faac43bf5eb2b144894f557
-	ChainScroll:    "0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07", // 0x37a2f0b0b5fc33999e3e7fdeccfae1e894ff9b07
+	ChainArbitrum:  "0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4", // 0xe92cd6164ce7dc68e740765bc1f2a091b6cbc3e4
+	ChainAvalanche: "0xC81CCebEA6A14bA007b96C0a1600D0bA0Df383a8", // 0xc81ccebea6a14ba007b96c0a1600d0ba0df383a8
+	ChainBase:      "0x5c5228aC8BC1528482514aF3e27E692495148717", // 0x5c5228ac8bc1528482514af3e27e692495148717
+	ChainBSC:       "0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB", // 0x86b0521f92a554057e54b93098ba2a6aaa2f4acb
+	ChainEthereum:  "0x5a40cDe2b76Da2beD545efB3ae15708eE56aAF9c", // 0x5a40cde2b76da2bed545efb3ae15708ee56aaf9c
+	ChainOptimism:  "0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3", // 0xc0179321f0825c3e0f59fe7ca4e40557b97797a3
+	ChainPolygon:   "0x5c5228aC8BC1528482514aF3e27E692495148717", // 0x5c5228ac8bc1528482514af3e27e692495148717
+	ChainScroll:    "0x78F8Bd884C3D738B74B420540659c82f392820e0", // 0x78f8bd884c3d738b74b420540659c82f392820e0
 }
 
 // Aave pool address provider v3.
@@ -109,7 +111,10 @@ var AavePoolAddressProviderV3List = map[int64]string{
 	ChainOptimism:  "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 	ChainPolygon:   "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb", // 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 	ChainScroll:    "0x69850D0B276776781C063771b161bd8894BCdD04", // 0x69850d0b276776781c063771b161bd8894bcdd04
+}
 
+var AaveOracleList = map[int64]string{
+	ChainEthereum: "0x54586bE62E3c3580375aE3723C145253060Ca0C2", // 0x54586be62e3c3580375ae3723c145253060ca0c2
 }
 
 // Aave a tokens v3.
@@ -117,29 +122,31 @@ var AavePoolAddressProviderV3List = map[int64]string{
 // map[network][underlying] = address.
 var AaveATokenV3List = map[int64]map[string]string{
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainArbitrum: {
 		DAIList[ChainArbitrum]:    "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aArbDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		LINKList[ChainArbitrum]:   "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aArb, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		LINKList[ChainArbitrum]:   "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aArbLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
 		USDCeList[ChainArbitrum]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aArbUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		WBTCList[ChainArbitrum]:   "0x078f358208685046a11C85e8ad32895DED33A249", // aArb, 0x078f358208685046a11c85e8ad32895ded33a249
-		WETHList[ChainArbitrum]:   "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aArb, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
-		USDTList[ChainArbitrum]:   "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aArb, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		AAVEList[ChainArbitrum]:   "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aArb, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		WBTCList[ChainArbitrum]:   "0x078f358208685046a11C85e8ad32895DED33A249", // aArbWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
+		WETHList[ChainArbitrum]:   "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aArbWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[ChainArbitrum]:   "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aArbUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEList[ChainArbitrum]:   "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aArbAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
 		EURSList[ChainArbitrum]:   "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aArbEURS, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-		WSTETHList[ChainArbitrum]: "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aArb, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
-		MAIList[ChainArbitrum]:    "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aArb, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
-		RETHList[ChainArbitrum]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aArb, 0x8eb270e296023e9d92081fdf967ddd7878724424
-		LUSDList[ChainArbitrum]:   "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aArb, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
-		USDCList[ChainArbitrum]:   "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aArb, 0x724dc807b04555b71ed48a6896b6f41593b8c637
-		FRAXList[ChainArbitrum]:   "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aArb, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
-		ARBList[ChainArbitrum]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aArb, 0x6533afac2e7bccb20dca161449a13a32d391fb00
+		WSTETHList[ChainArbitrum]: "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aArbwstETH, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		MAIList[ChainArbitrum]:    "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aArbMAI, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		RETHList[ChainArbitrum]:   "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aArbrETH, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		LUSDList[ChainArbitrum]:   "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aArbLUSD, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+		USDCList[ChainArbitrum]:   "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aArbUSDC, 0x724dc807b04555b71ed48a6896b6f41593b8c637
+		FRAXList[ChainArbitrum]:   "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aArbFRAX, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
+		ARBList[ChainArbitrum]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aArbARB, 0x6533afac2e7bccb20dca161449a13a32d391fb00
+		WEETHList[ChainArbitrum]:  "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77", // aArbweETH, 0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77
+		GHOList[ChainArbitrum]:    "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D", // aArbGHO, 0xebe517846d0f36eced99c735cbf6131e1feb775d
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainAvalanche: {
 		DAIeList[ChainAvalanche]:  "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aAvaDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		LINKList[ChainAvalanche]:  "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aAvaLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		LINKeList[ChainAvalanche]: "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aAvaLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
 		USDCList[ChainAvalanche]:  "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aAvaUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
 		WBTCeList[ChainAvalanche]: "0x078f358208685046a11C85e8ad32895DED33A249", // aAvaWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
 		WETHeList[ChainAvalanche]: "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aAvaWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
@@ -152,16 +159,29 @@ var AaveATokenV3List = map[int64]map[string]string{
 		BTCbList[ChainAvalanche]:  "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aAvaBTC.b, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainBase: {
 		WETHList[ChainBase]:   "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7", // aBasWETH, 0xd4a0e0b9149bcee3c920d2e00b5de09138fd8bb7
 		CbETHList[ChainBase]:  "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad", // aBascbETH, 0xcf3d55c10db69f28fd1a75bd73f3d8a2d9c595ad
 		USDbCList[ChainBase]:  "0x0a1d576f3eFeF75b330424287a95A366e8281D54", // aBasUSDbC, 0x0a1d576f3efef75b330424287a95a366e8281d54
 		WSTETHList[ChainBase]: "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D", // aBaswstETH, 0x99cbc45ea5bb7ef3a5bc08fb1b7e56bb2442ef0d
 		USDCList[ChainBase]:   "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB", // aBasUSDC, 0x4e65fe4dba92790696d040ac24aa414708f5c0ab
+		WEETHList[ChainBase]:  "0x7C307e128efA31F540F2E2d976C995E0B65F51F6", // aBasweETH, 0x7c307e128efa31f540f2e2d976c995e0b65f51f6
+		CbBTCList[ChainBase]:  "0xBdb9300b7CDE636d9cD4AFF00f6F009fFBBc8EE6", // aBascbBTC, 0xbdb9300b7cde636d9cd4aff00f6f009ffbbc8ee6
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.8.2024.
+	ChainBSC: {
+		CakeList[ChainBSC]:  "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281", // 0x4199cc1f5ed0d796563d7ccb2e036253e2c18281
+		WBNBList[ChainBSC]:  "0x9B00a09492a626678E5A3009982191586C444Df9", // 0x9b00a09492a626678e5a3009982191586c444df9
+		BTCbList[ChainBSC]:  "0x56a7ddc4e848EbF43845854205ad71D5D5F72d3D", // 0x56a7ddc4e848ebf43845854205ad71d5d5f72d3d
+		ETHList[ChainBSC]:   "0x2E94171493fAbE316b6205f1585779C887771E2F", // 0x2e94171493fabe316b6205f1585779c887771e2f
+		USDCList[ChainBSC]:  "0x00901a076785e0906d1028c7d6372d247bec7d61", // 0x00901a076785e0906d1028c7d6372d247bec7d61
+		USDTList[ChainBSC]:  "0xa9251ca9DE909CB71783723713B21E4233fbf1B1", // 0xa9251ca9de909cb71783723713b21e4233fbf1b1
+		FDUSDList[ChainBSC]: "0x75bd1A659bdC62e4C313950d44A2416faB43E785", // 0x75bd1a659bdc62e4c313950d44a2416fab43e785
+	},
+	// Already in order of the contract return value.
+	// Last updated at Jul.5.2024.
 	ChainEthereum: {
 		WETHList[ChainEthereum]:   "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8", // aEthWETH, 0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8
 		WSTETHList[ChainEthereum]: "0x0B925eD163218f6662a35e0f0371Ac234f9E9371", // aEthwstETH, 0x0b925ed163218f6662a35e0f0371ac234f9e9371
@@ -191,9 +211,17 @@ var AaveATokenV3List = map[int64]map[string]string{
 		FXSList[ChainEthereum]:    "0x82F9c5ad306BBa1AD0De49bB5FA6F01bf61085ef", // aEthFXS, 0x82f9c5ad306bba1ad0de49bb5fa6f01bf61085ef
 		CrvUSDList[ChainEthereum]: "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A", // aEthcrvUSD, 0xb82fa9f31612989525992fcfbb09ab22eff5c85a
 		PyUSDList[ChainEthereum]:  "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E", // aEthPYUSD, 0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e
+		WEETHList[ChainEthereum]:  "0xBdfa7b7893081B35Fb54027489e2Bc7A38275129", // aEthweETH, 0xbdfa7b7893081b35fb54027489e2bc7a38275129
+		OSETHList[ChainEthereum]:  "0x927709711794F3De5DdBF1D176bEE2D55Ba13c21", // aEthosETH, 0x927709711794f3de5ddbf1d176bee2d55ba13c21
+		USDeList[ChainEthereum]:   "0x4F5923Fc5FD4a93352581b38B7cD26943012DECF", // aEthUSDe, 0x4f5923fc5fd4a93352581b38b7cd26943012decf
+		ETHxList[ChainEthereum]:   "0x1c0E06a0b1A4c160c17545FF2A951bfcA57C0002", // aEthETHx, 0x1c0e06a0b1a4c160c17545ff2a951bfca57c0002
+		SUSDeList[ChainEthereum]:  "0x4579a27aF00A62C0EB156349f31B345c08386419", // aEthsUSDe, 0x4579a27af00a62c0eb156349f31b345c08386419
+		TBTCList[ChainEthereum]:   "0x10Ac93971cdb1F5c778144084242374473c350Da", // aEthtBTC, 0x10ac93971cdb1f5c778144084242374473c350da
+		CbBTCList[ChainEthereum]:  "0x5c647cE0Ae10658ec44FA4E11A51c96e94efd1Dd", // aEthcbBTC, 0x5c647ce0ae10658ec44fa4e11a51c96e94efd1dd
+		USDSList[ChainEthereum]:   "0x32a6268f9Ba3642Dda7892aDd74f1D34469A4259", // aEthUSDS, 0x32a6268f9ba3642dda7892add74f1d34469a4259
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainOptimism: {
 		DAIList[ChainOptimism]:    "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aOptDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
 		LINKList[ChainOptimism]:   "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aOptLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
@@ -211,34 +239,37 @@ var AaveATokenV3List = map[int64]map[string]string{
 		USDCList[ChainOptimism]:   "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aOpt, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainPolygon: {
 		DAIList[ChainPolygon]:     "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE", // aPolDAI, 0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee
-		LINKList[ChainPolygon]:    "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aPol, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
+		LINKList[ChainPolygon]:    "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530", // aPolLINK, 0x191c10aa4af7c30e871e70c95db0e4eb77237530
 		USDCeList[ChainPolygon]:   "0x625E7708f30cA75bfd92586e17077590C60eb4cD", // aPolUSDC, 0x625e7708f30ca75bfd92586e17077590c60eb4cd
-		WBTCList[ChainPolygon]:    "0x078f358208685046a11C85e8ad32895DED33A249", // aPol, 0x078f358208685046a11c85e8ad32895ded33a249
-		WETHList[ChainPolygon]:    "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aPol, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
-		USDTList[ChainPolygon]:    "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aPol, 0x6ab707aca953edaefbc4fd23ba73294241490620
-		AAVEList[ChainPolygon]:    "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aPol, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
-		WMATICList[ChainPolygon]:  "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aPol, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
-		CRVList[ChainPolygon]:     "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aPol, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
-		SUSHIList[ChainPolygon]:   "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aPol, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
-		GHSTList[ChainPolygon]:    "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aPol, 0x8eb270e296023e9d92081fdf967ddd7878724424
-		BALList[ChainPolygon]:     "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aPol, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
-		DPIList[ChainPolygon]:     "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aPol, 0x724dc807b04555b71ed48a6896b6f41593b8c637
-		EURSList[ChainPolygon]:    "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aPol, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
-		JEURList[ChainPolygon]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aPol, 0x6533afac2e7bccb20dca161449a13a32d391fb00
+		WBTCList[ChainPolygon]:    "0x078f358208685046a11C85e8ad32895DED33A249", // aPolWBTC, 0x078f358208685046a11c85e8ad32895ded33a249
+		WETHList[ChainPolygon]:    "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8", // aPolWETH, 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8
+		USDTList[ChainPolygon]:    "0x6ab707Aca953eDAeFBc4fD23bA73294241490620", // aPolUSDT, 0x6ab707aca953edaefbc4fd23ba73294241490620
+		AAVEList[ChainPolygon]:    "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375", // aPolAAVE, 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
+		WMATICList[ChainPolygon]:  "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97", // aPolWMATIC, 0x6d80113e533a2c0fe82eabd35f1875dcea89ea97
+		CRVList[ChainPolygon]:     "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf", // aPolCRV, 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff
+		SUSHIList[ChainPolygon]:   "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA", // aPolSUSHI, 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
+		GHSTList[ChainPolygon]:    "0x8Eb270e296023E9D92081fdF967dDd7878724424", // aPolGHST, 0x8eb270e296023e9d92081fdf967ddd7878724424
+		BALList[ChainPolygon]:     "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692", // aPolBAL, 0x8ffdf2de812095b1d19cb146e4c004587c0a0692
+		DPIList[ChainPolygon]:     "0x724dc807b04555b71ed48a6896b6F41593b8C637", // aPolDPI, 0x724dc807b04555b71ed48a6896b6f41593b8c637
+		EURSList[ChainPolygon]:    "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5", // aPolEURS, 0x38d693ce1df5aadf7bc62595a37d667ad57922e5
+		JEURList[ChainPolygon]:    "0x6533afac2E7BCCB20dca161449A13A32D391fb00", // aPolJEUR, 0x6533afac2e7bccb20dca161449a13a32d391fb00
 		EURAList[ChainPolygon]:    "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77", // aPolAGEUR,0x8437d7c167dfb82ed4cb79cd44b7a32a1dd95c77
-		MiMATICList[ChainPolygon]: "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D", // aPol, 0xebe517846d0f36eced99c735cbf6131e1feb775d
-		STMATICList[ChainPolygon]: "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9", // aPol, 0xea1132120ddcdda2f119e99fa7a27a0d036f7ac9
-		MaticXList[ChainPolygon]:  "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE", // aPol, 0x80ca0d8c38d2e2bcbab66aa1648bd1c7160500fe
+		MiMATICList[ChainPolygon]: "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D", // aPolMIMATIC, 0xebe517846d0f36eced99c735cbf6131e1feb775d
+		STMATICList[ChainPolygon]: "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9", // aPolstMATIC, 0xea1132120ddcdda2f119e99fa7a27a0d036f7ac9
+		MaticXList[ChainPolygon]:  "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE", // aPolMATICX, 0x80ca0d8c38d2e2bcbab66aa1648bd1c7160500fe
 		WSTETHList[ChainPolygon]:  "0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40", // aPolwstETH,0xf59036caebea7dc4b86638dfa2e3c97da9fccd40
 		USDCList[ChainPolygon]:    "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD", // aPolUSDCn, 0xa4d94019934d8333ef880abffbf2fdd611c762bd
 	},
+	// Already in order of the contract return value.
+	// Last updated at Aug.9.2024.
 	ChainScroll: {
 		WETHList[ChainScroll]:   "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a", // aScrWETH, 0xf301805be1df81102c957f6d4ce29d2b8c056b2a
 		USDCList[ChainScroll]:   "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD", // aScrUSDC, 0x1d738a3436a8c49ceffbab7fbf04b660fb528cbd
 		WSTETHList[ChainScroll]: "0x5B1322eeb46240b02e20062b8F0F9908d525B09c", // aScrwstETH, 0x5b1322eeb46240b02e20062b8f0f9908d525b09c
+		WEETHList[ChainScroll]:  "0xd80A5e16DBDC52Bd1C947CEDfA22c562Be9129C8", // aScrweETH, 0xd80a5e16dbdc52bd1c947cedfa22c562be9129c8
 	},
 }
 
@@ -248,7 +279,7 @@ var AaveATokenV3List = map[int64]map[string]string{
 var AaveStaticATokenV3List = map[int64]map[string]string{
 	// wstETH does not have static a token.
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainBase: {
 		WETHList[ChainBase]:  "0x468973e3264F2aEba0417A8f2cD0Ec397E738898", // stataBasWETH, 0x468973e3264f2aeba0417a8f2cd0ec397e738898
 		CbETHList[ChainBase]: "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e", // stataBascbETH, 0x16a004065dfb11276dcb29dc03fb8a85f9a43c6e
@@ -262,11 +293,12 @@ var AaveStaticATokenV3List = map[int64]map[string]string{
 	},
 }
 
+// DEPRECATED: Aave v3 has deprecated sToken.
+//
 // Aave s tokens v3.
 //
 // map[network][underlying] = address.
 var AaveSTokenV3List = map[int64]map[string]string{
-
 	ChainArbitrum: {
 		DAIList[ChainArbitrum]:    "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // sArbDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
 		LINKList[ChainArbitrum]:   "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // sArb, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
@@ -283,15 +315,17 @@ var AaveSTokenV3List = map[int64]map[string]string{
 		USDCList[ChainArbitrum]:   "0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a", // sArb, 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a
 		FRAXList[ChainArbitrum]:   "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // sArb, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
 		ARBList[ChainArbitrum]:    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D", // sArb, 0x6b4b37618d85db2a7b469983c888040f7f05ea3d
+		WEETHList[ChainArbitrum]:  "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF", // sArb, 0x40b4baecc69b882e8804f9286b12228c27f8c9bf
+		GHOList[ChainArbitrum]:    "0x687871030477bf974725232F764aa04318A8b9c8", // sArb, 0x687871030477bf974725232f764aa04318a8b9c8
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainAvalanche: {
 		DAIeList[ChainAvalanche]:  "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtAvaDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
-		LINKList[ChainAvalanche]:  "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtAvaLINK, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
+		LINKeList[ChainAvalanche]: "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtAvaLINK, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
 		USDCList[ChainAvalanche]:  "0x307ffe186F84a3bc2613D1eA417A5737D69A7007", // stableDebtAvaUSDC, 0x307ffe186f84a3bc2613d1ea417a5737d69a7007
 		WBTCeList[ChainAvalanche]: "0x633b207Dd676331c413D4C013a6294B0FE47cD0e", // stableDebtAvaWBTC, 0x633b207dd676331c413d4c013a6294b0fe47cd0e
-		WETHList[ChainAvalanche]:  "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtAvaWETH, 0xd8ad37849950903571df17049516a5cd4cbe55f6
+		WETHeList[ChainAvalanche]: "0xD8Ad37849950903571df17049516a5CD4cbE55F6", // stableDebtAvaWETH, 0xd8ad37849950903571df17049516a5cd4cbe55f6
 		USDTList[ChainAvalanche]:  "0x70eFfc565DB6EEf7B927610155602d31b670e802", // stableDebtAvaUSDT, 0x70effc565db6eef7b927610155602d31b670e802
 		AAVEeList[ChainAvalanche]: "0xfAeF6A702D15428E588d4C0614AEFb4348D83D48", // stableDebtAvaAAVE, 0xfaef6a702d15428e588d4c0614aefb4348d83d48
 		WAVAXList[ChainAvalanche]: "0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E", // stableDebtAvaWAVAX, 0xf15f26710c827dde8acba678682f3ce24f2fb56e
@@ -301,16 +335,29 @@ var AaveSTokenV3List = map[int64]map[string]string{
 		BTCbList[ChainAvalanche]:  "0xa5e408678469d23efDB7694b1B0A85BB0669e8bd", // stableDebtAvaBTC.b, 0xa5e408678469d23efdb7694b1b0a85bb0669e8bd
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainBase: {
 		WETHList[ChainBase]:   "0xaED3b56FeA82E809665f02AcBcDEc0816c75f4d9", // 0xaed3b56fea82e809665f02acbcdec0816c75f4d9
 		CbETHList[ChainBase]:  "0xa9dF5c62d16d3f496673F4d736852017b086eCA0", // 0xa9df5c62d16d3f496673f4d736852017b086eca0
 		USDbCList[ChainBase]:  "0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654", // 0xbbadd47fbafa9de717fe203e4707deb893c64654
 		WSTETHList[ChainBase]: "0xfe742Fa2a84294E8316F05b17c05090Fc68B5105", // 0xfe742fa2a84294e8316f05b17c05090fc68b5105
 		USDCList[ChainBase]:   "0x03506214379aA86ad1176af71c260278cfa10B38", // 0x03506214379aa86ad1176af71c260278cfa10b38
+		WEETHList[ChainBase]:  "0xCBEdA45432D5325585ACAD29244f113C237B6Cf0", // 0xcbeda45432d5325585acad29244f113c237b6cf0
+		CbBTCList[ChainBase]:  "0x839A515eB049237a6D4978F1735a00608a5A857D", // 0x839a515eb049237a6d4978f1735a00608a5a857d
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.8.2024.
+	ChainBSC: {
+		CakeList[ChainBSC]:  "0x57e95511de39890D3e782df4b19F0D97A05DF64A", // 0x57e95511de39890d3e782df4b19f0d97a05df64a
+		WBNBList[ChainBSC]:  "0x5cc46d2b1103aB23CFD63eF8631480bbf4eB40FE", // 0x5cc46d2b1103ab23cfd63ef8631480bbf4eb40fe
+		BTCbList[ChainBSC]:  "0x9Ef6D76740713C674A6e4f38B863E62D10965053", // 0x9ef6d76740713c674a6e4f38b863e62d10965053
+		ETHList[ChainBSC]:   "0xa8327EE1858E06983af6690d24e77774807109d4", // 0xa8327ee1858e06983af6690d24e77774807109d4
+		USDCList[ChainBSC]:  "0xCcC260D9778F900eAd566Fa2E1D622E667677653", // 0xccc260d9778f900ead566fa2e1d622e667677653
+		USDTList[ChainBSC]:  "0xB735D922a36d4337f561CE433594727e1bc8bD01", // 0xb735d922a36d4337f561ce433594727e1bc8bd01
+		FDUSDList[ChainBSC]: "0x5543d347bfae77A5FF913e589aB6D6ad520f1C73", // 0x5543d347bfae77a5ff913e589ab6d6ad520f1c73
+	},
+	// Already in order of the contract return value.
+	// Last updated at Jul.5.2024.
 	ChainEthereum: {
 		WETHList[ChainEthereum]:   "0x102633152313C81cD80419b6EcF66d14Ad68949A", // stableDebtEthWETH, 0x102633152313c81cd80419b6ecf66d14ad68949a
 		WSTETHList[ChainEthereum]: "0x39739943199c0fBFe9E5f1B5B160cd73a64CB85D", // stableDebtEthwstETH, 0x39739943199c0fbfe9e5f1b5b160cd73a64cb85d
@@ -340,9 +387,17 @@ var AaveSTokenV3List = map[int64]map[string]string{
 		FXSList[ChainEthereum]:    "0x61dFd349140C239d3B61fEe203Efc811b518a317", // stableDebtEthFXS, 0x61dfd349140c239d3b61fee203efc811b518a317
 		CrvUSDList[ChainEthereum]: "0xb55C604075D79486b8A329c396Fc711Be54B5330", // stableDebtEthcrvUSD, 0xb55c604075d79486b8a329c396fc711be54b5330
 		PyUSDList[ChainEthereum]:  "0x5B393DB4c72B1Bd82CE2834F6485d61b137Bc7aC", // stableDebtEthPYUSD, 0x5b393db4c72b1bd82ce2834f6485d61b137bc7ac
+		WEETHList[ChainEthereum]:  "0xBad6eF8e76E26F39e985474aD0974FDcabF85d37", // stableDebtEthweETH, 0xbad6ef8e76e26f39e985474ad0974fdcabf85d37
+		OSETHList[ChainEthereum]:  "0x48Fa27f511F40d16f9E7C913e9388d52d95bC6d2", // stableDebtEthosETH, 0x48fa27f511f40d16f9e7c913e9388d52d95bc6d2
+		USDeList[ChainEthereum]:   "0x43Cc8AD0c223b38D9c04802bB184A2D97e497D38", // stableDebtEthUSDe, 0x43cc8ad0c223b38d9c04802bb184a2d97e497d38
+		ETHxList[ChainEthereum]:   "0xBDfa7DE5CF7a7DdE4F023Cac842BF520fcF5395C", // stableDebtEthETHx, 0xbdfa7de5cf7a7dde4f023cac842bf520fcf5395c
+		SUSDeList[ChainEthereum]:  "0xc9335dE638f4C96a8330b2FFc44353Bab58774e3", // stableDebtEthsUSDe, 0xc9335de638f4c96a8330b2ffc44353bab58774e3
+		TBTCList[ChainEthereum]:   "0xCcf8413F9cA3bAE07EEF05E265D238d60abCb8Ca", // stableDebtEthtBTC, 0xccf8413f9ca3bae07eef05e265d238d60abcb8ca
+		CbBTCList[ChainEthereum]:  "0x0002BfcCE657a4BEB498E23201bd767FC5A0A0d5", // stableDebtEthcbBTC, 0x0002bfcce657a4beb498e23201bd767fc5a0a0d5
+		USDSList[ChainEthereum]:   "0x21A7BD33410cb836d99efEA1f1bFE72E3094024b", // stableDebtEthUSDS, 0x21a7bd33410cb836d99efea1f1bfe72e3094024b
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainOptimism: {
 		DAIList[ChainOptimism]:    "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtOptDAI, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
 		LINKList[ChainOptimism]:   "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtOpt, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
@@ -360,7 +415,7 @@ var AaveSTokenV3List = map[int64]map[string]string{
 		USDCList[ChainOptimism]:   "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB", // stableDebtOpt, 0x8a9fde6925a839f6b1932d16b36ac026f8d3fbdb
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainPolygon: {
 		DAIList[ChainPolygon]:     "0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B", // stableDebtPol, 0xd94112b5b62d53c9402e7a60289c6810def1dc9b
 		LINKList[ChainPolygon]:    "0x89D976629b7055ff1ca02b927BA3e020F22A44e4", // stableDebtPol, 0x89d976629b7055ff1ca02b927ba3e020f22a44e4
@@ -384,6 +439,14 @@ var AaveSTokenV3List = map[int64]map[string]string{
 		WSTETHList[ChainPolygon]:  "0x173e54325AE58B072985DbF232436961981EA000", // stableDebtPol, 0x173e54325ae58b072985dbf232436961981ea000
 		USDCList[ChainPolygon]:    "0xc889e9f8370D14A428a9857205d99BFdB400b757", // stableDebtPol, 0xc889e9f8370d14a428a9857205d99bfdb400b757
 	},
+	// Already in order of the contract return value.
+	// Last updated at Aug.9.2024.
+	ChainScroll: {
+		WETHList[ChainScroll]:   "0x117d9cF336287F46DBE509a43925cFF115Aa563c", // 0x117d9cf336287f46dbe509a43925cff115aa563c
+		USDCList[ChainScroll]:   "0x59F359aA263f7Ac09876E869AF1F75b558904ed4", // 0x59f359aa263f7ac09876e869af1f75b558904ed4
+		WSTETHList[ChainScroll]: "0x18e3f125ce85e8D65AD2bb4f6b5fff110772A078", // 0x18e3f125ce85e8d65ad2bb4f6b5fff110772a078
+		WEETHList[ChainScroll]:  "0xF474cC392591E3252996459FCAA3D75dc9F95b09", // 0xf474cc392591e3252996459fcaa3d75dc9f95b09
+	},
 }
 
 // Aave v tokens v3.
@@ -391,7 +454,7 @@ var AaveSTokenV3List = map[int64]map[string]string{
 // map[network][underlying] = address.
 var AaveVTokenV3List = map[int64]map[string]string{
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainArbitrum: {
 		DAIList[ChainArbitrum]:    "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtArb, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
 		LINKList[ChainArbitrum]:   "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtArb, 0x953a573793604af8d41f306feb8274190db4ae0e
@@ -408,12 +471,14 @@ var AaveVTokenV3List = map[int64]map[string]string{
 		USDCList[ChainArbitrum]:   "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6", // variableDebtArb, 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6
 		FRAXList[ChainArbitrum]:   "0x5D557B07776D12967914379C71a1310e917C7555", // variableDebtArb, 0x5d557b07776d12967914379c71a1310e917c7555
 		ARBList[ChainArbitrum]:    "0x44705f578135cC5d703b4c9c122528C73Eb87145", // variableDebtArb, 0x44705f578135cc5d703b4c9c122528c73eb87145
+		WEETHList[ChainArbitrum]:  "0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6", // variableDebtArb, 0x3ca5fa07689f266e907439afd1fbb59c44fe12f6
+		GHOList[ChainArbitrum]:    "0x18248226C16BF76c032817854E7C83a2113B4f06", // variableDebtArb, 0x18248226c16bf76c032817854e7c83a2113b4f06
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainAvalanche: {
 		DAIeList[ChainAvalanche]:  "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtAvaDAI, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
-		LINKList[ChainAvalanche]:  "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtAvaLINK, 0x953a573793604af8d41f306feb8274190db4ae0e
+		LINKeList[ChainAvalanche]: "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtAvaLINK, 0x953a573793604af8d41f306feb8274190db4ae0e
 		USDCList[ChainAvalanche]:  "0xFCCf3cAbbe80101232d343252614b6A3eE81C989", // variableDebtAvaUSDC, 0xfccf3cabbe80101232d343252614b6a3ee81c989
 		WBTCeList[ChainAvalanche]: "0x92b42c66840C7AD907b4BF74879FF3eF7c529473", // variableDebtAvaWBTC, 0x92b42c66840c7ad907b4bf74879ff3ef7c529473
 		WETHeList[ChainAvalanche]: "0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351", // variableDebtAvaWETH, 0x0c84331e39d6658cd6e6b9ba04736cc4c4734351
@@ -426,16 +491,29 @@ var AaveVTokenV3List = map[int64]map[string]string{
 		BTCbList[ChainAvalanche]:  "0xA8669021776Bc142DfcA87c21b4A52595bCbB40a", // variableDebtAvaBTC.b, 0xa8669021776bc142dfca87c21b4a52595bcbb40a
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainBase: {
 		WETHList[ChainBase]:   "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E", // 0x24e6e0795b3c7c71d965fcc4f371803d1c1dca1e
 		CbETHList[ChainBase]:  "0x1DabC36f19909425f654777249815c073E8Fd79F", // 0x1dabc36f19909425f654777249815c073e8fd79f
 		USDbCList[ChainBase]:  "0x7376b2F323dC56fCd4C191B34163ac8a84702DAB", // 0x7376b2f323dc56fcd4c191b34163ac8a84702dab
 		WSTETHList[ChainBase]: "0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1", // 0x41a7c3f5904ad176dacbb1d99101f59ef0811dc1
 		USDCList[ChainBase]:   "0x59dca05b6c26dbd64b5381374aAaC5CD05644C28", // 0x59dca05b6c26dbd64b5381374aaac5cd05644c28
+		WEETHList[ChainBase]:  "0x8D2e3F1f4b38AA9f1ceD22ac06019c7561B03901", // 0x8d2e3f1f4b38aa9f1ced22ac06019c7561b03901
+		CbBTCList[ChainBase]:  "0x05e08702028de6AaD395DC6478b554a56920b9AD", // 0x05e08702028de6aad395dc6478b554a56920b9ad
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.8.2024.
+	ChainBSC: {
+		CakeList[ChainBSC]:  "0xE20dBC7119c635B1B51462f844861258770e0699", // 0xe20dbc7119c635b1b51462f844861258770e0699
+		WBNBList[ChainBSC]:  "0x0E76414d433ddfe8004d2A7505d218874875a996", // 0x0e76414d433ddfe8004d2a7505d218874875a996
+		BTCbList[ChainBSC]:  "0x7b1E82F4f542fbB25D64c5523Fe3e44aBe4F2702", // 0x7b1e82f4f542fbb25d64c5523fe3e44abe4f2702
+		ETHList[ChainBSC]:   "0x8FDea7891b4D6dbdc746309245B316aF691A636C", // 0x8fdea7891b4d6dbdc746309245b316af691a636c
+		USDCList[ChainBSC]:  "0xcDBBEd5606d9c5C98eEedd67933991dC17F0c68d", // 0xcdbbed5606d9c5c98eeedd67933991dc17f0c68d
+		USDTList[ChainBSC]:  "0xF8bb2Be50647447Fb355e3a77b81be4db64107cd", // 0xf8bb2be50647447fb355e3a77b81be4db64107cd
+		FDUSDList[ChainBSC]: "0xE628B8a123e6037f1542e662B9F55141a16945C8", // 0xe628b8a123e6037f1542e662b9f55141a16945c8
+	},
+	// Already in order of the contract return value.
+	// Last updated at Jul.5.2024.
 	ChainEthereum: {
 		WETHList[ChainEthereum]:   "0xeA51d7853EEFb32b6ee06b1C12E6dcCA88Be0fFE", // variableDebtEthWETH, 0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe
 		WSTETHList[ChainEthereum]: "0xC96113eED8cAB59cD8A66813bCB0cEb29F06D2e4", // variableDebtEthwstETH, 0xc96113eed8cab59cd8a66813bcb0ceb29f06d2e4
@@ -465,9 +543,17 @@ var AaveVTokenV3List = map[int64]map[string]string{
 		FXSList[ChainEthereum]:    "0x68e9f0aD4e6f8F5DB70F6923d4d6d5b225B83b16", // variableDebtEthFXS, 0x68e9f0ad4e6f8f5db70f6923d4d6d5b225b83b16
 		CrvUSDList[ChainEthereum]: "0x028f7886F3e937f8479efaD64f31B3fE1119857a", // variableDebtEthcrvUSD, 0x028f7886f3e937f8479efad64f31b3fe1119857a
 		PyUSDList[ChainEthereum]:  "0x57B67e4DE077085Fd0AF2174e9c14871BE664546", // variableDebtEthPYUSD, 0x57b67e4de077085fd0af2174e9c14871be664546
+		WEETHList[ChainEthereum]:  "0x77ad9BF13a52517AD698D65913e8D381300c8Bf3", // variableDebtEthweETH, 0x77ad9bf13a52517ad698d65913e8d381300c8bf3
+		OSETHList[ChainEthereum]:  "0x8838eefF2af391863E1Bb8b1dF563F86743a8470", // variableDebtEthosETH, 0x8838eeff2af391863e1bb8b1df563f86743a8470
+		USDeList[ChainEthereum]:   "0x015396E1F286289aE23a762088E863b3ec465145", // variableDebtEthUSDe, 0x015396e1f286289ae23a762088e863b3ec465145
+		ETHxList[ChainEthereum]:   "0x08a8Dc81AeA67F84745623aC6c72CDA3967aab8b", // variableDebtEthETHx, 0x08a8dc81aea67f84745623ac6c72cda3967aab8b
+		SUSDeList[ChainEthereum]:  "0xeFFDE9BFA8EC77c14C364055a200746d6e12BeD6", // variableDebtEthsUSDe, 0xeffde9bfa8ec77c14c364055a200746d6e12bed6
+		TBTCList[ChainEthereum]:   "0xAC50890a80A2731eb1eA2e9B4F29569CeB06D960", // variableDebtEthtBTC, 0xac50890a80a2731eb1ea2e9b4f29569ceb06d960
+		CbBTCList[ChainEthereum]:  "0xeB284A70557EFe3591b9e6D9D720040E02c54a4d", // variableDebtEthcbBTC, 0xeb284a70557efe3591b9e6d9d720040e02c54a4d
+		USDSList[ChainEthereum]:   "0x490E0E6255bF65b43E2e02F7acB783c5e04572Ff", // variableDebtEthUSDS, 0x490e0e6255bf65b43e2e02f7acb783c5e04572ff
 	},
 	// Already in order of the contract return value.
-	// Last updated at Mar.22.2024.
+	// Last updated at Jul.5.2024.
 	ChainOptimism: {
 		DAIList[ChainOptimism]:    "0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC", // variableDebtOpt, 0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc
 		LINKList[ChainOptimism]:   "0x953A573793604aF8d41F306FEb8274190dB4aE0e", // variableDebtOpt, 0x953a573793604af8d41f306feb8274190db4ae0e
@@ -508,6 +594,14 @@ var AaveVTokenV3List = map[int64]map[string]string{
 		MaticXList[ChainPolygon]:  "0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9", // variableDebtPol, 0xb5b46f918c2923fc7f26db76e8a6a6e9c4347cf9
 		WSTETHList[ChainPolygon]:  "0x77fA66882a8854d883101Fb8501BD3CaD347Fc32", // variableDebtPol, 0x77fa66882a8854d883101fb8501bd3cad347fc32
 		USDCList[ChainPolygon]:    "0xE701126012EC0290822eEA17B794454d1AF8b030", // variableDebtPolUSDCn, 0xe701126012ec0290822eea17b794454d1af8b030
+	},
+	// Already in order of the contract return value.
+	// Last updated at Aug.9.2024.
+	ChainScroll: {
+		WETHList[ChainScroll]:   "0xfD7344CeB1Df9Cf238EcD667f4A6F99c6Ef44a56", // 0xfd7344ceb1df9cf238ecd667f4a6f99c6ef44a56
+		USDCList[ChainScroll]:   "0x3d2E209af5BFa79297C88D6b57F89d792F6E28EE", // 0x3d2e209af5bfa79297c88d6b57f89d792f6e28ee
+		WSTETHList[ChainScroll]: "0x8a035644322129800C3f747f54Db0F4d3c0A2877", // 0x8a035644322129800c3f747f54db0f4d3c0a2877
+		WEETHList[ChainScroll]:  "0x009D88C6a6B4CaA240b71C98BA93732e26F2A55A", // 0x009d88c6a6b4caa240b71c98ba93732e26f2a55a
 	},
 }
 

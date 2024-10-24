@@ -9,6 +9,13 @@ var XVSList = map[int64]string{
 	ChainBSC: "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63", // XVS, 0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63
 }
 
+// Venus comptroller.
+//
+// map[network] = address.
+var VenusComptrollerList = map[int64]string{
+	ChainBSC: "0xfD36E2c2a6789Db23113685031d7F16329158384", // 0xfd36e2c2a6789db23113685031d7f16329158384
+}
+
 // Venus c tokens(v tokens).
 //
 // map[network][underlying] = address.

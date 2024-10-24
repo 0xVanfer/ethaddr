@@ -7,6 +7,16 @@ package ethaddr
 // Deployed contracts: https://www.staderlabs.com/docs-v1/Ethereum/smart-contracts
 const StaderProtocol string = "stader"
 
+// Stader token SD.
+//
+// map[chainID] = address.
+var StaderTokenList = map[int64]string{
+	ChainEthereum: "0x30D20208d987713f46DFD34EF128Bb16C404D10f", // SD, 0x30d20208d987713f46dfd34ef128bb16c404d10f
+}
+
+// Same as StaderTokenList.
+var SDList = StaderTokenList
+
 // MaticX by Stader.
 //
 // map[network] = address.
@@ -19,16 +29,27 @@ var MaticXList = map[int64]string{
 //
 // map[network] = address.
 var ETHxList = map[int64]string{
+	ChainArbitrum: "0xED65C5085a18Fa160Af0313E60dcc7905E944Dc7", // ETHx, 0xed65c5085a18fa160af0313e60dcc7905e944dc7
 	ChainEthereum: "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b", // ETHx, 0xa35b1b31ce002fbf2058d22f30f95d405200a15b
 }
 
-// Stader PoS staking contract.
+// Stader oracle for ETHx and SD.
+//
+// map[network] = address.
+var StaderETHxOracle = map[int64]string{
+	ChainEthereum: "0xF64bAe65f6f2a5277571143A24FaaFDFC0C2a737", // 0xf64bae65f6f2a5277571143a24faafdfc0c2a737
+}
+
+// Stader PoS staking contract for Matic.
 //
 // map[network] = address.
 var StaderStakeManagerList = map[int64]string{
 	ChainEthereum: "0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908", // 0x5e3ef299fddf15eaa0432e6e66473ace8c13d908
 }
 
+// Polygon pool for MaticX.
+//
+// map[network] = address.
 var StaderChildPoolList = map[int64]string{
 	ChainPolygon: "0xfd225C9e6601C9d38d8F98d8731BF59eFcF8C0E3", // 0xfd225c9e6601c9d38d8f98d8731bf59efcf8c0e3
 }

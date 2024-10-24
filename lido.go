@@ -13,6 +13,7 @@ const LidoProtocol string = "lido"
 var LidoTokenList = map[int64]string{
 	ChainArbitrum: "0x13Ad51ed4F1B7e9Dc168d8a00cB3f4dDD85EfA60", // LDO, 0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60
 	ChainEthereum: "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32", // LDO, 0x5a98fcbea516cf06857215779fd812ca3bef1b32
+	ChainOptimism: "0xFdb794692724153d1488CcdBE0C56c252596735F", // LDO, 0xfdb794692724153d1488ccdbe0c56c252596735f
 }
 
 // Same as LidoTokenList.

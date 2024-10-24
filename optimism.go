@@ -1,6 +1,7 @@
 package ethaddr
 
 // Blockscan: https://optimistic.etherscan.io/
+const ChainNameOptimism string = "optimism"
 
 // Optimism token OP.
 //

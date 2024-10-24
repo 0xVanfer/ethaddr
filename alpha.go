@@ -1,8 +1,6 @@
 package ethaddr
 
-// Now: https://stellaxyz.io/ Previous: https://alphaventuredao.io/
-//
-// Docs: https://docs.stellaxyz.io/stella-doc/overview/getting-started
+// Website: https://alphaventuredao.io/
 const AlphaProtocol string = "alpha"
 
 // Alpha token: ALPHA.

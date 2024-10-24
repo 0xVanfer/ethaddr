@@ -20,13 +20,22 @@ var LendingTokenListsMap = map[string]LendingTokenLists{
 		VTokenList: &AaveVTokenV3List,
 		STokenList: &AaveSTokenV3List,
 	},
+	AaveV3ProtocolLidoFork: {
+		ATokenList: &AaveATokenV3LidoForkList,
+		VTokenList: &AaveVTokenV3LidoForkList,
+		STokenList: &AaveSTokenV3LidoForkList,
+	},
+	AaveV3ProtocolEtherfiFork: {
+		ATokenList: &AaveATokenV3EtherfiForkList,
+		VTokenList: &AaveVTokenV3EtherfiForkList,
+	},
 	BenqiProtocol: {
 		CTokenList: &BenqiCTokenList,
 	},
 	TraderJoeProtocol: {
 		CTokenList: &TraderjoeCTokenList,
 	},
-	CompoundProtocol: {
+	CompoundV2Protocol: {
 		CTokenList: &CompoundCTokenList,
 	},
 	SparkProtocol: {

@@ -1,5 +1,8 @@
 package ethaddr
 
+// Blockscan: https://blastscan.io/
+const ChainNameBlast string = "blast"
+
 // Blast USDB.
 //
 // map[network] = address

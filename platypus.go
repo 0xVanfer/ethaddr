@@ -210,8 +210,8 @@ var PlatypusLpList = map[int64]map[string]map[string]string{
 
 		// BTC.b - WBTC.e
 		Platypus_BTCb_WBTCe_PairName: {
-			WBTCList[ChainAvalanche]: PlatypusLp_BTCb_WBTCe_WBTCe_Address,
-			BTCbList[ChainAvalanche]: PlatypusLp_BTCb_WBTCe_BTCb_Address,
+			WBTCeList[ChainAvalanche]: PlatypusLp_BTCb_WBTCe_WBTCe_Address,
+			BTCbList[ChainAvalanche]:  PlatypusLp_BTCb_WBTCe_BTCb_Address,
 		},
 
 		// AVAX - sAVAX

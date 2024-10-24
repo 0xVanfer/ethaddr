@@ -1,5 +1,8 @@
 package ethaddr
 
+// Blockscan: https://filscan.io/ (non etherscan)
+const ChainNameFilecoin string = "filecoin"
+
 // Filecoin.
 //
 // map[network] = address.

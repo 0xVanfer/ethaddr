@@ -1,6 +1,6 @@
 package ethaddr
 
-// Website:https://abracadabra.money/
+// Website: https://abracadabra.money/
 //
 // Docs: https://docs.abracadabra.money/learn/
 const AbracadabraProtocol string = "abracadabra"

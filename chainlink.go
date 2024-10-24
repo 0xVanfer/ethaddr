@@ -1,6 +1,14 @@
 package ethaddr
 
+// Website: https://chain.link/
+const ChainlinkProtocol string = "chainlink"
+
 // Chainlink token: LINK.
+//
+// For chain avalanche (43114), use LINKeList instead.
+// If the protocol later deploy the token on avalanche, this address might be changed.
+//
+// The link to pay is not the link in this list. https://docs.chain.link/resources/link-token-contracts
 //
 // map[network] = address.
 var ChainlinkTokenList = map[int64]string{

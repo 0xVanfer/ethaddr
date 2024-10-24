@@ -1,5 +1,8 @@
 package ethaddr
 
+// Website: https://stargate.finance/
+const StargateProtocol string = "stargate"
+
 // Stargate token: STG.
 //
 // map[network] = address.

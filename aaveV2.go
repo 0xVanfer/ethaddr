@@ -8,7 +8,7 @@ package ethaddr
 //
 // Docs: https://docs.aave.com/developers/getting-started/readme
 //
-// Deployed contracts: https://docs.aave.com/developers/deployed-contracts/deployed-contracts
+// Deployed contracts: https://github.com/bgd-labs/aave-address-book/blob/main/src/ts/AaveV2Ethereum.ts
 //
 // X (twitter): https://twitter.com/aave
 const AaveV2Protocol string = "aave"
@@ -75,8 +75,8 @@ var AaveATokenV2List = map[int64]map[string]string{
 		DAIeList[ChainAvalanche]:  "0x47AFa96Cdc9fAb46904A55a6ad4bf6660B53c38a", // avDAI, 0x47afa96cdc9fab46904a55a6ad4bf6660b53c38a
 		USDCeList[ChainAvalanche]: "0x46A51127C3ce23fb7AB1DE06226147F446e4a857", // avUSDC, 0x46a51127c3ce23fb7ab1de06226147f446e4a857
 		USDTeList[ChainAvalanche]: "0x532E6537FEA298397212F09A61e03311686f548e", // avUSDT, 0x532e6537fea298397212f09a61e03311686f548e
-		WETHList[ChainAvalanche]:  "0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21", // avWETH, 0x53f7c5869a859f0aec3d334ee8b4cf01e3492f21
-		WBTCList[ChainAvalanche]:  "0x686bEF2417b6Dc32C50a3cBfbCC3bb60E1e9a15D", // avWBTC, 0x686bef2417b6dc32c50a3cbfbcc3bb60e1e9a15d, delisted
+		WETHeList[ChainAvalanche]: "0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21", // avWETH, 0x53f7c5869a859f0aec3d334ee8b4cf01e3492f21
+		WBTCeList[ChainAvalanche]: "0x686bEF2417b6Dc32C50a3cBfbCC3bb60E1e9a15D", // avWBTC, 0x686bef2417b6dc32c50a3cbfbcc3bb60e1e9a15d, delisted
 		WAVAXList[ChainAvalanche]: "0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B", // avWAVAX, 0xdfe521292ece2a4f44242efbcd66bc594ca9714b
 		AAVEList[ChainAvalanche]:  "0xD45B7c061016102f9FA220502908f2c0f1add1D7", // avAAVE, 0xd45b7c061016102f9fa220502908f2c0f1add1d7
 	},
@@ -127,6 +127,12 @@ var AaveATokenV2List = map[int64]map[string]string{
 		WBTCList[ChainPolygon]:   "0x5c2ed810328349100A66B82b78a1791B101C9D61", // amWBTC, 0x5c2ed810328349100a66b82b78a1791b101c9d61
 		WETHList[ChainPolygon]:   "0x28424507fefb6f7f8E9D3860F56504E4e5f5f390", // amWETH, 0x28424507fefb6f7f8e9d3860f56504e4e5f5f390
 		WMATICList[ChainPolygon]: "0x8dF3aad3a84da6b69A4DA8aeC3eA40d9091B2Ac4", // amWMATIC, 0x8df3aad3a84da6b69a4da8aec3ea40d9091b2ac4
+		GHSTList[ChainPolygon]:   "0x080b5BF8f360F624628E0fb961F4e67c9e3c7CF1", // amGHST, 0x080b5bf8f360f624628e0fb961f4e67c9e3c7cf1
+		BALList[ChainPolygon]:    "0xc4195D4060DaEac44058Ed668AA5EfEc50D77ff6", // amBAL, 0xc4195d4060daeac44058ed668aa5efec50d77ff6
+		DPIList[ChainPolygon]:    "0x81fB82aAcB4aBE262fc57F06fD4c1d2De347D7B1", // amDPI, 0x81fb82aacb4abe262fc57f06fd4c1d2de347d7b1
+		CRVList[ChainPolygon]:    "0x3Df8f92b7E798820ddcCA2EBEA7BAbda2c90c4aD", // amCRV, 0x3df8f92b7e798820ddcca2ebea7babda2c90c4ad
+		SUSHIList[ChainPolygon]:  "0x21eC9431B5B55c5339Eb1AE7582763087F98FAc2", // amSUSHI, 0x21ec9431b5b55c5339eb1ae7582763087f98fac2
+		LINKList[ChainPolygon]:   "0x0Ca2e42e8c21954af73Bc9af1213E4e81D6a669A", // amLINK, 0x0ca2e42e8c21954af73bc9af1213e4e81d6a669a
 	},
 }
 
@@ -138,8 +144,8 @@ var AaveSTokenV2List = map[int64]map[string]string{
 		DAIeList[ChainAvalanche]:  "0x3676E4EE689D527dDb89812B63fAD0B7501772B3", // stableDebtvDAI, 0x3676e4ee689d527ddb89812b63fad0b7501772b3
 		USDCeList[ChainAvalanche]: "0x5B14679135dbE8B02015ec3Ca4924a12E4C6C85a", // stableDebtvUSDC, 0x5b14679135dbe8b02015ec3ca4924a12e4c6c85a
 		USDTeList[ChainAvalanche]: "0x9c7B81A867499B7387ed05017a13d4172a0c17bF", // stableDebtvUSDT, 0x9c7b81a867499b7387ed05017a13d4172a0c17bf
-		WETHList[ChainAvalanche]:  "0x60F6A45006323B97d97cB0a42ac39e2b757ADA63", // stableDebtvWETH, 0x60f6a45006323b97d97cb0a42ac39e2b757ada63
-		WBTCList[ChainAvalanche]:  "0x3484408989985d68C9700dc1CFDFeAe6d2f658CF", // stableDebtvWBTC, 0x3484408989985d68c9700dc1cfdfeae6d2f658cf, delisted
+		WETHeList[ChainAvalanche]: "0x60F6A45006323B97d97cB0a42ac39e2b757ADA63", // stableDebtvWETH, 0x60f6a45006323b97d97cb0a42ac39e2b757ada63
+		WBTCeList[ChainAvalanche]: "0x3484408989985d68C9700dc1CFDFeAe6d2f658CF", // stableDebtvWBTC, 0x3484408989985d68c9700dc1cfdfeae6d2f658cf, delisted
 		WAVAXList[ChainAvalanche]: "0x2920CD5b8A160b2Addb00Ec5d5f4112255d4ae75", // stableDebtvWAVAX, 0x2920cd5b8a160b2addb00ec5d5f4112255d4ae75
 		AAVEList[ChainAvalanche]:  "0x66904E4F3f44e3925D22ceca401b6F2DA085c98f", // stableDebtvAAVE, 0x66904e4f3f44e3925d22ceca401b6f2da085c98f
 	},
@@ -190,6 +196,12 @@ var AaveSTokenV2List = map[int64]map[string]string{
 		WBTCList[ChainPolygon]:   "0x2551B15dB740dB8348bFaDFe06830210eC2c2F13", // stableDebtmWBTC, 0x2551b15db740db8348bfadfe06830210ec2c2f13
 		WETHList[ChainPolygon]:   "0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f", // stableDebtmWETH, 0xc478cbbeb590c76b01ce658f8c4dda04f30e2c6f
 		WMATICList[ChainPolygon]: "0xb9A6E29fB540C5F1243ef643EB39b0AcbC2e68E3", // stableDebtmWMATIC, 0xb9a6e29fb540c5f1243ef643eb39b0acbc2e68e3
+		GHSTList[ChainPolygon]:   "0x6A01Db46Ae51B19A6B85be38f1AA102d8735d05b", // stableDebtmGHST, 0x6a01db46ae51b19a6b85be38f1aa102d8735d05b
+		BALList[ChainPolygon]:    "0xbC30bbe0472E0E86b6f395f9876B950A13B23923", // stableDebtmBAL, 0xbc30bbe0472e0e86b6f395f9876b950a13b23923
+		DPIList[ChainPolygon]:    "0xA742710c0244a8Ebcf533368e3f0B956B6E53F7B", // stableDebtmDPI, 0xa742710c0244a8ebcf533368e3f0b956b6e53f7b
+		CRVList[ChainPolygon]:    "0x807c97744e6C9452e7C2914d78f49d171a9974a0", // stableDebtmCRV, 0x807c97744e6c9452e7c2914d78f49d171a9974a0
+		SUSHIList[ChainPolygon]:  "0x7Ed588DCb30Ea11A54D8a5E9645960262A97cd54", // stableDebtmSUSHI, 0x7ed588dcb30ea11a54d8a5e9645960262a97cd54
+		LINKList[ChainPolygon]:   "0x9fb7F546E60DDFaA242CAeF146FA2f4172088117", // stableDebtmLINK, 0x9fb7f546e60ddfaa242caef146fa2f4172088117
 	},
 }
 
@@ -201,8 +213,8 @@ var AaveVTokenV2List = map[int64]map[string]string{
 		DAIeList[ChainAvalanche]:  "0x1852DC24d1a8956a0B356AA18eDe954c7a0Ca5ae", // variableDebtvDAI, 0x1852dc24d1a8956a0b356aa18ede954c7a0ca5ae
 		USDCeList[ChainAvalanche]: "0x848c080d2700CBE1B894a3374AD5E887E5cCb89c", // variableDebtvUSDC, 0x848c080d2700cbe1b894a3374ad5e887e5ccb89c
 		USDTeList[ChainAvalanche]: "0xfc1AdA7A288d6fCe0d29CcfAAa57Bc9114bb2DbE", // variableDebtvUSDT, 0xfc1ada7a288d6fce0d29ccfaaa57bc9114bb2dbe
-		WETHList[ChainAvalanche]:  "0x4e575CacB37bc1b5afEc68a0462c4165A5268983", // variableDebtvWETH, 0x4e575cacb37bc1b5afec68a0462c4165a5268983
-		WBTCList[ChainAvalanche]:  "0x2dc0E35eC3Ab070B8a175C829e23650Ee604a9eB", // variableDebtvWBTC, 0x2dc0e35ec3ab070b8a175c829e23650ee604a9eb, delisted
+		WETHeList[ChainAvalanche]: "0x4e575CacB37bc1b5afEc68a0462c4165A5268983", // variableDebtvWETH, 0x4e575cacb37bc1b5afec68a0462c4165a5268983
+		WBTCeList[ChainAvalanche]: "0x2dc0E35eC3Ab070B8a175C829e23650Ee604a9eB", // variableDebtvWBTC, 0x2dc0e35ec3ab070b8a175c829e23650ee604a9eb, delisted
 		WAVAXList[ChainAvalanche]: "0x66A0FE52Fb629a6cB4D10B8580AFDffE888F5Fd4", // variableDebtvWAVAX, 0x66a0fe52fb629a6cb4d10b8580afdffe888f5fd4
 		AAVEList[ChainAvalanche]:  "0x8352E3fd18B8d84D3c8a1b538d788899073c7A8E", // variableDebtvAAVE, 0x8352e3fd18b8d84d3c8a1b538d788899073c7a8e
 	},
@@ -253,5 +265,11 @@ var AaveVTokenV2List = map[int64]map[string]string{
 		WBTCList[ChainPolygon]:   "0xF664F50631A6f0D72ecdaa0e49b0c019Fa72a8dC", // variableDebtmWBTC, 0xf664f50631a6f0d72ecdaa0e49b0c019fa72a8dc
 		WETHList[ChainPolygon]:   "0xeDe17e9d79fc6f9fF9250D9EEfbdB88Cc18038b5", // variableDebtmWETH, 0xede17e9d79fc6f9ff9250d9eefbdb88cc18038b5
 		WMATICList[ChainPolygon]: "0x59e8E9100cbfCBCBAdf86b9279fa61526bBB8765", // variableDebtmWMATIC, 0x59e8e9100cbfcbcbadf86b9279fa61526bbb8765
+		GHSTList[ChainPolygon]:   "0x36e988a38542C3482013Bb54ee46aC1fb1efedcd", // variableDebtmGHST, 0x36e988a38542c3482013bb54ee46ac1fb1efedcd
+		BALList[ChainPolygon]:    "0x773E0e32e7b6a00b7cA9daa85dfba9D61B7f2574", // variableDebtmBAL, 0x773e0e32e7b6a00b7ca9daa85dfba9d61b7f2574
+		DPIList[ChainPolygon]:    "0x43150AA0B7e19293D935A412C8607f9172d3d3f3", // variableDebtmDPI, 0x43150aa0b7e19293d935a412c8607f9172d3d3f3
+		CRVList[ChainPolygon]:    "0x780BbcBCda2cdb0d2c61fd9BC68c9046B18f3229", // variableDebtmCRV, 0x780bbcbcda2cdb0d2c61fd9bc68c9046b18f3229
+		SUSHIList[ChainPolygon]:  "0x9CB9fEaFA73bF392C905eEbf5669ad3d073c3DFC", // variableDebtmSUSHI, 0x9cb9feafa73bf392c905eebf5669ad3d073c3dfc
+		LINKList[ChainPolygon]:   "0xCC71e4A38c974e19bdBC6C0C19b63b8520b1Bb09", // variableDebtmLINK, 0xcc71e4a38c974e19bdbc6c0c19b63b8520b1bb09
 	},
 }

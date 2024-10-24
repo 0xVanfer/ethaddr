@@ -13,7 +13,7 @@ const KyberProtocol string = "kyber"
 //
 // map[network] = address.
 var KyberOldTokenList = map[int64]string{
-	ChainEthereum: "0xdd974d5c2e2928dea5f71b9825b8b646686bd200", // KNC
+	ChainEthereum: "0xdd974D5C2e2928deA5F71b9825b8b646686BD200", // KNC, 0xdd974d5c2e2928dea5f71b9825b8b646686bd200
 }
 
 // Kyber token in use: KNC.
@@ -24,6 +24,7 @@ var KyberTokenList = map[int64]string{
 	ChainAvalanche: "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f", // KNC, 0x39fc9e94caeacb435842fadedecb783589f50f5f
 	ChainBSC:       "0xfe56d5892BDffC7BF58f2E84BE1b2C32D21C308b", // KNC, 0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b
 	ChainEthereum:  "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202", // KNC, 0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202
+	ChainOptimism:  "0xa00E3A3511aAC35cA78530c85007AFCd31753819", // KNC, 0xa00e3a3511aac35ca78530c85007afcd31753819
 	ChainPolygon:   "0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C", // KNC, 0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c
 }
 
