@@ -8,14 +8,15 @@ package ethaddr
 //
 // Docs: https://docs.aave.com/developers/getting-started/readme
 //
-// Deployed contracts: https://github.com/bgd-labs/aave-address-book/blob/main/src/ts/AaveV2Ethereum.ts
+// Deployed contracts: https://aave.com/docs/resources/addresses
+// or https://github.com/bgd-labs/aave-address-book/blob/main/src/ts/AaveV2Ethereum.ts
 //
 // X (twitter): https://twitter.com/aave
 const AaveV2Protocol string = "aave"
 
 // Aave incentives controller V2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveIncentivesControllerV2List = map[int64]string{
 	ChainAvalanche: "0x01D83Fe6A10D2f2B7AF17034343746188272cAc9", // 0x01d83fe6a10d2f2b7af17034343746188272cac9
 	ChainEthereum:  "0xd784927Ff2f95ba542BfC824c8a8a98F3495f6b5", // 0xd784927ff2f95ba542bfc824c8a8a98f3495f6b5
@@ -24,7 +25,7 @@ var AaveIncentivesControllerV2List = map[int64]string{
 
 // Aave lending pool v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveLendingPoolV2List = map[int64]string{
 	ChainAvalanche: "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C", // 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c
 	ChainEthereum:  "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9", // 0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9
@@ -33,7 +34,7 @@ var AaveLendingPoolV2List = map[int64]string{
 
 // Aave oracle v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveOracleV2List = map[int64]string{
 	ChainAvalanche: "0xdC336Cd4769f4cC7E9d726DA53e6d3fC710cEB89", // 0xdc336cd4769f4cc7e9d726da53e6d3fc710ceb89
 	ChainEthereum:  "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9", // 0xa50ba011c48153de246e5192c8f9258a2ba79ca9
@@ -42,7 +43,7 @@ var AaveOracleV2List = map[int64]string{
 
 // Aave lending pool address provider v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AavePoolAddressProviderV2List = map[int64]string{
 	ChainAvalanche: "0xb6A86025F0FE1862B372cb0ca18CE3EDe02A318f", // 0xb6a86025f0fe1862b372cb0ca18ce3ede02a318f
 	ChainEthereum:  "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5", // 0xb53c1a33016b2dc2ff3653530bff1848a515c8c5
@@ -51,7 +52,7 @@ var AavePoolAddressProviderV2List = map[int64]string{
 
 // Aave ui pool data provider v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveUiPoolDataProviderV2List = map[int64]string{
 	ChainAvalanche: "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A", // 0x00e50fab64ebb37b87df06aa46b8b35d5f1a4e1a
 	ChainEthereum:  "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A", // 0x00e50fab64ebb37b87df06aa46b8b35d5f1a4e1a
@@ -60,7 +61,7 @@ var AaveUiPoolDataProviderV2List = map[int64]string{
 
 // Aave ui incentives data provider v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveUiIncentiveDataProviderV2List = map[int64]string{
 	ChainAvalanche: "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF", // 0x11979886a6dbae27d7a72c49fcf3f23240d647bf
 	ChainEthereum:  "0xD01ab9a6577E1D84F142e44D49380e23A340387d", // 0xd01ab9a6577e1d84f142e44d49380e23a340387d

@@ -25,6 +25,7 @@ var RhoCTokenList = map[int64]map[string]string{
 		USDeList[ChainScroll]:       "0x5fF1926507f6e71bFbd5f9897fBaeF021E2F77CA", // rUSDe, 0x5ff1926507f6e71bfbd5f9897fbaef021e2f77ca
 		UniETHList[ChainScroll]:     "0xFE707359517f0d5AD0187a237974D3110A734016", // runiETH, 0xfe707359517f0d5ad0187a237974d3110a734016
 		YLstETHBFEList[ChainScroll]: "0x7AE3c19De353ce163Fe81AE3ebFC90709d3868BE", // rylstETH, 0x7ae3c19de353ce163fe81ae3ebfc90709d3868be
+		SCRList[ChainScroll]:        "0xC34721FE52284FAB7AEC852A48CB45108F8b4aCa", // rSCR, 0xc34721fe52284fab7aec852a48cb45108f8b4aca
 		// UniBTCList[ChainScroll]:   "0xFE707359517f0d5AD0187a237974D3110A734016", // runiBTC, 0xfe707359517f0d5ad0187a237974d3110a734016
 		// WETHList[ChainScroll]: "0x76DC94562c89D2820E88D1274d4Bb32Cee306d4C", // This seems to be deprecated. WETH (???).
 		// WBTCList[ChainScroll]: "0x1D73ead2BBEa318344fccD7142F70488BAb08F44", // This seems to be deprecated. WBTC (???).

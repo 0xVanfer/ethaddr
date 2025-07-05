@@ -10,7 +10,7 @@ const OneInchProtocol string = "1inch"
 // For polygon, 0x111111111117dC0aa78b770fA6A738034120C302 is also a token called 1INCH,
 // but with almost zero holders. Consider it to be a fake one.
 //
-// map[network] = address.
+// map[chainID] = address.
 var OneInchTokenList = map[int64]string{
 	ChainArbitrum: "0x6314C31A7a1652cE482cffe247E9CB7c3f4BB9aF", // 1INCH, 0x6314c31a7a1652ce482cffe247e9cb7c3f4bb9af
 	ChainBSC:      "0x111111111117dC0aa78b770fA6A738034120C302", // 1INCH, 0x111111111117dc0aa78b770fa6a738034120c302
@@ -24,7 +24,7 @@ var OINCHLIST = OneInchTokenList
 
 // 1 Inch router V4.
 //
-// map[network] = address
+// map[chainID] = address
 var OneInchRouterV4List = map[int64]string{
 	ChainArbitrum:  "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
 	ChainAvalanche: "0x1111111254fb6c44bAC0beD2854e76F90643097d", // 0x1111111254fb6c44bac0bed2854e76f90643097d
@@ -37,7 +37,7 @@ var OneInchRouterV4List = map[int64]string{
 
 // 1 Inch router V5.
 //
-// map[network] = address
+// map[chainID] = address
 var OneInchRouterV5List = map[int64]string{
 	ChainArbitrum:  "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
 	ChainAvalanche: "0x1111111254EEB25477B68fb85Ed929f73A960582", // 0x1111111254eeb25477b68fb85ed929f73a960582
@@ -50,20 +50,14 @@ var OneInchRouterV5List = map[int64]string{
 
 // 1 Inch router V6.
 //
-// map[network] = address
+// map[chainID] = address
 var OneInchRouterV6List = map[int64]string{
-	ChainArbitrum:  "",                                           //
-	ChainAvalanche: "",                                           //
-	ChainBSC:       "",                                           //
-	ChainEthereum:  "0x111111125421cA6dc452d289314280a0f8842A65", // 0x111111125421ca6dc452d289314280a0f8842a65
-	ChainFantom:    "",                                           //
-	ChainOptimism:  "",                                           //
-	ChainPolygon:   "",                                           //
+	ChainEthereum: "0x111111125421cA6dc452d289314280a0f8842A65", // 0x111111125421ca6dc452d289314280a0f8842a65
 }
 
 // 1 Inch spot aggregator.
 //
-// map[network] = address
+// map[chainID] = address
 var OneInchSpotPriceAggregatorList = map[int64]string{
 	ChainArbitrum:  "0x735247fb0a604c0adC6cab38ACE16D0DbA31295F", // 0x735247fb0a604c0adc6cab38ace16d0dba31295f
 	ChainAvalanche: "0xBd0c7AaF0bF082712EbE919a9dD94b2d978f79A9", // 0xbd0c7aaf0bf082712ebe919a9dd94b2d978f79a9

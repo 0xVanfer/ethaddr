@@ -1,4 +1,4 @@
 package ethaddr
 
-// Blockscan: https://filscan.io/ (non etherscan)
+// Blockscan: https://centrifuge.subscan.io/ (non etherscan)
 const ChainNameCentrifuge string = "centrifuge"

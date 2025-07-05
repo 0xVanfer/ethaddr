@@ -1,10 +1,11 @@
 package ethaddr
 
+// Website: https://yearn.fi/
 const YearnProtocol string = "yearn"
 
 // Yearn token: YFI.
 //
-// map[network] = address.
+// map[chainID] = address.
 var YearnTokenList = map[int64]string{
 	ChainEthereum:  "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e", // YFI, 0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e
 	ChainFantom:    "0x29b0Da86e484E1C0029B56e817912d778aC0EC69", // YFI, 0x29b0da86e484e1c0029b56e817912d778ac0ec69
@@ -18,7 +19,7 @@ var YFIList = YearnTokenList
 
 // Yearn woofy token: WOOFY.
 //
-// map[network] = address.
+// map[chainID] = address.
 var WoofyList = map[int64]string{
 	ChainEthereum: "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1
 	ChainFantom:   "0xD0660cD418a64a1d44E9214ad8e459324D8157f1", // WOOFY, 0xd0660cd418a64a1d44e9214ad8e459324d8157f1

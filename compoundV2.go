@@ -9,7 +9,7 @@ const CompoundV2Protocol string = "compoundv2"
 
 // Comptroller.
 //
-// map[network] = address.
+// map[chainID] = address.
 var CompoundComptrollerV2List = map[int64]string{
 	ChainEthereum: "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B", // 0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b
 }

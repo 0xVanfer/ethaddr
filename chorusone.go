@@ -1,7 +1,7 @@
 package ethaddr
 
-// https://chorus.one/
-const ChorusOne string = "chorusone"
+// Website: https://chorus.one/
+const ChorusOneProtocol string = "chorusone"
 
 // Chorus one symbiotic restaking vault ETH: coETH.
 //

@@ -9,17 +9,27 @@ const MorphoBlueProtocol string = "morphoblue"
 
 // MORPHO token.
 //
-// map[network] = address.
+// map[chainID] = address.
 var MorphoTokenList = map[int64]string{
 	ChainEthereum: "0x9994E35Db50125E0DF82e4c2dde62496CE330999", // MORPHO, 0x9994e35db50125e0df82e4c2dde62496ce330999
 }
 
 var MorphoBlueList = map[int64]string{
-	ChainEthereum: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
+	ChainArbitrum: "0x6c247b1F6182318877311737BaC0844bAa518F5e", // 0x6c247b1f6182318877311737bac0844baa518f5e
+	ChainBase:     "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb", // 0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb
+	ChainEthereum: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb", // 0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb
+	ChainFraxtal:  "0xa6030627d724bA78a59aCf43Be7550b4C5a0653b", // 0xa6030627d724ba78a59acf43be7550b4c5a0653b
+	ChainMode:     "0xd85cE6BD68487E0AaFb0858FDE1Cd18c76840564", // 0xd85ce6bd68487e0aafb0858fde1cd18c76840564
+	ChainOptimism: "0xce95AfbB8EA029495c66020883F87aaE8864AF92", // 0xce95afbb8ea029495c66020883f87aae8864af92
+	ChainPolygon:  "0x1bF0c2541F820E775182832f06c0B7Fc27A25f67", // 0x1bf0c2541f820e775182832f06c0b7fc27a25f67
+	ChainScroll:   "0x2d012EdbAdc37eDc2BC62791B666f9193FDF5a55", // 0x2d012edbadc37edc2bc62791b666f9193fdf5a55
+	ChainSonic:    "0xd6c916eB7542D0Ad3f18AEd0FCBD50C582cfa95f", // 0xd6c916eb7542d0ad3f18aed0fcbd50c582cfa95f
 }
 
 var MORPHOList = MorphoTokenList
 
+// Deprecated: this map is meaningless.
+//
 // map[network][collateral token][borrow token] = id
 var MorphoMarketIDMapList = map[int64]map[string]map[string][]string{
 	ChainEthereum: {
@@ -70,6 +80,8 @@ var MorphoMarketIDMapList = map[int64]map[string]map[string][]string{
 	},
 }
 
+// Deprecated: this map is meaningless.
+//
 // map[network] = [all ids]
 var MorphoMarketIDs = map[int64][]string{
 	ChainEthereum: {

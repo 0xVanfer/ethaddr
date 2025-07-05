@@ -9,9 +9,20 @@ var AaveForkProtocols = []string{
 	SparkProtocol,
 }
 
+// Aave fork lending pool list map.
+//
+// map[protocol name][network] = lending pool.
+var AaveForkLendingPoolListMap = map[string]*map[int64]string{
+	AaveV2Protocol:            &AaveLendingPoolV2List,
+	AaveV3Protocol:            &AaveLendingPoolV3List,
+	AaveV3ProtocolLidoFork:    &AaveLendingPoolV3LidoForkList,
+	AaveV3ProtocolEtherfiFork: &AaveLendingPoolV3EtherfiForkList,
+	SparkProtocol:             &SparkPoolList,
+}
+
 // Aave fork A token list map.
 //
-// map[protocol name][network][underlying] = a token.
+// map[protocol name][network][underlying] = atoken.
 var AaveForkATokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol:            &AaveATokenV2List,
 	AaveV3Protocol:            &AaveATokenV3List,
@@ -22,7 +33,7 @@ var AaveForkATokenListMap = map[string]*map[int64]map[string]string{
 
 // Aave fork V token list map.
 //
-// map[protocol name][network][underlying] = v token.
+// map[protocol name][network][underlying] = vtoken.
 var AaveForkVTokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol:            &AaveVTokenV2List,
 	AaveV3Protocol:            &AaveVTokenV3List,
@@ -35,7 +46,7 @@ var AaveForkVTokenListMap = map[string]*map[int64]map[string]string{
 //
 // Aave fork S token list map.
 //
-// map[protocol name][network][underlying] = s token.
+// map[protocol name][network][underlying] = stoken.
 var AaveForkSTokenListMap = map[string]*map[int64]map[string]string{
 	AaveV2Protocol:         &AaveSTokenV2List,
 	AaveV3Protocol:         &AaveSTokenV3List,

@@ -10,6 +10,8 @@ type LendingTokenLists struct {
 
 // map[protocol name]=LendingTokenLists
 var LendingTokenListsMap = map[string]LendingTokenLists{
+	// Aave forks
+
 	AaveV2Protocol: {
 		ATokenList: &AaveATokenV2List,
 		VTokenList: &AaveVTokenV2List,
@@ -29,6 +31,14 @@ var LendingTokenListsMap = map[string]LendingTokenLists{
 		ATokenList: &AaveATokenV3EtherfiForkList,
 		VTokenList: &AaveVTokenV3EtherfiForkList,
 	},
+	SparkProtocol: {
+		ATokenList: &SparkATokenList,
+		VTokenList: &SparkVTokenList,
+		STokenList: &SparkSTokenList,
+	},
+
+	// CompoundV2 forks
+
 	BenqiProtocol: {
 		CTokenList: &BenqiCTokenList,
 	},
@@ -36,11 +46,18 @@ var LendingTokenListsMap = map[string]LendingTokenLists{
 		CTokenList: &TraderjoeCTokenList,
 	},
 	CompoundV2Protocol: {
-		CTokenList: &CompoundCTokenList,
+		CTokenList: &CompoundV2CTokenList,
 	},
-	SparkProtocol: {
-		ATokenList: &SparkATokenList,
-		VTokenList: &SparkVTokenList,
-		STokenList: &SparkSTokenList,
+	RhoProtocol: {
+		CTokenList: &RhoCTokenList,
+	},
+	VenusProtocol: {
+		CTokenList: &VenusCTokenList,
+	},
+
+	// CompoundV3 forks
+
+	CompoundV3Protocol: {
+		CTokenList: &CompoundV3CTokenList,
 	},
 }

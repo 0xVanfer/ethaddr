@@ -60,3 +60,10 @@ var ENAList = map[int64]string{
 	ChainScroll:   "0x58538e6A46E07434d7E7375Bc268D3cb839C0133", // ENA, 0x58538e6a46e07434d7e7375bc268d3cb839c0133
 	ChainZkSync:   "0x686b311F82b407f0be842652a98e5619F64cC25F", // ENA, 0x686b311f82b407f0be842652a98e5619f64cc25f
 }
+
+// Ethena rwa token: USDtb.
+//
+// map[chainID] = address
+var USDtbList = map[int64]string{
+	ChainEthereum: "0xC139190F447e929f090Edeb554D95AbB8b18aC1C", // USDtb, 0xc139190f447e929f090edeb554d95abb8b18ac1c
+}

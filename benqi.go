@@ -9,7 +9,7 @@ const BenqiProtocol string = "benqi"
 
 // Benqi token: QI.
 //
-// map[network] = address.
+// map[chainID] = address.
 var BenqiTokenList = map[int64]string{
 	ChainAvalanche: "0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5", // QI, 0x8729438eb15e2c8b576fcc6aecda6a148776c0f5
 }
@@ -19,14 +19,14 @@ var QIList = BenqiTokenList
 
 // Benqi savax token: sAVAX.
 //
-// map[network] = address.
+// map[chainID] = address.
 var SAVAXList = map[int64]string{
 	ChainAvalanche: "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE", // sAVAX, 0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be
 }
 
 // Benqi comptroller, similar to compound.
 //
-// map[network] = address.
+// map[chainID] = address.
 var BenqiComptrollerList = map[int64]string{
 	ChainAvalanche: "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4", // 0x486af39519b4dc9a7fccd318217352830e8ad9b4
 }
@@ -49,5 +49,6 @@ var BenqiCTokenList = map[int64]map[string]string{
 		SAVAXList[ChainAvalanche]: "0xF362feA9659cf036792c9cb02f8ff8198E21B4cB", // qisAVAX, 0xf362fea9659cf036792c9cb02f8ff8198e21b4cb
 		BTCbList[ChainAvalanche]:  "0x89a415b3D20098E6A6C8f7a59001C67BD3129821", // qiBTC.b, 0x89a415b3d20098e6a6c8f7a59001c67bd3129821
 		BUSDList[ChainAvalanche]:  "0x872670CcAe8C19557cC9443Eff587D7086b8043A", // qiBUSD, 0x872670ccae8c19557cc9443eff587d7086b8043a
+		AUSDList[ChainAvalanche]:  "0x190D94613A09ad7931FcD17CD6A8F9B6B47ad414", // qiAUSD, 0x190d94613a09ad7931fcd17cd6a8f9b6b47ad414
 	},
 }

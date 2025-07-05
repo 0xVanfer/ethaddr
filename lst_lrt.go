@@ -1,41 +1,79 @@
 package ethaddr
 
-// ETH LST
-var AllETHLSTs = []map[int64]string{
-	AnkrETHList,         // ankr
-	BETHList, WBETHList, // binance
-	CbETHList,               // coinbase
-	FrxETHList, SfrxETHList, // frax
-	STETHList, WSTETHList, // lido
-	METHList,  // mantle
-	RETHList,  // rocketpool
-	ETHxList,  // stader
-	OSETHList, // stakewise
-	SWETHList, // swell
-}
-
-// ETH LRT, restaked by eigenlayer
-var AllETHEigenLayerLRTs = []map[int64]string{
-	EETHList, WEETHList, // etherfi
-	RsETHList,  // Kelp
-	EzETHList,  // renzo
-	RswETHList, // swell
-}
-
-// ETH LRT, restaked symbiotic
-var AllETHSymbioticLRTs = []map[int64]string{
-	AmphrETHList, // amphor
-	CoETHList,    // chorusone
-	IfsETHList,   // infStones
-	LugaETHList,  // luganodes
-	RstETHList,   // p2p
-	Re7LRTList,   // re7
-	PzETHList,    // renzo
-	SteakLRTList, // steakhouse
-}
-
-// ETH LRT
-var AllETHLRTs = append(AllETHEigenLayerLRTs, AllETHSymbioticLRTs...)
-
+// Deprecated: To get if a token is ETH related, use package LSD. This file will not be updated on time.
+//
 // ETH LST & LRT
-var AllETHRelated = append(AllETHLSTs, AllETHLRTs...)
+var ETHRelatedTokensList = []map[int64]string{
+	WETHList,
+	// amphor
+	AmphrETHList,
+	// ankr
+	AnkrETHList,
+	// bedrock
+	UniETHList,
+	// binance
+	BETHList, WBETHList,
+	// chorusone
+	CoETHList,
+	// cian
+	YLstETHList, SYLstETHList, YLrsETHList, YLstETHBFEList,
+	// coinbase
+	CbETHList,
+	// etherfi
+	EETHList, WEETHList,
+	// frax
+	FrxETHList, SfrxETHList,
+	// infstones
+	IfsETHList,
+	// kelp
+	RsETHList, WrsETHList, AgETHList,
+	// lido
+	STETHList, WSTETHList,
+	// luganodes
+	LugaETHList,
+	// mantle
+	METHList,
+	// p2p
+	RstETHList,
+	// renzo
+	EzETHList, PzETHList,
+	// rocket pool
+	RETHList,
+	// stakewise
+	OSETHList,
+	// stone
+	STONEList,
+	// swell
+	SWETHList, RswETHList,
+}
+
+// Deprecated: To get if a token is ETH related, use package LSD. This file will not be updated on time.
+//
+// BTC LRT
+var BTCRelatedTokensList = []map[int64]string{
+	WBTCList,
+	// bedrock
+	UniBTCList,
+	// binance
+	BBTCList, BTCBList,
+	// bridged
+	BTCbList,
+	// coinbase
+	CbBTCList,
+	// fbtc (fire)
+	FBTCList,
+	// kraken
+	KBTCList,
+	// lombard
+	LBTCList,
+	// pumpBTC
+	PumpBTCList, PumpBTCBeraList, PumpBTCSeiList,
+	// republic
+	RenBTCList,
+	// solv
+	SolvBTCList, XSolvBTCList,
+	// stakestone
+	STONEBTCList, SBTCList,
+	// tbtc
+	TBTCList,
+}

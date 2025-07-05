@@ -19,12 +19,14 @@ var CompoundV3MarketsList = map[int64]map[string]string{
 		USDCList[ChainBase]:  "0xb125E6687d4313864e53df431d5425969c15Eb2F", // 0xb125e6687d4313864e53df431d5425969c15eb2f
 		USDbCList[ChainBase]: "0x9c4ec768c28520B50860ea7a15bd7213a9fF58bf", // 0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf
 		WETHList[ChainBase]:  "0x46e6b214b524310239732D51387075E0e70970bf", // 0x46e6b214b524310239732d51387075e0e70970bf
+		AEROList[ChainBase]:  "0x784efeB622244d2348d4F2522f8860B96fbEcE89", // 0x784efeB622244d2348d4F2522f8860B96fbEcE89
 	},
 	ChainEthereum: {
 		WETHList[ChainEthereum]:   "0xA17581A9E3356d9A858b789D68B4d866e593aE94", // 0xa17581a9e3356d9a858b789d68b4d866e593ae94
 		USDCList[ChainEthereum]:   "0xc3d688B66703497DAA19211EEdff47f25384cdc3", // 0xc3d688b66703497daa19211eedff47f25384cdc3
 		USDTList[ChainEthereum]:   "0x3Afdc9BCA9213A35503b077a6072F3D0d5AB0840", // 0x3afdc9bca9213a35503b077a6072f3d0d5ab0840
 		WSTETHList[ChainEthereum]: "0x3D0bb1ccaB520A66e607822fC55BC921738fAFE3", // 0x3d0bb1ccab520a66e607822fc55bc921738fafe3
+		USDSList[ChainEthereum]:   "0x5D409e56D886231aDAf00c8775665AD0f9897b56", // 0x5d409e56d886231adaf00c8775665ad0f9897b56
 	},
 	ChainOptimism: {
 		USDCList[ChainOptimism]: "0x2e44e174f7D53F0212823acC11C01A11d58c5bCB", // 0x2e44e174f7d53f0212823acc11c01a11d58c5bcb
@@ -37,6 +39,9 @@ var CompoundV3MarketsList = map[int64]map[string]string{
 	},
 	ChainScroll: {
 		USDCList[ChainScroll]: "0xB2f97c1Bd3bf02f5e74d13f02E3e26F93D77CE44", // 0xb2f97c1bd3bf02f5e74d13f02e3e26f93d77ce44
+	},
+	ChainMantle: {
+		USDeList[ChainMantle]: "0x606174f62cd968d8e684c645080fa694c1D7786E", // 0x606174f62cd968d8e684c645080fa694c1d7786e
 	},
 }
 
@@ -56,12 +61,14 @@ var CompoundV3MarketsExtentionList = map[int64]map[string]string{
 		USDCList[ChainBase]:  "0x3bac64185786922292266AA92a58cf870D694E2a", // 0x3bac64185786922292266aa92a58cf870d694e2a
 		USDbCList[ChainBase]: "0x2F9E3953b2Ef89fA265f2a32ed9F80D00229125B", // 0x2f9e3953b2ef89fa265f2a32ed9f80d00229125b
 		WETHList[ChainBase]:  "0x88bB8C109640778D3fB1074bB10a66e31F2c9c17", // 0x88bb8c109640778d3fb1074bb10a66e31f2c9c17
+		AEROList[ChainBase]:  "0x6f7D514bbD4aFf3BcD1140B7344b32f063dEe486", // 0x6f7d514bbd4aff3bcd1140b7344b32f063dee486
 	},
 	ChainEthereum: {
 		WETHList[ChainEthereum]:   "0xe2C1F54aFF6b38fD9DF7a69F22cB5fd3ba09F030", // 0xe2c1f54aff6b38fd9df7a69f22cb5fd3ba09f030
 		USDCList[ChainEthereum]:   "0x285617313887d43256F852cAE0Ee4de4b68D45B0", // 0x285617313887d43256f852cae0ee4de4b68d45b0
 		USDTList[ChainEthereum]:   "0x5C58d4479A1E9b2d19EE052143FA73F0ee79A36e", // 0x5c58d4479a1e9b2d19ee052143fa73f0ee79a36e
 		WSTETHList[ChainEthereum]: "0x995E394b8B2437aC8Ce61Ee0bC610D617962B214", // 0x995e394b8b2437ac8ce61ee0bc610d617962b214
+		USDSList[ChainEthereum]:   "0x95DeDD64b551F05E9f59a101a519B024b6b116E7", // 0x95dedd64b551f05e9f59a101a519b024b6b116e7
 	},
 	ChainOptimism: {
 		USDCList[ChainOptimism]: "0xE802a0b833f6080FEB46DD54c75444c5dba0c873", // 0xe802a0b833f6080feb46dd54c75444c5dba0c873
@@ -74,5 +81,8 @@ var CompoundV3MarketsExtentionList = map[int64]map[string]string{
 	},
 	ChainScroll: {
 		USDCList[ChainScroll]: "0x27E24C49f95DfF7E231eF1C2849F760cDF25a5Ad", // 0x27e24c49f95dff7e231ef1c2849f760cdf25a5ad
+	},
+	ChainMantle: {
+		USDeList[ChainMantle]: "0xf528B4bCAc12dad0bFa114282b219ad706bA7f18", // 0xf528b4bcac12dad0bfa114282b219ad706ba7f18
 	},
 }

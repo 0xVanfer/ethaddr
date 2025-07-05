@@ -1,7 +1,14 @@
 package ethaddr
 
-// https://www.renzoprotocol.com/
+// Website: https://www.renzoprotocol.com/
 const RenzoProtocol string = "renzo"
+
+// Renzo token: REZ.
+//
+// map[chainID] = address
+var REZList = map[int64]string{
+	ChainEthereum: "0x3B50805453023a91a8bf641e279401a0b23FA6F9", // REZ, 0x3b50805453023a91a8bf641e279401a0b23fa6f9
+}
 
 // Renzo symbiotic restaked vault: pzETH.
 //
@@ -14,6 +21,8 @@ var RenzoSymbioticRestakedLSTList = map[int64]string{
 //
 // map[chainID] = address
 var RenzoEigenlayerRestakedLSTList = map[int64]string{
+	ChainArbitrum: "0x2416092f143378750bb29b79eD961ab195CcEea5", // ezETH, 0x2416092f143378750bb29b79ed961ab195cceea5
+	ChainBase:     "0x2416092f143378750bb29b79eD961ab195CcEea5", // ezETH, 0x2416092f143378750bb29b79ed961ab195cceea5
 	ChainEthereum: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110", // ezETH, 0xbf5495efe5db9ce00f80364c8b423567e58d2110
 }
 

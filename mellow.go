@@ -1,6 +1,6 @@
 package ethaddr
 
-// Website: https://app.mellow.finance/restake
+// Website: https://app.mellow.finance/vaults
 const MellowProtocol string = "mellow"
 
 // The vaults for Symbiotic wstETH restaking on Mellow frontend.

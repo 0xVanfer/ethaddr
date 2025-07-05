@@ -5,7 +5,7 @@ const UniswapProtocolV2 = "uniswapv2"
 
 // Uniswap V2 swap router.
 //
-// map[network] = address.
+// map[chainID] = address.
 //
 // Uni V2 is only on ethereum.
 var UniswapV2RouterList = map[int64]string{

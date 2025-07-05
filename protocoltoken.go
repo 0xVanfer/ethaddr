@@ -2,7 +2,7 @@ package ethaddr
 
 // Protocol token list map.
 //
-// map[protocol name][network] = token.
+// map[protocol name][chainID] = token.
 //
 // Not suggested to use this map.
 var ProtocolTokenListMap = map[string]map[int64]string{

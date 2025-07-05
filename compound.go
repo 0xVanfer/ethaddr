@@ -2,7 +2,7 @@ package ethaddr
 
 // Compound token: COMP.
 //
-// map[network] = address.
+// map[chainID] = address.
 var CompoundTokenList = map[int64]string{
 	ChainArbitrum: "0x354A6dA3fcde098F8389cad84b0182725c6C91dE", // COMP, 0x354a6da3fcde098f8389cad84b0182725c6c91de
 	ChainBase:     "0x9e1028F5F1D5eDE59748FFceE5532509976840E0", // COMP, 0x9e1028f5f1d5ede59748ffcee5532509976840e0

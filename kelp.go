@@ -1,6 +1,6 @@
 package ethaddr
 
-// https://stage.kelpdao.xyz/
+// Website: https://kerneldao.com/kelp/restake/
 const KelpProtocol string = "kelp"
 
 // Kelp restaking ETH: rsETH.

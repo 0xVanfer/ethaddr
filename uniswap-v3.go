@@ -9,7 +9,7 @@ const UniswapProtocolV3 = "uniswapv3"
 
 // Uniswap V3 swap router.
 //
-// map[network] = address.
+// map[chainID] = address.
 var UniswapV3RouterList = map[int64]string{
 	ChainArbitrum: "0xE592427A0AEce92De3Edee1F18E0157C05861564", // 0xe592427a0aece92de3edee1f18e0157c05861564
 	ChainEthereum: "0xE592427A0AEce92De3Edee1F18E0157C05861564", // 0xe592427a0aece92de3edee1f18e0157c05861564
@@ -20,7 +20,7 @@ var UniswapV3RouterList = map[int64]string{
 
 // Uniswap V3 swap router 02.
 //
-// map[network] = address.
+// map[chainID] = address.
 var UniswapV3Router02List = map[int64]string{
 	ChainAvalanche:  "0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE", // 0xbb00ff08d01d300023c629e8ffffcb65a5a578ce
 	ChainBase:       "0x2626664c2603336E57B271c5C0b26F421741e481", // 0x2626664c2603336e57b271c5c0b26f421741e481
@@ -33,7 +33,7 @@ var UniswapV3Router02List = map[int64]string{
 
 // Uniswap v3 factory.
 //
-// map[network] = address.
+// map[chainID] = address.
 var UniswapV3FactoryList = map[int64]string{
 	ChainArbitrum:   "0x1F98431c8aD98523631AE4a59f267346ea31F984", // 0x1f98431c8ad98523631ae4a59f267346ea31f984
 	ChainAvalanche:  "0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD", // 0x740b1c1de25031c31ff4fc9a62f554a55cdc1bad
@@ -50,7 +50,7 @@ var UniswapV3FactoryList = map[int64]string{
 
 // Uniswap v3 nonfungible position manager.
 //
-// map[network] = address.
+// map[chainID] = address.
 var UniswapV3NonfungiblePositionManagerList = map[int64]string{
 	ChainAvalanche:  "0x655C406EBFa14EE2006250925e54ec43AD184f8B", // 0x655c406ebfa14ee2006250925e54ec43ad184f8b
 	ChainBase:       "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1", // 0x03a520b32c04bf3beef7beb72e919cf822ed34f1

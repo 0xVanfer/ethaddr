@@ -12,14 +12,14 @@ const AaveV3ProtocolEtherfiFork string = "aavev3etherfi"
 // Aave rewards controller V3 for etherfi fork.
 // Previously named as "incentives controller".
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveIncentivesControllerV3EtherfiForkList = map[int64]string{
 	ChainEthereum: "0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb", // 0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb
 }
 
 // Aave lending pool v3 for etherfi fork.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AaveLendingPoolV3EtherfiForkList = map[int64]string{
 	ChainEthereum: "0x0AA97c284e98396202b6A04024F5E2c65026F3c0", // 0x0aa97c284e98396202b6a04024f5e2c65026f3c0
 }
@@ -27,7 +27,7 @@ var AaveLendingPoolV3EtherfiForkList = map[int64]string{
 // Aave protocol data provider v3 for etherfi fork.
 // Previously named as "pool data provider".
 //
-// map[network] = address.
+// map[chainID] = address.
 //
 // Last updated Oct.24.2024. Aave v3.2.0
 var AavePoolDataProviderV3EtherfiForkList = map[int64]string{
@@ -36,7 +36,7 @@ var AavePoolDataProviderV3EtherfiForkList = map[int64]string{
 
 // Aave ui pool data provider v3 for etherfi fork.
 //
-// map[network] = address.
+// map[chainID] = address.
 //
 // Last updated Oct.24.2024. Aave v3.2.0
 var AaveUiPoolDataProviderV3EtherfiForkList = map[int64]string{
@@ -45,7 +45,7 @@ var AaveUiPoolDataProviderV3EtherfiForkList = map[int64]string{
 
 // Aave ui incentive data provider v3 for etherfi fork.
 //
-// map[network] = address.
+// map[chainID] = address.
 //
 // Last updated Oct.24.2024. Aave v3.2.0
 var AaveUiIncentiveDataProviderV3EtherfiForkList = map[int64]string{
@@ -54,9 +54,16 @@ var AaveUiIncentiveDataProviderV3EtherfiForkList = map[int64]string{
 
 // Aave pool address provider v3 for etherfi fork.
 //
-// map[network] = address.
+// map[chainID] = address.
 var AavePoolAddressProviderV3EtherfiForkList = map[int64]string{
 	ChainEthereum: "0xeBa440B438Ad808101d1c451C1C5322c90BEFCdA", // 0xeba440b438ad808101d1c451c1c5322c90befcda
+}
+
+// Aave v3 oracle for etherfi fork.
+//
+// map[chainID] = address.
+var AaveOracleV3EtherfiForkList = map[int64]string{
+	ChainEthereum: "0x43b64f28A678944E0655404B0B98E443851cC34F", // 0x43b64f28a678944e0655404b0b98e443851cc34f
 }
 
 // Aave a tokens v3 for etherfi fork.

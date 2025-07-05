@@ -7,7 +7,7 @@ const SushiProtocol string = "sushi"
 
 // Sushi token: SUSHI.
 //
-// map[network] = address.
+// map[chainID] = address.
 var SushiTokenList = map[int64]string{
 	ChainArbitrum:  "0xd4d42F0b6DEF4CE0383636770eF773390d85c61A", // SUSHI, 0xd4d42f0b6def4ce0383636770ef773390d85c61a
 	ChainAvalanche: "0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76", // SUSHI.e, 0x37b608519f91f70f2eeb0e5ed9af4061722e4f76
@@ -20,7 +20,7 @@ var SUSHIList = SushiTokenList
 
 // XSUSHI.
 //
-// map[network] = address.
+// map[chainID] = address.
 var XSushiList = map[int64]string{
 	ChainEthereum: "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272", // XSUSHI, 0x8798249c2e607446efb7ad49ec89dd1865ff4272
 }
@@ -29,7 +29,7 @@ var XSushiList = map[int64]string{
 //
 // https://docs.sushi.com/docs/Products/Classic%20AMM/Deployment%20Addresses
 //
-// map[network] = address
+// map[chainID] = address
 var SushiV2RouterList = map[int64]string{
 	ChainArbitrum:  "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506", // 0x1b02da8cb0d097eb8d57a175b88c7d8b47997506
 	ChainAvalanche: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506", // 0x1b02da8cb0d097eb8d57a175b88c7d8b47997506
@@ -45,7 +45,7 @@ var SushiV2RouterList = map[int64]string{
 //
 // https://docs.sushi.com/docs/Products/Classic%20AMM/Deployment%20Addresses
 //
-// map[network] = address
+// map[chainID] = address
 var SushiV2FactoryList = map[int64]string{
 	ChainArbitrum:  "0xc35DADB65012eC5796536bD9864eD8773aBc74C4", // 0xc35dadb65012ec5796536bd9864ed8773abc74c4
 	ChainAvalanche: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4", // 0xc35dadb65012ec5796536bd9864ed8773abc74c4
@@ -61,7 +61,7 @@ var SushiV2FactoryList = map[int64]string{
 //
 // https://docs.sushi.com/docs/Products/V3%20AMM/Core/Deployment%20Addresses
 //
-// map[network] = address
+// map[chainID] = address
 var SushiV3FactoryList = map[int64]string{
 	ChainArbitrum:  "0x1af415a1EbA07a4986a52B6f2e7dE7003D82231e", // 0x1af415a1eba07a4986a52b6f2e7de7003d82231e
 	ChainAvalanche: "0x3e603C14aF37EBdaD31709C4f848Fc6aD5BEc715", // 0x3e603c14af37ebdad31709c4f848fc6ad5bec715

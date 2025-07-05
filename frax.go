@@ -6,7 +6,7 @@ const FraxProtocol string = "frax"
 
 // Frax token: FRAX.
 //
-// map[network] = address.
+// map[chainID] = address.
 var FRAXList = map[int64]string{
 	ChainArbitrum:  "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F", // FRAX, 0x17fc002b466eec40dae837fc4be5c67993ddbd6f
 	ChainAvalanche: "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64", // FRAX, 0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64
@@ -15,9 +15,16 @@ var FRAXList = map[int64]string{
 	ChainPolygon:   "0x104592a158490a9228070E0A8e5343B499e125D0", // FRAX, 0x104592a158490a9228070e0a8e5343b499e125d0
 }
 
+// Frax staked FRAX, sFRAX.
+//
+// map[chainID] = address.
+var SFRAXList = map[int64]string{
+	ChainEthereum: "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32", // sFRAX, 0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32
+}
+
 // Frax share token: FXS.
 //
-// map[network] = address.
+// map[chainID] = address.
 var FXSList = map[int64]string{
 	ChainEthereum: "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0", // FXS, 0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0
 }

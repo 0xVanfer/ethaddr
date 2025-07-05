@@ -1,6 +1,7 @@
 package ethaddr
 
 // WARNING: Platypus was dead and relaunched on Jan.2024.
+// Last checked Feb.2025, Platypus has shut down, and deleted twitter account.
 
 // Website: https://platypus.finance/
 //
@@ -11,7 +12,7 @@ const PlatypusProtocol string = "platypus"
 //
 // Platypus token: PTP.
 //
-// map[network] = address.
+// map[chainID] = address.
 var PlatypusTokenList = map[int64]string{
 	ChainAvalanche: "0x22d4002028f537599bE9f666d1c4Fa138522f9c8", // PTP, 0x22d4002028f537599be9f666d1c4fa138522f9c8
 }
@@ -23,7 +24,7 @@ var PTPList = PlatypusTokenList
 //
 // Platypus ve token: vePTP.
 //
-// map[network] = address.
+// map[chainID] = address.
 var PlatypusvePTPList = map[int64]string{
 	ChainAvalanche: "0x5857019c749147EEE22b1Fe63500F237F3c1B692", // vePTP, 0x5857019c749147eee22b1fe63500f237f3c1b692
 }
@@ -32,7 +33,7 @@ var PlatypusvePTPList = map[int64]string{
 //
 // Platypus xPTP.
 //
-// map[network] = address.
+// map[chainID] = address.
 var PlatypusxPTPList = map[int64]string{
 	ChainAvalanche: "0x060556209E507d30f2167a101bFC6D256Ed2f3e1", // xPTP, 0x060556209e507d30f2167a101bfc6d256ed2f3e1
 }
@@ -91,7 +92,7 @@ var PlatypusRouterList = map[int64]map[string]string{
 //
 // Platypus master platypus v2.
 //
-// map[network] = address.
+// map[chainID] = address.
 var PlatypusMasterPlatypusV2List = map[int64]string{
 	ChainAvalanche: "0x68c5f4374228BEEdFa078e77b5ed93C28a2f713E", // 0x68c5f4374228beedfa078e77b5ed93c28a2f713e
 }
@@ -100,7 +101,7 @@ var PlatypusMasterPlatypusV2List = map[int64]string{
 //
 // Platypus master platypus v4.
 //
-// map[network] = address.
+// map[chainID] = address.
 var PlatypusMasterPlatypusV4List = map[int64]string{
 	ChainAvalanche: "0xfF6934aAC9C94E1C39358D4fDCF70aeca77D0AB0", // 0xff6934aac9c94e1c39358d4fdcf70aeca77d0ab0
 }

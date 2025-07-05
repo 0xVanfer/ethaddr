@@ -9,7 +9,7 @@ const CurveProtocol string = "curve"
 
 // Curve token: CRV.
 //
-// map[network] = address.
+// map[chainID] = address.
 var CurveTokenlist = map[int64]string{
 	ChainArbitrum:  "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978", // CRV, 0x11cdb42b0eb46d95f990bedd4695a6e3fa034978
 	ChainAvalanche: "0x47536F17F4fF30e64A96a7555826b8f9e66ec468", // CRV, 0x47536f17f4ff30e64a96a7555826b8f9e66ec468
@@ -24,7 +24,7 @@ var CRVList = CurveTokenlist
 
 // Curve USD: crvUSD.
 //
-// map[network] = address.
+// map[chainID] = address.
 var CrvUSDList = map[int64]string{
 	ChainArbitrum: "0x498Bf2B1e120FeD3ad3D42EA2165E9b73f99C1e5", // crvUSD, 0x498bf2b1e120fed3ad3d42ea2165e9b73f99c1e5
 	ChainEthereum: "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E", // crvUSD, 0xf939e0a03fb07f59a73314e73794be0e57ac1b4e
@@ -47,11 +47,13 @@ var CurveFoldedPoolList = map[int64][]string{
 
 // Curve gauage factory.
 //
-// map[network] = address.
+// map[chainID] = address.
 var CurveGaugeFactoryList = map[int64]string{
 	ChainAvalanche: "0xabC000d88f23Bb45525E447528DBF656A9D55bf5", // 0xabc000d88f23bb45525e447528dbf656a9d55bf5
 }
 
+// Deprecated: NOT updated for 3 years.
+//
 // Curve pools.
 //
 // map[network][pool name] = address.
@@ -73,6 +75,8 @@ var CurvePoolsList = map[int64]map[string]string{
 	},
 }
 
+// Deprecated: NOT updated for 3 years.
+//
 // Curve gauges using different contracts.
 //
 // map[network][gauge type] = []address.

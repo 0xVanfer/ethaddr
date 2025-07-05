@@ -5,7 +5,7 @@ const SparkProtocol string = "spark"
 
 // Spark Saving DAI address.
 //
-// map[network] = address.
+// map[chainID] = address.
 var SDAIList = map[int64]string{
 	ChainEthereum: "0x83F20F44975D03b1b09e64809B757c47f942BEeA", // sDAI, 0x83f20f44975d03b1b09e64809b757c47f942beea
 }
@@ -59,6 +59,11 @@ var SparkATokenList = map[int64]map[string]string{
 		GNOList[ChainEthereum]:    "0x7b481aCC9fDADDc9af2cBEA1Ff2342CB1733E50F", // spGNO, 0x7b481acc9fdaddc9af2cbea1ff2342cb1733e50f
 		CbBTCList[ChainEthereum]:  "0xb3973D459df38ae57797811F2A1fd061DA1BC123", // spcbBTC, 0xb3973d459df38ae57797811f2a1fd061da1bc123
 		SUSDSList[ChainEthereum]:  "0x6715bc100A183cc65502F05845b589c1919ca3d3", // spsUSDS, 0x6715bc100a183cc65502f05845b589c1919ca3d3
+		USDSList[ChainEthereum]:   "0xC02aB1A5eaA8d1B114EF786D9bde108cD4364359", // spUSDS, 0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359
+		LBTCList[ChainEthereum]:   "0xa9d4EcEBd48C282a70CfD3c469d6C8F178a5738E", // spLBTC, 0xa9d4ecebd48c282a70cfd3c469d6c8f178a5738e
+		TBTCList[ChainEthereum]:   "0xce6Ca9cDce00a2b0c0d1dAC93894f4Bd2c960567", // sptBTC, 0x18084fba666a33d37592fa2633fd49a74dd93a88
+		EzETHList[ChainEthereum]:  "0xB131cD463d83782d4DE33e00e35EF034F0869bA1", // spezETH, 0x2416092f143378750bb29b79ed961ab195cceea5
+		RsETHList[ChainEthereum]:  "0x856f1Ea78361140834FDCd0dB0b08079e4A45062", // spRsETH, 0x856f1ea78361140834fdcd0db0b08079e4a45062
 	},
 }
 
@@ -79,6 +84,11 @@ var SparkVTokenList = map[int64]map[string]string{
 		GNOList[ChainEthereum]:    "0x57a2957651DA467fCD4104D749f2F3684784c25a", // variableDebtGNO, 0x57a2957651da467fcd4104d749f2f3684784c25a
 		CbBTCList[ChainEthereum]:  "0x661fE667D2103eb52d3632a3eB2cAbd123F27938", // variableDebtcbBTC, 0x661fe667d2103eb52d3632a3eb2cabd123f27938
 		SUSDSList[ChainEthereum]:  "0x4e89b83f426fED3f2EF7Bb2d7eb5b53e288e1A13", // variableDebtsUSDS, 0x4e89b83f426fed3f2ef7bb2d7eb5b53e288e1a13
+		USDSList[ChainEthereum]:   "0x8c147debea24Fb98ade8dDa4bf142992928b449e", // variableDebtUSDS, 0x8c147debea24fb98ade8dda4bf142992928b449e
+		LBTCList[ChainEthereum]:   "0x096bdDFEE63F44A97cC6D2945539Ee7C8f94637D", // variableDebtLBTC, 0x096bddfee63f44a97cc6d2945539ee7c8f94637d
+		TBTCList[ChainEthereum]:   "0x764591dC9ba21c1B92049331b80b6E2a2acF8B17", // variableDebttBTC, 0x764591dc9ba21c1b92049331b80b6e2a2acf8b17
+		EzETHList[ChainEthereum]:  "0xB0B14Dd477E6159B4F3F210cF45F0954F57c0FAb", // variableDebtezETH, 0xb0b14dd477e6159b4f3f210cf45f0954f57c0fab
+		RsETHList[ChainEthereum]:  "0xc528F0C91CFAE4fd86A68F6Dfd4d7284707Bec68", // variableDebtRsETH, 0xc528f0c91cfae4fd86a68f6dfd4d7284707bec68
 	},
 }
 

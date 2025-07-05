@@ -9,7 +9,7 @@ const RocketPoolProtocol string = "rocketpool"
 
 // Rocket pool rETH.
 //
-// map[network] = address.
+// map[chainID] = address.
 var RETHList = map[int64]string{
 	ChainArbitrum:  "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8", // rETH, 0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8
 	ChainBase:      "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c", // rETH, 0xb6fe221fe9eef5aba221c348ba20a1bf5e73624c
@@ -22,7 +22,7 @@ var RETHList = map[int64]string{
 
 // Rocket pool token.
 //
-// map[network] = address.
+// map[chainID] = address.
 var RocketPoolTokenList = map[int64]string{
 	ChainArbitrum:  "0xB766039cc6DB368759C1E56B79AFfE831d0Cc507", // RPL, 0xb766039cc6db368759c1e56b79affe831d0cc507
 	ChainBase:      "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302", // RPL, 0x1f73eaf55d696bffa9b0ea16fa987b93b0f4d302

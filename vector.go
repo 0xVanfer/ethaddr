@@ -5,7 +5,7 @@ const VectorProtocol string = "vector"
 
 // Vector token: VTX.
 //
-// map[network] = address.
+// map[chainID] = address.
 var VectorTokenList = map[int64]string{
 	ChainAvalanche: "0x5817D4F0b62A59b17f75207DA1848C2cE75e7AF4", // VTX, 0x5817d4f0b62a59b17f75207da1848c2ce75e7af4
 }
@@ -15,7 +15,7 @@ var VTXList = VectorTokenList
 
 // Vector staking contract.
 //
-// map[network] = address.
+// map[chainID] = address.
 var VectorChefList = map[int64]string{
 	ChainAvalanche: "0x423D0FE33031aA4456a17b150804aA57fc157d97", // 0x423d0fe33031aa4456a17b150804aa57fc157d97
 }

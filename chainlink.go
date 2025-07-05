@@ -10,7 +10,7 @@ const ChainlinkProtocol string = "chainlink"
 //
 // The link to pay is not the link in this list. https://docs.chain.link/resources/link-token-contracts
 //
-// map[network] = address.
+// map[chainID] = address.
 var ChainlinkTokenList = map[int64]string{
 	ChainArbitrum:  "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4", // LINK, 0xf97f4df75117a78c1a5a0dbb814af92458539fb4
 	ChainAvalanche: "0x5947BB275c521040051D82396192181b413227A3", // LINK.e, 0x5947bb275c521040051d82396192181b413227a3
@@ -25,7 +25,7 @@ var LINKList = ChainlinkTokenList
 
 // Bridged Chainlink token: LINK.e.
 //
-// map[network] = address.
+// map[chainID] = address.
 var LINKeList = map[int64]string{
 	ChainAvalanche: "0x5947BB275c521040051D82396192181b413227A3", // LINK.e, 0x5947bb275c521040051d82396192181b413227a3
 }

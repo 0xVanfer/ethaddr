@@ -1,6 +1,6 @@
 package ethaddr
 
-// https://www.luganodes.com/
+// Website: https://www.luganodes.com/
 const LuganodesProtocol string = "luganodes"
 
 // Luganodes symbiotic restaked ETH: LugaETH.

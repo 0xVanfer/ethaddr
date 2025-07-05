@@ -11,14 +11,14 @@ const KyberProtocol string = "kyber"
 // You can find the new one by "KyberTokenList" in this package.
 // However, this old version token is still in use, such as AAVE V2 Ethereum.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberOldTokenList = map[int64]string{
 	ChainEthereum: "0xdd974D5C2e2928deA5F71b9825b8b646686BD200", // KNC, 0xdd974d5c2e2928dea5f71b9825b8b646686bd200
 }
 
 // Kyber token in use: KNC.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberTokenList = map[int64]string{
 	ChainArbitrum:  "0xe4DDDfe67E7164b0FE14E218d80dC4C08eDC01cB", // KNC, 0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb
 	ChainAvalanche: "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f", // KNC, 0x39fc9e94caeacb435842fadedecb783589f50f5f
@@ -33,7 +33,7 @@ var KNCList = KyberTokenList
 
 // Kyber factory.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberFactoryList = map[int64]string{
 	ChainArbitrum:  "0x51E8D106C646cA58Caf32A47812e95887C071a62", // 0x51e8d106c646ca58caf32a47812e95887c071a62
 	ChainAvalanche: "0x10908C875D865C66f271F5d3949848971c9595C9", // 0x10908c875d865c66f271f5d3949848971c9595c9
@@ -45,14 +45,14 @@ var KyberFactoryList = map[int64]string{
 
 // Kyber DMM factory.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberDMMFactoryList = map[int64]string{
 	ChainArbitrum: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974", // 0xd9bfe9979e9ca4b2fe84ba5d4cf963bbcb376974
 }
 
 // Kyber router.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberRouterList = map[int64]string{
 	ChainArbitrum:  "0xC3E2aED41ECdFB1ad41ED20D45377Da98D5489dD", // 0xc3e2aed41ecdfb1ad41ed20d45377da98d5489dd
 	ChainAvalanche: "0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8", // 0x8efa5a9ad6d594cf76830267077b78ce0bc5a5f8
@@ -64,14 +64,14 @@ var KyberRouterList = map[int64]string{
 
 // Kyber DMM router.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberDMMRouterList = map[int64]string{
 	ChainArbitrum: "0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55", // 0xeae47c5d99f7b31165a7f0c5f7e0d6afa25cfd55
 }
 
 // Kyber reward locker.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberRewardLockerList = map[int64]string{
 	ChainAvalanche: "0xf530a090EF6481cfB33F98c63532E7745abab58A", // 0xf530a090ef6481cfb33f98c63532e7745abab58a
 	ChainBSC:       "0xfab5186A194588F5AD5074Bd52659302906B4522", // 0xfab5186a194588f5ad5074bd52659302906b4522
@@ -81,7 +81,7 @@ var KyberRewardLockerList = map[int64]string{
 
 // Kyber migrator.
 //
-// map[network] = address.
+// map[chainID] = address.
 var KyberMigratorList = map[int64]string{
 	ChainEthereum: "0x6A65e062cE8290007301296F3C6AE446Af7BDEeC", // 0x6a65e062ce8290007301296f3c6ae446af7bdeec
 }

@@ -2,7 +2,7 @@ package ethaddr
 
 // Trueusd token: TUSD.
 //
-// map[network] = address.
+// map[chainID] = address.
 var TUSDList = map[int64]string{
 	ChainArbitrum:  "0x4D15a3A2286D883AF0AA1B3f21367843FAc63E07", // TUSD, 0x4d15a3a2286d883af0aa1b3f21367843fac63e07
 	ChainAvalanche: "0x1C20E891Bab6b1727d14Da358FAe2984Ed9B59EB", // TUSD, 0x1c20e891bab6b1727d14da358fae2984ed9b59eb
@@ -13,7 +13,7 @@ var TUSDList = map[int64]string{
 
 // Old Trueusd token: TUSD.
 //
-// map[network] = address.
+// map[chainID] = address.
 var TUSDOldList = map[int64]string{
 	ChainBSC: "0x14016E85a25aeb13065688cAFB43044C2ef86784", // TUSDOLD, 0x14016e85a25aeb13065688cafb43044c2ef86784
 }

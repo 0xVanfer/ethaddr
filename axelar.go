@@ -7,7 +7,7 @@ package ethaddr
 // Deployed addresses: https://docs.axelar.dev/resources/contract-addresses/mainnet
 const AxelarProtocol string = "axelar"
 
-// map[network] = gateway contract address
+// map[chainID] = gateway contract address
 var AxelarGatewayList = map[int64]string{
 	ChainArbitrum:   "0xe432150cce91c13a887f7D836923d5597adD8E31", // 0xe432150cce91c13a887f7d836923d5597add8e31
 	ChainAvalanche:  "0x5029C0EFf6C34351a0CEc334542cDb22c7928f78", // 0x5029c0eff6c34351a0cec334542cdb22c7928f78
@@ -30,7 +30,7 @@ var AxelarGatewayList = map[int64]string{
 	ChainScroll:     "0xe432150cce91c13a887f7D836923d5597adD8E31", // 0xe432150cce91c13a887f7d836923d5597add8e31
 }
 
-// map[network] = gateway contract address
+// map[chainID] = gateway contract address
 var AxelarGasServiceList = map[int64]string{
 	ChainArbitrum:   "0x2d5d7d31F671F86C782533cc367F14109a082712", // 0x2d5d7d31f671f86c782533cc367f14109a082712
 	ChainAvalanche:  "0x2d5d7d31F671F86C782533cc367F14109a082712", // 0x2d5d7d31f671f86c782533cc367f14109a082712
